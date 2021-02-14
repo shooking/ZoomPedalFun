@@ -1,19 +1,23 @@
 CPP        = g++
-CPPFLAGS   = -Wall -g -c
+CPPFLAGS   = -Wall -g
 
-SOURCES    := ${wildcard *.cpp}
-OBJECTS    := ${SOURCES:.cpp=.o}
+SOURCES	:= ${wildcard *.cpp}
+OBJECTS	:= ${SOURCES:.cpp=.o}
+EXES	:= ${SOURCES:.cpp=}
 
-.PHONY:    all clean
+all: $(EXES)
 
-.SUFFIXES: .cpp .o
+B1OnPatchGetName: B1OnPatchGetName.cpp
+	echo "Making $?"
+	$(CPP) $(CPPFLAGS) $< -o $@
 
-all:       main
+B1OnPatchUnpack000: B1OnPatchUnpack000.cpp
+	echo "Making $?"
+	$(CPP) $(CPPFLAGS) $< -o $@
 
-main:      $(OBJECTS)
-
-.cpp.o:
+ExamineUpdater: ExamineUpdater.cpp
+	echo "Making $?"
 	$(CPP) $(CPPFLAGS) $< -o $@
 
 clean:
-	rm -fv *.o
+	rm -fv $(OBJECTS) $(EXES)
