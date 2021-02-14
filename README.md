@@ -13,6 +13,8 @@ Mungewell's Zoom-zt2: https://github.com/mungewell/zoom-zt2
 
 SysExTones g1on: https://github.com/SysExTones/g1on
 
+SrMouraSilva: https://github.com/PedalController/PiPedalController
+
 Decent editors:
 
 ToneLib: https://tonelib.net/
