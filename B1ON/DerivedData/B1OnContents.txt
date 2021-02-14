@@ -1,0 +1,100 @@
+1 UK Groove 
+2 SLAP      
+3 Fonk      
+4 REC FAT CL
+5 ruff      
+6 CLEAN&ECHO
+7 FAT Syn   
+8 AttackBass
+9 Fracture  
+10 FRETLESS  
+11 SolidState
+12 RockSteady
+13 LowOctave 
+14 A-Remark  
+15 Reach4It! 
+16 HammOnTap 
+17 Chordal   
+18 SoloDlaVrb
+19 SpaceMan  
+20 FrippOut  
+21 NW AUTO   
+22 NW FUZZ   
+23 NW VERB   
+24 NW ENS    
+25 NW VIB    
+26 NW SATK   
+27 NW DLY    
+28 NW DBL    
+29 NW CHOR   
+30 NW SYN    
+31 Studio    
+32 Fat Man   
+33 TC CLEAN  
+34 The Gospel
+35 REC CLEAN 
+36 Solid Bass
+37 Big Willie
+38 Low Fi    
+39 PickHeavy 
+40 ReggaeBASS
+41 Cappn Hook
+42 REC SOLO_C
+43 FUSION CH 
+44 CHORD     
+45 HARMONICS 
+46 CUTTING   
+47 TAPPING   
+48 CLEAN SOLO
+49 DUB BASS  
+50 Orpheum   
+51 TREMO     
+52 Mean Green
+53 CHO&REV   
+54 Ice       
+55 Listen Up 
+56 Tight     
+57 REC SLAP  
+58 PULL MELO 
+59 ChokePHASE
+60 SLAPBACK  
+61 HYBRID DIS
+62 JB Dis    
+63 ExtraExtra
+64 KingSal   
+65 boozer    
+66 Aggression
+67 REC SOLO_D
+68 DIS SOLO  
+69 PHASER    
+70 aMUSE me  
+71 AUTO-FUNK 
+72 Talkin'   
+73 kick it   
+74 Energy    
+75 G-Boogie  
+76 Star Bass 
+77 SYNBASS   
+78 BassickSyn
+79 Boogie    
+80 SFX SYNTH 
+81 Synthy    
+82 chill     
+83 Ice Cold  
+84 Drowned   
+85 Warp      
+86 JustNasty 
+87 Krush     
+88 Copycat   
+89 Murda Fuzz
+90 Genesis   
+91 MillerTime
+92 WARM TONE 
+93 EarthyRock
+94 Remote    
+95 1981      
+96 TM FUZZ   
+97 Smoke     
+98 Magic     
+99 jackko    
+100 SpaceFONK 
