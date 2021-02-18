@@ -20,7 +20,25 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
 
 	int j = 0;
 	vector<BYTE>	unpacked;
+	
+	// Check this is the right sysex
+	bool rightSysex = 
+		sysex[0] == 0xF0 &&
+		sysex[1] == 0x52 &&
+		sysex[2] == 0x00 &&
+		(sysex[3] == 0x63 // G1On?? Add more IDs here
+	       		|| 
+		 sysex[3] == 0x65 // B1On my pedal 
+		) &&
+		sysex[4] == 0x28;
 
+	if (!rightSysex)
+	{
+		cout << "Sorry I do not recognize this sysex. Your pedal ID is ";
+		printf("%02x", sysex[3]);
+		cout << ". Exiting\n";
+		exit(-1);
+	}
 	// We expect this unpacked sysex to start from byte 5 (0 bias)
 	for (size_t i = 5; i < sysex.size() - 1; i++)
 	{	
