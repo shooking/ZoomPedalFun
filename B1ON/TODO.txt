@@ -1,0 +1,11 @@
+I can see when one shares other ZDLs that likely the FXID and GID changes.
+As of now I cannot work out the Sysex to set a FXID/GID
+Worse, it seems I can change the 1st two bytes of a given FXID in sysex
+BUT it does not seem to get the GID
+and if pedal is in bypass the parameter values will not accept injection.
+
+So it seems the only way is to send FULL sysex except this isnt what
+Tonelib, 1-Controller etc are doing.
+Indeed I dont know what they are doing.
+
+
