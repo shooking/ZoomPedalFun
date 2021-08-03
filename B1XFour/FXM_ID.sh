@@ -39,7 +39,8 @@ hexFXValueHigh=`printf "%02x" $hexFXHigh`
 
 # We read in the FX GROUP and convert to low/high
 theValue=$3
-theValueMod=$(($theValue / 32 ))
+#theValueMod=$(($theValue * 8 ))
+theValueMod=$(($theValue))
 
 # we switch FX on
 OnOff=`printf "%02x" 1`
