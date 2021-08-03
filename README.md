@@ -7,6 +7,8 @@ If you want to contribute then hit me up in the issues (technical not financial!
 
 I also draw you attention to other great works in this area:
 
+(B1ON) zoom Effect Manager: https://www.reddit.com/r/zoommultistomp/comments/jcjk04/new_zoom_effect_manager_111/
+
 Barsik-Barbosik Zoom Firmware Editor: https://github.com/Barsik-Barbosik/Zoom-Firmware-Editor
 
 Mungewell's Zoom-zt2: https://github.com/mungewell/zoom-zt2
@@ -14,6 +16,8 @@ Mungewell's Zoom-zt2: https://github.com/mungewell/zoom-zt2
 SysExTones g1on: https://github.com/SysExTones/g1on
 
 SrMouraSilva: https://github.com/PedalController/PiPedalController
+
+ZDownload: https://github.com/fuzboxz/zdownload
 
 Decent editors:
 
