@@ -33,3 +33,78 @@ Sense:  1     Display: -10..10, 0..19 [-1 -> 1, no 0!]
 Reso:   5     Display: 0..10
 Dry:    25    Display: 0..100
 Level:  100   Display: 0..150
+
+#From pedal
+###########
+
+Change to UK Groove patch on pedal.
+Sysex dumped with F0 52 00 65 29 F7
+
+$ ./b1on_from_pedal.exe ukgroove_from_pedal.dat
+Infile: ukgroove_from_pedal.dat
+INPUT
+f0 52 00 65 28
+06 11 00 00 50 0d 70 00 08 46 40 01 00 0c 00 00
+00 00 00 00 00 11 01 00 42 04 02 28 00 19 00 0c
+00 00 00 00 00 00 00 00 04 00 21 00 20 0a 02 50
+10 00 0c 00 01 25 03 00 00 00 00 00 64 00 01 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 40 00 32 04 00 00 00 20 03
+00 00 00 00 55 4b 20 47 00 72 6f 6f 76 65 20 00
+f7
+
+[17][0][0][80]
+FXID[1] (ON)= 0 (00), GROUPID = 0 (00)
+
+FX1 P1 = 565 (235) FX1 P2 = 30 (1e) FX1 P3 = 70 (46) FX1 P4 = 10 (0a) FX1 P5 = 0 (00) FX1 P6 = 100 (64) FX1 P7 = 0 (00) FX1 P8 = 0 (00) FX1 P9 = 0 (00)
+
+[17][1][0][132]
+FXID[2] (ON)= 8 (08), GROUPID = 32 (20)
+
+FX2 P1 = 10 (0a) FX2 P2 = 5 (05) FX2 P3 = 25 (19) FX2 P4 = 100 (64) FX2 P5 = 0 (00) FX2 P6 = 0 (00) FX2 P7 = 0 (00) FX2 P8 = 0 (00) FX2 P9 = 0 (00)
+
+[33][0][32][138]
+FXID[3] (ON)= 1 (01), GROUPID = 81 (51)
+
+FX3 P1 = 10 (0a) FX3 P2 = 10 (0a) FX3 P3 = 12 (0c) FX3 P4 = 12 (0c) FX3 P5 = 40 (28) FX3 P6 = 25 (19) FX3 P7 = 0 (00) FX3 P8 = 0 (00) FX3 P9 = 50 (32)
+
+[1][0][0][0]
+FXID[4] (ON)= 0 (00), GROUPID = 0 (00)
+
+FX4 P1 = 0 (00) FX4 P2 = 0 (00) FX4 P3 = 0 (00) FX4 P4 = 0 (00) FX4 P5 = 0 (00) FX4 P6 = 0 (00) FX4 P7 = 0 (00) FX4 P8 = 0 (00) FX4 P9 = 0 (00)
+
+[1][0][0][0]
+FXID[5] (ON)= 0 (00), GROUPID = 0 (00)
+
+FX5 P1 = 0 (00) FX5 P2 = 0 (00) FX5 P3 = 0 (00) FX5 P4 = 0 (00) FX5 P5 = 0 (00) FX5 P6 = 0 (00) FX5 P7 = 0 (00) FX5 P8 = 0 (00) FX5 P9 = 0 (00)
+Volume = 50 (32)
+UK Groove
+OUTPUT
+
+11 00 00 50 8d f0 00 46 40 01 80 0c 00 00 00 00 00 00
+11 01 00 84 02 28 00 19 80 0c 00 00 00 00 00 00 00 00
+21 00 20 8a 02 50 00 0c 80 01 25 03 00 00 00 00 64 00
+01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+40 32 04 00 00 00 20 03 00 00 00 55 4b 20 47 72 6f 6f
+76 65 20 00
+
+Those values are correct.
+
+Conclusion: I must be grabbing the wrong values from the firmware?
+
+The mask for unpacking is something like this
+
+                int p[] = {
+                /* 0 */ ( ( ((unpacked[ 18* i + 4]      ) << 8) + (unpacked[18* i +  3]) ) >> 6 ),
+                /* 1 */ ( ( ((unpacked[ 18* i + 6]      ) << 8) + (unpacked[18* i +  5]) ) >> 3 ),
+                /* 2 */ ( ( ((unpacked[ 18* i + 8] & 0xF) << 8) + (unpacked[18* i +  7]) )     ),
+                /* 3 */ ( ( ((unpacked[ 18* i + 9] & 0xF) << 8) + (unpacked[18* i +  8]) ) >> 5 ),
+                /* 4 */ ( ( ((unpacked[18* i + 10] & 0xF) << 8) + (unpacked[18* i +  9]) ) >> 5 ),
+                /* 5 */ ( ( ((unpacked[18* i + 11] & 0xF) << 8) + (unpacked[18* i + 10]) ) >> 5 ),
+                /* 6 */ ( ( ((unpacked[18* i + 12] & 0xF) << 8) + (unpacked[18* i + 11]) ) >> 5 ),
+                /* 7 */ ( ( ((unpacked[18* i + 13]      ) << 8) + (unpacked[18* i + 12]) ) >> 5 ),
+                /* 8 */     ((unpacked[18* i + 16] >> 1 ) )
+                };
+some funky masking going on here!
