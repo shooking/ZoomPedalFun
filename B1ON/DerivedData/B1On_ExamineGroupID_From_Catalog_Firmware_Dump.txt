@@ -1,0 +1,131 @@
+Hex numbers!!
+
+In sysex we get
+
+FXIDLow FXIDHigh GIDLow GIDHigh - at least the first 4 bytes are influenced by the FX/GID
+
+Comparing dump from 1.30 B1On updater with manual dumps we can begin to infer the GID.
+Look at offset 0x00205810 onwards, searching for <<<
+
+Seems to be if byte[2] is clear, the GID is byte[3] / 2
+
+<<<0>>>1		I make these 0x02 in byte position 3 (0 index start)
+				2 / 2 == 1
+OPTCOMP.ZDL
+D_COMP.ZDL
+M_COMP.ZDL
+60_COMP.ZDL
+LIMITER.ZDL
+SLWATK.ZDL
+ZNR.ZDL
+<<<1>>>2		I make these 0x04 in byte position 4 (0 index start)
+				4 / 2 = 2
+B_GEQ.ZDL
+B_PEQ.ZDL
+SPLITTER.ZDL
+BOTTOM_B.ZDL
+EXCITER.ZDL
+B_ATWAH.ZDL		
+M_FILTER.ZDL
+A_FILTER.ZDL
+B_CRY.ZDL
+SEQFLTR.ZDL
+
+Hmmh I also find ZTron
+Hmmh I also find STEP
+Hmmh I also find Random filter
+
+<<<2>>>14		I make these 0x0280 (0x80 0x02) interesting
+				NOTE 0x280 >> 5 == 0x14 ... coincidence?
+				So maybe if byte[2] & F0 is not 0 then we
+				((byte[3]&0x0F)<<8 + (byte[2]&0xF0) ) >> 5
+				((0x02&0x0F)<<8 + (0x80&0xF0) ) >> 5
+				((0x02)<<8 + (0x80&0xF0) ) >> 5 = 0x280 >> 5 == 0x14
+_B_BOOST.ZDL	
+_B_OD.ZDL
+_BASSMUF.ZDL
+_B_DST_1.ZDL
+_B_METAL.ZDL
+Hmmh I also found others.
+
+<<<14>>>16		I make these 0x02c0 (0xc0 0x02) interesting
+				((byte[3]&0x0F)<<8 + (byte[2]&0xF0) ) >> 5
+				((0x02&0x0F)<<8 + (0xc0&0xF0) ) >> 5
+				((0x02)<<8 + (0xc0&0xF0) ) >> 5 = 0x2c0 >> 5 == 0x16
+_BASSDRV.ZDL	
+_DI_PLUS.ZDL
+_BASS_BB.ZDL
+_DI5.ZDL
+_BAS_PRE.ZDL
+_AC_BPRE.ZDL
+
+<<<16>>>5		I make these 0x0a20 (0x20 0x0a) interesting
+				((byte[3]&0x0F)<<8 + (byte[2]&0xF0) ) >> 5
+				((0x0a&0x0F)<<8 + (0x20&0xF0) ) >> 5
+				==0x51 ... hmmh
+_SVT.ZDL		
+_B_MAN.ZDL
+_HRT3500.ZDL
+_SMR.ZDL
+_FlipTop.ZDL
+_ACOSTIC.ZDL
+_AG_AMP.ZDL
+_Monoton.ZDL
+_SuperB.ZDL
+_GKruegr.ZDL
+_Heaven.ZDL
+_MARK_B.ZDL
+
+<<<5>>>6		NOTE 0x0c / 2 == 0x06
+TREMOLO.ZDL		I make these 0x0c == 2 x 6 (12 == 0x0c)
+SLICER.ZDL
+PHASER.ZDL
+DUOPHASE.ZDL
+VIBRATO.ZDL
+THEVIBE.ZDL
+B_CHORUS.ZDL
+B_DETUNE.ZDL
+B_ENSMBL.ZDL
+CRN_TRI.ZDL
+B_FLNGR.ZDL
+B_OCTAVE.ZDL
+PTCHSHFT.ZDL
+B_PITCH.ZDL
+
+<<<6>>>7		I make these 0x0e == 2 x 7 (14 == 0x0e)
+
+BITCRUSH.ZDL
+BOMBER.ZDL
+B_SYNTH.ZDL
+STDSYN.ZDL
+SYNTLK.ZDL
+Z_SYN.ZDL
+DEFRET.ZDL
+
+<<<7>>>8		I make these 0x10 == 2 x 8 (16 = 0x10)
+
+DELAY.ZDL
+STOMPDLY.ZDL
+MODDLY2.ZDL
+RVRSDLY.ZDL
+FLTRDLY.ZDL
+STDELAY.ZDL
+
+<<<8>>>9		I make these 0x12 == 2 x 9 (18 = 0x12)
+
+HDHALL.ZDL
+HALL.ZDL
+ROOM.ZDL
+PLATE.ZDL
+EARLYREF.ZDL
+MODREV.ZDL
+SLAPBACK.ZDL
+PARTICLE.ZDL
+
+<<<9>>>B		I dont have these but I am willing to bet it will be 2x0x0B?
+PEDALVX.ZDL
+PEDALWAH.ZDL
+PDL_RESO.ZDL
+B_PDLPIT.ZDL
+B_PDLMNP.ZDL
+<<<
