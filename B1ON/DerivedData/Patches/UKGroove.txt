@@ -1,0 +1,35 @@
+From the 1.30 firmware, look for UK Groove
+
+You should find processed data like this
+
+1.30 Firmware
+1 UK Groove
+	Delay == 21 00 C0 02 but I believe 11 00 00 10
+	Z Tron == 21 00 20 8A but I believe 11 01 00 04
+21 00 C0 02 03 50 00 0A 00 CA 23 28 02 00 00 00 00 00 
+21 00 20 8A 02 50 00 0C 80 01 25 03 00 00 00 00 64 00 
+01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+40 32 04 00 00 00 20 03 00 00 00 55 4B 20 47 72 6F 6F 76 65 20 00 
+
+Notice this must be "cooked" - that is in processed form.
+
+If I look on the pedal:
+
+Delay:
+
+Time:   566.  Display 1..4000 then 23 more note delays)
+F.B.:   30    Display 0..100
+Mix:    70    Display 0..100
+HiDMP:  10    Display: 0..10
+P-P:    Mono  Display: Mono P-P 0..1
+Level:  100   Display: 0..150
+Tail:   off   Display: off on 0..1
+
+Z Tron:
+
+Sense:  1     Display: -10..10, 0..19 [-1 -> 1, no 0!]
+Reso:   5     Display: 0..10
+Dry:    25    Display: 0..100
+Level:  100   Display: 0..150
