@@ -32,3 +32,7 @@ Derived
 
 The Zeroed out patches are as Factory EXCEPT all params were set to 0.
 This allows us to see the FXID/GID in the first 4 bytes of the processed output
+
+
+TotalDecode.txt has the decoded factory values then the decoded "0" values.
+I will be checking this against the pedal and Mungewell suggested to compare with values from ToneLib.
