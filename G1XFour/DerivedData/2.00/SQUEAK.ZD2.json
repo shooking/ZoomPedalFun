@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "Squeak",
+            "description": "This models a ProCo RAT. A parameter has been added that allows you to adjust the mix level of the original sound.",
+            "version": "1.30",
+            "fxid": 304,
+            "gid": 24,
+            "group": 3,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "SQUEAK.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Gain",
+                  "explanation": "Adjusts the gain.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 47
+            },
+            {
+                  "name": "FLTR",
+                  "explanation": "Adjusts the tone.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 60
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume. ",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 79
+            },
+            {
+                  "name": "DryMx",
+                  "explanation": "Adjusts the volume of the unaffected sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 0
+            }
+      ]
+}

@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "Exciter",
+            "description": "This exciter enables flexible control.",
+            "version": "1.30",
+            "fxid": 176,
+            "gid": 16,
+            "group": 2,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "EXCITER.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Bass",
+                  "explanation": "Adjusts the amount of low-frequency phase correction.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 0
+            },
+            {
+                  "name": "Treble",
+                  "explanation": "Adjusts the amount of high-frequency phase correction.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 0
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 80
+            },
+            {
+                  "name": "ON/OFF",
+                  "explanation": "Sets the foot switch function.",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 0
+            }
+      ]
+}

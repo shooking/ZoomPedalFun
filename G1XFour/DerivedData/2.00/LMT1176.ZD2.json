@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "LMT-76",
+            "description": "This is a simulation of the UREI 1176LN.",
+            "version": "1.50",
+            "fxid": 32,
+            "gid": 12,
+            "group": 1,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "LMT1176.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Input",
+                  "explanation": "Adjusts the input level.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 80,
+                  "mdefault": 40
+            },
+            {
+                  "name": "Ratio",
+                  "explanation": "Adjusts the compression ratio.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 3,
+                  "mdefault": 0
+            },
+            {
+                  "name": "REL",
+                  "explanation": "This is a limiter that suppresses signal peaks above a certain reference level.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 60,
+                  "mdefault": 10
+            },
+            {
+                  "name": "Output",
+                  "explanation": "Adjusts the output level.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 80,
+                  "mdefault": 38
+            }
+      ]
+}
