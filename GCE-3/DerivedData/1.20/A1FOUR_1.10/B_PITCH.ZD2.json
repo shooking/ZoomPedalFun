@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "BaMnPitch",
+            description: "This pitch shifter was designed specifically for playing single notes in the bass frequency range.",
+            version: "1.30",
+            fxid: 112,
+            gid: 52,
+            group: 6,
+            numParams: 4,
+            numSlots: 1,
+            filename: "B_PITCH.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "Shift",
+                  explanation: "Adjusts the pitch shift amount in semitones. Selecting \"0\" gives a detuning effect.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 25,
+                  mdefault: 0,
+            },
+            {
+                  name: "Fine",
+                  explanation: "Allows fine adjustment of pitch shift amount in Cent (1/100 semitone) steps.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 50,
+                  mdefault: 25,
+            },
+            {
+                  name: "Tone",
+                  explanation: "Adjusts the tone.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 10,
+                  mdefault: 7,
+            },
+            {
+                  name: "BAL",
+                  explanation: "Adjusts the balance between original and effect sounds.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 50,
+            },
+      ],
+}

@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "VinFLNGR",
+            "description": "This analog flanger sound is similar to an MXR M-117R.",
+            "version": "1.40",
+            "fxid": 80,
+            "gid": 48,
+            "group": 6,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "VINFLNGR.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "PreD",
+                  "explanation": "Sets pre-delay time of effect sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 50,
+                  "mdefault": 4
+            },
+            {
+                  "name": "Depth",
+                  "explanation": "Sets the depth of the modulation.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 47
+            },
+            {
+                  "name": "Rate",
+                  "explanation": "Sets the speed of the modulation.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 78,
+                  "mdefault": 7
+            },
+            {
+                  "name": "RESO",
+                  "explanation": "Sets effect resonance.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 20,
+                  "mdefault": 18
+            }
+      ]
+}

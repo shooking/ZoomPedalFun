@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "BendCho",
+            "description": "This effect provides pitch bending that uses the input signal as trigger and processes each note separately.",
+            "version": "1.40",
+            "fxid": 320,
+            "gid": 48,
+            "group": 6,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "BENDCHO.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Mode",
+                  "explanation": "Sets direction of pitch bend.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 0
+            },
+            {
+                  "name": "Depth",
+                  "explanation": "Sets the depth of the modulation.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 40
+            },
+            {
+                  "name": "Time",
+                  "explanation": "Sets time before effect starts.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 50,
+                  "mdefault": 50
+            },
+            {
+                  "name": "BAL",
+                  "explanation": "Adjusts the balance between original and effect sounds.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 100
+            }
+      ]
+}

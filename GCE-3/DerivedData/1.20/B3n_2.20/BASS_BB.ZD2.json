@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "Bass BB",
+            "description": "This is a simulation of the Xotic Bass BB Preamp.",
+            "version": "1.20",
+            "fxid": 64,
+            "gid": 28,
+            "group": 3,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "BASS_BB.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Gain",
+                  "explanation": "Adjusts the gain.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 84
+            },
+            {
+                  "name": "Bass",
+                  "explanation": "Adjusts volume of low frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 20,
+                  "mdefault": 13
+            },
+            {
+                  "name": "Treble",
+                  "explanation": "Adjusts volume of high frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 20,
+                  "mdefault": 16
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 35
+            }
+      ]
+}

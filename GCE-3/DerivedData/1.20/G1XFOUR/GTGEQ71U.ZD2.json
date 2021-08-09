@@ -1,0 +1,79 @@
+{
+      "FX": {
+            "name": "Gt GEQ 7",
+            "description": "This mono graphic equalizer has 7 bands that suit guitar frequencies.",
+            "version": "1.20",
+            "fxid": 84,
+            "gid": 16,
+            "group": 2,
+            "numParams": 8,
+            "numSlots": 2,
+            "filename": "GTGEQ71U.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "100",
+                  "explanation": "Boosts or cuts the low (100 Hz) frequency band.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 48,
+                  "mdefault": 24
+            },
+            {
+                  "name": "200",
+                  "explanation": "Boosts or cuts the low (200 Hz) frequency band.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 48,
+                  "mdefault": 24
+            },
+            {
+                  "name": "400",
+                  "explanation": "Boosts or cuts the low (400 Hz) frequency band.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 48,
+                  "mdefault": 24
+            },
+            {
+                  "name": "800",
+                  "explanation": "Boosts or cuts the low (800 Hz) frequency band.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 48,
+                  "mdefault": 24
+            },
+            {
+                  "name": "1.6k",
+                  "explanation": "Boosts or cuts the low (1.6 kHz) frequency band.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 48,
+                  "mdefault": 24
+            },
+            {
+                  "name": "3.2k",
+                  "explanation": "Boosts or cuts the low (3.2 kHz) frequency band.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 48,
+                  "mdefault": 24
+            },
+            {
+                  "name": "6.4k",
+                  "explanation": "Boosts or cuts the low (6.4 kHz) frequency band.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 48,
+                  "mdefault": 24
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 80
+            }
+      ]
+}

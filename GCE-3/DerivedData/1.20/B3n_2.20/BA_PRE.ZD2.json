@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "Bass Pre",
+            "description": "This is a preamp model with a 3-band equalizer.",
+            "version": "1.20",
+            "fxid": 96,
+            "gid": 28,
+            "group": 3,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "BA_PRE.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Bass",
+                  "explanation": "Adjusts volume of low frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 10,
+                  "mdefault": 3
+            },
+            {
+                  "name": "MID",
+                  "explanation": "Adjusts volume of middle frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 20,
+                  "mdefault": 14
+            },
+            {
+                  "name": "Treble",
+                  "explanation": "Adjusts volume of high frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 10,
+                  "mdefault": 3
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 64
+            }
+      ]
+}

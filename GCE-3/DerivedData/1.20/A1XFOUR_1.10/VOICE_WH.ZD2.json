@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "VoiceWah",
+            description: "This effect can make a guitar sound like a human voice.",
+            version: "1.40",
+            fxid: 208,
+            gid: 88,
+            group: 11,
+            numParams: 4,
+            numSlots: 1,
+            filename: "VOICE_WH.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "Vowel",
+                  explanation: "Adjusts the emphasized vowel.",
+                  blackback: false,
+                  pedal: true,
+                  mmax: 100,
+                  mdefault: 0,
+            },
+            {
+                  name: "PTTRN",
+                  explanation: "Sets effect pattern.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 2,
+                  mdefault: 1,
+            },
+            {
+                  name: "Voice",
+                  explanation: "Adjusts the vowel sounds.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 50,
+            },
+            {
+                  name: "Mode",
+                  explanation: "Sets the sound style.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 1,
+                  mdefault: 0,
+            },
+      ],
+}

@@ -1,0 +1,79 @@
+{
+      "FX": {
+            "name": "MS 800",
+            "description": "This models the sound of the Marshall JCM800 2203.",
+            "version": "1.20",
+            "fxid": 16,
+            "gid": 32,
+            "group": 4,
+            "numParams": 8,
+            "numSlots": 2,
+            "filename": "MS800.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Input",
+                  "explanation": "Adjusts the input gain.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 1
+            },
+            {
+                  "name": "Bass",
+                  "explanation": "Adjusts volume of low frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "MID",
+                  "explanation": "Adjusts volume of middle frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "Treble",
+                  "explanation": "Adjusts volume of high frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "PRSNC",
+                  "explanation": "Adjusts volume of super-high frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 30
+            },
+            {
+                  "name": "Gain",
+                  "explanation": "Adjusts the gain.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 70
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 70
+            },
+            {
+                  "name": "SOLO",
+                  "explanation": "Sets the volume when the control switch is on.",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 8,
+                  "mdefault": 2
+            }
+      ]
+}

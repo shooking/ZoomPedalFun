@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "OctFuzz",
+            "description": "This fuzz effect adds an octave above.",
+            "version": "1.30",
+            "fxid": 160,
+            "gid": 24,
+            "group": 3,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "OCTFUZZ.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Boost",
+                  "explanation": "Adjusts the gain.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 65
+            },
+            {
+                  "name": "Color",
+                  "explanation": "Sets the sound color.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 1
+            },
+            {
+                  "name": "Tone",
+                  "explanation": "Adjusts the tone.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 68
+            }
+      ]
+}

@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "Mini MkB",
+            "description": "This models the sound of the Markbass MINIMARK 802 bass amplifier.",
+            "version": "1.20",
+            "fxid": 112,
+            "gid": 36,
+            "group": 4,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "MINIMARK.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Gain",
+                  "explanation": "Adjusts the gain.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 62
+            },
+            {
+                  "name": "VNTG",
+                  "explanation": "Adjusts the tone.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "Shape",
+                  "explanation": "These filters boost low and high frequencies while cutting middle frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 40
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 37
+            }
+      ]
+}

@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "AG Detune",
+            description: "This detuning effect tailored for acoustic guitar provides chorus with little variation.",
+            version: "1.00",
+            fxid: 0,
+            gid: 50,
+            group: 6,
+            numParams: 4,
+            numSlots: 1,
+            filename: "ACDETUNE.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "Cent",
+                  explanation: "Adjust the amount of detuning precisely in cents (1/100 semitone).",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 25,
+                  mdefault: 12,
+            },
+            {
+                  name: "PreD",
+                  explanation: "Set the pre-delay for the effect sound.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 50,
+                  mdefault: 34,
+            },
+            {
+                  name: "Tone",
+                  explanation: "Adjust the tone.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 50,
+            },
+            {
+                  name: "Mix",
+                  explanation: "Adjust the amount of effect sound mixed with the original sound.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 50,
+            },
+      ],
+}

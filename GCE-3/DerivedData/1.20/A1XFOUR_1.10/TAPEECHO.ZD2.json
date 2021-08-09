@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "TapeEcho",
+            description: "This effect simulates a tape echo. Changing the \"Time\" parameter changes the pitch of the echoes.",
+            version: "1.50",
+            fxid: 48,
+            gid: 64,
+            group: 8,
+            numParams: 4,
+            numSlots: 1,
+            filename: "TAPEECHO.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "Time",
+                  explanation: "Sets the delay time.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 2014,
+                  mdefault: 559,
+            },
+            {
+                  name: "F.B",
+                  explanation: "Adjusts the feedback amount.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 64,
+            },
+            {
+                  name: "Mix",
+                  explanation: "Adjusts the amount of effected sound that is mixed with the original sound.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 56,
+            },
+            {
+                  name: "Tail",
+                  explanation: "When ON, effect sound continues even after effect is turned off. When OFF, effect sound stops right when effect is turned off.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 1,
+                  mdefault: 0,
+            },
+      ],
+}

@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "AutoWah",
+            "description": "This effect varies wah in accordance with picking intensity.",
+            "version": "1.40",
+            "fxid": 16,
+            "gid": 16,
+            "group": 2,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "AUTOWAH.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Mode",
+                  "explanation": "Sets direction of movement of the filter.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 1
+            },
+            {
+                  "name": "Sense",
+                  "explanation": "Adjusts the sensitivity of the effect.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 9,
+                  "mdefault": 7
+            },
+            {
+                  "name": "RESO",
+                  "explanation": "Sets effect resonance.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 10,
+                  "mdefault": 8
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 80
+            }
+      ]
+}

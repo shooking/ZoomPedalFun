@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "BassOctFZ",
+            "description": "This fuzz effect adds an octave above.",
+            "version": "1.20",
+            "fxid": 224,
+            "gid": 28,
+            "group": 3,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "BA_OCTFZ.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Boost",
+                  "explanation": "Adjusts the gain.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 73
+            },
+            {
+                  "name": "Tone",
+                  "explanation": "Adjusts the tone.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "Fuzz",
+                  "explanation": "This adjusts the amount of fuzz in the mix.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 34
+            },
+            {
+                  "name": "Dry",
+                  "explanation": "Adjusts the volume of the unaffected sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 48
+            }
+      ]
+}

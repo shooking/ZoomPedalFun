@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "DYN Comp",
+            description: "This is a simulation of the MXR Dyna Comp.Added parameters allow you to adjust the tone and the compressor attack speed.",
+            version: "1.30",
+            fxid: 96,
+            gid: 12,
+            group: 1,
+            numParams: 4,
+            numSlots: 1,
+            filename: "DCOMP.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "Sense",
+                  explanation: "Adjusts the sensitivity of the effect.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 10,
+                  mdefault: 6,
+            },
+            {
+                  name: "ATTCK",
+                  explanation: "Sets compressor attack speed to FAST or SLOW.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 1,
+                  mdefault: 0,
+            },
+            {
+                  name: "Tone",
+                  explanation: "Adjusts the tone.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 50,
+            },
+            {
+                  name: "VOL",
+                  explanation: "Adjusts the volume.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 50,
+            },
+      ],
+}

@@ -1,0 +1,79 @@
+{
+      "FX": {
+            "name": "PhaseDly",
+            "description": "This effect applies a phaser to a delayed sound.",
+            "version": "1.20",
+            "fxid": 224,
+            "gid": 64,
+            "group": 8,
+            "numParams": 8,
+            "numSlots": 2,
+            "filename": "PHASEDLY.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Time",
+                  "explanation": "Sets the delay time.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 2014,
+                  "mdefault": 2006
+            },
+            {
+                  "name": "F.B",
+                  "explanation": "Adjusts the feedback amount.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 24
+            },
+            {
+                  "name": "Mix",
+                  "explanation": "Adjusts the amount of effected sound that is mixed with the original sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 56
+            },
+            {
+                  "name": "Tail",
+                  "explanation": "When ON, effect sound continues even after effect is turned off. When OFF, effect sound stops right when effect is turned off.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 1
+            },
+            {
+                  "name": "COLOR",
+                  "explanation": "Sets the tone of the effect type.",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 3,
+                  "mdefault": 2
+            },
+            {
+                  "name": "DEPTH",
+                  "explanation": "Sets the depth of the modulation.",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 100
+            },
+            {
+                  "name": "RATE",
+                  "explanation": "Sets the speed of the modulation.",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 77,
+                  "mdefault": 59
+            },
+            {
+                  "name": "RESO",
+                  "explanation": "Sets effect resonance.",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 48
+            }
+      ]
+}

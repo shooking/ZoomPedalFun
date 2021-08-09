@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "Sax Growl",
+            description: "This effect simulates using a growling technique, which muddies the sound.",
+            version: "1.00",
+            fxid: 1042,
+            gid: 53,
+            group: 6,
+            numParams: 4,
+            numSlots: 1,
+            filename: "GROWL.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "FREQ",
+                  explanation: "Set the frequency of modulation.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 99,
+                  mdefault: 29,
+            },
+            {
+                  name: "Sense",
+                  explanation: "Adjust the sensitivity of the effect.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 9,
+                  mdefault: 4,
+            },
+            {
+                  name: "Tone",
+                  explanation: "Adjust the tone.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 10,
+                  mdefault: 10,
+            },
+            {
+                  name: "Mix",
+                  explanation: "Adjust the amount of effect sound mixed with the original sound.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 60,
+            },
+      ],
+}

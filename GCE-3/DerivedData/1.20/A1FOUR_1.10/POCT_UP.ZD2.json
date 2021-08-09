@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "PolyOctUp",
+            description: "This effect adds a higher octave to the original sound. Chord input is also possible.",
+            version: "1.00",
+            fxid: 4096,
+            gid: 53,
+            group: 6,
+            numParams: 4,
+            numSlots: 1,
+            filename: "POCT_UP.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "Color",
+                  explanation: "Select the effect sound type.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 1,
+                  mdefault: 1,
+            },
+            {
+                  name: "Tone",
+                  explanation: "Adjusts the tone.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 50,
+            },
+            {
+                  name: "Wet",
+                  explanation: "Adjust the amount of the effect sound in the mix. ",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 80,
+            },
+            {
+                  name: "Dry",
+                  explanation: "Adjust the amount of the original sound in the mix.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 80,
+            },
+      ],
+}

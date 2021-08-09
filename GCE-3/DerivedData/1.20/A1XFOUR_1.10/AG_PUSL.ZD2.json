@@ -1,0 +1,23 @@
+{
+      FX: {
+            name: "AG PU SEL",
+            description: "This effect adjusts the tone according to the type of acoustic guitar pickup.",
+            version: "1.00",
+            fxid: 1,
+            gid: 18,
+            group: 2,
+            numParams: 1,
+            numSlots: 1,
+            filename: "AG_PUSL.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "Type",
+                  explanation: "Select the type of pickup used.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 1,
+                  mdefault: 0,
+            },
+      ],
+}

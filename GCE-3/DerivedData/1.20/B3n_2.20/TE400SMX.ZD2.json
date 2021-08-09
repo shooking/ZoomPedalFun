@@ -1,0 +1,79 @@
+{
+      "FX": {
+            "name": "TE400SMX",
+            "description": "This models the sound of the Trace Elliot AH400SMX.",
+            "version": "1.10",
+            "fxid": 80,
+            "gid": 36,
+            "group": 4,
+            "numParams": 8,
+            "numSlots": 2,
+            "filename": "TE400SMX.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Style",
+                  "explanation": "Three preset tones can be used to match the playing style.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 2,
+                  "mdefault": 2
+            },
+            {
+                  "name": "Bass",
+                  "explanation": "Adjusts volume of low frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 60,
+                  "mdefault": 31
+            },
+            {
+                  "name": "MID",
+                  "explanation": "Adjusts volume of middle frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 60,
+                  "mdefault": 33
+            },
+            {
+                  "name": "Treble",
+                  "explanation": "Adjusts volume of high frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 60,
+                  "mdefault": 41
+            },
+            {
+                  "name": "Gain",
+                  "explanation": "Adjusts the gain.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 20
+            },
+            {
+                  "name": "Shape",
+                  "explanation": "These presets boost low and high frequencies while cutting middle frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 2,
+                  "mdefault": 0
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 60
+            },
+            {
+                  "name": "SOLO",
+                  "explanation": "Sets the volume when the control switch is on.",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 8,
+                  "mdefault": 2
+            }
+      ]
+}

@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "ChromeWah",
+            description: "This simulates a British wah pedal with a chrome finish.",
+            version: "1.50",
+            fxid: 48,
+            gid: 88,
+            group: 11,
+            numParams: 4,
+            numSlots: 1,
+            filename: "CHRM_WAH.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "FREQ",
+                  explanation: "Adjusts the emphasized frequency.",
+                  blackback: false,
+                  pedal: true,
+                  mmax: 100,
+                  mdefault: 50,
+            },
+            {
+                  name: "Range",
+                  explanation: "Adjusts the frequency range processed by the effect.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 50,
+            },
+            {
+                  name: "Dry",
+                  explanation: "Adjusts the volume of the unaffected sound.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 0,
+            },
+            {
+                  name: "VOL",
+                  explanation: "Adjusts the volume.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 80,
+            },
+      ],
+}

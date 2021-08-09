@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "CloneCho",
+            description: "This analog chorus sound models the Electro-Harmonix SmallClone.",
+            version: "1.40",
+            fxid: 256,
+            gid: 48,
+            group: 6,
+            numParams: 4,
+            numSlots: 1,
+            filename: "CLONECHO.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "Depth",
+                  explanation: "Sets the depth of the modulation.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 1,
+                  mdefault: 1,
+            },
+            {
+                  name: "Rate",
+                  explanation: "Sets the speed of the modulation.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 23,
+            },
+            {
+                  name: "Tone",
+                  explanation: "Adjusts the tone.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 100,
+            },
+            {
+                  name: "Mix",
+                  explanation: "Adjusts the amount of effected sound that is mixed with the original sound.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 100,
+            },
+      ],
+}

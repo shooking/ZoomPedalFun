@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "Pitch DLY",
+            "description": "This effect applies pitch shift to a delayed sound.",
+            "version": "1.20",
+            "fxid": 176,
+            "gid": 64,
+            "group": 8,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "PITCHDLY.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Pitch",
+                  "explanation": "Sets volume of pitch shift applied to delayed sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 30,
+                  "mdefault": 21
+            },
+            {
+                  "name": "Time",
+                  "explanation": "Sets the delay time.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1999,
+                  "mdefault": 89
+            },
+            {
+                  "name": "F.B",
+                  "explanation": "Adjusts the feedback amount.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 80
+            },
+            {
+                  "name": "Mix",
+                  "explanation": "Adjusts the amount of effected sound that is mixed with the original sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 80
+            }
+      ]
+}

@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "DualComp",
+            description: "This is a compressor which allows separate settings for the low frequency and high frequency range.",
+            version: "1.30",
+            fxid: 64,
+            gid: 12,
+            group: 1,
+            numParams: 4,
+            numSlots: 1,
+            filename: "DUAL_CMP.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "FREQ",
+                  explanation: "Adjusts the crossover point between the high frequency and low frequency range.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 9,
+                  mdefault: 9,
+            },
+            {
+                  name: "LoCMP",
+                  explanation: "Adjusts the compression depth in the low frequency range.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 50,
+                  mdefault: 15,
+            },
+            {
+                  name: "HiCMP",
+                  explanation: "Adjusts the compression depth in the high frequency range.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 50,
+                  mdefault: 24,
+            },
+            {
+                  name: "VOL",
+                  explanation: "Adjusts the volume.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 75,
+            },
+      ],
+}

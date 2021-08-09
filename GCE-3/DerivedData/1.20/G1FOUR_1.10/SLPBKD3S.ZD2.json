@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "SlapBackD",
+            "description": "This delay features a short delay time that is good for muted rhythm playing and rockabilly.",
+            "version": "1.10",
+            "fxid": 193,
+            "gid": 64,
+            "group": 8,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "SLPBKD3S.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Time",
+                  "explanation": "Sets the delay time.\nWhen Sync is chosen, the delay time is synchronized to the tempo.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 300,
+                  "mdefault": 98
+            },
+            {
+                  "name": "F.B",
+                  "explanation": "Adjusts the feedback amount.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 29
+            },
+            {
+                  "name": "Mix",
+                  "explanation": "Adjusts the amount of effected sound that is mixed with the original sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 40
+            },
+            {
+                  "name": "SubDv",
+                  "explanation": "Set the note length of the delay sound.\nWhen P-P is chosen, L/R channels output delays in quarter/dotted eighth notes respectively.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 2,
+                  "mdefault": 0
+            }
+      ]
+}

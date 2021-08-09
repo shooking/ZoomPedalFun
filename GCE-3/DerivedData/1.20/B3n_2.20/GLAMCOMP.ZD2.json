@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "Glam Comp",
+            "description": "This compressor becomes a glamorous tone as increasing the Shape parameter.Also, you can mix the original sound.",
+            "version": "1.20",
+            "fxid": 112,
+            "gid": 12,
+            "group": 1,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "GLAMCOMP.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Comp",
+                  "explanation": "Adjusts the depth of the compression.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 91
+            },
+            {
+                  "name": "Shape",
+                  "explanation": "Emphasizes high and low frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 10,
+                  "mdefault": 8
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume. ",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 73
+            },
+            {
+                  "name": "DryMx",
+                  "explanation": "Adjusts the volume of the unaffected sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 51
+            }
+      ]
+}

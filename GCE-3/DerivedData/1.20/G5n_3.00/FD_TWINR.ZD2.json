@@ -1,0 +1,79 @@
+{
+      "FX": {
+            "name": "FD TWNR",
+            "description": "This models the sound of the Fender '65 Twin Reverb.",
+            "version": "1.20",
+            "fxid": 32,
+            "gid": 32,
+            "group": 4,
+            "numParams": 8,
+            "numSlots": 2,
+            "filename": "FD_TWINR.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Bass",
+                  "explanation": "Adjusts volume of low frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 90,
+                  "mdefault": 38
+            },
+            {
+                  "name": "MID",
+                  "explanation": "Adjusts volume of middle frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 90,
+                  "mdefault": 40
+            },
+            {
+                  "name": "Treble",
+                  "explanation": "Adjusts volume of high frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 90,
+                  "mdefault": 35
+            },
+            {
+                  "name": "BRGHT",
+                  "explanation": "Sets the high frequency response. The effect is noticeable at lower gain settings.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 0
+            },
+            {
+                  "name": "Gain",
+                  "explanation": "Adjusts the gain.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 90,
+                  "mdefault": 30
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 90,
+                  "mdefault": 70
+            },
+            {
+                  "name": "DEPTH",
+                  "explanation": "Sets the depth of the modulation.",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 90,
+                  "mdefault": 40
+            },
+            {
+                  "name": "SPEED",
+                  "explanation": "Sets the speed of the modulation.",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 40
+            }
+      ]
+}

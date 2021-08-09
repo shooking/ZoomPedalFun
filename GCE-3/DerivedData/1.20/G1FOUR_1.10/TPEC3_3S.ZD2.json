@@ -1,0 +1,79 @@
+{
+      "FX": {
+            "name": "TapeEcho3",
+            "description": "This tape echo effect models the MAESTRO ECHOPLEX EP-3.",
+            "version": "1.10",
+            "fxid": 241,
+            "gid": 64,
+            "group": 8,
+            "numParams": 8,
+            "numSlots": 2,
+            "filename": "TPEC3_3S.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Gain",
+                  "explanation": "Adjusts the gain.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "Hi",
+                  "explanation": "Adjusts volume of high frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 62
+            },
+            {
+                  "name": "Lo",
+                  "explanation": "Adjusts volume of low frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 47
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 80
+            },
+            {
+                  "name": "Time",
+                  "explanation": "Sets the delay time.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1005,
+                  "mdefault": 350
+            },
+            {
+                  "name": "F.B",
+                  "explanation": "Adjusts the feedback amount.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 20
+            },
+            {
+                  "name": "Mix",
+                  "explanation": "Adjusts the amount of effected sound that is mixed with the original sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "RecLv",
+                  "explanation": "Adjusts the volume recorded to the tape.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            }
+      ]
+}

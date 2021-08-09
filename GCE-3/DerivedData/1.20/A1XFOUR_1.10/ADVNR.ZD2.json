@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "Adv.NR",
+            description: "This noise reduction naturally suppresses noise when not playing.",
+            version: "1.00",
+            fxid: 4096,
+            gid: 13,
+            group: 1,
+            numParams: 4,
+            numSlots: 1,
+            filename: "ADVNR.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "THRSH",
+                  explanation: "Adjust the threshold that triggers the effect.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 30,
+            },
+            {
+                  name: "ATTCK",
+                  explanation: "Adjust the speed that it starts.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 0,
+            },
+            {
+                  name: "Hold",
+                  explanation: "Adjust the time that noise reduction continues to operate after the control signal goes below the threshold value.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 0,
+            },
+            {
+                  name: "Decay",
+                  explanation: "Adjust the decay time.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 80,
+            },
+      ],
+}

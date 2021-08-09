@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "Ac TpEcho",
+            description: "This tape echo sound has been tailored for acoustic instruments.",
+            version: "1.00",
+            fxid: 0,
+            gid: 66,
+            group: 8,
+            numParams: 4,
+            numSlots: 1,
+            filename: "AC_TPECH.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "Time",
+                  explanation: "Set the delay time.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 1005,
+                  mdefault: 350,
+            },
+            {
+                  name: "F.B",
+                  explanation: "Adjust the amount of feedback.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 20,
+            },
+            {
+                  name: "Mix",
+                  explanation: "Adjust the amount of effect sound mixed with the original sound.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 50,
+            },
+            {
+                  name: "Tail",
+                  explanation: "When ON, the effect sound is sustained even if the effect itself is turned off. When OFF, the effect sound also stops when the effect is turned off.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 1,
+                  mdefault: 0,
+            },
+      ],
+}

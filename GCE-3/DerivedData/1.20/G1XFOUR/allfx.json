@@ -1,0 +1,4371 @@
+[
+      {
+            "FX": {
+                  "name": "Bypass",
+                  "description": "No effect.",
+                  "version": "1.00",
+                  "fxid": 0,
+                  "gid": 0,
+                  "group": 0,
+                  "numParams": 0,
+                  "numSlots": 1,
+                  "filename": ""
+            },
+            "Parameters": []
+      },
+      {
+            "FX": {
+                  "name": "Comp",
+                  "description": "This compressor in the style of the MXR Dyna Comp.",
+                  "version": "1.40",
+                  "fxid": 16,
+                  "gid": 8,
+                  "group": 1,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "COMP.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Sense",
+                        "explanation": "Adjusts the sensitivity of the effect.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 10,
+                        "mdefault": 6
+                  },
+                  {
+                        "name": "ATTCK",
+                        "explanation": "Sets compressor attack speed to Fast or Slow.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "Tone",
+                        "explanation": "Adjusts the tone.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 10,
+                        "mdefault": 6
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 80
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "RackComp",
+                  "description": "This compressor allows more detailed adjustment than Comp.",
+                  "version": "1.40",
+                  "fxid": 32,
+                  "gid": 8,
+                  "group": 1,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "RACKCOMP.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "THRSH",
+                        "explanation": "Sets the level that activates the compressor.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 50,
+                        "mdefault": 40
+                  },
+                  {
+                        "name": "Ratio",
+                        "explanation": "Adjusts the compression ratio.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 9,
+                        "mdefault": 5
+                  },
+                  {
+                        "name": "ATTCK",
+                        "explanation": "Sets compressor attack speed.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 9,
+                        "mdefault": 6
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 80
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "SlowATTCK",
+                  "description": "This effect slows the attack of each note, resulting in a violin-like performance.",
+                  "version": "1.50",
+                  "fxid": 48,
+                  "gid": 8,
+                  "group": 1,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "SLWATK.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Time",
+                        "explanation": "Adjusts the attack time.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 49,
+                        "mdefault": 20
+                  },
+                  {
+                        "name": "Curve",
+                        "explanation": "Set the curve of volume change during attack.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 10,
+                        "mdefault": 10
+                  },
+                  {
+                        "name": "Tone",
+                        "explanation": "Adjusts the tone.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 100
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 80
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "ZNR",
+                  "description": "ZOOM's unique noise reduction cuts noise during pauses in playing without affecting the tone.",
+                  "version": "1.50",
+                  "fxid": 64,
+                  "gid": 8,
+                  "group": 1,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "ZNR.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "DETCT",
+                        "explanation": "Sets control signal detection level.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 1
+                  },
+                  {
+                        "name": "Depth",
+                        "explanation": "Sets the depth of noise reduction.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 100
+                  },
+                  {
+                        "name": "THRSH",
+                        "explanation": "Adjusts the effect sensitivity.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 30
+                  },
+                  {
+                        "name": "Decay",
+                        "explanation": "Adjust the envelope release.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 0
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "LMT-76",
+                  "description": "This is a simulation of the UREI 1176LN.",
+                  "version": "1.50",
+                  "fxid": 32,
+                  "gid": 12,
+                  "group": 1,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "LMT1176.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Input",
+                        "explanation": "Adjusts the input level.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 80,
+                        "mdefault": 40
+                  },
+                  {
+                        "name": "Ratio",
+                        "explanation": "Adjusts the compression ratio.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 3,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "REL",
+                        "explanation": "This is a limiter that suppresses signal peaks above a certain reference level.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 60,
+                        "mdefault": 10
+                  },
+                  {
+                        "name": "Output",
+                        "explanation": "Adjusts the output level.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 80,
+                        "mdefault": 38
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "AutoWah",
+                  "description": "This effect varies wah in accordance with picking intensity.",
+                  "version": "1.40",
+                  "fxid": 16,
+                  "gid": 16,
+                  "group": 2,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "AUTOWAH.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Mode",
+                        "explanation": "Sets direction of movement of the filter.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 1
+                  },
+                  {
+                        "name": "Sense",
+                        "explanation": "Adjusts the sensitivity of the effect.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 9,
+                        "mdefault": 7
+                  },
+                  {
+                        "name": "RESO",
+                        "explanation": "Sets effect resonance.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 10,
+                        "mdefault": 8
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 80
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "SeqFLTR",
+                  "description": "The sequence filter has the flavor of a Z.Vex Seek-Wah.",
+                  "version": "1.50",
+                  "fxid": 64,
+                  "gid": 16,
+                  "group": 2,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "SEQFLTR.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Step",
+                        "explanation": "Adjusts number of sequence steps.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 6,
+                        "mdefault": 6
+                  },
+                  {
+                        "name": "PTTRN",
+                        "explanation": "Sets effect pattern.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 7,
+                        "mdefault": 6
+                  },
+                  {
+                        "name": "Speed",
+                        "explanation": "Sets the speed of the modulation.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 77,
+                        "mdefault": 25
+                  },
+                  {
+                        "name": "RESO",
+                        "explanation": "Sets effect resonance.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 10,
+                        "mdefault": 10
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "Gt GEQ",
+                  "description": "This mono graphic equalizer has 6 bands that suit guitar frequencies.",
+                  "version": "1.00",
+                  "fxid": 81,
+                  "gid": 16,
+                  "group": 2,
+                  "numParams": 7,
+                  "numSlots": 2,
+                  "filename": "GT_GEQ1U.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "160",
+                        "explanation": "Boosts or cuts the low (160 Hz) frequency band.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 48,
+                        "mdefault": 24
+                  },
+                  {
+                        "name": "400",
+                        "explanation": "Boosts or cuts the low (400 Hz) frequency band.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 48,
+                        "mdefault": 24
+                  },
+                  {
+                        "name": "800",
+                        "explanation": "Boosts or cuts the low (800 Hz) frequency band.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 48,
+                        "mdefault": 24
+                  },
+                  {
+                        "name": "3.2k",
+                        "explanation": "Boosts or cuts the low (3.2 kHz) frequency band.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 48,
+                        "mdefault": 24
+                  },
+                  {
+                        "name": "6.4k",
+                        "explanation": "Boosts or cuts the low (6.4 kHz) frequency band.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 48,
+                        "mdefault": 24
+                  },
+                  {
+                        "name": "12k",
+                        "explanation": "Boosts or cuts the low (12 kHz) frequency band.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 48,
+                        "mdefault": 24
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 80
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "Gt GEQ 7",
+                  "description": "This mono graphic equalizer has 7 bands that suit guitar frequencies.",
+                  "version": "1.20",
+                  "fxid": 84,
+                  "gid": 16,
+                  "group": 2,
+                  "numParams": 8,
+                  "numSlots": 2,
+                  "filename": "GTGEQ71U.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "100",
+                        "explanation": "Boosts or cuts the low (100 Hz) frequency band.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 48,
+                        "mdefault": 24
+                  },
+                  {
+                        "name": "200",
+                        "explanation": "Boosts or cuts the low (200 Hz) frequency band.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 48,
+                        "mdefault": 24
+                  },
+                  {
+                        "name": "400",
+                        "explanation": "Boosts or cuts the low (400 Hz) frequency band.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 48,
+                        "mdefault": 24
+                  },
+                  {
+                        "name": "800",
+                        "explanation": "Boosts or cuts the low (800 Hz) frequency band.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 48,
+                        "mdefault": 24
+                  },
+                  {
+                        "name": "1.6k",
+                        "explanation": "Boosts or cuts the low (1.6 kHz) frequency band.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 48,
+                        "mdefault": 24
+                  },
+                  {
+                        "name": "3.2k",
+                        "explanation": "Boosts or cuts the low (3.2 kHz) frequency band.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 48,
+                        "mdefault": 24
+                  },
+                  {
+                        "name": "6.4k",
+                        "explanation": "Boosts or cuts the low (6.4 kHz) frequency band.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 48,
+                        "mdefault": 24
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 80
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "ParaEQ",
+                  "description": "This is a 1-band parametric equalizer.",
+                  "version": "1.40",
+                  "fxid": 112,
+                  "gid": 16,
+                  "group": 2,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "PARAEQ.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "FREQ",
+                        "explanation": "Sets the frequency of the equalizer.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 30,
+                        "mdefault": 8
+                  },
+                  {
+                        "name": "Q",
+                        "explanation": "Adjusts equalizer Q.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 67,
+                        "mdefault": 1
+                  },
+                  {
+                        "name": "Gain",
+                        "explanation": "Adjusts the gain.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 48,
+                        "mdefault": 24
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 80
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "RndmFLTR",
+                  "description": "This filter effect changes character randomly.",
+                  "version": "1.40",
+                  "fxid": 144,
+                  "gid": 16,
+                  "group": 2,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "RNDMFLTR.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Type",
+                        "explanation": "Sets filter type.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 2,
+                        "mdefault": 2
+                  },
+                  {
+                        "name": "Speed",
+                        "explanation": "Sets the speed of the modulation.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 77,
+                        "mdefault": 34
+                  },
+                  {
+                        "name": "BAL",
+                        "explanation": "Adjusts the balance between original and effect sounds.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 90
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 80
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "Exciter",
+                  "description": "This exciter enables flexible control.",
+                  "version": "1.30",
+                  "fxid": 176,
+                  "gid": 16,
+                  "group": 2,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "EXCITER.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Bass",
+                        "explanation": "Adjusts the amount of low-frequency phase correction.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "Treble",
+                        "explanation": "Adjusts the amount of high-frequency phase correction.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 80
+                  },
+                  {
+                        "name": "ON/OFF",
+                        "explanation": "Sets the foot switch function.",
+                        "blackback": true,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 0
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "TS Drive",
+                  "description": "Simulation of the Ibanez TS808.",
+                  "version": "1.40",
+                  "fxid": 16,
+                  "gid": 24,
+                  "group": 3,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "TS_DRIVE.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Gain",
+                        "explanation": "Adjusts the gain.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 74
+                  },
+                  {
+                        "name": "Boost",
+                        "explanation": "Turns boost ON/OFF.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "Tone",
+                        "explanation": "Adjusts the tone.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 57
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 82
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "EP Stomp",
+                  "description": "This models the Maestro Echoplex preamp.",
+                  "version": "1.40",
+                  "fxid": 32,
+                  "gid": 24,
+                  "group": 3,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "EP_STOMP.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Gain",
+                        "explanation": "Adjusts the gain.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 35
+                  },
+                  {
+                        "name": "Bass",
+                        "explanation": "Adjusts volume of low frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 20,
+                        "mdefault": 10
+                  },
+                  {
+                        "name": "Treble",
+                        "explanation": "Adjusts volume of high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 20,
+                        "mdefault": 8
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 62
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "RC Boost",
+                  "description": "This booster covers sounds ranging from clean boosts to light drives.",
+                  "version": "1.50",
+                  "fxid": 48,
+                  "gid": 24,
+                  "group": 3,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "RCBOOST.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Gain",
+                        "explanation": "Adjusts the gain.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 58
+                  },
+                  {
+                        "name": "Bass",
+                        "explanation": "Adjusts volume of low frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 48
+                  },
+                  {
+                        "name": "Treble",
+                        "explanation": "Adjusts volume of high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 52
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 48
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "GoldDrive",
+                  "description": "This effect models a famous gold overdrive boutique pedal.",
+                  "version": "1.30",
+                  "fxid": 64,
+                  "gid": 24,
+                  "group": 3,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "GOLD_DRV.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Gain",
+                        "explanation": "Adjusts the gain.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 69
+                  },
+                  {
+                        "name": "Bass",
+                        "explanation": "Adjusts volume of low frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Treble",
+                        "explanation": "Adjusts volume of high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 56
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 43
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "SweetDrv",
+                  "description": "This effect models a sweet sounding overdrive.",
+                  "version": "1.30",
+                  "fxid": 80,
+                  "gid": 24,
+                  "group": 3,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "SWEETDRV.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Gain",
+                        "explanation": "Adjusts the gain.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 78
+                  },
+                  {
+                        "name": "Tone",
+                        "explanation": "Adjusts volume of high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Focus",
+                        "explanation": "Adjusts volume of middle frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 67
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 62
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "DYN Drive",
+                  "description": "This effect easily achieves the warm drive tone of a tube amp.",
+                  "version": "1.30",
+                  "fxid": 96,
+                  "gid": 24,
+                  "group": 3,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "DYNDRIVE.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Gain",
+                        "explanation": "Adjusts the gain.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 78
+                  },
+                  {
+                        "name": "Tone",
+                        "explanation": "Adjusts the tone.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 67
+                  },
+                  {
+                        "name": "Mode",
+                        "explanation": "Sets the sound style.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 1
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 46
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "RedCrunch",
+                  "description": "Use this effect for the famous \"brown sound.\"",
+                  "version": "1.30",
+                  "fxid": 112,
+                  "gid": 24,
+                  "group": 3,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "REDCRUNC.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Gain",
+                        "explanation": "Adjusts the gain.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 68
+                  },
+                  {
+                        "name": "Tone",
+                        "explanation": "Adjusts the tone.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 47
+                  },
+                  {
+                        "name": "PRSNC",
+                        "explanation": "Adjusts volume of super-high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 48
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 61
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "Aco.Sim",
+                  "description": "This effect changes the tone of an electric guitar to make it sound like an acoustic guitar.",
+                  "version": "1.30",
+                  "fxid": 192,
+                  "gid": 24,
+                  "group": 3,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "ACOSIM.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Top",
+                        "explanation": "Adjusts the unique string tone of acoustic guitars.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 80
+                  },
+                  {
+                        "name": "Body",
+                        "explanation": "Adjusts the body resonance of acoustic guitars.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Tone",
+                        "explanation": "Adjusts the tone.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 100
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 80
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "NYC Muff",
+                  "description": "This models an Electro-Harmonix Big Muff Pi. An added parameter allows you to adjust the balance of original sound and distortion.",
+                  "version": "1.40",
+                  "fxid": 208,
+                  "gid": 24,
+                  "group": 3,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "NYC_MUFF.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "SUSTN",
+                        "explanation": "Adjusts the gain.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 70
+                  },
+                  {
+                        "name": "Tone",
+                        "explanation": "Adjusts the tone.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 55
+                  },
+                  {
+                        "name": "BAL",
+                        "explanation": "Adjusts the balance between original and effect sounds.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 100
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 58
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "HG THRTTL",
+                  "description": "This models the sound of the Mesa Boogie THROTTLE BOX(GAIN SWITCH:HI / BOOST:ON).",
+                  "version": "1.30",
+                  "fxid": 224,
+                  "gid": 24,
+                  "group": 3,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "BGTHRTTL.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Gain",
+                        "explanation": "Adjusts the gain.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 78
+                  },
+                  {
+                        "name": "Tone",
+                        "explanation": "Adjusts the tone.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 56
+                  },
+                  {
+                        "name": "MdCut",
+                        "explanation": "Adjusts volume of middle frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 46
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 54
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "DIST 1",
+                  "description": "This models the sound of a BOSS DS-1 DISTORTION.",
+                  "version": "1.30",
+                  "fxid": 288,
+                  "gid": 24,
+                  "group": 3,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "DIST_1.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Gain",
+                        "explanation": "Adjusts the gain.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 61
+                  },
+                  {
+                        "name": "Tone",
+                        "explanation": "Adjusts the tone.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 41
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume. ",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 100
+                  },
+                  {
+                        "name": "Comp",
+                        "explanation": "Sets the clipping type of DIST 1.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 0
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "Squeak",
+                  "description": "This models a ProCo RAT. A parameter has been added that allows you to adjust the mix level of the original sound.",
+                  "version": "1.30",
+                  "fxid": 304,
+                  "gid": 24,
+                  "group": 3,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "SQUEAK.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Gain",
+                        "explanation": "Adjusts the gain.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 47
+                  },
+                  {
+                        "name": "FLTR",
+                        "explanation": "Adjusts the tone.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 60
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume. ",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 79
+                  },
+                  {
+                        "name": "DryMx",
+                        "explanation": "Adjusts the volume of the unaffected sound.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 0
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "DIST Plus",
+                  "description": "This models the sound of a MXR DISTORTION+.",
+                  "version": "1.20",
+                  "fxid": 352,
+                  "gid": 24,
+                  "group": 3,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "DISTPLUS.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Gain",
+                        "explanation": "Adjusts the gain.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 70
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 100
+                  },
+                  {
+                        "name": "DryMx",
+                        "explanation": "Adjusts the volume of the unaffected sound.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "Comp",
+                        "explanation": "Sets the clipping type of DIST Plus.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 2,
+                        "mdefault": 0
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "Zen O.DRV",
+                  "description": "This models the sound of a Hermida Audio Zendrive.",
+                  "version": "1.20",
+                  "fxid": 368,
+                  "gid": 24,
+                  "group": 3,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "ZEN_DRV.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Gain",
+                        "explanation": "Adjusts the gain.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 70
+                  },
+                  {
+                        "name": "Tone",
+                        "explanation": "Adjusts the tone.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 60
+                  },
+                  {
+                        "name": "Voice",
+                        "explanation": "Adjusts gain of high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 80
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume. ",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 70
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "VioletDST",
+                  "description": "This models the sound of a SUHR Riot Reloaded.",
+                  "version": "1.20",
+                  "fxid": 400,
+                  "gid": 24,
+                  "group": 3,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "VIOLETDS.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Gain",
+                        "explanation": "Adjusts the gain.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 70
+                  },
+                  {
+                        "name": "Tone",
+                        "explanation": "Adjusts the tone.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 80
+                  },
+                  {
+                        "name": "Voice",
+                        "explanation": "Sets the sound style.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 2,
+                        "mdefault": 2
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume. ",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 70
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "MS 800",
+                  "description": "This models the sound of the Marshall JCM800 2203.",
+                  "version": "1.00",
+                  "fxid": 17,
+                  "gid": 32,
+                  "group": 4,
+                  "numParams": 7,
+                  "numSlots": 2,
+                  "filename": "MS800_1U.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Input",
+                        "explanation": "Adjusts the input gain.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 1
+                  },
+                  {
+                        "name": "Bass",
+                        "explanation": "Adjusts volume of low frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "MID",
+                        "explanation": "Adjusts volume of middle frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Treble",
+                        "explanation": "Adjusts volume of high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "PRSNC",
+                        "explanation": "Adjusts volume of super-high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 30
+                  },
+                  {
+                        "name": "Gain",
+                        "explanation": "Adjusts the gain.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 70
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 70
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "MS 1959",
+                  "description": "This models the sound of the Marshall 1959 SUPER LEAD 100.",
+                  "version": "1.00",
+                  "fxid": 25,
+                  "gid": 32,
+                  "group": 4,
+                  "numParams": 7,
+                  "numSlots": 2,
+                  "filename": "MS19591U.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Bass",
+                        "explanation": "Adjusts volume of low frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "MID",
+                        "explanation": "Adjusts volume of middle frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 70
+                  },
+                  {
+                        "name": "Treble",
+                        "explanation": "Adjusts volume of high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 60
+                  },
+                  {
+                        "name": "PRSNC",
+                        "explanation": "Adjusts volume of super-high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 40
+                  },
+                  {
+                        "name": "Input1",
+                        "explanation": "Adjusts the gain of the input1.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 101,
+                        "mdefault": 61
+                  },
+                  {
+                        "name": "Input2",
+                        "explanation": "Adjusts the gain of the input2.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 101,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 80
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "FD TWNR",
+                  "description": "This models the sound of the Fender '65 Twin Reverb.",
+                  "version": "1.00",
+                  "fxid": 33,
+                  "gid": 32,
+                  "group": 4,
+                  "numParams": 8,
+                  "numSlots": 2,
+                  "filename": "FD_TWR1U.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Bass",
+                        "explanation": "Adjusts volume of low frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 90,
+                        "mdefault": 38
+                  },
+                  {
+                        "name": "MID",
+                        "explanation": "Adjusts volume of middle frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 90,
+                        "mdefault": 40
+                  },
+                  {
+                        "name": "Treble",
+                        "explanation": "Adjusts volume of high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 90,
+                        "mdefault": 35
+                  },
+                  {
+                        "name": "BRGHT",
+                        "explanation": "Sets the high frequency response. The effect is noticeable at lower gain settings.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "Gain",
+                        "explanation": "Adjusts the gain.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 90,
+                        "mdefault": 30
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 90,
+                        "mdefault": 70
+                  },
+                  {
+                        "name": "Depth",
+                        "explanation": "Sets the depth of the modulation.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 90,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "Speed",
+                        "explanation": "Sets the speed of the modulation.\n",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 40
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "FD B-MAN",
+                  "description": "This models the sound of the Fender '59 Bassman.",
+                  "version": "1.10",
+                  "fxid": 40,
+                  "gid": 32,
+                  "group": 4,
+                  "numParams": 7,
+                  "numSlots": 2,
+                  "filename": "FDBMAN1U.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Input",
+                        "explanation": "Selects the input channel.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 1
+                  },
+                  {
+                        "name": "Bass",
+                        "explanation": "Adjusts volume of low frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 110,
+                        "mdefault": 30
+                  },
+                  {
+                        "name": "MID",
+                        "explanation": "Adjusts volume of middle frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 110,
+                        "mdefault": 90
+                  },
+                  {
+                        "name": "Treble",
+                        "explanation": "Adjusts volume of high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 110,
+                        "mdefault": 40
+                  },
+                  {
+                        "name": "PRSNC",
+                        "explanation": "Adjusts volume of super-high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 110,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Gain",
+                        "explanation": "Adjusts the gain.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 110,
+                        "mdefault": 30
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 110,
+                        "mdefault": 50
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "FD DLXR",
+                  "description": "This models the sound of the Fender '65 Deluxe Reverb.",
+                  "version": "1.10",
+                  "fxid": 44,
+                  "gid": 32,
+                  "group": 4,
+                  "numParams": 7,
+                  "numSlots": 2,
+                  "filename": "FDDLXR1U.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Input",
+                        "explanation": "Selects the input channel.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "Bass",
+                        "explanation": "Adjusts volume of low frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 90,
+                        "mdefault": 33
+                  },
+                  {
+                        "name": "Treble",
+                        "explanation": "Adjusts volume of high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 90,
+                        "mdefault": 55
+                  },
+                  {
+                        "name": "Gain",
+                        "explanation": "Adjusts the gain.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 90,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 90,
+                        "mdefault": 90
+                  },
+                  {
+                        "name": "Depth",
+                        "explanation": "Sets the depth of the modulation.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 90,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "Speed",
+                        "explanation": "Sets the speed of the modulation.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 40
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "UK 30A",
+                  "description": "This models the sound of an early class A British combo amp.",
+                  "version": "1.00",
+                  "fxid": 49,
+                  "gid": 32,
+                  "group": 4,
+                  "numParams": 7,
+                  "numSlots": 2,
+                  "filename": "UK30A_1U.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Bass",
+                        "explanation": "Adjusts volume of low frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 49
+                  },
+                  {
+                        "name": "Treble",
+                        "explanation": "Adjusts volume of high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 38
+                  },
+                  {
+                        "name": "Cut",
+                        "explanation": "Adjusts the tone.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 78
+                  },
+                  {
+                        "name": "Gain",
+                        "explanation": "Adjusts the gain.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 30
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 84
+                  },
+                  {
+                        "name": "Depth",
+                        "explanation": "Sets the depth of the modulation.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "Speed",
+                        "explanation": "Sets the speed of the modulation.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 110,
+                        "mdefault": 50
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "BG MK1",
+                  "description": "This models the sound of the Mesa Boogie Mark I combo amp.",
+                  "version": "1.00",
+                  "fxid": 65,
+                  "gid": 32,
+                  "group": 4,
+                  "numParams": 7,
+                  "numSlots": 2,
+                  "filename": "BGMK1_1U.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Bass",
+                        "explanation": "Adjusts volume of low frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 49
+                  },
+                  {
+                        "name": "MID",
+                        "explanation": "Adjusts volume of middle frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 55
+                  },
+                  {
+                        "name": "Treble",
+                        "explanation": "Adjusts volume of high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 53
+                  },
+                  {
+                        "name": "PRSNC",
+                        "explanation": "Adjusts volume of super-high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 55
+                  },
+                  {
+                        "name": "Gain1",
+                        "explanation": "Adjusts the gain of the first stage.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 72
+                  },
+                  {
+                        "name": "Gain2",
+                        "explanation": "Adjusts the gain of the second stage.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 70
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 58
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "XtasyBlue",
+                  "description": "This models the sound of the Bogner Ecstasy Blue channel.",
+                  "version": "1.00",
+                  "fxid": 81,
+                  "gid": 32,
+                  "group": 4,
+                  "numParams": 7,
+                  "numSlots": 2,
+                  "filename": "XTSBLU1U.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Bass",
+                        "explanation": "Adjusts volume of low frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "MID",
+                        "explanation": "Adjusts volume of middle frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Treble",
+                        "explanation": "Adjusts volume of high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "PRSNC",
+                        "explanation": "Adjusts volume of super-high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 40
+                  },
+                  {
+                        "name": "STRCT",
+                        "explanation": "Selects the type and gain of the tone.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 1
+                  },
+                  {
+                        "name": "Gain",
+                        "explanation": "Adjusts the gain.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 60
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 42
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "HW 100",
+                  "description": "This models the sound of the Hiwatt Custom 100.",
+                  "version": "1.00",
+                  "fxid": 97,
+                  "gid": 32,
+                  "group": 4,
+                  "numParams": 7,
+                  "numSlots": 2,
+                  "filename": "HW100_1U.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Input",
+                        "explanation": "Selects the input channel.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 1
+                  },
+                  {
+                        "name": "Bass",
+                        "explanation": "Adjusts volume of low frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 40
+                  },
+                  {
+                        "name": "MID",
+                        "explanation": "Adjusts volume of middle frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 80
+                  },
+                  {
+                        "name": "Treble",
+                        "explanation": "Adjusts volume of high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 60
+                  },
+                  {
+                        "name": "PRSNC",
+                        "explanation": "Adjusts volume of super-high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 60
+                  },
+                  {
+                        "name": "Gain",
+                        "explanation": "Adjusts the gain.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 60
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "Recti ORG",
+                  "description": "This models the sound of the Mesa Boogie Dual Rectifier Orange Channel.",
+                  "version": "1.00",
+                  "fxid": 113,
+                  "gid": 32,
+                  "group": 4,
+                  "numParams": 7,
+                  "numSlots": 2,
+                  "filename": "RCTORG1U.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Mode",
+                        "explanation": "Sets the tone of the character.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "Bass",
+                        "explanation": "Adjusts volume of low frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 52
+                  },
+                  {
+                        "name": "MID",
+                        "explanation": "Adjusts volume of middle frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 65
+                  },
+                  {
+                        "name": "Treble",
+                        "explanation": "Adjusts volume of high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 67
+                  },
+                  {
+                        "name": "PRSNC",
+                        "explanation": "Adjusts volume of super-high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 62
+                  },
+                  {
+                        "name": "Gain",
+                        "explanation": "Adjusts the gain.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 70
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 62
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "ORG120",
+                  "description": "This models the sound of the Orange Graphic120.",
+                  "version": "1.00",
+                  "fxid": 129,
+                  "gid": 32,
+                  "group": 4,
+                  "numParams": 7,
+                  "numSlots": 2,
+                  "filename": "ORG1201U.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Input",
+                        "explanation": "Selects the input channel.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 1
+                  },
+                  {
+                        "name": "Color",
+                        "explanation": "Sets the tone of the effect type.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 5,
+                        "mdefault": 3
+                  },
+                  {
+                        "name": "Bass",
+                        "explanation": "Adjusts volume of low frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Treble",
+                        "explanation": "Adjusts volume of high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 60
+                  },
+                  {
+                        "name": "PRSNC",
+                        "explanation": "Adjusts volume of super-high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Gain",
+                        "explanation": "Adjusts the gain.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 53
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 100
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "DZ DRV",
+                  "description": "This models the sound of the Diezel Herbert Channel2.",
+                  "version": "1.00",
+                  "fxid": 145,
+                  "gid": 32,
+                  "group": 4,
+                  "numParams": 8,
+                  "numSlots": 2,
+                  "filename": "DZ_DRV1U.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Bass",
+                        "explanation": "Adjusts volume of low frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "MID",
+                        "explanation": "Adjusts volume of middle frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 70
+                  },
+                  {
+                        "name": "Treble",
+                        "explanation": "Adjusts volume of high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 60
+                  },
+                  {
+                        "name": "PRSNC",
+                        "explanation": "Adjusts volume of super-high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 40
+                  },
+                  {
+                        "name": "Gain",
+                        "explanation": "Adjusts the gain.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 60
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 80
+                  },
+                  {
+                        "name": "Deep",
+                        "explanation": "Emphasizes low frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "MidCut",
+                        "explanation": "Cuts middle frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 0
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "MATCH30",
+                  "description": "This models the sound of the Matchless DC-30.",
+                  "version": "1.00",
+                  "fxid": 161,
+                  "gid": 32,
+                  "group": 4,
+                  "numParams": 7,
+                  "numSlots": 2,
+                  "filename": "MACH301U.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Gain1",
+                        "explanation": "Adjusts the gain of channel1.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 101,
+                        "mdefault": 36
+                  },
+                  {
+                        "name": "Bass1",
+                        "explanation": "Adjusts volume of low frequencies in the channel1.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 47
+                  },
+                  {
+                        "name": "TRBL1",
+                        "explanation": "Adjusts volume of high frequencies in the channel1.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 49
+                  },
+                  {
+                        "name": "Gain2",
+                        "explanation": "Adjusts the gain of channel2.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 101,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "Tone2",
+                        "explanation": "Adjusts the tone of channel2.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 5,
+                        "mdefault": 1
+                  },
+                  {
+                        "name": "Cut",
+                        "explanation": "Adjusts the tone.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 101,
+                        "mdefault": 34
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "MS4x12",
+                  "description": "This models the sound of a Marshall 1960 A-type cabinet with four 12\" Celestion speakers.",
+                  "version": "1.30",
+                  "fxid": 16,
+                  "gid": 40,
+                  "group": 5,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "MS4X12.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "MIC",
+                        "explanation": "MIC=OFF: This tone is optimized for using amp modeling with a guitar amp.\nMIC=ON: This tone is optimized for using amp modeling with headphones or monitor speakers.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "D57:D421",
+                        "explanation": "This adjusts the volume balance between the Shure SM57 and the Sennheiser MD421.\nWhen the MIC parameter is set to OFF, this setting has no effect.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Hi",
+                        "explanation": "Adjusts volume of high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Lo",
+                        "explanation": "Adjusts volume of low frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "MS4x12GB",
+                  "description": "This models the sound of a Marshall 1960 B-type cabinet with four 12\" Celestion G12M GreenBack speakers.",
+                  "version": "1.30",
+                  "fxid": 24,
+                  "gid": 40,
+                  "group": 5,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "MS4X12GB.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "MIC",
+                        "explanation": "MIC=OFF: This tone is optimized for using amp modeling with a guitar amp.\nMIC=ON: This tone is optimized for using amp modeling with headphones or monitor speakers.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "D57:D421",
+                        "explanation": "This adjusts the volume balance between the Shure SM57 and the Sennheiser MD421.\nWhen the MIC parameter is set to OFF, this setting has no effect.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Hi",
+                        "explanation": "Adjusts volume of high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Lo",
+                        "explanation": "Adjusts volume of low frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "FD2x12",
+                  "description": "This models the sound of the Fender '65 Twin Reverb cabinet with two 12\" Jensen speakers.",
+                  "version": "1.30",
+                  "fxid": 32,
+                  "gid": 40,
+                  "group": 5,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "FD2X12.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "MIC",
+                        "explanation": "MIC=OFF: This tone is optimized for using amp modeling with a guitar amp.\nMIC=ON: This tone is optimized for using amp modeling with headphones or monitor speakers.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "D57:D421",
+                        "explanation": "This adjusts the volume balance between the Shure SM57 and the Sennheiser MD421.\nWhen the MIC parameter is set to OFF, this setting has no effect.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Hi",
+                        "explanation": "Adjusts volume of high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Lo",
+                        "explanation": "Adjusts volume of low frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "FD-B4x10",
+                  "description": "This models the sound of the Fender '59 Bassman cabinet with four 10\" Jensen speakers.",
+                  "version": "1.40",
+                  "fxid": 39,
+                  "gid": 40,
+                  "group": 5,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "FDB4X10.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "MIC",
+                        "explanation": "MIC=OFF: This tone is optimized for using amp modeling with a guitar amp.\nMIC=ON: This tone is optimized for using amp modeling with headphones or monitor speakers.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "D57:D421",
+                        "explanation": "This adjusts the volume balance between the Shure SM57 and the Sennheiser MD421.\nWhen the MIC parameter is set to OFF, this setting has no effect.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Hi",
+                        "explanation": "Adjusts volume of high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Lo",
+                        "explanation": "Adjusts volume of low frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "FD-DX1x12",
+                  "description": "This models the sound of a Fender '65 Deluxe Reverb cabinet with one 12\" Jensen C-12K Speaker.",
+                  "version": "1.40",
+                  "fxid": 42,
+                  "gid": 40,
+                  "group": 5,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "FDDX1X12.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "MIC",
+                        "explanation": "MIC=OFF: This tone is optimized for using amp modeling with a guitar amp.\nMIC=ON: This tone is optimized for using amp modeling with headphones or monitor speakers.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "D57:D421",
+                        "explanation": "This adjusts the volume balance between the Shure SM57 and the Sennheiser MD421.\nWhen the MIC parameter is set to OFF, this setting has no effect.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Hi",
+                        "explanation": "Adjusts volume of high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Lo",
+                        "explanation": "Adjusts volume of low frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "UK2x12",
+                  "description": "This models the sound of an early British combo amp with two 12\" Celestion Alnico speakers.",
+                  "version": "1.30",
+                  "fxid": 48,
+                  "gid": 40,
+                  "group": 5,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "UK2X12.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "MIC",
+                        "explanation": "MIC=OFF: This tone is optimized for using amp modeling with a guitar amp.\nMIC=ON: This tone is optimized for using amp modeling with headphones or monitor speakers.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "D57:D421",
+                        "explanation": "This adjusts the volume balance between the Shure SM57 and the Sennheiser MD421.\nWhen the MIC parameter is set to OFF, this setting has no effect.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Hi",
+                        "explanation": "Adjusts volume of high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Lo",
+                        "explanation": "Adjusts volume of low frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "MK1 1x12",
+                  "description": "This models the sound of a Mesa Boogie Mark I cabinet with one 12\" ALTEC 417-8H speaker.",
+                  "version": "1.30",
+                  "fxid": 64,
+                  "gid": 40,
+                  "group": 5,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "MK1_1X12.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "MIC",
+                        "explanation": "MIC=OFF: This tone is optimized for using amp modeling with a guitar amp.\nMIC=ON: This tone is optimized for using amp modeling with headphones or monitor speakers.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "D57:D421",
+                        "explanation": "This adjusts the volume balance between the Shure SM57 and the Sennheiser MD421.\nWhen the MIC parameter is set to OFF, this setting has no effect.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Hi",
+                        "explanation": "Adjusts volume of high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Lo",
+                        "explanation": "Adjusts volume of low frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "MK3 1x12",
+                  "description": "This models the sound of a Mesa Boogie Mark III cabinet with one 12\" Celestion Black Shadow Speaker.",
+                  "version": "1.30",
+                  "fxid": 66,
+                  "gid": 40,
+                  "group": 5,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "MK3_1X12.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "MIC",
+                        "explanation": "MIC=OFF: This tone is optimized for using amp modeling with a guitar amp.\nMIC=ON: This tone is optimized for using amp modeling with headphones or monitor speakers.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "D57:D421",
+                        "explanation": "This adjusts the volume balance between the Shure SM57 and the Sennheiser MD421.\nWhen the MIC parameter is set to OFF, this setting has no effect.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Hi",
+                        "explanation": "Adjusts volume of high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Lo",
+                        "explanation": "Adjusts volume of low frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "BGN4x12",
+                  "description": "This models the sound of the Bogner Ecstasy cabinet with four 12\" Celestion speakers.",
+                  "version": "1.30",
+                  "fxid": 80,
+                  "gid": 40,
+                  "group": 5,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "BGN4X12.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "MIC",
+                        "explanation": "MIC=OFF: This tone is optimized for using amp modeling with a guitar amp.\nMIC=ON: This tone is optimized for using amp modeling with headphones or monitor speakers.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "D57:D421",
+                        "explanation": "This adjusts the volume balance between the Shure SM57 and the Sennheiser MD421.\nWhen the MIC parameter is set to OFF, this setting has no effect.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Hi",
+                        "explanation": "Adjusts volume of high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Lo",
+                        "explanation": "Adjusts volume of low frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "HW4x12",
+                  "description": "This models the sound of a Hiwatt SE-4123 cabinet with four 12\" Fane speakers.",
+                  "version": "1.30",
+                  "fxid": 96,
+                  "gid": 40,
+                  "group": 5,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "HW4X12.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "MIC",
+                        "explanation": "MIC=OFF: This tone is optimized for using amp modeling with a guitar amp.\nMIC=ON: This tone is optimized for using amp modeling with headphones or monitor speakers.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "D57:D421",
+                        "explanation": "This adjusts the volume balance between the Shure SM57 and the Sennheiser MD421.\nWhen the MIC parameter is set to OFF, this setting has no effect.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Hi",
+                        "explanation": "Adjusts volume of high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Lo",
+                        "explanation": "Adjusts volume of low frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "RCT4x12",
+                  "description": "This models the sound of a Mesa Boogie Recto Standard Slant Cabinet ARMOR with four 12\" Celestion Vintage 30 speakers.",
+                  "version": "1.30",
+                  "fxid": 112,
+                  "gid": 40,
+                  "group": 5,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "RCT4X12.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "MIC",
+                        "explanation": "MIC=OFF: This tone is optimized for using amp modeling with a guitar amp.\nMIC=ON: This tone is optimized for using amp modeling with headphones or monitor speakers.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "D57:D421",
+                        "explanation": "This adjusts the volume balance between the Shure SM57 and the Sennheiser MD421.\nWhen the MIC parameter is set to OFF, this setting has no effect.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Hi",
+                        "explanation": "Adjusts volume of high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Lo",
+                        "explanation": "Adjusts volume of low frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "ORG4x12",
+                  "description": "This models the sound of an Orange PPC412 cabinet with four 12\" Celestion Vintage 30 speakers.",
+                  "version": "1.30",
+                  "fxid": 128,
+                  "gid": 40,
+                  "group": 5,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "ORG_4X12.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "MIC",
+                        "explanation": "MIC=OFF: This tone is optimized for using amp modeling with a guitar amp.\nMIC=ON: This tone is optimized for using amp modeling with headphones or monitor speakers.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "D57:D421",
+                        "explanation": "This adjusts the volume balance between the Shure SM57 and the Sennheiser MD421.\nWhen the MIC parameter is set to OFF, this setting has no effect.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Hi",
+                        "explanation": "Adjusts volume of high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Lo",
+                        "explanation": "Adjusts volume of low frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "DZ4x12F",
+                  "description": "This models the sound of a Diezel 412F cabinet with four 12\" Celestion Vintage 30 speakers.",
+                  "version": "1.30",
+                  "fxid": 144,
+                  "gid": 40,
+                  "group": 5,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "DZ4X12F.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "MIC",
+                        "explanation": "MIC=OFF: This tone is optimized for using amp modeling with a guitar amp.\nMIC=ON: This tone is optimized for using amp modeling with headphones or monitor speakers.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "D57:D421",
+                        "explanation": "This adjusts the volume balance between the Shure SM57 and the Sennheiser MD421.\nWhen the MIC parameter is set to OFF, this setting has no effect.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Hi",
+                        "explanation": "Adjusts volume of high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Lo",
+                        "explanation": "Adjusts volume of low frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "MA2x12",
+                  "description": "This models the sound of a Matchless DC-30 cabinet with 12\" Customized Celestion G12H30 and 12\" Celestion G12M Greenback speakers.",
+                  "version": "1.30",
+                  "fxid": 160,
+                  "gid": 40,
+                  "group": 5,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "MA2X12.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "MIC",
+                        "explanation": "MIC=OFF: This tone is optimized for using amp modeling with a guitar amp.\nMIC=ON: This tone is optimized for using amp modeling with headphones or monitor speakers.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "D57:D421",
+                        "explanation": "This adjusts the volume balance between the Shure SM57 and the Sennheiser MD421.\nWhen the MIC parameter is set to OFF, this setting has no effect.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Hi",
+                        "explanation": "Adjusts volume of high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Lo",
+                        "explanation": "Adjusts volume of low frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "Tremolo",
+                  "description": "This effect varies the volume at a regular rate.",
+                  "version": "1.50",
+                  "fxid": 16,
+                  "gid": 48,
+                  "group": 6,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "TREMOLO.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Wave",
+                        "explanation": "Sets the modulation waveform.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 2,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "Depth",
+                        "explanation": "Sets the depth of the modulation.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 90
+                  },
+                  {
+                        "name": "Rate",
+                        "explanation": "Sets the speed of the modulation.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 110,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 62
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "StereoCho",
+                  "description": "This is a stereo chorus with a clear tone.",
+                  "version": "1.40",
+                  "fxid": 48,
+                  "gid": 48,
+                  "group": 6,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "STEREOCH.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Depth",
+                        "explanation": "Sets the depth of the modulation.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 80
+                  },
+                  {
+                        "name": "Rate",
+                        "explanation": "Sets the speed of the modulation.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 49,
+                        "mdefault": 29
+                  },
+                  {
+                        "name": "Tone",
+                        "explanation": "Adjusts the tone.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 10,
+                        "mdefault": 7
+                  },
+                  {
+                        "name": "Mix",
+                        "explanation": "Adjusts the amount of effected sound that is mixed with the original sound.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 60
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "Phaser",
+                  "description": "This effect adds a phasing variation to the sound.",
+                  "version": "1.50",
+                  "fxid": 64,
+                  "gid": 48,
+                  "group": 6,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "PHASER.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Color",
+                        "explanation": "Sets the tone of the effect type.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 3,
+                        "mdefault": 3
+                  },
+                  {
+                        "name": "Depth",
+                        "explanation": "Sets the depth of the modulation.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 100
+                  },
+                  {
+                        "name": "Rate",
+                        "explanation": "Sets the speed of the modulation.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 77,
+                        "mdefault": 11
+                  },
+                  {
+                        "name": "RESO",
+                        "explanation": "Sets effect resonance.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "VinFLNGR",
+                  "description": "This analog flanger sound is similar to an MXR M-117R.",
+                  "version": "1.40",
+                  "fxid": 80,
+                  "gid": 48,
+                  "group": 6,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "VINFLNGR.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "PreD",
+                        "explanation": "Sets pre-delay time of effect sound.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 50,
+                        "mdefault": 4
+                  },
+                  {
+                        "name": "Depth",
+                        "explanation": "Sets the depth of the modulation.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 47
+                  },
+                  {
+                        "name": "Rate",
+                        "explanation": "Sets the speed of the modulation.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 78,
+                        "mdefault": 7
+                  },
+                  {
+                        "name": "RESO",
+                        "explanation": "Sets effect resonance.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 20,
+                        "mdefault": 18
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "Vibrato",
+                  "description": "This effect automatically adds vibrato.",
+                  "version": "1.40",
+                  "fxid": 112,
+                  "gid": 48,
+                  "group": 6,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "VIBRATO.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Depth",
+                        "explanation": "Sets the depth of the modulation.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 40
+                  },
+                  {
+                        "name": "Rate",
+                        "explanation": "Sets the speed of the modulation.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 78,
+                        "mdefault": 30
+                  },
+                  {
+                        "name": "Tone",
+                        "explanation": "Adjusts the tone.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 10,
+                        "mdefault": 7
+                  },
+                  {
+                        "name": "BAL",
+                        "explanation": "Adjusts the balance between original and effect sounds.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 72
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "Octave",
+                  "description": "This effect adds sound one octave and two octaves below the original sound.",
+                  "version": "1.40",
+                  "fxid": 128,
+                  "gid": 48,
+                  "group": 6,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "OCTAVE.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "OCT1",
+                        "explanation": "Adjusts the level of the sound one octave below the effect sound.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 80
+                  },
+                  {
+                        "name": "OCT2",
+                        "explanation": "Adjusts the level of the sound two octaves below the effect sound.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 15
+                  },
+                  {
+                        "name": "Tone",
+                        "explanation": "Adjusts the tone.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 10,
+                        "mdefault": 8
+                  },
+                  {
+                        "name": "Dry",
+                        "explanation": "Adjusts the volume of the unaffected sound.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 100
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "PitchSHFT",
+                  "description": "This effect shifts the pitch up or down.",
+                  "version": "1.50",
+                  "fxid": 176,
+                  "gid": 48,
+                  "group": 6,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "PITCHSHF.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Shift",
+                        "explanation": "Adjusts the pitch shift amount in semitones. Selecting \"0\" gives a detuning effect.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 25,
+                        "mdefault": 19
+                  },
+                  {
+                        "name": "Fine",
+                        "explanation": "Allows fine adjustment of pitch shift amount in Cent (1/100 semitone) steps.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 50,
+                        "mdefault": 25
+                  },
+                  {
+                        "name": "Tone",
+                        "explanation": "Adjusts the tone.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 10,
+                        "mdefault": 7
+                  },
+                  {
+                        "name": "BAL",
+                        "explanation": "Adjusts the balance between original and effect sounds.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 40
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "HPS",
+                  "description": "This intelligent pitch shifter outputs the effect sound with the pitch shifted according to scale and key settings.",
+                  "version": "1.50",
+                  "fxid": 208,
+                  "gid": 48,
+                  "group": 6,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "HPS.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Scale",
+                        "explanation": "Sets the pitch of the pitch-shifted sound added to the original sound.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 9,
+                        "mdefault": 6
+                  },
+                  {
+                        "name": "Key",
+                        "explanation": "Sets the tonic (root) of the scale used for pitch shifting.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 11,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "Tone",
+                        "explanation": "Adjusts the tone.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 10,
+                        "mdefault": 6
+                  },
+                  {
+                        "name": "Mix",
+                        "explanation": "Adjusts the amount of effected sound that is mixed with the original sound.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 70
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "CloneCho",
+                  "description": "This analog chorus sound models the Electro-Harmonix SmallClone.",
+                  "version": "1.40",
+                  "fxid": 256,
+                  "gid": 48,
+                  "group": 6,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "CLONECHO.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Depth",
+                        "explanation": "Sets the depth of the modulation.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 1
+                  },
+                  {
+                        "name": "Rate",
+                        "explanation": "Sets the speed of the modulation.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 23
+                  },
+                  {
+                        "name": "Tone",
+                        "explanation": "Adjusts the tone.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 100
+                  },
+                  {
+                        "name": "Mix",
+                        "explanation": "Adjusts the amount of effected sound that is mixed with the original sound.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 100
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "CoronaTri",
+                  "description": "This is a model of tc electronic's CORONA Tri-Chorus.",
+                  "version": "1.10",
+                  "fxid": 305,
+                  "gid": 48,
+                  "group": 6,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "CRNTRI3S.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Depth",
+                        "explanation": "Sets the depth of the modulation.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 100
+                  },
+                  {
+                        "name": "Speed",
+                        "explanation": "Sets the speed of the modulation.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 25
+                  },
+                  {
+                        "name": "Tone",
+                        "explanation": "Adjusts the tone.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 100
+                  },
+                  {
+                        "name": "Mix",
+                        "explanation": "Adjusts the amount of effected sound that is mixed with the original sound.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 100
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "Delay",
+                  "description": "This long delay has a maximum length of 3000 mS.",
+                  "version": "1.10",
+                  "fxid": 17,
+                  "gid": 64,
+                  "group": 8,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "DELAY_3S.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Time",
+                        "explanation": "Sets the delay time.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 3018,
+                        "mdefault": 559
+                  },
+                  {
+                        "name": "F.B",
+                        "explanation": "Adjusts the feedback amount.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 30
+                  },
+                  {
+                        "name": "Mix",
+                        "explanation": "Adjusts the amount of effected sound that is mixed with the original sound.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 70
+                  },
+                  {
+                        "name": "Tail",
+                        "explanation": "When ON, effect sound continues even after effect is turned off. When OFF, effect sound stops right when effect is turned off.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 0
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "AnalogDly",
+                  "description": "This analog delay simulation has a long delay with a maximum length of 3000 mS.",
+                  "version": "1.10",
+                  "fxid": 33,
+                  "gid": 64,
+                  "group": 8,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "ANDLY_3S.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Time",
+                        "explanation": "Sets the delay time.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 3018,
+                        "mdefault": 359
+                  },
+                  {
+                        "name": "F.B",
+                        "explanation": "Adjusts the feedback amount.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 28
+                  },
+                  {
+                        "name": "Mix",
+                        "explanation": "Adjusts the amount of effected sound that is mixed with the original sound.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 40
+                  },
+                  {
+                        "name": "Tail",
+                        "explanation": "When ON, effect sound continues even after effect is turned off. When OFF, effect sound stops right when effect is turned off.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 0
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "TapeEcho",
+                  "description": "This effect simulates a tape echo. Changing the \"Time\" parameter changes the pitch of the echoes.",
+                  "version": "1.50",
+                  "fxid": 48,
+                  "gid": 64,
+                  "group": 8,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "TAPEECHO.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Time",
+                        "explanation": "Sets the delay time.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 2014,
+                        "mdefault": 559
+                  },
+                  {
+                        "name": "F.B",
+                        "explanation": "Adjusts the feedback amount.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 64
+                  },
+                  {
+                        "name": "Mix",
+                        "explanation": "Adjusts the amount of effected sound that is mixed with the original sound.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 56
+                  },
+                  {
+                        "name": "Tail",
+                        "explanation": "When ON, effect sound continues even after effect is turned off. When OFF, effect sound stops right when effect is turned off.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 0
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "ReverseDL",
+                  "description": "This reverse delay is a long delay with a maximum length of 1500 mS.",
+                  "version": "1.10",
+                  "fxid": 65,
+                  "gid": 64,
+                  "group": 8,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "RVRSDL3S.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Time",
+                        "explanation": "Sets the delay time.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1503,
+                        "mdefault": 990
+                  },
+                  {
+                        "name": "F.B",
+                        "explanation": "Adjusts the feedback amount.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 20
+                  },
+                  {
+                        "name": "BAL",
+                        "explanation": "Adjusts the balance between original and effect sounds.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Tail",
+                        "explanation": "When ON, effect sound continues even after effect is turned off. When OFF, effect sound stops right when effect is turned off.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 0
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "ModDelay",
+                  "description": "This delay effect allows the use of modulation.",
+                  "version": "1.40",
+                  "fxid": 80,
+                  "gid": 64,
+                  "group": 8,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "MODDELAY.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Time",
+                        "explanation": "Sets the delay time.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 2014,
+                        "mdefault": 499
+                  },
+                  {
+                        "name": "F.B",
+                        "explanation": "Adjusts the feedback amount.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Mix",
+                        "explanation": "Adjusts the amount of effected sound that is mixed with the original sound.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 62
+                  },
+                  {
+                        "name": "Tail",
+                        "explanation": "When ON, effect sound continues even after effect is turned off. When OFF, effect sound stops right when effect is turned off.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 0
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "P-P Delay",
+                  "description": "This delay outputs the delay sound alternately left and right.",
+                  "version": "1.10",
+                  "fxid": 129,
+                  "gid": 64,
+                  "group": 8,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "PPDLY_3S.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Time",
+                        "explanation": "Sets the delay time.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 3018,
+                        "mdefault": 559
+                  },
+                  {
+                        "name": "F.B",
+                        "explanation": "Adjusts the feedback amount.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 30
+                  },
+                  {
+                        "name": "Mix",
+                        "explanation": "Adjusts the amount of effected sound that is mixed with the original sound.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 70
+                  },
+                  {
+                        "name": "Tail",
+                        "explanation": "When ON, effect sound continues even after effect is turned off. When OFF, effect sound stops right when effect is turned off.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 0
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "SoftEcho",
+                  "description": "This echo has a soft tone.This echo effect allows the use of modulation.",
+                  "version": "1.10",
+                  "fxid": 289,
+                  "gid": 64,
+                  "group": 8,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "SOFTEC3S.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "MOD",
+                        "explanation": "Turns modulation ON or OFF.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 1
+                  },
+                  {
+                        "name": "Time",
+                        "explanation": "Sets the delay time.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 562,
+                        "mdefault": 387
+                  },
+                  {
+                        "name": "F.B",
+                        "explanation": "Adjusts the feedback amount.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 47
+                  },
+                  {
+                        "name": "Mix",
+                        "explanation": "Adjusts the amount of effected sound that is mixed with the original sound.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 69
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "Room",
+                  "description": "This reverb effect simulates the acoustics of a room.",
+                  "version": "1.50",
+                  "fxid": 32,
+                  "gid": 72,
+                  "group": 9,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "ROOM.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "PreD",
+                        "explanation": "Adjusts the delay between input of the original sound and start of the reverb sound.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 99,
+                        "mdefault": 4
+                  },
+                  {
+                        "name": "Decay",
+                        "explanation": "Sets the duration of the reverberations.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 29,
+                        "mdefault": 9
+                  },
+                  {
+                        "name": "Mix",
+                        "explanation": "Adjusts the amount of effected sound that is mixed with the original sound.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 60
+                  },
+                  {
+                        "name": "Tail",
+                        "explanation": "When ON, effect sound continues even after effect is turned off. When OFF, effect sound stops right when effect is turned off.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 0
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "Hall",
+                  "description": "This reverb effect simulates the acoustics of a concert hall.",
+                  "version": "1.50",
+                  "fxid": 48,
+                  "gid": 72,
+                  "group": 9,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "HALL.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "PreD",
+                        "explanation": "Adjusts the delay between input of the original sound and start of the reverb sound.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 99,
+                        "mdefault": 48
+                  },
+                  {
+                        "name": "Decay",
+                        "explanation": "Sets the duration of the reverberations.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 29,
+                        "mdefault": 9
+                  },
+                  {
+                        "name": "Mix",
+                        "explanation": "Adjusts the amount of effected sound that is mixed with the original sound.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 46
+                  },
+                  {
+                        "name": "Tail",
+                        "explanation": "When ON, effect sound continues even after effect is turned off. When OFF, effect sound stops right when effect is turned off.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 0
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "HD Hall",
+                  "description": "This is a dense hall reverb.",
+                  "version": "1.50",
+                  "fxid": 64,
+                  "gid": 72,
+                  "group": 9,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "HD_HALL.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "PreD",
+                        "explanation": "Adjusts the delay between input of the original sound and start of the reverb sound.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 199,
+                        "mdefault": 80
+                  },
+                  {
+                        "name": "Decay",
+                        "explanation": "Sets the duration of the reverberations.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 45
+                  },
+                  {
+                        "name": "Mix",
+                        "explanation": "Adjusts the amount of effected sound that is mixed with the original sound.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 62
+                  },
+                  {
+                        "name": "Tail",
+                        "explanation": "When ON, effect sound continues even after effect is turned off. When OFF, effect sound stops right when effect is turned off.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 0
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "Spring",
+                  "description": "This reverb effect simulates a spring reverb.",
+                  "version": "1.50",
+                  "fxid": 80,
+                  "gid": 72,
+                  "group": 9,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "SPRING.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "PreD",
+                        "explanation": "Adjusts the delay between input of the original sound and start of the reverb sound.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 99,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "Decay",
+                        "explanation": "Sets the duration of the reverberations.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 29,
+                        "mdefault": 19
+                  },
+                  {
+                        "name": "Mix",
+                        "explanation": "Adjusts the amount of effected sound that is mixed with the original sound.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Tail",
+                        "explanation": "When ON, effect sound continues even after effect is turned off. When OFF, effect sound stops right when effect is turned off.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 0
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "FD Spring",
+                  "description": "This simulates the spring reverb of the '65 Fender Twin Reverb.",
+                  "version": "1.40",
+                  "fxid": 96,
+                  "gid": 72,
+                  "group": 9,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "FDSPRING.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Color",
+                        "explanation": "Sets the tone of the effect type.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "Lo",
+                        "explanation": "Adjusts volume of low frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 100
+                  },
+                  {
+                        "name": "Hi",
+                        "explanation": "Adjusts volume of high frequencies.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 100
+                  },
+                  {
+                        "name": "Mix",
+                        "explanation": "Adjusts the amount of effected sound that is mixed with the original sound.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "Plate",
+                  "description": "This simulates a plate reverb.",
+                  "version": "1.50",
+                  "fxid": 112,
+                  "gid": 72,
+                  "group": 9,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "PLATEREV.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "PreD",
+                        "explanation": "Adjusts the delay between input of the original sound and start of the reverb sound.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 199,
+                        "mdefault": 8
+                  },
+                  {
+                        "name": "Decay",
+                        "explanation": "Sets the duration of the reverberations.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 52
+                  },
+                  {
+                        "name": "Mix",
+                        "explanation": "Adjusts the amount of effected sound that is mixed with the original sound.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 44
+                  },
+                  {
+                        "name": "Tail",
+                        "explanation": "When ON, effect sound continues even after effect is turned off. When OFF, effect sound stops right when effect is turned off.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 0
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "PDL Vol",
+                  "description": "The volume curve of the volume pedal can be set.",
+                  "version": "1.50",
+                  "fxid": 16,
+                  "gid": 88,
+                  "group": 11,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "PDL_VOL.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": true,
+                        "mmax": 100,
+                        "mdefault": 100
+                  },
+                  {
+                        "name": "Min",
+                        "explanation": "Adjusts the volume when the pedal is at minimum position.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "Max",
+                        "explanation": "Adjusts the volume when the pedal is at maximum position.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 100
+                  },
+                  {
+                        "name": "Curve",
+                        "explanation": "Sets the volume curve.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 0
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "BlackWah",
+                  "description": "This pedal wah effect simulates the Cry Baby.",
+                  "version": "1.50",
+                  "fxid": 32,
+                  "gid": 88,
+                  "group": 11,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "BLCK_WAH.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "FREQ",
+                        "explanation": "Adjusts the emphasized frequency.",
+                        "blackback": false,
+                        "pedal": true,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Range",
+                        "explanation": "Adjusts the frequency range processed by the effect.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Dry",
+                        "explanation": "Adjusts the volume of the unaffected sound.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 80
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "PDL Pitch",
+                  "description": "Use an expression pedal to change the pitch in real time with this effect.",
+                  "version": "1.40",
+                  "fxid": 80,
+                  "gid": 88,
+                  "group": 11,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "PDL_PIT.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Bend",
+                        "explanation": "Sets the amount of pitch shift.",
+                        "blackback": false,
+                        "pedal": true,
+                        "mmax": 100,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "Color",
+                        "explanation": "Sets the type of pitch change control with the expression pedal.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 8,
+                        "mdefault": 0
+                  },
+                  {
+                        "name": "Tone",
+                        "explanation": "Adjusts the tone.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 10,
+                        "mdefault": 10
+                  },
+                  {
+                        "name": "Mode",
+                        "explanation": "Sets the sound style.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 0
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "PDL Vibe",
+                  "description": "This vibe sound features unique undulations.",
+                  "version": "1.40",
+                  "fxid": 112,
+                  "gid": 88,
+                  "group": 11,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "PDL_VIBE.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Speed",
+                        "explanation": "Sets the speed of the modulation.",
+                        "blackback": false,
+                        "pedal": true,
+                        "mmax": 50,
+                        "mdefault": 25
+                  },
+                  {
+                        "name": "Depth",
+                        "explanation": "Sets the depth of the modulation.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 60
+                  },
+                  {
+                        "name": "Mode",
+                        "explanation": "Sets effect to vibrato or chorus.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 1,
+                        "mdefault": 1
+                  },
+                  {
+                        "name": "VOL",
+                        "explanation": "Adjusts the volume.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 80
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "PDL PHSR",
+                  "description": "The expression pedal controls the modulation frequency of this phaser.",
+                  "version": "1.40",
+                  "fxid": 144,
+                  "gid": 88,
+                  "group": 11,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "PDL_PHA.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "Rate",
+                        "explanation": "Sets the speed of the modulation.",
+                        "blackback": false,
+                        "pedal": true,
+                        "mmax": 49,
+                        "mdefault": 11
+                  },
+                  {
+                        "name": "Depth",
+                        "explanation": "Sets the depth of the modulation.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 100
+                  },
+                  {
+                        "name": "RESO",
+                        "explanation": "Sets effect resonance.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 50
+                  },
+                  {
+                        "name": "Color",
+                        "explanation": "Sets the tone of the effect type.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 3,
+                        "mdefault": 3
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "PDL Delay",
+                  "description": "The expression pedal controls the delay input level of this effect.",
+                  "version": "1.10",
+                  "fxid": 161,
+                  "gid": 88,
+                  "group": 11,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "PDLDLY3S.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "InLvl",
+                        "explanation": "Adjusts the delay input level.",
+                        "blackback": false,
+                        "pedal": true,
+                        "mmax": 100,
+                        "mdefault": 100
+                  },
+                  {
+                        "name": "Time",
+                        "explanation": "Sets the delay time.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 3018,
+                        "mdefault": 359
+                  },
+                  {
+                        "name": "F.B",
+                        "explanation": "Adjusts the feedback amount.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 40
+                  },
+                  {
+                        "name": "Mix",
+                        "explanation": "Adjusts the amount of effected sound that is mixed with the original sound.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 100
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "PDL Rev",
+                  "description": "The expression pedal controls the reverb input level of this effect.",
+                  "version": "1.40",
+                  "fxid": 176,
+                  "gid": 88,
+                  "group": 11,
+                  "numParams": 4,
+                  "numSlots": 1,
+                  "filename": "PDL_REV.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "InLvl",
+                        "explanation": "Adjusts the reverb input level.",
+                        "blackback": false,
+                        "pedal": true,
+                        "mmax": 100,
+                        "mdefault": 100
+                  },
+                  {
+                        "name": "PreD",
+                        "explanation": "Adjusts the delay between input of the original sound and start of the reverb sound.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 99,
+                        "mdefault": 48
+                  },
+                  {
+                        "name": "Decay",
+                        "explanation": "Sets the duration of the reverberations.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 29,
+                        "mdefault": 14
+                  },
+                  {
+                        "name": "Mix",
+                        "explanation": "Adjusts the amount of effected sound that is mixed with the original sound.",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 100,
+                        "mdefault": 80
+                  }
+            ]
+      },
+      {
+            "FX": {
+                  "name": "Output VP",
+                  "description": "This controls the product output level. This volume will be kept even when the patch is changed.",
+                  "version": "1.30",
+                  "fxid": 65520,
+                  "gid": 95,
+                  "group": 11,
+                  "numParams": 1,
+                  "numSlots": 1,
+                  "filename": "OUT_VP.ZD2.BMP"
+            },
+            "Parameters": [
+                  {
+                        "name": "-",
+                        "explanation": "-",
+                        "blackback": false,
+                        "pedal": false,
+                        "mmax": 5075,
+                        "mdefault": 4947
+                  }
+            ]
+      }
+]

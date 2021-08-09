@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "Air",
+            description: "This effect reproduces the ambience of a room, to create spatial depth.",
+            version: "1.50",
+            fxid: 16,
+            gid: 72,
+            group: 9,
+            numParams: 4,
+            numSlots: 1,
+            filename: "AIR.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "Size",
+                  explanation: "Sets the size of the space.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 99,
+                  mdefault: 19,
+            },
+            {
+                  name: "REF",
+                  explanation: "Adjusts the amount of reflection from the wall.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 10,
+                  mdefault: 5,
+            },
+            {
+                  name: "Mix",
+                  explanation: "Adjusts the amount of effected sound that is mixed with the original sound.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 60,
+            },
+            {
+                  name: "Tail",
+                  explanation: "When ON, effect sound continues even after effect is turned off. When OFF, effect sound stops right when effect is turned off.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 1,
+                  mdefault: 0,
+            },
+      ],
+}

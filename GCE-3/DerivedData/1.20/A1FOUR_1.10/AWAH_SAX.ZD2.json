@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "Sax A.Wah",
+            description: "This is an auto wah for saxophone. ",
+            version: "1.00",
+            fxid: 1042,
+            gid: 21,
+            group: 2,
+            numParams: 4,
+            numSlots: 1,
+            filename: "AWAH_SAX.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "Sense",
+                  explanation: "Adjust the sensitivity of the effect.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 9,
+                  mdefault: 4,
+            },
+            {
+                  name: "RESO",
+                  explanation: "Set the amount of resonance.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 10,
+                  mdefault: 5,
+            },
+            {
+                  name: "BAL",
+                  explanation: "Adjust the balance of the original and effect sounds.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 83,
+            },
+            {
+                  name: "INST",
+                  explanation: "Select the instrument used. \nTN/ALT: Tenor/alto sax \nSP: Soprano sax",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 1,
+                  mdefault: 0,
+            },
+      ],
+}

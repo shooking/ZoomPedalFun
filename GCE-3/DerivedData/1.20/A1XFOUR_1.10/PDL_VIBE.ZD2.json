@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "PDL Vibe",
+            description: "This vibe sound features unique undulations.",
+            version: "1.40",
+            fxid: 112,
+            gid: 88,
+            group: 11,
+            numParams: 4,
+            numSlots: 1,
+            filename: "PDL_VIBE.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "Speed",
+                  explanation: "Sets the speed of the modulation.",
+                  blackback: false,
+                  pedal: true,
+                  mmax: 50,
+                  mdefault: 25,
+            },
+            {
+                  name: "Depth",
+                  explanation: "Sets the depth of the modulation.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 60,
+            },
+            {
+                  name: "Mode",
+                  explanation: "Sets effect to vibrato or chorus.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 1,
+                  mdefault: 1,
+            },
+            {
+                  name: "VOL",
+                  explanation: "Adjusts the volume.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 80,
+            },
+      ],
+}

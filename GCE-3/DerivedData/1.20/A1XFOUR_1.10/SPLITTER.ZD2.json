@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "Splitter",
+            description: "This effect divides the signal into two bands (high/low) and lets you freely adjust the mix ratio of the two bands.",
+            version: "1.30",
+            fxid: 128,
+            gid: 20,
+            group: 2,
+            numParams: 4,
+            numSlots: 1,
+            filename: "SPLITTER.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "FREQ",
+                  explanation: "Adjusts the crossover point between the high frequency and low frequency band.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 15,
+                  mdefault: 2,
+            },
+            {
+                  name: "Lo",
+                  explanation: "Adjusts the mix ratio of the low frequency band.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 50,
+                  mdefault: 16,
+            },
+            {
+                  name: "Hi",
+                  explanation: "Adjusts the mix ratio of the high frequency band.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 50,
+                  mdefault: 19,
+            },
+            {
+                  name: "VOL",
+                  explanation: "Adjusts the volume.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 80,
+            },
+      ],
+}

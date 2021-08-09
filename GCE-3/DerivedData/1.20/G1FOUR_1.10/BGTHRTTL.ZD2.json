@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "HG THRTTL",
+            "description": "This models the sound of the Mesa Boogie THROTTLE BOX(GAIN SWITCH:HI / BOOST:ON).",
+            "version": "1.30",
+            "fxid": 224,
+            "gid": 24,
+            "group": 3,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "BGTHRTTL.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Gain",
+                  "explanation": "Adjusts the gain.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 78
+            },
+            {
+                  "name": "Tone",
+                  "explanation": "Adjusts the tone.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 56
+            },
+            {
+                  "name": "MdCut",
+                  "explanation": "Adjusts volume of middle frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 46
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 54
+            }
+      ]
+}

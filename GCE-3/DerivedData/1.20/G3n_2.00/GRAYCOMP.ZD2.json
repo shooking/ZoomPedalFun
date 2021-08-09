@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "GrayComp",
+            "description": "This models a ROSS Compressor. Added parameters allow you to adjust the tone.",
+            "version": "1.40",
+            "fxid": 96,
+            "gid": 8,
+            "group": 1,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "GRAYCOMP.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "SUSTN",
+                  "explanation": "Adjusts the sustain.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 63
+            },
+            {
+                  "name": "Lo",
+                  "explanation": "Adjusts volume of low frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "Hi",
+                  "explanation": "Adjusts volume of high frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 88
+            }
+      ]
+}

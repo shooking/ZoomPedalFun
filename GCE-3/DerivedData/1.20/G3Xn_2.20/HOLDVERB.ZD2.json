@@ -1,0 +1,79 @@
+{
+      "FX": {
+            "name": "HoldVerb",
+            "description": "This hold reverb effect is controlled using the control switch.",
+            "version": "1.10",
+            "fxid": 240,
+            "gid": 72,
+            "group": 9,
+            "numParams": 8,
+            "numSlots": 2,
+            "filename": "HOLDVERB.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "PreD",
+                  "explanation": "Adjusts the delay between input of the original sound and start of the reverb sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 199,
+                  "mdefault": 8
+            },
+            {
+                  "name": "Decay",
+                  "explanation": "Sets the duration of the reverberations. ",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 52
+            },
+            {
+                  "name": "Mix",
+                  "explanation": "Adjusts the amount of effected sound that is mixed with the original sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 44
+            },
+            {
+                  "name": "Tail",
+                  "explanation": "When ON, effect sound continues even after effect is turned off. When OFF, effect sound stops right when effect is turned off.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 0
+            },
+            {
+                  "name": "Color",
+                  "explanation": "Adjusts the reverb time of the low frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 58
+            },
+            {
+                  "name": "LoDMP",
+                  "explanation": "Adjusts low frequency damping in reverb sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 97
+            },
+            {
+                  "name": "HiDMP",
+                  "explanation": "Adjusts high frequency damping in reverb sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 95
+            },
+            {
+                  "name": "Hold",
+                  "explanation": "Sets the control switch function.",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 0
+            }
+      ]
+}

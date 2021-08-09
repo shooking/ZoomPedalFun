@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "P-BitCRSH",
+            description: "This effect creates a lo-fi sound.",
+            version: "1.40",
+            fxid: 240,
+            gid: 88,
+            group: 11,
+            numParams: 4,
+            numSlots: 1,
+            filename: "PDL_BITC.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "SMPL",
+                  explanation: "Sets sampling rate.",
+                  blackback: false,
+                  pedal: true,
+                  mmax: 50,
+                  mdefault: 2,
+            },
+            {
+                  name: "Bit",
+                  explanation: "Sets bit depth.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 13,
+                  mdefault: 5,
+            },
+            {
+                  name: "Tone",
+                  explanation: "Adjusts the tone.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 10,
+                  mdefault: 8,
+            },
+            {
+                  name: "BAL",
+                  explanation: "Adjusts the balance between original and effect sounds.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 90,
+            },
+      ],
+}

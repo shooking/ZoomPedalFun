@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "Vn A.Wah",
+            description: "This is an auto wah for violin.",
+            version: "1.00",
+            fxid: 644,
+            gid: 21,
+            group: 2,
+            numParams: 4,
+            numSlots: 1,
+            filename: "AWAH_VN.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "Sense",
+                  explanation: "Adjust the sensitivity of the effect.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 19,
+                  mdefault: 15,
+            },
+            {
+                  name: "RESO",
+                  explanation: "Set the amount of resonance.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 10,
+                  mdefault: 7,
+            },
+            {
+                  name: "LoMix",
+                  explanation: "Adjust the mix of the low frequencies.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 10,
+                  mdefault: 6,
+            },
+            {
+                  name: "BAL",
+                  explanation: "Adjust the balance of the original and effect sounds.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 100,
+            },
+      ],
+}

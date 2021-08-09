@@ -1,0 +1,79 @@
+{
+      "FX": {
+            "name": "AMPG SVT",
+            "description": "This models the sound of the Ampeg SVT.",
+            "version": "1.10",
+            "fxid": 16,
+            "gid": 36,
+            "group": 4,
+            "numParams": 8,
+            "numSlots": 2,
+            "filename": "SVT.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Bass",
+                  "explanation": "Adjusts volume of low frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 80,
+                  "mdefault": 40
+            },
+            {
+                  "name": "MID-F",
+                  "explanation": "Adjusts the center frequency of the mid-range.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 31,
+                  "mdefault": 13
+            },
+            {
+                  "name": "MID",
+                  "explanation": "Adjusts volume of middle frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 80,
+                  "mdefault": 40
+            },
+            {
+                  "name": "Treble",
+                  "explanation": "Adjusts volume of high frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 80,
+                  "mdefault": 40
+            },
+            {
+                  "name": "Gain",
+                  "explanation": "Adjusts the gain.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 30
+            },
+            {
+                  "name": "Ultra",
+                  "explanation": "Emphasizes high and low frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 4,
+                  "mdefault": 0
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 71
+            },
+            {
+                  "name": "SOLO",
+                  "explanation": "Sets the volume when the control switch is on.",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 8,
+                  "mdefault": 2
+            }
+      ]
+}

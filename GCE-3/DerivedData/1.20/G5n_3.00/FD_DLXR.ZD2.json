@@ -1,0 +1,79 @@
+{
+      "FX": {
+            "name": "FD DLXR",
+            "description": "This models the sound of the Fender '65 Deluxe Reverb.",
+            "version": "1.10",
+            "fxid": 42,
+            "gid": 32,
+            "group": 4,
+            "numParams": 8,
+            "numSlots": 2,
+            "filename": "FD_DLXR.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Input",
+                  "explanation": "Selects the input channel.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 0
+            },
+            {
+                  "name": "Bass",
+                  "explanation": "Adjusts volume of low frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 90,
+                  "mdefault": 33
+            },
+            {
+                  "name": "Treble",
+                  "explanation": "Adjusts volume of high frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 90,
+                  "mdefault": 55
+            },
+            {
+                  "name": "Gain",
+                  "explanation": "Adjusts the gain.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 90,
+                  "mdefault": 50
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 90,
+                  "mdefault": 90
+            },
+            {
+                  "name": "DEPTH",
+                  "explanation": "Sets the depth of the modulation.",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 90,
+                  "mdefault": 80
+            },
+            {
+                  "name": "SPEED",
+                  "explanation": "Sets the speed of the modulation.",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 40
+            },
+            {
+                  "name": "TRM VOL",
+                  "explanation": "Sets the volume when the tremolo is on.",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 9,
+                  "mdefault": 0
+            }
+      ]
+}

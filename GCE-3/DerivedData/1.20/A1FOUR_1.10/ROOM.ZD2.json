@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "Room",
+            description: "This reverb effect simulates the acoustics of a room.",
+            version: "1.50",
+            fxid: 32,
+            gid: 72,
+            group: 9,
+            numParams: 4,
+            numSlots: 1,
+            filename: "ROOM.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "PreD",
+                  explanation: "Adjusts the delay between input of the original sound and start of the reverb sound.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 99,
+                  mdefault: 4,
+            },
+            {
+                  name: "Decay",
+                  explanation: "Sets the duration of the reverberations.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 29,
+                  mdefault: 9,
+            },
+            {
+                  name: "Mix",
+                  explanation: "Adjusts the amount of effected sound that is mixed with the original sound.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 60,
+            },
+            {
+                  name: "Tail",
+                  explanation: "When ON, effect sound continues even after effect is turned off. When OFF, effect sound stops right when effect is turned off.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 1,
+                  mdefault: 0,
+            },
+      ],
+}

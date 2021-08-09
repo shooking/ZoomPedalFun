@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "LoopRoll",
+            "description": "This effect allows you use the footswitch to sample and hold what you play.",
+            "version": "1.20",
+            "fxid": 64,
+            "gid": 56,
+            "group": 7,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "LOOPROLL.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Time",
+                  "explanation": "Sets the loop time.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 4006,
+                  "mdefault": 3992
+            },
+            {
+                  "name": "Duty",
+                  "explanation": "Sets the time that the sample-and-hold sound is produced.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 75,
+                  "mdefault": 75
+            },
+            {
+                  "name": "BAL",
+                  "explanation": "Adjusts the balance between original and effect sounds.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 100
+            },
+            {
+                  "name": "ON/OFF",
+                  "explanation": "Sets the foot switch function.",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 1
+            }
+      ]
+}

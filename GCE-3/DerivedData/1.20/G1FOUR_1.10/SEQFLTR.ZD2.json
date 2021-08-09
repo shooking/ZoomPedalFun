@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "SeqFLTR",
+            "description": "The sequence filter has the flavor of a Z.Vex Seek-Wah.",
+            "version": "1.50",
+            "fxid": 64,
+            "gid": 16,
+            "group": 2,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "SEQFLTR.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Step",
+                  "explanation": "Adjusts number of sequence steps.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 6,
+                  "mdefault": 6
+            },
+            {
+                  "name": "PTTRN",
+                  "explanation": "Sets effect pattern.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 7,
+                  "mdefault": 6
+            },
+            {
+                  "name": "Speed",
+                  "explanation": "Sets the speed of the modulation.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 77,
+                  "mdefault": 25
+            },
+            {
+                  "name": "RESO",
+                  "explanation": "Sets effect resonance.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 10,
+                  "mdefault": 10
+            }
+      ]
+}

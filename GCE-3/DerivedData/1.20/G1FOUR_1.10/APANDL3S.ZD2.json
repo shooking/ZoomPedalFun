@@ -1,0 +1,71 @@
+{
+      "FX": {
+            "name": "A-Pan DLY",
+            "description": "This combines auto pan and delay to create the effect of the stereo image moving cyclically.",
+            "version": "1.10",
+            "fxid": 209,
+            "gid": 64,
+            "group": 8,
+            "numParams": 7,
+            "numSlots": 2,
+            "filename": "APANDL3S.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Time",
+                  "explanation": "Sets the delay time.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1512,
+                  "mdefault": 222
+            },
+            {
+                  "name": "F.B",
+                  "explanation": "Adjusts the feedback amount.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 87
+            },
+            {
+                  "name": "Mix",
+                  "explanation": "Adjusts the amount of effected sound that is mixed with the original sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 53
+            },
+            {
+                  "name": "Link",
+                  "explanation": "Sets the order that the auto pan and delay are connected.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 1
+            },
+            {
+                  "name": "Cycle",
+                  "explanation": "Sets the speed of the sound movement.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 52,
+                  "mdefault": 26
+            },
+            {
+                  "name": "Width",
+                  "explanation": "Sets the width of the sound movement.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 50,
+                  "mdefault": 50
+            },
+            {
+                  "name": "Clip",
+                  "explanation": "Adjusts the amount of waveform clipping.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 10,
+                  "mdefault": 0
+            }
+      ]
+}

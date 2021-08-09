@@ -1,0 +1,71 @@
+{
+      "FX": {
+            "name": "ORG120",
+            "description": "This models the sound of the Orange Graphic120.",
+            "version": "1.00",
+            "fxid": 129,
+            "gid": 32,
+            "group": 4,
+            "numParams": 7,
+            "numSlots": 2,
+            "filename": "ORG1201U.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Input",
+                  "explanation": "Selects the input channel.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 1
+            },
+            {
+                  "name": "Color",
+                  "explanation": "Sets the tone of the effect type.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 5,
+                  "mdefault": 3
+            },
+            {
+                  "name": "Bass",
+                  "explanation": "Adjusts volume of low frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "Treble",
+                  "explanation": "Adjusts volume of high frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 60
+            },
+            {
+                  "name": "PRSNC",
+                  "explanation": "Adjusts volume of super-high frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "Gain",
+                  "explanation": "Adjusts the gain.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 53
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 100
+            }
+      ]
+}

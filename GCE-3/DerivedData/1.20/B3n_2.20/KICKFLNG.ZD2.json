@@ -1,0 +1,79 @@
+{
+      "FX": {
+            "name": "Kick FLNG",
+            "description": "This flanger is controlled using the control switch.",
+            "version": "1.30",
+            "fxid": 224,
+            "gid": 48,
+            "group": 6,
+            "numParams": 8,
+            "numSlots": 2,
+            "filename": "KICKFLNG.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "PreD",
+                  "explanation": "Sets pre-delay time of effect sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 4
+            },
+            {
+                  "name": "Depth",
+                  "explanation": "Sets the depth of the modulation.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 61
+            },
+            {
+                  "name": "Rate",
+                  "explanation": "Sets the speed of the modulation.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 41
+            },
+            {
+                  "name": "ON/OFF",
+                  "explanation": "Sets the foot switch function.",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 73
+            },
+            {
+                  "name": "RESO",
+                  "explanation": "Sets effect resonance.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 63
+            },
+            {
+                  "name": "Mix",
+                  "explanation": "Adjusts the amount of effected sound that is mixed with the original sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "RST-F",
+                  "explanation": "Adjusts the LFO reset frequency.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 0
+            },
+            {
+                  "name": "LFO",
+                  "explanation": "Sets the function when the control switch is on.",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 0
+            }
+      ]
+}

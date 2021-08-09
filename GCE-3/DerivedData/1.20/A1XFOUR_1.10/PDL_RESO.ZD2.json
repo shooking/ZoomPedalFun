@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "PDL Reso",
+            description: "Pedal wah with a strong character.",
+            version: "1.60",
+            fxid: 32,
+            gid: 92,
+            group: 11,
+            numParams: 4,
+            numSlots: 1,
+            filename: "PDL_RESO.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "FREQ",
+                  explanation: "Adjusts the emphasized frequency.",
+                  blackback: false,
+                  pedal: true,
+                  mmax: 49,
+                  mdefault: 11,
+            },
+            {
+                  name: "RESO",
+                  explanation: "Sets effect resonance.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 10,
+                  mdefault: 7,
+            },
+            {
+                  name: "Dry",
+                  explanation: "Adjusts the volume of the unaffected sound.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 50,
+            },
+            {
+                  name: "VOL",
+                  explanation: "Adjusts the volume.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 92,
+            },
+      ],
+}

@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "BassStCho",
+            "description": "This stereo chorus for bass has a clear sound quality.",
+            "version": "1.30",
+            "fxid": 32,
+            "gid": 52,
+            "group": 6,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "B_ST_CHO.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Depth",
+                  "explanation": "Sets the depth of the modulation.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 75
+            },
+            {
+                  "name": "Rate",
+                  "explanation": "Sets the speed of the modulation.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 49,
+                  "mdefault": 26
+            },
+            {
+                  "name": "LoCut",
+                  "explanation": "Sets the cut-off frequency in the low range of the effect sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 10,
+                  "mdefault": 3
+            },
+            {
+                  "name": "Mix",
+                  "explanation": "Adjusts the amount of effected sound that is mixed with the original sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 76
+            }
+      ]
+}

@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "TheVibe",
+            "description": "This vibe sound features unique undulations.",
+            "version": "1.50",
+            "fxid": 96,
+            "gid": 48,
+            "group": 6,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "THEVIBE.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Speed",
+                  "explanation": "Sets the speed of the modulation.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 50,
+                  "mdefault": 25
+            },
+            {
+                  "name": "Depth",
+                  "explanation": "Sets the depth of the modulation.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 60
+            },
+            {
+                  "name": "Mode",
+                  "explanation": "Sets effect to vibrato or chorus.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 1
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 80
+            }
+      ]
+}

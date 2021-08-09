@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "SlwAtkDly",
+            "description": "This effect combines slow attack and delay.",
+            "version": "1.10",
+            "fxid": 272,
+            "gid": 64,
+            "group": 8,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "SLWATKDL.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Swell",
+                  "explanation": "Adjusts the attack time.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 49,
+                  "mdefault": 24
+            },
+            {
+                  "name": "Time",
+                  "explanation": "Sets the delay time. ",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1914,
+                  "mdefault": 489
+            },
+            {
+                  "name": "F.B",
+                  "explanation": "Adjusts the feedback amount.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 71
+            },
+            {
+                  "name": "Mix",
+                  "explanation": "Adjusts the amount of effected sound that is mixed with the original sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 64
+            }
+      ]
+}

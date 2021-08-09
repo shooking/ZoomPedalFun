@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "HotSpice",
+            description: "This effect simulates a sitar tone.",
+            version: "1.30",
+            fxid: 80,
+            gid: 56,
+            group: 7,
+            numParams: 4,
+            numSlots: 1,
+            filename: "HOTSPICE.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "Bend",
+                  explanation: "Adjust the depth of the pitch bend.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 11,
+            },
+            {
+                  name: "Buzz",
+                  explanation: "Adjust the buzzing tone.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 57,
+            },
+            {
+                  name: "+1oct",
+                  explanation: "Adjust the volume of one octave up.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 36,
+            },
+            {
+                  name: "VOL",
+                  explanation: "Adjusts the volume.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 80,
+            },
+      ],
+}

@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "LL36",
+            description: "Body characteristics of a YAMAHA LL36, which features a thick solid sound with a balanced tone.",
+            version: "1.00",
+            fxid: 320,
+            gid: 162,
+            group: 20,
+            numParams: 4,
+            numSlots: 1,
+            filename: "MDL_LL36.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "Gain",
+                  explanation: "Adjusts the gain.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 48,
+                  mdefault: 24,
+            },
+            {
+                  name: "Bass",
+                  explanation: "Adjusts volume of low frequencies.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 50,
+            },
+            {
+                  name: "MID",
+                  explanation: "Adjusts volume of middle frequencies.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 50,
+            },
+            {
+                  name: "Treble",
+                  explanation: "Adjusts volume of high frequencies.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 50,
+            },
+      ],
+}

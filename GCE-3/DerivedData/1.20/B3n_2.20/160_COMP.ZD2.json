@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "160 Comp",
+            "description": "This compressor is in the style of the dbx 160A.",
+            "version": "1.30",
+            "fxid": 48,
+            "gid": 12,
+            "group": 1,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "160_COMP.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "THRSH",
+                  "explanation": "Adjusts the threshold that determines when the effect is activated.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 60,
+                  "mdefault": 38
+            },
+            {
+                  "name": "Ratio",
+                  "explanation": "Adjusts the compression ratio.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 90,
+                  "mdefault": 30
+            },
+            {
+                  "name": "Knee",
+                  "explanation": "Sets the type of knee.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 1
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 80
+            }
+      ]
+}

@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "PDL FLNGR",
+            description: "The expression pedal controls the emphasized frequency of this flanger.",
+            version: "1.40",
+            fxid: 256,
+            gid: 88,
+            group: 11,
+            numParams: 4,
+            numSlots: 1,
+            filename: "PDL_FLNG.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "FREQ",
+                  explanation: "This sets the emphasized frequency.",
+                  blackback: false,
+                  pedal: true,
+                  mmax: 100,
+                  mdefault: 50,
+            },
+            {
+                  name: "RESO",
+                  explanation: "Sets effect resonance.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 20,
+                  mdefault: 18,
+            },
+            {
+                  name: "HiDMP",
+                  explanation: "Adjusts the treble attenuation of the effect sound.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 10,
+                  mdefault: 8,
+            },
+            {
+                  name: "Mix",
+                  explanation: "Adjusts the amount of effected sound that is mixed with the original sound.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 65,
+            },
+      ],
+}

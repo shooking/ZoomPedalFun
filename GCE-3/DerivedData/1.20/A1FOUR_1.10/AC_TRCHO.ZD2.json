@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "AG Chorus",
+            description: "This three-pole chorus has been tailored for acoustic guitar. When connected in stereo, it can provide a wide chorus effect.",
+            version: "1.00",
+            fxid: 16,
+            gid: 50,
+            group: 6,
+            numParams: 4,
+            numSlots: 1,
+            filename: "AC_TRCHO.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "Speed",
+                  explanation: "Set the modulation speed.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 29,
+            },
+            {
+                  name: "Depth",
+                  explanation: "Set the modulation depth.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 80,
+            },
+            {
+                  name: "Tone",
+                  explanation: "Adjust the tone.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 100,
+            },
+            {
+                  name: "Mix",
+                  explanation: "Adjust the amount of effect sound mixed with the original sound.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 41,
+            },
+      ],
+}

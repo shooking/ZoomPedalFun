@@ -1,0 +1,79 @@
+{
+      "FX": {
+            "name": "EG FLTR",
+            "description": "This filter effect is controlled using the control switch.",
+            "version": "1.30",
+            "fxid": 128,
+            "gid": 16,
+            "group": 2,
+            "numParams": 8,
+            "numSlots": 2,
+            "filename": "EGFILTER.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "FREQ1",
+                  "explanation": "Sets the frequency when the control switch is off.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 100
+            },
+            {
+                  "name": "FREQ2",
+                  "explanation": "Sets the frequency when the control switch is on.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 16
+            },
+            {
+                  "name": "RESO",
+                  "explanation": "Sets effect resonance.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 35
+            },
+            {
+                  "name": "Type",
+                  "explanation": "Sets filter type.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 5,
+                  "mdefault": 4
+            },
+            {
+                  "name": "Speed",
+                  "explanation": "Sets the speed of the modulation.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 25
+            },
+            {
+                  "name": "BAL",
+                  "explanation": "Adjusts the balance between original and effect sounds.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 100
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 72
+            },
+            {
+                  "name": "CNTRL",
+                  "explanation": "Sets the control switch function.",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 2,
+                  "mdefault": 2
+            }
+      ]
+}

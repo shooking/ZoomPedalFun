@@ -1,0 +1,23 @@
+{
+      FX: {
+            name: "Anti FB",
+            description: "This function detects and cuts a frequency band that is causing feedback to reduce it.",
+            version: "1.00",
+            fxid: 65520,
+            gid: 23,
+            group: 2,
+            numParams: 1,
+            numSlots: 1,
+            filename: "ANTI_FB.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "FREQ",
+                  explanation: "Set the cut frequency band. When AUTO is selected, the feedback frequency band will be automatically detected when the effect is on.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 139,
+                  mdefault: 0,
+            },
+      ],
+}

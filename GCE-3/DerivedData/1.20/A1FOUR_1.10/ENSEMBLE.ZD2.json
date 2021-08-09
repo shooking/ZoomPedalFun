@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "Ensemble",
+            description: "This is an eight-voice doubling effect. The effect sounds like multiple people performing the same phrase.",
+            version: "1.00",
+            fxid: 4128,
+            gid: 53,
+            group: 6,
+            numParams: 4,
+            numSlots: 1,
+            filename: "ENSEMBLE.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "Depth",
+                  explanation: "Adjust the pitch variation depth of the effect sound.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 50,
+            },
+            {
+                  name: "MID",
+                  explanation: "Adjust the volume of the effect sound mid frequencies.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 12,
+                  mdefault: 2,
+            },
+            {
+                  name: "Hi",
+                  explanation: "Adjust the volume of the effect sound high frequencies.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 12,
+                  mdefault: 9,
+            },
+            {
+                  name: "BAL",
+                  explanation: "Adjust the balance of the original and effect sounds.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 64,
+            },
+      ],
+}

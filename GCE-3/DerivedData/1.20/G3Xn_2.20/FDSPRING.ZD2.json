@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "FD Spring",
+            "description": "This simulates the spring reverb of the '65 Fender Twin Reverb.",
+            "version": "1.40",
+            "fxid": 96,
+            "gid": 72,
+            "group": 9,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "FDSPRING.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Color",
+                  "explanation": "Sets the tone of the effect type.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 0
+            },
+            {
+                  "name": "Lo",
+                  "explanation": "Adjusts volume of low frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 100
+            },
+            {
+                  "name": "Hi",
+                  "explanation": "Adjusts volume of high frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 100
+            },
+            {
+                  "name": "Mix",
+                  "explanation": "Adjusts the amount of effected sound that is mixed with the original sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            }
+      ]
+}

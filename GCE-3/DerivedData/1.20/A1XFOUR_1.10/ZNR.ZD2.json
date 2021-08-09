@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "ZNR",
+            description: "ZOOM's unique noise reduction cuts noise during pauses in playing without affecting the tone.",
+            version: "1.50",
+            fxid: 64,
+            gid: 8,
+            group: 1,
+            numParams: 4,
+            numSlots: 1,
+            filename: "ZNR.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "DETCT",
+                  explanation: "Sets control signal detection level.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 1,
+                  mdefault: 1,
+            },
+            {
+                  name: "Depth",
+                  explanation: "Sets the depth of noise reduction.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 100,
+            },
+            {
+                  name: "THRSH",
+                  explanation: "Adjusts the effect sensitivity.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 30,
+            },
+            {
+                  name: "Decay",
+                  explanation: "Adjust the envelope release.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 0,
+            },
+      ],
+}

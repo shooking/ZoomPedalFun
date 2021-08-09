@@ -1,0 +1,79 @@
+{
+      "FX": {
+            "name": "D.I Plus",
+            "description": "This is a simulation of the MXR Bass D.I.+, which has both clean and distortion channels.",
+            "version": "1.10",
+            "fxid": 32,
+            "gid": 28,
+            "group": 3,
+            "numParams": 8,
+            "numSlots": 2,
+            "filename": "DI_PLUS.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Bass",
+                  "explanation": "Adjusts volume of low frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "MID",
+                  "explanation": "Adjusts the volume of middle frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "Treble",
+                  "explanation": "Adjusts volume of high frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "Color",
+                  "explanation": "This turns the preset EQ ON or OFF for the clean channel.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 1
+            },
+            {
+                  "name": "CL VOL",
+                  "explanation": "Adjusts the volume of the clean channel.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "BLEND",
+                  "explanation": "Adjusts the balance between the original sound and the effected sound.",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 70
+            },
+            {
+                  "name": "GAIN",
+                  "explanation": "Adjusts the gain.",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 70
+            },
+            {
+                  "name": "DS VOL",
+                  "explanation": "Adjusts the volume of the distortion channel.",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 75
+            }
+      ]
+}

@@ -1,0 +1,71 @@
+{
+      "FX": {
+            "name": "MS 45os",
+            "description": "This models the sound of the Marshall JTM 45 Offset.",
+            "version": "1.00",
+            "fxid": 27,
+            "gid": 32,
+            "group": 4,
+            "numParams": 7,
+            "numSlots": 2,
+            "filename": "MS45OS1U.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Bass",
+                  "explanation": "Adjusts volume of low frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 30
+            },
+            {
+                  "name": "MID",
+                  "explanation": "Adjusts volume of middle frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 70
+            },
+            {
+                  "name": "Treble",
+                  "explanation": "Adjusts volume of high frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 65
+            },
+            {
+                  "name": "PRSNC",
+                  "explanation": "Adjusts volume of super-high frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 30
+            },
+            {
+                  "name": "Input1",
+                  "explanation": "Adjusts the gain of the input1.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 101,
+                  "mdefault": 61
+            },
+            {
+                  "name": "Input2",
+                  "explanation": "Adjusts the gain of the input2.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 101,
+                  "mdefault": 0
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 80
+            }
+      ]
+}

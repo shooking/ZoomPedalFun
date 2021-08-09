@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "Octave",
+            "description": "This effect adds sound one octave and two octaves below the original sound.",
+            "version": "1.40",
+            "fxid": 128,
+            "gid": 48,
+            "group": 6,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "OCTAVE.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "OCT1",
+                  "explanation": "Adjusts the level of the sound one octave below the effect sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 80
+            },
+            {
+                  "name": "OCT2",
+                  "explanation": "Adjusts the level of the sound two octaves below the effect sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 15
+            },
+            {
+                  "name": "Tone",
+                  "explanation": "Adjusts the tone.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 10,
+                  "mdefault": 8
+            },
+            {
+                  "name": "Dry",
+                  "explanation": "Adjusts the volume of the unaffected sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 100
+            }
+      ]
+}

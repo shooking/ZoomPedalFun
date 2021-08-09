@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "BassPEQ",
+            description: "This 1-band parametric equalizer is suitable for the bass frequency range.",
+            version: "1.30",
+            fxid: 112,
+            gid: 20,
+            group: 2,
+            numParams: 4,
+            numSlots: 1,
+            filename: "BA_PEQ.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "FREQ",
+                  explanation: "Sets the frequency of the equalizer.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 37,
+                  mdefault: 8,
+            },
+            {
+                  name: "Q",
+                  explanation: "Adjusts equalizer Q.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 67,
+                  mdefault: 5,
+            },
+            {
+                  name: "Gain",
+                  explanation: "Adjusts the gain.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 80,
+                  mdefault: 40,
+            },
+            {
+                  name: "VOL",
+                  explanation: "Adjusts the volume.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 80,
+            },
+      ],
+}

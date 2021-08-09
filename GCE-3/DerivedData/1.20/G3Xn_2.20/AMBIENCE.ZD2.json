@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "Ambience",
+            "description": "This effect adds a natural ambience (air) to the sound.",
+            "version": "1.20",
+            "fxid": 176,
+            "gid": 72,
+            "group": 9,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "AMBIENCE.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "PreD",
+                  "explanation": "Adjusts the delay between input of the original sound and start of the reverb sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 200,
+                  "mdefault": 29
+            },
+            {
+                  "name": "Decay",
+                  "explanation": "Sets the duration of the reverberations.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 70
+            },
+            {
+                  "name": "Mix",
+                  "explanation": "Adjusts the amount of effected sound that is mixed with the original sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "Tail",
+                  "explanation": "When ON, effect sound continues even after effect is turned off. The dry sound also continues to have the same tone as when the effect was on. When OFF, effect sound stops right when effect is turned off.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 0
+            }
+      ]
+}

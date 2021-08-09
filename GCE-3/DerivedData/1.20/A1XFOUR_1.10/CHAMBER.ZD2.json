@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "Chamber",
+            description: "This effect simulates the reverberations of a chamber-sized room.",
+            version: "1.40",
+            fxid: 208,
+            gid: 72,
+            group: 9,
+            numParams: 4,
+            numSlots: 1,
+            filename: "CHAMBER.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "PreD",
+                  explanation: "Adjusts the delay between input of the original sound and start of the reverb sound.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 200,
+                  mdefault: 24,
+            },
+            {
+                  name: "Decay",
+                  explanation: "Sets the duration of the reverberations.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 50,
+            },
+            {
+                  name: "Mix",
+                  explanation: "Adjusts the amount of effected sound that is mixed with the original sound.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 48,
+            },
+            {
+                  name: "Tail",
+                  explanation: "When ON, effect sound continues even after effect is turned off. When OFF, effect sound stops right when effect is turned off.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 1,
+                  mdefault: 1,
+            },
+      ],
+}

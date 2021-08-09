@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "UpOctBSTR",
+            "description": "This effect adds an upper octave to the original sound. We recommend using the front guitar pickup.",
+            "version": "1.20",
+            "fxid": 320,
+            "gid": 24,
+            "group": 3,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "UPOCTBST.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "UpOct",
+                  "explanation": "Adjusts the amount of effected sound that is mixed with the original sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 65
+            },
+            {
+                  "name": "DryMx",
+                  "explanation": "Adjusts the volume of the unaffected sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 47
+            },
+            {
+                  "name": "Bottom",
+                  "explanation": "Adjusts volume of low frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 75
+            },
+            {
+                  "name": "PRSNC",
+                  "explanation": "Adjusts volume of super-high frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 70
+            }
+      ]
+}

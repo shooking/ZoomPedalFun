@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "TB MK1.5",
+            "description": "This is a classic fuzz effect.",
+            "version": "1.30",
+            "fxid": 144,
+            "gid": 24,
+            "group": 3,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "TB_MK15.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "ATTCK",
+                  "explanation": "Adjusts the gain.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 90
+            },
+            {
+                  "name": "Tone",
+                  "explanation": "Adjusts the tone.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 100
+            },
+            {
+                  "name": "Color",
+                  "explanation": "Sets the sound color.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 1
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 92
+            }
+      ]
+}

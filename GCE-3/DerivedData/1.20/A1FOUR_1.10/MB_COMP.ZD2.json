@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "MB Comp",
+            description: "This is a simulation of the MultiComp (MODE:MB). ",
+            version: "1.30",
+            fxid: 80,
+            gid: 12,
+            group: 1,
+            numParams: 4,
+            numSlots: 1,
+            filename: "MB_COMP.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "Comp",
+                  explanation: "Adjusts the depth of the compression.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 70,
+            },
+            {
+                  name: "LoTHR",
+                  explanation: "Adjusts the threshold that triggers the low-frequency effect.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 50,
+            },
+            {
+                  name: "HiTHR",
+                  explanation: "Adjusts the threshold that triggers the high-frequency effect.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 50,
+            },
+            {
+                  name: "VOL",
+                  explanation: "Adjusts the volume.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 25,
+            },
+      ],
+}

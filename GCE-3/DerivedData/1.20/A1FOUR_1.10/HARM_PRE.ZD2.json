@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "Hm Preamp",
+            description: "Preamp for Hamonica.",
+            version: "1.00",
+            fxid: 356,
+            gid: 21,
+            group: 2,
+            numParams: 4,
+            numSlots: 1,
+            filename: "HARM_PRE.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "Gain",
+                  explanation: "Set the gain.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 50,
+            },
+            {
+                  name: "Low",
+                  explanation: "Set the volume of low frequencies.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 48,
+                  mdefault: 24,
+            },
+            {
+                  name: "MID",
+                  explanation: "Set the volume of middle frequencies.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 48,
+                  mdefault: 24,
+            },
+            {
+                  name: "Hi",
+                  explanation: "Set the volume of high frequencies.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 48,
+                  mdefault: 24,
+            },
+      ],
+}

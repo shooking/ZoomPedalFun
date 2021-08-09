@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "SynTlk",
+            "description": "This effect produces a synthesizer sound similar to a talking modulator producing vowels.",
+            "version": "1.30",
+            "fxid": 32,
+            "gid": 60,
+            "group": 7,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "SYNTLK.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Decay",
+                  "explanation": "Adjusts the rate of sound change.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 40
+            },
+            {
+                  "name": "Type",
+                  "explanation": "Selects a vowel variation.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 3,
+                  "mdefault": 1
+            },
+            {
+                  "name": "Tone",
+                  "explanation": "Adjusts the tone.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 10,
+                  "mdefault": 8
+            },
+            {
+                  "name": "BAL",
+                  "explanation": "Adjusts the balance between original and effect sounds.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            }
+      ]
+}

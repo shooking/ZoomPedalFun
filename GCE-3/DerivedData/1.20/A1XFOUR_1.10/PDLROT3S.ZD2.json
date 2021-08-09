@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "PDL Roto",
+            description: "Simulates a rotary speaker.",
+            version: "1.10",
+            fxid: 225,
+            gid: 88,
+            group: 11,
+            numParams: 4,
+            numSlots: 1,
+            filename: "PDLROT3S.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "Mode",
+                  explanation: "Sets the rotary mode.",
+                  blackback: false,
+                  pedal: true,
+                  mmax: 1,
+                  mdefault: 0,
+            },
+            {
+                  name: "Drive",
+                  explanation: "Adjusts the amount of amplification from the preamp.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 20,
+            },
+            {
+                  name: "BAL",
+                  explanation: "Adjusts the balance between the horn (high frequencies) and the drum (low frequencies).",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 50,
+            },
+            {
+                  name: "VOL",
+                  explanation: "Adjusts the volume.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 80,
+            },
+      ],
+}

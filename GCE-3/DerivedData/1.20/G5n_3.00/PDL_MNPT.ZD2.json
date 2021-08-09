@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "PDL MnPit",
+            "description": "This is a pitch shifter specially for monophonic sound (single-note playing), which allows the pitch to be shifted in real time with the expression pedal.",
+            "version": "1.40",
+            "fxid": 96,
+            "gid": 88,
+            "group": 11,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "PDL_MNPT.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Bend",
+                  "explanation": "Sets the amount of pitch shift.",
+                  "blackback": false,
+                  "pedal": true,
+                  "mmax": 100,
+                  "mdefault": 0
+            },
+            {
+                  "name": "Color",
+                  "explanation": "Sets the type of pitch change control with the expression pedal.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 8,
+                  "mdefault": 0
+            },
+            {
+                  "name": "Tone",
+                  "explanation": "Adjusts the tone.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 10,
+                  "mdefault": 10
+            },
+            {
+                  "name": "Mode",
+                  "explanation": "Sets the sound style.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 0
+            }
+      ]
+}

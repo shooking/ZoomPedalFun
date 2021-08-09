@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "Low EQ",
+            description: "Designed for low frequencies, this equalizer allows you to select the type.",
+            version: "1.30",
+            fxid: 144,
+            gid: 20,
+            group: 2,
+            numParams: 4,
+            numSlots: 1,
+            filename: "LOW_EQ.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "Type",
+                  explanation: "Sets filter type.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 1,
+                  mdefault: 0,
+            },
+            {
+                  name: "FREQ",
+                  explanation: "Sets the frequency of the filter.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 55,
+                  mdefault: 10,
+            },
+            {
+                  name: "Gain",
+                  explanation: "Adjusts the gain. \nThis setting is disabled when the Type parameter is set to HPF.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 48,
+                  mdefault: 36,
+            },
+            {
+                  name: "VOL",
+                  explanation: "Adjusts the volume.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 80,
+            },
+      ],
+}

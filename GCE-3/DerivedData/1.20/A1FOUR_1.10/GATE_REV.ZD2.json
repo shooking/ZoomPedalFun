@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "GateRev",
+            description: "This unique reverb is good for percussive playing.",
+            version: "1.40",
+            fxid: 224,
+            gid: 72,
+            group: 9,
+            numParams: 4,
+            numSlots: 1,
+            filename: "GATE_REV.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "Color",
+                  explanation: "Sets the sound color.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 4,
+                  mdefault: 0,
+            },
+            {
+                  name: "Decay",
+                  explanation: "Sets the duration of the reverberations.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 55,
+            },
+            {
+                  name: "Tone",
+                  explanation: "Adjusts the tone.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 50,
+            },
+            {
+                  name: "BAL",
+                  explanation: "Adjusts the balance between original and effect sounds.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 60,
+            },
+      ],
+}

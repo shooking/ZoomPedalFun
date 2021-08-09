@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "PitchSHFT",
+            description: "This effect shifts the pitch up or down.",
+            version: "1.50",
+            fxid: 176,
+            gid: 48,
+            group: 6,
+            numParams: 4,
+            numSlots: 1,
+            filename: "PITCHSHF.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "Shift",
+                  explanation: "Adjusts the pitch shift amount in semitones. Selecting \"0\" gives a detuning effect.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 25,
+                  mdefault: 19,
+            },
+            {
+                  name: "Fine",
+                  explanation: "Allows fine adjustment of pitch shift amount in Cent (1/100 semitone) steps.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 50,
+                  mdefault: 25,
+            },
+            {
+                  name: "Tone",
+                  explanation: "Adjusts the tone.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 10,
+                  mdefault: 7,
+            },
+            {
+                  name: "BAL",
+                  explanation: "Adjusts the balance between original and effect sounds.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 40,
+            },
+      ],
+}

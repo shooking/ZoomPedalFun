@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "Tp P.Wah",
+            description: "This is a pedal wah for trumpet.",
+            version: "1.00",
+            fxid: 896,
+            gid: 93,
+            group: 11,
+            numParams: 4,
+            numSlots: 1,
+            filename: "PWAH_TP.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "FREQ",
+                  explanation: "Set the emphasized frequency.",
+                  blackback: false,
+                  pedal: true,
+                  mmax: 50,
+                  mdefault: 25,
+            },
+            {
+                  name: "Depth",
+                  explanation: "Set the depth of the wah effect.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 40,
+            },
+            {
+                  name: "Peak",
+                  explanation: "Set the amount of resonance when the filter is open.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 10,
+                  mdefault: 5,
+            },
+            {
+                  name: "VOL",
+                  explanation: "Adjust the volume.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 50,
+            },
+      ],
+}

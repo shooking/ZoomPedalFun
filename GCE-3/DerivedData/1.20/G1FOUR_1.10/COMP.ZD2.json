@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "Comp",
+            "description": "This compressor in the style of the MXR Dyna Comp.",
+            "version": "1.40",
+            "fxid": 16,
+            "gid": 8,
+            "group": 1,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "COMP.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Sense",
+                  "explanation": "Adjusts the sensitivity of the effect.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 10,
+                  "mdefault": 6
+            },
+            {
+                  "name": "ATTCK",
+                  "explanation": "Sets compressor attack speed to Fast or Slow.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 0
+            },
+            {
+                  "name": "Tone",
+                  "explanation": "Adjusts the tone.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 10,
+                  "mdefault": 6
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 80
+            }
+      ]
+}

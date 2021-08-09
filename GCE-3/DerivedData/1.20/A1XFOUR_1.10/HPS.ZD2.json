@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "HPS",
+            description: "This intelligent pitch shifter outputs the effect sound with the pitch shifted according to scale and key settings.",
+            version: "1.50",
+            fxid: 208,
+            gid: 48,
+            group: 6,
+            numParams: 4,
+            numSlots: 1,
+            filename: "HPS.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "Scale",
+                  explanation: "Sets the pitch of the pitch-shifted sound added to the original sound.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 9,
+                  mdefault: 6,
+            },
+            {
+                  name: "Key",
+                  explanation: "Sets the tonic (root) of the scale used for pitch shifting.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 11,
+                  mdefault: 0,
+            },
+            {
+                  name: "Tone",
+                  explanation: "Adjusts the tone.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 10,
+                  mdefault: 6,
+            },
+            {
+                  name: "Mix",
+                  explanation: "Adjusts the amount of effected sound that is mixed with the original sound.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 70,
+            },
+      ],
+}

@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "Cry",
+            description: "This effect varies the sound like a talking modulator.",
+            version: "1.40",
+            fxid: 48,
+            gid: 16,
+            group: 2,
+            numParams: 4,
+            numSlots: 1,
+            filename: "CRY.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "Range",
+                  explanation: "Adjusts the frequency range processed by the effect.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 9,
+                  mdefault: 6,
+            },
+            {
+                  name: "RESO",
+                  explanation: "Sets effect resonance.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 10,
+                  mdefault: 8,
+            },
+            {
+                  name: "Sense",
+                  explanation: "Adjusts the sensitivity of the effect.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 19,
+                  mdefault: 16,
+            },
+            {
+                  name: "BAL",
+                  explanation: "Adjusts the balance between original and effect sounds.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 100,
+            },
+      ],
+}

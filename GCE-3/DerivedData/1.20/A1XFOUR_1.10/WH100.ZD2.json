@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "WAH100",
+            description: "Simulates an Ibanez wah pedal.",
+            version: "1.50",
+            fxid: 64,
+            gid: 88,
+            group: 11,
+            numParams: 4,
+            numSlots: 1,
+            filename: "WH100.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "FREQ",
+                  explanation: "Adjusts the emphasized frequency.",
+                  blackback: false,
+                  pedal: true,
+                  mmax: 50,
+                  mdefault: 25,
+            },
+            {
+                  name: "Depth",
+                  explanation: "Sets the depth of the wah.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 40,
+            },
+            {
+                  name: "Dry",
+                  explanation: "Adjusts the volume of the unaffected sound.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 0,
+            },
+            {
+                  name: "VOL",
+                  explanation: "Adjusts the volume.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 80,
+            },
+      ],
+}

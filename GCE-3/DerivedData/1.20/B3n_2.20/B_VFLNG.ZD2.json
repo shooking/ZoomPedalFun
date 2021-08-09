@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "BaVinFLNG",
+            "description": "This analog flanger sound is similar to an MXR M-117R.A parameter has been added to cut low frequencies from the effect sound.",
+            "version": "1.30",
+            "fxid": 64,
+            "gid": 52,
+            "group": 6,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "B_VFLNG.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Depth",
+                  "explanation": "Sets the depth of the modulation.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 47
+            },
+            {
+                  "name": "Rate",
+                  "explanation": "Sets the speed of the modulation.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 78,
+                  "mdefault": 7
+            },
+            {
+                  "name": "RESO",
+                  "explanation": "Sets effect resonance.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 20,
+                  "mdefault": 18
+            },
+            {
+                  "name": "LoCut",
+                  "explanation": "Sets the cut-off frequency in the low range of the effect sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 10,
+                  "mdefault": 1
+            }
+      ]
+}

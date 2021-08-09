@@ -1,0 +1,47 @@
+{
+      FX: {
+            name: "BaDePiezo",
+            description: "This softens the characteristic tone of bass piezo pickups.",
+            version: "1.00",
+            fxid: 16,
+            gid: 18,
+            group: 2,
+            numParams: 4,
+            numSlots: 1,
+            filename: "DPZ_BA.ZD2.BMP",
+      },
+      Parameters: [
+            {
+                  name: "Gain",
+                  explanation: "Adjust the gain.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 12,
+                  mdefault: 6,
+            },
+            {
+                  name: "Mode",
+                  explanation: "Change the tone compensation mode.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 1,
+                  mdefault: 0,
+            },
+            {
+                  name: "LoBst",
+                  explanation: "Use to compensate for low frequencies, which are usually lacking when using piezo pickups.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 0,
+            },
+            {
+                  name: "HiCut",
+                  explanation: "This suppresses high frequencies, which tend to be unpleasant when using piezo pickups.",
+                  blackback: false,
+                  pedal: false,
+                  mmax: 100,
+                  mdefault: 0,
+            },
+      ],
+}

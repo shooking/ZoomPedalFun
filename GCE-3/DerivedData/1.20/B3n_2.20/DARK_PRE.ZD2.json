@@ -1,0 +1,79 @@
+{
+      "FX": {
+            "name": "Dark Pre",
+            "description": "This is a simulation of the Darkglass Electronics Microtubes B7K.",
+            "version": "1.10",
+            "fxid": 48,
+            "gid": 28,
+            "group": 3,
+            "numParams": 8,
+            "numSlots": 2,
+            "filename": "DARK_PRE.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Bass",
+                  "explanation": "Adjusts volume of low frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "L-MID",
+                  "explanation": "Adjusts the volume of lower middle frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "H-MID",
+                  "explanation": "Adjusts the volume of higher middle frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "Treble",
+                  "explanation": "Adjusts volume of high frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "Blend",
+                  "explanation": "Adjusts the balance between the original sound and the effected sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "Gain",
+                  "explanation": "Adjusts the gain.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 65
+            },
+            {
+                  "name": "BOOST",
+                  "explanation": "This sets the frequency bands boosted when the control switch is on.",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 2,
+                  "mdefault": 2
+            }
+      ]
+}
