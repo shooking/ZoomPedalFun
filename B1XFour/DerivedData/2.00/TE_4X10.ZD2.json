@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "TE4x10",
+            "description": "This models the sound of the TRACE ELLIOT 1048 cabinet with four 10\" speakers.",
+            "version": "1.20",
+            "fxid": 80,
+            "gid": 44,
+            "group": 5,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "TE_4X10.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "DYN20",
+                  "explanation": "Adjusts volume of the Electro-Voice RE-20.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "DYN57",
+                  "explanation": "Adjusts volume of the Shure SM57.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "Bottom",
+                  "explanation": "Adjusts volume of low frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "BAL",
+                  "explanation": "Adjusts the balance between original and effect sounds.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 100
+            }
+      ]
+}

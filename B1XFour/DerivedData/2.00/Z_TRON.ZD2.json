@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "Z Tron",
+            "description": "This is like a Q-Tron Envelope Filter in LP mode.",
+            "version": "1.30",
+            "fxid": 32,
+            "gid": 20,
+            "group": 2,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "Z_TRON.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Sense",
+                  "explanation": "Adjusts the sensitivity of the effect.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 19,
+                  "mdefault": 16
+            },
+            {
+                  "name": "RESO",
+                  "explanation": "Sets effect resonance.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 10,
+                  "mdefault": 7
+            },
+            {
+                  "name": "Dry",
+                  "explanation": "Adjusts the volume of the unaffected sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 25
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 83
+            }
+      ]
+}

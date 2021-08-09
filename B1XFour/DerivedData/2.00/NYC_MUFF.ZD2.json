@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "NYC Muff",
+            "description": "This models an Electro-Harmonix Big Muff Pi. An added parameter allows you to adjust the balance of original sound and distortion.",
+            "version": "1.40",
+            "fxid": 208,
+            "gid": 24,
+            "group": 3,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "NYC_MUFF.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "SUSTN",
+                  "explanation": "Adjusts the gain.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 70
+            },
+            {
+                  "name": "Tone",
+                  "explanation": "Adjusts the tone.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 55
+            },
+            {
+                  "name": "BAL",
+                  "explanation": "Adjusts the balance between original and effect sounds.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 100
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 58
+            }
+      ]
+}

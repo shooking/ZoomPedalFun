@@ -1,0 +1,79 @@
+{
+      "FX": {
+            "name": "EBH360",
+            "description": "This models the sound of the EBS HD360 bass amplifier.",
+            "version": "1.00",
+            "fxid": 129,
+            "gid": 36,
+            "group": 4,
+            "numParams": 8,
+            "numSlots": 2,
+            "filename": "EBH3601U.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Bass",
+                  "explanation": "Adjusts volume of low frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 40,
+                  "mdefault": 25
+            },
+            {
+                  "name": "MID-F",
+                  "explanation": "Adjusts the center frequency of the mid-range.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 31,
+                  "mdefault": 20
+            },
+            {
+                  "name": "MID",
+                  "explanation": "Adjusts volume of middle frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 40,
+                  "mdefault": 20
+            },
+            {
+                  "name": "Treble",
+                  "explanation": "Adjusts volume of high frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 40,
+                  "mdefault": 20
+            },
+            {
+                  "name": "BRGHT",
+                  "explanation": "Adjusts the high-frequency character.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 30
+            },
+            {
+                  "name": "Drive",
+                  "explanation": "Adjusts the gain.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 20
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "CHARA",
+                  "explanation": "Emphasizes high and low frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 0
+            }
+      ]
+}

@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "Defret",
+            "description": "Turns the sound from any bass guitar into a fretless bass sound.",
+            "version": "1.30",
+            "fxid": 64,
+            "gid": 60,
+            "group": 7,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "DEFRET.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Sense",
+                  "explanation": "Adjusts the sensitivity of the effect.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 30,
+                  "mdefault": 11
+            },
+            {
+                  "name": "Color",
+                  "explanation": "Adjusts the harmonics contents of the sound. Higher setting values result in stronger effect character.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 9,
+                  "mdefault": 7
+            },
+            {
+                  "name": "Tone",
+                  "explanation": "Adjusts the tone.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 49,
+                  "mdefault": 36
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 80
+            }
+      ]
+}

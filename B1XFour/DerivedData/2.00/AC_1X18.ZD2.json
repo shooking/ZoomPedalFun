@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "AC1x18",
+            "description": "This models an Acoustic 301 cabinet with one 18\" speaker.",
+            "version": "1.20",
+            "fxid": 96,
+            "gid": 44,
+            "group": 5,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "AC_1X18.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "DYN20",
+                  "explanation": "Adjusts volume of the Electro-Voice RE-20.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 83
+            },
+            {
+                  "name": "DYN57",
+                  "explanation": "Adjusts volume of the Shure SM57.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 57
+            },
+            {
+                  "name": "Bottom",
+                  "explanation": "Adjusts volume of low frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 38
+            },
+            {
+                  "name": "BAL",
+                  "explanation": "Adjusts the balance between original and effect sounds.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 100
+            }
+      ]
+}

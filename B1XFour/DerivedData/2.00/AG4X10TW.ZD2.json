@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "AG4x10TW",
+            "description": "This models an Aguilar GS410 cabinet with four 10\" speakers and a tweeter.",
+            "version": "1.20",
+            "fxid": 64,
+            "gid": 44,
+            "group": 5,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "AG4X10TW.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "DYN20",
+                  "explanation": "Adjusts volume of the Electro-Voice RE-20.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "DYN57",
+                  "explanation": "This adjusts the volume of the modeled sound captured from the tweeter by a Shure SM57.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "Bottom",
+                  "explanation": "Adjusts volume of low frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "BAL",
+                  "explanation": "Adjusts the balance between original and effect sounds.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 100
+            }
+      ]
+}

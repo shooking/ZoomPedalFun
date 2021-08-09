@@ -1,0 +1,71 @@
+{
+      "FX": {
+            "name": "SMR400",
+            "description": "This models the sound of the SWR SM-400.",
+            "version": "1.00",
+            "fxid": 49,
+            "gid": 36,
+            "group": 4,
+            "numParams": 7,
+            "numSlots": 2,
+            "filename": "SWR4001U.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Bass",
+                  "explanation": "Adjusts volume of low frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 60,
+                  "mdefault": 45
+            },
+            {
+                  "name": "MID-F",
+                  "explanation": "Adjusts the center frequency of the mid-range.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 31,
+                  "mdefault": 10
+            },
+            {
+                  "name": "MID",
+                  "explanation": "Adjusts volume of middle frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 60,
+                  "mdefault": 30
+            },
+            {
+                  "name": "Treble",
+                  "explanation": "Adjusts volume of high frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 60,
+                  "mdefault": 30
+            },
+            {
+                  "name": "Gain",
+                  "explanation": "Adjusts the gain.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "ENHNC",
+                  "explanation": "This tone control changes the frequency and level according to the knob position.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 0
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 68
+            }
+      ]
+}

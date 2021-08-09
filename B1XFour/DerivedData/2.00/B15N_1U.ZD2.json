@@ -1,0 +1,71 @@
+{
+      "FX": {
+            "name": "FlipTop",
+            "description": "This models the sound of the Ampeg B-15N bass amplifier.",
+            "version": "1.00",
+            "fxid": 145,
+            "gid": 36,
+            "group": 4,
+            "numParams": 7,
+            "numSlots": 2,
+            "filename": "B15N_1U.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "BRGHT",
+                  "explanation": "Adjusts the high-frequency character.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 0
+            },
+            {
+                  "name": "Treble",
+                  "explanation": "Adjusts volume of high frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 80,
+                  "mdefault": 48
+            },
+            {
+                  "name": "MID",
+                  "explanation": "Adjusts volume of middle frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 80,
+                  "mdefault": 40
+            },
+            {
+                  "name": "Bass",
+                  "explanation": "Adjusts volume of low frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 80,
+                  "mdefault": 64
+            },
+            {
+                  "name": "Gain",
+                  "explanation": "Adjusts the gain.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 30
+            },
+            {
+                  "name": "Ultra",
+                  "explanation": "Emphasizes high and low frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 3,
+                  "mdefault": 0
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 70
+            }
+      ]
+}

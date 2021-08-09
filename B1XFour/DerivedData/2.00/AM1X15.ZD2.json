@@ -1,0 +1,47 @@
+{
+      "FX": {
+            "name": "AM1x15",
+            "description": "This models an Ampeg B-15N cabinet with one 15\" speaker.",
+            "version": "1.10",
+            "fxid": 144,
+            "gid": 44,
+            "group": 5,
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "AM1X15.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "DYN20",
+                  "explanation": "Adjusts volume of the Electro-Voice RE-20.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "DYN57",
+                  "explanation": "Adjusts volume of the Shure SM57.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "Bottom",
+                  "explanation": "Adjusts volume of low frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "BAL",
+                  "explanation": "Adjusts the balance between original and effect sounds.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 100
+            }
+      ]
+}
