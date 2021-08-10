@@ -21,3 +21,20 @@ hex id     | model
 0x6E001100 | A1 FOUR
 0x6E001200 | A1X FOUR
 
+So put pedal in EditorOn mode.
+Then ask "what mode are you in please?"
+
+pi@raspberrypi:~/Software/ZoomPedal $ amidi -p ${MIDI_DEV} -S "f0 52 00 6E 58 02 F7" -r temp.bin -t 1 ; hexdump -C temp.bin
+
+11 bytes read
+00000000  f0 52 00 6e 58 01 6e 00  12 00 f7                 |.R.nX.n....|
+0000000b
+
+Notice 6e 00 12 00 => A1X Four.
+
+And indeed that is what mode the stored state of my GCE-3 currently is.
+So can we change it?
+
+
+
+
