@@ -12,6 +12,9 @@ AVAILABLE ZOOM Emulations
 
 hex id     | model
 ---------- | ----------
+0x6E001400 | unselected
+0x6E000000 | G5n
+0x6E000200 | G3n
 0x6E000300 | G3Xn
 0x6E000400 | B3n
 0x6E000C00 | G1 FOUR
