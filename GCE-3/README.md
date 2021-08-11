@@ -1,5 +1,20 @@
 I will put GCE-3 data in here
 
+CAUTION - You do everything at your own risk!
+
+I bricked my GCE-3 temporarily.
+I am ok with losing £60 to experiment. Your mileage may vary.
+
+HOW DID I UNBRICK?
+
+1. Uninstall the Guitar Lab
+2. Reinstall the Zoom PC drivers (get from Zoom's site)
+3. Reboot PC
+4. Reinstall 1.20 Firmware -- this took a long time. Seemed to get stuck on step 6. Patience.
+5. End of install asked you to unpower the GCE-3. Pulled USB C out... plugged back in. Light went green
+6. Restart Guitar Lab.
+7. Grab a coffee - it seems to take an age to discover your GCE-3. I think it goes of to the internet to find stuff?
+
 First useful info:
 
 When you emulate a pedal on your GCE-3 then majority of its functionality works.
