@@ -10,19 +10,23 @@ And for the "4" models (B1XFour etc) it is possible to edit FX's, parameter valu
 
 AVAILABLE ZOOM Emulations
 
-hex id     | model
----------- | ----------
-0x6E001400 | unselected
-0x6E000000 | G5n
-0x6E000200 | G3n
-0x6E000300 | G3Xn
-0x6E000400 | B3n
-0x6E000C00 | G1 FOUR
-0x6E000D00 | G1X FOUR
-0x6E000E00 | B1 FOUR
-0x6E000F00 | B1X FOUR
-0x6E001100 | A1 FOUR
-0x6E001200 | A1X FOUR
+hex id     | model     | version
+---------- | ----------| -------
+0x6E001400 | unselected| na
+0x6E000000 | G5n       | 3.00
+0x6E000200 | G3n       | 2.20
+0x6E000300 | G3Xn      | 2.20
+0x6E000400 | B3n       | 2.20
+0x6E000C00 | G1 FOUR   | 2.00
+0x6E000D00 | G1X FOUR  | 2.00
+0x6E000E00 | B1 FOUR   | 2.00
+0x6E000F00 | B1X FOUR  | 2.00
+0x6E001000 | ??        | 1.20
+0x6E001100 | A1 FOUR   | 1.01
+0x6E001200 | A1X FOUR  | 1.01
+0x6E001300 | ?         | 1.50
+0x6E001700 | ?         | 1.30
+0x6E001900 | ?         | 1.30
 
 So put pedal in EditorOn mode.
 Then ask "what mode are you in please?"
