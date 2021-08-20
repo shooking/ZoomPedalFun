@@ -10,7 +10,11 @@ import re
 # json5 accepts this, but is slower than json.
 import json5
 import math
+import logging
+logging.basicConfig(filename='midi.log', level=logging.DEBUG)
 
+gidMask = 0x0FFFFFFF
+fxidMask = 0xFFFF
 #--------------------------------------------------
 # Define ZT2/ZD2 file format using Construct (v2.10)
 # requires:
@@ -53,6 +57,7 @@ Group = Struct(
     DELAY = 8,
     REVERB = 9,
     PEDAL = 11,
+    AG_MODEL = 20,
     ACOUSTIC = 29,
     ),
     Padding(21),
@@ -85,6 +90,7 @@ ZD2 = Struct(
     DELAY = 8,
     REVERB = 9,
     PEDAL = 11,
+    AG_MODEL = 20,
     ACOUSTIC = 29,
     ),
     "id" / Int32ul,
@@ -174,26 +180,29 @@ import binascii
 from time import sleep
 
 def printhex(direct, msg):
-    print(direct)
+    logging.info(direct)
     l = []
     numchar=0
     for n in msg:
         l.append(n)
         numchar=numchar+1
-        if numchar % 8 == 0:
-            print(" ".join( "{0:#0{1}x}".format(int( m ), 4) for m in l))
+        if numchar % 16 == 0:
+            logging.info(" ".join( "{0:#0{1}x}".format(int( m ), 4) for m in l))
             l = []
     if l is not None:
-        print(" ".join( "{0:#0{1}x}".format(int( m ), 4) for m in l))
-
+        logging.info(" ".join( "{0:#0{1}x}".format(int( m ), 4) for m in l))
+        
 def printExtrahex(direct, msg):
-    print(direct + " 0xf0 ")
+    logging.info(direct + "0xf0 ")
     printhex(direct, msg)
-    print(direct + " 0xf7 ")
+    logging.info(direct + " 0xf7 ")
+
 
 def sniffMidiOut(mtype, data, printme = False):
+
+    logging.info("MIDI OUT")
     if printme == True:
-        print("sniffMidiOut")
+        logging.info("sniffMidiOut")
         if mtype == "sysex":
             printExtrahex("===>    ", data)
         else:
@@ -202,9 +211,11 @@ def sniffMidiOut(mtype, data, printme = False):
 
 
 def sniffMidiIn(self, printme = False):
+
+    logging.info("MIDI IN")
     msg = self.inport.receive()
     if printme == True:
-        print("sniffMidiIn")
+        logging.info("sniffMidiIn")
         if msg.type == "sysex":
             printExtrahex("<====    ", msg.data)
         else:
@@ -216,7 +227,6 @@ if sys.platform == 'win32':
     mido.set_backend('mido.backends.rtmidi_python')
     midiname = b"ZOOM G"
 else:
-    #midiname = "ZOOM GCE-3:ZOOM GCE-3 MIDI"
     midiname = "ZOOM G"
 
 class zoomzt2(object):
@@ -231,13 +241,13 @@ class zoomzt2(object):
 
     def connect(self):
         for port in mido.get_input_names():
-            print(port, midiname)
+            logging.info("{}, {}".format(port, midiname))
             if port[:len(midiname)]==midiname:
                 self.inport = mido.open_input(port)
                 #print("Using Input:", port)
                 break
         for port in mido.get_output_names():
-            print(port)
+            logging.info("{}".format(port))
             if port[:len(midiname)]==midiname:
                 self.outport = mido.open_output(port)
                 #print("Using Output:", port)
@@ -248,7 +258,7 @@ class zoomzt2(object):
             return(False)
 
         # Enable PC Mode
-        print("Enable PC Mode")
+        logging.info("Enable PC Mode")
         data = [0x52, 0x00, 0x6e, 0x52]
         msg = sniffMidiOut("sysex", data)
         #msg = mido.Message("sysex", data = [0x52, 0x00, 0x6e, 0x52])
@@ -257,7 +267,7 @@ class zoomzt2(object):
 
     def disconnect(self):
         # Disable PC Mode
-        print("Disable PC Mode")
+        logging.info("Disable PC Mode")
         data = [0x52, 0x00, 0x6e, 0x53]
         msg = sniffMidiOut("sysex", data)
         #msg = mido.Message("sysex", data = [0x52, 0x00, 0x6e, 0x53])
@@ -288,7 +298,7 @@ class zoomzt2(object):
 
     def unpack(self, packet):
         # Unpack data 7bit to 8bit, MSBs in first byte
-        print("Packet length {}".format(len(packet)))
+        logging.info("Packet length {}".format(len(packet)))
         data = bytearray(b"")
         loop = -1
         hibits = 0
@@ -308,7 +318,7 @@ class zoomzt2(object):
         return(data)
 
     def add_effect(self, data, name, version, id):
-        print("add_effect")
+        logging.info("add_effect")
         config = ZT2.parse(data)
         head, tail = os.path.split(name)
         
@@ -366,7 +376,7 @@ class zoomzt2(object):
 
     def filename(self, packet, name):
         # send filename (with different packet headers)
-        print(" send filename (with different packet headers")
+        logging.info(" send filename (with different packet headers")
         head, tail = os.path.split(name)
         for x in range(len(tail)):
             packet.append(ord(tail[x]))
@@ -379,7 +389,7 @@ class zoomzt2(object):
 
     def file_check(self, name):
         # check file is present on device
-        print(" Checking file is present on device")
+        logging.info(" Checking file is present on device")
         packet = bytearray(b"\x52\x00\x6e\x60\x25\x00\x00")
         head, tail = os.path.split(name)
         self.filename(packet, tail)
@@ -388,15 +398,15 @@ class zoomzt2(object):
         msg = sniffMidiOut("sysex", data)
         #msg = mido.Message("sysex", data = [0x52, 0x00, 0x6e, 0x60, 0x05, 0x00])
         self.outport.send(msg); sleep(0); msg = sniffMidiIn(self)
-        print(msg)
+        logging.info(msg)
         if msg.data[6] == 127 and msg.data[7] == 127:
             return(False)
-        print("We are checking the file HERE")
+        logging.info("We are checking the file HERE")
         data = [0x52, 0x00, 0x6e, 0x60, 0x27]
         msg = sniffMidiOut("sysex", data = data)
         #msg = mido.Message("sysex", data = [0x52, 0x00, 0x6e, 0x60, 0x27])
         self.outport.send(msg); sleep(0); msg = sniffMidiIn(self)
-        print(msg)
+        logging.info(msg)
         return(True)
     
     def file_wild(self, first):
@@ -415,9 +425,9 @@ class zoomzt2(object):
 
     def file_download(self, name):
         # download file from pedal to PC
-        print("In file_download {}".format(name))
+        logging.info("In file_download {}".format(name))
         packet = bytearray(b"\x52\x00\x6e\x60\x20\x02\x00\x00\x00\x00\x00\x00\x00\x00\x00")
-        print("packet")
+        logging.info("packet")
         head, tail = os.path.split(name)
         self.filename(packet, tail)
 
@@ -449,12 +459,11 @@ class zoomzt2(object):
             length = int(packet[9]) * 128 + int(packet[8])
             # 2047 is a "I dont exist"
             if length == 0 or length == 2047:
-                print("WE GOT ZERO LEN BACK")
+                logging.info("WE GOT ZERO LEN BACK")
                 break
-            print("WE GOT {} LEN BACK".format(length))
             block = self.unpack(packet[10:10 + length + int(length/7) + 1])
 
-            print("HERE IS THE BLOCK!! {} from {}".format(len(block), len(packet)+2))
+            #print("HERE IS THE BLOCK!! {} from {}".format(len(block), len(packet)+2))
             #printhex("BLOCK ", block, False)
             # confirm checksum (last 5 bytes of packet)
             # note: mido packet does not have SysEx prefix/postfix
@@ -463,7 +472,7 @@ class zoomzt2(object):
             if (checksum ^ 0xFFFFFFFF) == binascii.crc32(block):
                 data = data + block
             else:
-                print("Checksum error", hex(checksum))
+                logging.info("Checksum error {}".format(hex(checksum)))
                 break
         return(data)
 
@@ -531,7 +540,7 @@ class zoomzt2(object):
  
  
     def patch_download(self, location):
-        print("patch_download")
+        logging.info("patch_download")
         packet = bytearray(b"\x52\x00\x6e\x09\x00")
         packet.append(int(location/10)-1)
         packet.append(location % 10)
@@ -552,7 +561,7 @@ class zoomzt2(object):
                 + (packet[-2] << 21) + ((packet[-1] & 0x0F) << 28) 
 
         if (checksum ^ 0xFFFFFFFF) != binascii.crc32(data):
-            print("Checksum error", hex(checksum))
+            logging.info("Checksum error {}".format( hex(checksum)) )
 
         return(data)
 
@@ -590,7 +599,7 @@ class zoomzt2(object):
         packet = bytearray(b"\x52\x00\x6e\x28")
     '''
     def getfile(self, name):
-        print("options.receive - getting ", name)
+        logging.info("options.receive - getting {}".format(name))
         state = self.file_check(name)
         if (state == False):
             self.disconnect()
@@ -619,14 +628,14 @@ class zoomzt2(object):
             mmax = []
             mdefault = []
             if OnOffstart != 0:
-                print("In OnOffstart")
+                logging.info("In OnOffstart")
                 for j in range(0, 10):
                     mmax.append(data[OnOffstart + j * 0x38 + 12] + 
                         data[OnOffstart + j * 0x38 + 13] * 256)
                     mdefault.append(data[OnOffstart + j * 0x38 + 16] + 
                     data[OnOffstart + j * 0x38 + 17] * 256);
-                print(mmax[j])
-                print(mdefault[j])
+                    #logging.info("mmax: {}".format((mmax[j]))
+                    #logging.info("mmax: {}".format((mdefault[j]))
 
             # lets find the TXE1
             TXE1start = data.find("TXE1".encode())
@@ -640,7 +649,7 @@ class zoomzt2(object):
                 for j in range(4, fileSize + 4):
                     if data[j + ts] != 0x0a and data[j + ts] != 0x0d:
                         TXdescription = TXdescription + chr(data[j + ts])
-            print("Desc " + TXdescription)
+            logging.info("Desc {}".format( TXdescription))
             # so now we try to find the English params?
             PRMEstart = data.find("PRME".encode())
             if PRMEstart != 0:
@@ -665,7 +674,7 @@ class zoomzt2(object):
                 for j in range(0, len(x)):
                     x[j]['mmax'] = mmax[j+2]
                     x[j]['mdefault'] = mdefault[j+2]
-                print(x)
+                #print(x)
                 # get description the hard way.
                 xAdd = {
                     "FX" : 
@@ -673,9 +682,10 @@ class zoomzt2(object):
                         "name": binconfig['name'],
                         "description": TXdescription,
                         "version": binconfig['version'],
-                        "fxid": (binconfig['id'] & 0xFFFF),
-                        "gid": ((binconfig['id'] & 0xFFFF0000) >> 16) >> 5,
+                        "fxid": (binconfig['id'] & fxidMask),
+                        "gid": ((binconfig['id'] & gidMask) >> 16) >> 5,
                         "group": binconfig['group'], 
+                        "groupname": "{}" .format( binconfig['groupname']),
                         "numParams": len(x),
                         "numSlots": math.ceil(len(x) / 4),
                         "filename": name + '.BMP'
@@ -700,25 +710,25 @@ class zoomzt2(object):
             if data:
                 config = ZPTC.parse(data)
                 #print(config)
-                print("PatchNumber: {}".format(i))
+                #print("PatchNumber: {}".format(i))
                 numFX = (config['PTCF']['effects'])
                 thisPatch['numFX'] = numFX
                 patchName = (config['PTCF']['name'])
                 thisPatch['patchname'] = patchName
                 patchDescription = (config['TXE1']['name'])
                 thisPatch['description'] = patchDescription
-                print ("Patch: {}".format(patchName))
-                print ("Desc: {}".format(patchDescription))
+                logging.info ("Patch: {}".format(patchName))
+                logging.info ("Desc: {}".format(patchDescription))
                 theseFX = []
                 for fx in range(1, numFX + 1):
                     thisFX={}
                     idN = "id{}".format(fx)
                     effectN = "effect{}".format(fx)
-                    print("  enabled: ",config['EDTB'][effectN]['reversed']['control']['enabled'])
+                    logging.info("  enabled: {}".format(config['EDTB'][effectN]['reversed']['control']['enabled']))
                     currID = config['EDTB'][effectN]['reversed']['control']['id']
-                    print("  FXID={}, GID={}".format(str(currID & 0xFFFF), str( ( (currID&0xFFFF0000)>>16)>>5) ) )
-                    thisFX['fxid'] = (currID & 0xFFFF)
-                    thisFX['gid'] = (currID & 0xFFFF0000)>>21
+                    logging.info("  FXID={}, GID={}".format(str(currID & fxidMask), str( ( (currID & gidMask)>>16)>>5) ) )
+                    thisFX['fxid'] = (currID & fxidMask)
+                    thisFX['gid'] = (currID & gidMask)>>21
                     thisFX['enabled'] = config['EDTB'][effectN]['reversed']['control']['enabled']
                     # assume numParameters is 8, unless we already looked up FX and have a hit.
                     np = 8
@@ -739,6 +749,9 @@ class zoomzt2(object):
                             fxFilename = baseFX['filename']
                             fxnumSlots = baseFX['numSlots']
                         except:
+                            logging.info("Exception looking up FXID: {} {} {} {} {}".format(thisFX['fxid'], \
+                                    thisFX['gid'], patchName, currID, hex(int(currID))))
+                            logging.info(fxLookup)
                             np = 8
                     thisFX['name'] = fxName
                     thisFX['description'] = fxDescription
@@ -746,6 +759,7 @@ class zoomzt2(object):
                     thisFX['numSlots'] = fxnumSlots
                     thisFX['filename'] = fxFilename
                     thisFX['Parameters'] = []
+                    # might not want to make param1 param2?
                     for j in range(1,np+1):
                         pj = "param{}".format(j)
                         thisParam = {}
@@ -761,16 +775,16 @@ class zoomzt2(object):
                                     "mdefault": baseP['mdefault']
                                     }
                         else:
-                            print("   {} = {}".format(pj, config['EDTB'][effectN]['reversed']['control'][pj]))
+                            logging.info("   {} = {}".format(pj, config['EDTB'][effectN]['reversed']['control'][pj]))
                             thisParam = {pj: config['EDTB'][effectN]['reversed']['control'][pj]}
                         thisFX['Parameters'].append(thisParam)
  
                     theseFX.append(thisFX)
                 thisPatch['FX'] = theseFX        
-                print(thisPatch)
+                logging.info(thisPatch)
                 thesePatches.append(thisPatch)
-        print("PRINTING THESE PATCHES")
-        print(thesePatches)
+        logging.info("PRINTING THESE PATCHES")
+        logging.info(thesePatches)
         out_file = open("allpatches.json", "w")
         json5.dump(thesePatches, out_file, indent = 4)
         out_file.close()
@@ -780,7 +794,7 @@ def main():
     from optparse import OptionParser
 
     data = bytearray(b"")
-    print("in main .. data is ...")
+    logging.info("in main .. data is ...")
     pedal = zoomzt2()
 
     usage = "usage: %prog [options] FILENAME"
@@ -835,14 +849,14 @@ def main():
         help="upload specific patch (10..59)", dest="upload")
 
     (options, args) = parser.parse_args()
-    print(options)
-    print(args)
+    logging.info(options)
+    logging.info(args)
     if len(args) != 1:
         parser.error("FILE not specified")
 
     if options.getfile:
-        print("options: ", options.getfile)
-        print("args[0] = ", args[0])
+        logging.info("options: ", options.getfile)
+        logging.info("args[0] = ", args[0])
 
     if options.install and options.uninstall:
         sys.exit("Cannot use 'install' and 'uninstall' at same time")
@@ -860,7 +874,7 @@ def main():
             sys.exit("Unable to find Pedal")
 
     if options.patch:
-        print("options.patch")
+        logging.info("options.patch")
         data = pedal.patch_download(int(options.patch))
         pedal.disconnect()
 
@@ -873,7 +887,7 @@ def main():
         exit(0)
 
     if options.allpatches:
-        print("options.allpatches")
+        logging.info("options.allpatches")
 
         pedal.allpatches()
 
@@ -902,12 +916,13 @@ def main():
     if options.receive:
         pedal.file_check("FLST_SEQ.ZT2")
         data = pedal.file_download("FLST_SEQ.ZT2")
-        print("options.receive - getting FLST_SEQ.ZT2")
+        logging.info("options.receive - getting FLST_SEQ.ZT2")
         pedal.file_close()
 
         # so now interpret the data to get the ZD2's.
         # and for each call getfile(name)
         # we also create a total pedal JSON
+        # we need to create a "blank" entry for BYPASS
         total_pedal = [{
             "FX": {
                 "name": "Bypass",
@@ -916,6 +931,7 @@ def main():
                 "fxid": 0,
                 "gid": 0,
                 "group": 0,
+                "groupname": "BYPASS",
                 "numParams": 0,
                 "numSlots": 1,
                 "filename": ""
@@ -927,21 +943,22 @@ def main():
         fxLookup = {}
         fxLookup[0, 0] = 0
         j = 1
-        # we need to create a "blank" entry for BYPASS
         config = ZT2.parse(data)
         for group in config[1]:
-            print("Group", dict(group)["group"], ":", dict(group)["groupname"])
+            logging.info("Group{}: {}".format( dict(group)["group"],  dict(group)["groupname"]))
     
             for effect in dict(group)["effects"]:
                 myG = dict(effect)["id"]
-                myGID = ((myG & 0xFFFF0000) >> 16) >> 5
-                myID = (myG & 0xFFFF)
-                print("myID is ", myID, " ", hex(myID))
-                print("myGID is ", int(myGID), " ", hex(int(myGID)))
-                print("   ", dict(effect)["effect"], "(ver=", dict(effect)["version"], \
-                    "), group=", dict(effect)["group"], ", id=", hex(dict(effect)["id"]), \
-                    ", installed=", dict(effect)["installed"])
-                print("Getting {}".format(dict(effect)["effect"]))
+                myGID = ((myG & gidMask) >> 16) >> 5
+                myID = (myG & fxidMask)
+                logging.info("myID is {} {}".format( myID, hex(myID)))
+                logging.info("myGID is {} {}".format( int(myGID), hex(int(myGID))))
+                logging.info("   {} (ver={}), group={}, id={}, fxid={}, gid={}, installed={}".format(dict(effect)["effect"], dict(effect)["version"], \
+                    dict(effect)["group"], hex(dict(effect)["id"]), \
+                    hex(myID), \
+                    hex(int(myGID)), \
+                    dict(effect)["installed"]))
+                logging.info("Getting {}".format(dict(effect)["effect"]))
                 currFX = pedal.getfile(dict(effect)["effect"])
                 total_pedal.append(currFX)
                 fxLookup[myID, myGID] = j 
@@ -971,12 +988,12 @@ def main():
         data = pedal.remove_effect(data, options.delete)
     
     if options.dump and data:
-        print("dump")
+        logging.info("dump")
         config = ZT2.parse(data)
-        print(config)
+        logging.info(config)
     
     if options.toggle and data:
-        print("toggle")
+        logging.info("toggle")
         config = ZT2.parse(data)
         groupnum=0
     
@@ -992,23 +1009,28 @@ def main():
         data = ZT2.build(config)
     
     if options.summary and data:
-        print("summary")
+        logging.info("summary")
         config = ZT2.parse(data)
         for group in config[1]:
-            print("Group", dict(group)["group"], ":", dict(group)["groupname"])
+            logging.info("Group{}: {}".format( dict(group)["group"],  dict(group)["groupname"]))
     
             for effect in dict(group)["effects"]:
                 myG = dict(effect)["id"]
-                myGID = ((myG & 0xFFFF0000) >> 16) >> 5
-                myID = (myG & 0xFFFF)
-                print("myID is ", myID, " ", hex(myID))
-                print("myGID is ", int(myGID), " ", hex(int(myGID)))
-                print("   ", dict(effect)["effect"], "(ver=", dict(effect)["version"], \
-                    "), group=", dict(effect)["group"], ", id=", hex(dict(effect)["id"]), \
-                    ", installed=", dict(effect)["installed"])
+                myGID = ((myG & gidMask) >> 16) >> 5
+                myID = (myG & fxidMask)
+                logging.info("myID is {} {}".format( myID, hex(myID)))
+                logging.info("myGID is {} {}".format( int(myGID), hex(int(myGID))))
+                logging.info("   {} (ver={}), group={}, id={}, fxid={}, gid={}, installed={}".format(dict(effect)["effect"], dict(effect)["version"], \
+                    dict(effect)["group"], hex(dict(effect)["id"]), \
+                    hex(myID), \
+                    hex(int(myGID)), \
+                    dict(effect)["installed"]))
+                logging.info("Getting {}".format(dict(effect)["effect"]))
+                currFX = pedal.getfile(dict(effect)["effect"])
+                total_pedal.append(currFX)
 
     if options.build and data:
-        print("options.build")
+        logging.info("options.build")
         config = ZT2.parse(data)
         for group in config[1]:
             for effect in dict(group)["effects"]:
@@ -1017,7 +1039,7 @@ def main():
                     "-w", options.build)
 
     if options.write and data:
-       print("options.write")
+       logging.info("options.write")
        outfile = open(args[0], "wb")
        if not outfile:
            sys.exit("Unable to open FILE for writing")
