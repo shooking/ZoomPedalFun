@@ -221,23 +221,19 @@ currFX = [{'onoff' : None, 'label': None, 'slot': x + 1, 'effect': None} for x i
 
 if __name__ == "__main__":
     
-    """
     # remote directory mypedal
     if os.path.exists("mypedal"):
         shutil.rmtree("mypedal")
     # create it, it will be 755
     os.mkdir("mypedal")
-    """
     # change to it
     os.chdir("mypedal")
-    """ 
     # populate the directory. Assumption is you run this from
     # ZoomPedalFun/python directory
     # we then create and move to subdirectory mypedal
     # so the script is up one directory level
     cmd = 'python3 ../zoomzt2_shooking.py -R -w my_pedal.zt2'
     runCommand(cmd)
-    """ 
     # OK so now we should have allpatches.json and allfx.json
     if not(os.path.exists("allfx.json") and os.path.exists("allpatches.json")):
         print("Something wrong - expected to have created allfx.json and allpatches.json")
