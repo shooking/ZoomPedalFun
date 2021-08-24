@@ -51,8 +51,14 @@ def populatePatches():
         for ri in range(0,len(rawPatches)):
             rp = rawPatches[ri]
             slots = ""
-            for i in range(0, rp['numFX']): 
-                slots=slots + str(rp['FX'][i]['numSlots'])
+            endLoop = rp['numFX']
+            i = 0
+            j = 0
+            while i < endLoop:
+                currSlot=rp['FX'][j]['numSlots']
+                slots=slots + str(currSlot)
+                j = j + 1
+                i = i + currSlot
             currP = {
                 'n': rp['patchname'],
                 'd': rp['description'],
@@ -181,7 +187,7 @@ def runCommand(cmd):
     out = p.stderr.read()
     # could put a message via stdout
     # to check it worked EXCEPT we check the files.
-    #sys.stdout.write(str(out))
+    sys.stdout.write(str(out))
     sys.stdout.flush()
     print("FINISHED INIT")
 
@@ -194,6 +200,26 @@ def userSelectedPatch(event):
 
     # we have index into the patch,
     # so walk the FX
+    endLoop = rp['numFX']
+    i = 0 # actual slot
+    j = 0 # logical slot
+    while i < endLoop:
+        cfx = rp['FX'][j]
+        img = getImage(cfx['filename'])
+        theFX=currFX[i]
+        theFX['slot'] = i + 1
+        theFX['label'].configure( image = img)
+        theFX['label'].image = img
+        if cfx['enabled'] == True:
+            theFX['onoff'].config(text = "FX{} {}".format(i+1, "ON"))
+            theFX['onoff'].config(bg = "green")
+        else:
+            theFX['onoff'].config(text = "FX{} {}".format(i+1, "OFF"))
+            theFX['onoff'].config(bg = "red")
+        i = i + rp['FX'][j]['numSlots']
+        j = j + 1
+
+    """
     prevSlot=0
     for iFX in range(0, rp['numFX']):
         cfx = rp['FX'][iFX]
@@ -213,11 +239,13 @@ def userSelectedPatch(event):
         else:
             theFX['onoff'].config(text = "FX{} {}".format(iFX+1, "OFF"))
             theFX['onoff'].config(bg = "red")
+    """
     # ok so how about we actually change the patch??
-    runCommand('../../B1XFour/LoadPatch.sh {}'.format(theIndex + 10))
+    bankSize = model['bankSize']
+    runCommand('../../B1XFour/LoadPatch.sh {} {}'.format( int(theIndex / bankSize), theIndex % bankSize) )
 
 
-currFX = [{'onoff' : None, 'label': None, 'slot': x + 1, 'effect': None} for x in range(5)]
+currFX = [{'onoff' : None, 'label': None, 'slot': x + 1, 'effect': None} for x in range(8)]
 
 if __name__ == "__main__":
     
@@ -240,6 +268,11 @@ if __name__ == "__main__":
         print("Try replugging pedal into Pi. Ensure you only have one Zoom connected.")
         sys.exit(1)
 
+    print("Loading Pedal")
+    with open('model.dat', 'r') as fxFile:
+        model=fxFile.read()
+    model=json5.loads(model)
+    print(model)
     print("Loading FXs")
     with open('allfx.json', 'r') as fxFile:
         dataFX=fxFile.read()
@@ -266,7 +299,7 @@ if __name__ == "__main__":
     avail_FX = ttk.Combobox(win, width="200", values=populateFX(), textvariable=selectedFX, state='readonly')
     avail_FX.place(x=100, y = 550)
 
-    pedalFX = [{'groupname': None, 'Filename' : None, 'FXID': None, 'GID': None, 'version': None}]
+    #pedalFX = [{'groupname': None, 'Filename' : None, 'FXID': None, 'GID': None, 'version': None}]
 
     buildCurrFXGUI(win, avail_FX, currFX)
     # main()

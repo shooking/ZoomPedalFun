@@ -97,19 +97,6 @@ ZD2 = Struct(
     "name" / CString("ascii"),
 )
 
-PTCF = Struct(
-    Const(b"PTCF"),
-    Padding(8),
-    "effects" / Int32ul,
-    Padding(10),
-    "name" / PaddedString(10, "ascii"),
-    "id1" / Int32ul,
-    "id2" / Int32ul,
-    "id3" / Int32ul,
-    "id4" / Int32ul,
-    "id5" / Int32ul,
-)
-
 TXJ1 = Struct(
     Const(b"TXJ1"),
     "length" / Int32ul,
@@ -141,7 +128,7 @@ EDTB2 = Struct( # Working with a Byte-reversed copy of data
 )
 
 EDTB1 = Struct(
-    "dump" / Peek(HexDump(Bytes(24))),
+    #"dump" / Peek(HexDump(Bytes(24))),
     "autorev" / ByteSwapped(Bytes(24)),
     "reversed" / RestreamData(this.autorev, EDTB2), # this does not allow re-build of data :-(
 )
@@ -149,28 +136,29 @@ EDTB1 = Struct(
 EDTB = Struct(
     Const(b"EDTB"),
     "length" / Int32ul,
-    "effect1" / EDTB1,
-    "effect2" / EDTB1,
-    "effect3" / EDTB1,
-    "effect4" / EDTB1,
-    "effect5" / EDTB1,
+    "effects" / Array(this._.fx_count, EDTB1),
 )
 
 PPRM = Struct(
     Const(b"PPRM"),
     "length" / Int32ul,
-    "pprm_dump" / Peek(HexDump(Bytes(this.length))),
+    #"pprm_dump" / Peek(HexDump(Bytes(this.length))),
     Padding(this.length),
 )
 
-ZPTC = Struct(
-    "PTCF" / PTCF,
+ZPTC = Padded(760, Struct(
+    Const(b"PTCF"),
+    Padding(8),
+    "fx_count" / Int32ul,
+    Padding(10),
+    "name" / PaddedString(10, "ascii"),
+    "ids" / Array(this.fx_count, Int32ul),
+
     "TXJ1" / TXJ1,
     "TXE1" / TXE1,
     "EDTB" / EDTB,
     "PPRM" / PPRM,
-)
-
+))
 
 #--------------------------------------------------
 import os
@@ -232,7 +220,12 @@ else:
 class zoomzt2(object):
     inport = None
     outport = None
-
+    model = None
+    numPatches = 0
+    bankSize = 0
+    ptcSize = 0
+    version = 0
+    gce3version = 0
     def is_connected(self):
         if self.inport == None or self.outport == None:
             return(False)
@@ -256,6 +249,97 @@ class zoomzt2(object):
         if self.inport == None or self.outport == None:
             #print("Unable to find Pedal")
             return(False)
+
+        # ask pedal for some info
+
+        logging.info("Grab Pedal Info")
+        data = [0x52, 0x00, 0x6e, 0x50]
+        msg = sniffMidiOut("sysex", data)
+        self.outport.send(msg); sleep(0); msg = sniffMidiIn(self)
+
+        data = [0x7e, 0x00, 0x06, 0x01]
+        msg = sniffMidiOut("sysex", data)
+        self.outport.send(msg); sleep(0); msg = sniffMidiIn(self)
+        d = msg.data
+        print(d)
+        if len(d) < 12:
+            print("odd - too short")
+            sys.exit(1)
+        if d[5] == 0x6e and d[6] == 0x00 and d[7] == 0x10:
+            # a Zoom GCE-3
+            self.gce3version = chr(d[9]) + chr(d[10]) + chr(d[11]) + chr(d[12])
+            # check model
+            data = [0x52, 0x00, 0x6e, 0x58, 0x02]
+            msg = sniffMidiOut("sysex", data)
+            self.outport.send(msg); sleep(0); msg = sniffMidiIn(self)
+            d = msg.data
+            if d[5] == 0x6e and d[6] == 0x00:
+                if   d[7] == 0x00:
+                    self.model = "G5n"
+                    self.version = "3.00"
+                elif d[7] == 0x02:
+                    self.model = "G3n"
+                    self.version = "2.20"
+                elif d[7] == 0x03:
+                    self.model = "G3Xn"
+                    self.version = "2.20"
+                elif d[7] == 0x04:
+                    self.model = "B3n"
+                    self.version = "2.20"
+                elif d[7] == 0x0c:
+                    self.model = "G1 Four"
+                    self.version = "2.00"
+                elif d[7] == 0x0d:
+                    self.model = "G1X Four"
+                    self.version = "2.00"
+                elif d[7] == 0x0e:
+                    self.model = "B1 FOUR"
+                    self.version = "2.00"
+                elif d[7] == 0x0f:
+                    self.model = "B1X Four"
+                    self.version = "2.00"
+                elif d[7] == 0x10:
+                    self.model = "GCE-3" # aguess
+                    self.version = "1.20"
+                elif d[7] == 0x11:
+                    self.model = "A1 Four"
+                    self.version = "1.01"
+                elif d[7] == 0x12:
+                    self.model = "A1X Four"
+                    self.version = "1.01"
+                elif d[7] == 0x13:
+                    self.model = "??"
+                    self.version = "1.50"
+                elif d[7] == 0x17:
+                    self.model = "??"
+                    self.version = "1.30"
+                elif d[7] == 0x19:
+                    self.model = "??"
+                    self.version = "1.30"
+        # how big is patch etc
+        data = [0x52, 0x00, 0x6e, 0x44]
+        msg = sniffMidiOut("sysex", data)
+        self.outport.send(msg); sleep(0); msg = sniffMidiIn(self)
+        d = msg.data
+        self.numPatches = d[5] * 128 + d[4]
+        self.bankSize = d[11] * 128 + d[10]
+        self.ptcSize = d[7] * 128 + d[6]
+
+        # write out pedal state
+        out1 = open("model.dat", "w")
+        if not out1:
+            sys.exit("Unable to open FILE for writing")
+        tD = {
+                "model": self.model,
+                "numPatches": self.numPatches,
+                "bankSize": self.bankSize,
+                "ptcSize": self.ptcSize,
+                "version": self.version,
+                "gce3version": self.gce3version
+            }
+        print(tD)
+        json5.dump(tD, out1, indent = 6)
+        out1.close()
 
         # Enable PC Mode
         logging.info("Enable PC Mode")
@@ -542,8 +626,12 @@ class zoomzt2(object):
     def patch_download(self, location):
         logging.info("patch_download")
         packet = bytearray(b"\x52\x00\x6e\x09\x00")
-        packet.append(int(location/10)-1)
-        packet.append(location % 10)
+        #packet.append(int(location/10)-1)
+        #packet.append(location % 10)
+        a1=int(location / self.bankSize)
+        b1=location % self.bankSize
+        packet.append(a1)
+        packet.append(b1)
 
         msg = sniffMidiOut("sysex", data = packet)
         #msg = mido.Message("sysex", data = packet)
@@ -568,8 +656,10 @@ class zoomzt2(object):
 
     def patch_upload(self, location, data):
         packet = bytearray(b"\x52\x00\x6e\x08\x00")
-        packet.append(int(location/10)-1)
-        packet.append(location % 10)
+        a1=int(location / self.bankSize)
+        b1=location % self.bankSize
+        packet.append(a1)
+        packet.append(b1)
 
         length = len(data)
         packet.append(length & 0x7f)
@@ -699,7 +789,9 @@ class zoomzt2(object):
 
     def allpatches(self, total_pedal = None, fxLookup = None):
         thesePatches = []
-        for i in range(10, 60):
+        #for i in range(10, 60):
+        for i in range(0, self.numPatches):
+            print("processing patch {}".format(i))
             data = self.patch_download(i)
             outfile = open("patch_{}".format(i), "wb")
             if not outfile:
@@ -709,27 +801,29 @@ class zoomzt2(object):
             thisPatch = {}
             if data:
                 config = ZPTC.parse(data)
-                #print(config)
                 #print("PatchNumber: {}".format(i))
-                numFX = (config['PTCF']['effects'])
+                numFX = (config['fx_count'])
                 thisPatch['numFX'] = numFX
-                patchName = (config['PTCF']['name'])
+                patchName = (config['name'])
                 thisPatch['patchname'] = patchName
                 patchDescription = (config['TXE1']['name'])
                 thisPatch['description'] = patchDescription
                 logging.info ("Patch: {}".format(patchName))
                 logging.info ("Desc: {}".format(patchDescription))
                 theseFX = []
-                for fx in range(1, numFX + 1):
+                for fx in config['EDTB']['effects']:
                     thisFX={}
                     idN = "id{}".format(fx)
                     effectN = "effect{}".format(fx)
-                    logging.info("  enabled: {}".format(config['EDTB'][effectN]['reversed']['control']['enabled']))
-                    currID = config['EDTB'][effectN]['reversed']['control']['id']
+                    #logging.info("  enabled: {}".format(config['EDTB'][effectN]['reversed']['control']['enabled']))
+                    currID = fx['reversed']['control']['id']
+                    if currID == 1:
+                        # this is part of a multiFX
+                        continue
                     logging.info("  FXID={}, GID={}".format(str(currID & fxidMask), str( ( (currID & gidMask)>>16)>>5) ) )
                     thisFX['fxid'] = (currID & fxidMask)
                     thisFX['gid'] = (currID & gidMask)>>21
-                    thisFX['enabled'] = config['EDTB'][effectN]['reversed']['control']['enabled']
+                    thisFX['enabled'] = fx['reversed']['control']['enabled']
                     # assume numParameters is 8, unless we already looked up FX and have a hit.
                     np = 8
                     npi = -1
@@ -748,7 +842,7 @@ class zoomzt2(object):
                             fxDescription = baseFX['description']
                             fxFilename = baseFX['filename']
                             fxnumSlots = baseFX['numSlots']
-                        except:
+                        except KeyError:
                             logging.info("Exception looking up FXID: {} {} {} {} {}".format(thisFX['fxid'], \
                                     thisFX['gid'], patchName, currID, hex(int(currID))))
                             logging.info(fxLookup)
@@ -766,7 +860,7 @@ class zoomzt2(object):
                         if npi != -1:
                             baseP = total_pedal[npi]['Parameters'][j - 1]
                             thisParam = {
-                                    pj: config['EDTB'][effectN]['reversed']['control'][pj],
+                                    pj: fx['reversed']['control'][pj],
                                     "name" : baseP['name'],
                                     "explanation": baseP['explanation'],
                                     "blackback": baseP['blackback'],
@@ -775,8 +869,8 @@ class zoomzt2(object):
                                     "mdefault": baseP['mdefault']
                                     }
                         else:
-                            logging.info("   {} = {}".format(pj, config['EDTB'][effectN]['reversed']['control'][pj]))
-                            thisParam = {pj: config['EDTB'][effectN]['reversed']['control'][pj]}
+                            logging.info("   {} = {}".format(pj, fx['reversed']['control'][pj]))
+                            thisParam = {pj: fx['reversed']['control'][pj]}
                         thisFX['Parameters'].append(thisParam)
  
                     theseFX.append(thisFX)
@@ -968,6 +1062,7 @@ def main():
         out_file.close()
 
         # now find list of Patches, pass in the fxLookup and total_pedal
+        # we should use 6e 44 to determine how name patches.
         pedal.allpatches(total_pedal = total_pedal, fxLookup = fxLookup)
     else:
         # Read data from file
