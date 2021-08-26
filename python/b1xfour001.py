@@ -34,13 +34,13 @@ import mido
 import binascii
 from time import sleep
 
-fxOn = [False, False, False, False, False]
+fxOn = [False, False, False, False, False, False, False, False, False]
 # we use this to keep tabs of the FX slot
 # so slot 1 is midi val 0
 # slot 2 can be midi val 1, but if double slot then 2
 # let's put the default values in first
 # modify it on FX load
-fxSlotID = [0, 1, 2, 3, 4]
+fxSlotID = [0, 1, 2, 3, 4, 5, 6, 7, 8]
 
 # returns data ready for display
 def populatePatches():
@@ -76,21 +76,9 @@ def populateFX():
         myFX=[]
         logging.info("In populatePatches")
         for ri in range(0, len(rawFX)):
+            if ri % 10 == 0:
+                print("Loaded patch {}".format(ri))
             rp = rawFX[ri]['FX']
-            """
-            currP = {
-                'name': rp['name'],
-                'description': rp['description'],
-                'version': rp['version'],
-                'fxid': rp['fxid'],
-                'gid': rp['gid'],
-                'group': rp['group'],
-                'groupname': rp['groupname'],
-                'numParams': rp['numParams'],
-                'numSlots': rp['numSlots'],
-                'filename': rp['filename']
-            }
-            """
             currP = {
                 'groupname': rp['groupname'],
                 'name': rp['name'],
@@ -198,6 +186,16 @@ def userSelectedPatch(event):
     theValue = avail_Patches.get()
     rp = rawPatches[theIndex]
 
+    # Zero out existing GUI first
+    for i in range(0, len(currFX)):
+        print("zeroing out gui {}".format(i))
+        currFX[i]['onoff'].config(text = "FX{} {}".format(i+1, "OFF"))
+        currFX[i]['onoff'].config(bg = "red")
+        currFX[i]['label'].configure( image = None )
+        currFX[i]['label'].image = None
+        currFX[i]['slot'] = i + 1
+        currFX[i]['effect'].config(text = "FX{} ID".format(i+1))
+            
     # we have index into the patch,
     # so walk the FX
     endLoop = rp['numFX']
@@ -219,36 +217,25 @@ def userSelectedPatch(event):
         i = i + rp['FX'][j]['numSlots']
         j = j + 1
 
-    """
-    prevSlot=0
-    for iFX in range(0, rp['numFX']):
-        cfx = rp['FX'][iFX]
-        img = getImage(cfx['filename'])
-        theFX=currFX[iFX]
-        if iFX == 0:
-            theFX['slot'] = cfx['numSlots']
-            prevSlot = theFX['slot']
-        else:
-            theFX['slot'] = cfx['numSlots'] + prevSlot
-
-        theFX['label'].configure( image = img)
-        theFX['label'].image = img
-        if cfx['enabled'] == True:
-            theFX['onoff'].config(text = "FX{} {}".format(iFX+1, "ON"))
-            theFX['onoff'].config(bg = "green")
-        else:
-            theFX['onoff'].config(text = "FX{} {}".format(iFX+1, "OFF"))
-            theFX['onoff'].config(bg = "red")
-    """
     # ok so how about we actually change the patch??
     bankSize = model['bankSize']
     runCommand('../../B1XFour/LoadPatch.sh {} {}'.format( int(theIndex / bankSize), theIndex % bankSize) )
 
 
-currFX = [{'onoff' : None, 'label': None, 'slot': x + 1, 'effect': None} for x in range(8)]
+def GenFX():
+    return [{'onoff' : None, 'label': None, 'slot': x + 1, 'effect': None} for x in range(9)]
+
+def InitializeFXState(currFX):
+    for fx in currFX:
+        fx = {'onoff' : None, 'label': None, 'slot': x + 1, 'effect': None}
+
+currFX = GenFX()
 
 if __name__ == "__main__":
     
+    # change to it
+    os.chdir("mypedal")
+    """
     # remote directory mypedal
     if os.path.exists("mypedal"):
         shutil.rmtree("mypedal")
@@ -262,6 +249,7 @@ if __name__ == "__main__":
     # so the script is up one directory level
     cmd = 'python3 ../zoomzt2_shooking.py -R -w my_pedal.zt2'
     runCommand(cmd)
+    """
     # OK so now we should have allpatches.json and allfx.json
     if not(os.path.exists("allfx.json") and os.path.exists("allpatches.json")):
         print("Something wrong - expected to have created allfx.json and allpatches.json")
@@ -302,6 +290,19 @@ if __name__ == "__main__":
     #pedalFX = [{'groupname': None, 'Filename' : None, 'FXID': None, 'GID': None, 'version': None}]
 
     buildCurrFXGUI(win, avail_FX, currFX)
+    fxLabel = tk.Label(win, text="FX")
+    fxLabel.place(x = 0, y = 550)
+
+    # render the model etc
+    # {'model': 'G5n', 'numPatches': 200, 'bankSize': 4, 'ptcSize': 760, 'version': '3.00', 'gce3version': '1.20'}
+    modelLabel = tk.Label(win, text="Model {} Firmware {}".format(model['model'], model['version']))
+    GCEmodelLabel = tk.Label(win, text="GCE Model {} Firmware {}".format('GCE-3', model['gce3version']))
+    bankAndPatchLabel = tk.Label(win, text="{} patches, {} per bank".format(model['numPatches'], model['bankSize']))
+
+    modelLabel.place(x = 0, y = 350)
+    GCEmodelLabel.place(x = 0, y = 400)
+    bankAndPatchLabel.place(x = 0, y = 450)
+
     # main()
     win.mainloop()
 

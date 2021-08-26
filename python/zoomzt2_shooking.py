@@ -846,6 +846,8 @@ class zoomzt2(object):
                             logging.info("Exception looking up FXID: {} {} {} {} {}".format(thisFX['fxid'], \
                                     thisFX['gid'], patchName, currID, hex(int(currID))))
                             logging.info(fxLookup)
+                            # hack - often these are loopers or rhythm.
+                            fxnumSlots = 2
                             np = 8
                     thisFX['name'] = fxName
                     thisFX['description'] = fxDescription
