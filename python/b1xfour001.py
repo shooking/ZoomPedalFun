@@ -234,6 +234,7 @@ currFX = GenFX()
 if __name__ == "__main__":
     
     # change to it
+    """
     os.chdir("mypedal")
     """
     # remote directory mypedal
@@ -249,7 +250,7 @@ if __name__ == "__main__":
     # so the script is up one directory level
     cmd = 'python3 ../zoomzt2_shooking.py -R -w my_pedal.zt2'
     runCommand(cmd)
-    """
+
     # OK so now we should have allpatches.json and allfx.json
     if not(os.path.exists("allfx.json") and os.path.exists("allpatches.json")):
         print("Something wrong - expected to have created allfx.json and allpatches.json")
