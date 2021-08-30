@@ -19,6 +19,8 @@ SrMouraSilva: https://github.com/PedalController/PiPedalController
 
 ZDownload: https://github.com/fuzboxz/zdownload
 
+Zoom-dev midi docs: https://github.com/zoom-dev/MIDIDocs
+
 Decent editors:
 
 ToneLib: https://tonelib.net/
