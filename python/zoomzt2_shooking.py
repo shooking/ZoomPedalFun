@@ -316,6 +316,37 @@ class zoomzt2(object):
                 elif d[7] == 0x19:
                     self.model = "??"
                     self.version = "1.30"
+        elif d[5] == 0x6e and d[6] == 0x00:
+            self.version = chr(d[9]) + chr(d[10]) + chr(d[11]) + chr(d[12])
+            if   d[7] == 0x00:
+                self.model = "G5n"
+            elif d[7] == 0x02:
+                self.model = "G3n"
+            elif d[7] == 0x03:
+                self.model = "G3Xn"
+            elif d[7] == 0x04:
+                self.model = "B3n"
+            elif d[7] == 0x0c:
+                self.model = "G1 Four"
+            elif d[7] == 0x0d:
+                self.model = "G1X Four"
+            elif d[7] == 0x0e:
+                self.model = "B1 FOUR"
+            elif d[7] == 0x0f:
+                self.model = "B1X Four"
+            elif d[7] == 0x10:
+                self.model = "GCE-3" # aguess
+                self.version = "1.20"
+            elif d[7] == 0x11:
+                self.model = "A1 Four"
+            elif d[7] == 0x12:
+                self.model = "A1X Four"
+            elif d[7] == 0x13:
+                self.model = "??"
+            elif d[7] == 0x17:
+                self.model = "??"
+            elif d[7] == 0x19:
+                self.model = "??"
         # how big is patch etc
         data = [0x52, 0x00, 0x6e, 0x44]
         msg = sniffMidiOut("sysex", data)
@@ -800,6 +831,19 @@ class zoomzt2(object):
             outfile.close()
             thisPatch = {}
             if data:
+                ZPTC = Padded(self.ptcSize, Struct(
+                    Const(b"PTCF"),
+                    Padding(8),
+                    "fx_count" / Int32ul,
+                    Padding(10),
+                    "name" / PaddedString(10, "ascii"),
+                    "ids" / Array(this.fx_count, Int32ul),
+                    "TXJ1" / TXJ1,
+                    "TXE1" / TXE1,
+                    "EDTB" / EDTB,
+                    "PPRM" / PPRM,
+                ))
+
                 config = ZPTC.parse(data)
                 #print("PatchNumber: {}".format(i))
                 numFX = (config['fx_count'])
