@@ -9,6 +9,7 @@ import re
 # some of the files have traiing ,
 # json5 accepts this, but is slower than json.
 import json5
+import json
 import math
 import logging
 logging.basicConfig(filename='midi.log', level=logging.DEBUG)
@@ -73,28 +74,10 @@ ZT2 = Padded(8502, Sequence(
     "groups" / GreedyRange(Group),
 ))
 
-ZD2 = Struct(
-    Const(b"\x5a\x44\x4c\x46\x78"),
-    Padding(84),
-    "version" / PaddedString(4, "ascii"),
-    Const(b"\x00\x00"),
-    "group" / Byte,
-    "groupname" / Enum(Computed(this.group),
-        DYNAMICS = 1,
-    FILTER = 2,
-    DRIVE = 3,
-    AMP = 4,
-    CABINET = 5,
-    MODULATION = 6,
-    SFX = 7,
-    DELAY = 8,
-    REVERB = 9,
-    PEDAL = 11,
-    AG_MODEL = 20,
-    ACOUSTIC = 29,
-    ),
-    "id" / Int32ul,
-    "name" / CString("ascii"),
+ICON = Struct(
+        Const(b"ICON"),
+        "length" / Int32ul,
+        "data" / Bytes(this.length),
 )
 
 TXJ1 = Struct(
@@ -108,6 +91,53 @@ TXE1 = Struct(
     "length" / Int32ul,
     "name" / PaddedString(this.length, "ascii"),
 )
+
+INFO = Struct(
+        Const(b"INFO"),
+        "length" / Int32ul,
+        "data" / Bytes(this.length),
+)
+
+DATA = Struct(
+        Const(b"DATA"),
+        "length" / Int32ul,
+        "data" / Bytes(this.length),
+)
+
+PRMJ = Struct(
+        Const(b"PRMJ"),
+        "length" / Int32ul,
+        "data" / Bytes(this.length),
+)
+
+PRME = Struct(
+        Const(b"PRME"),
+        "length" / Int32ul,
+        "data" / PaddedString(this.length, "ascii"),
+)
+
+# should be able to just import this in ??
+ZD2 = Struct(
+    Const(b"ZDLF"),
+    "length" / Int32ul,
+    "unknown" / Bytes(81),
+    "version" / PaddedString(4, "ascii"),
+    Const(b"\x00\x00"),
+    "group" / Byte,
+    "id" / Int32ul,
+    "name" / CString("ascii"),
+    "unknown2" / Bytes(lambda this: 10 - len(this.name)),
+    "groupname" / CString("ascii"),
+    "unknown3" / Bytes(lambda this: 16 - len(this.groupname)),
+    "ICON" / ICON,
+    "TXJ1" / TXJ1,
+    "TXE1" / TXE1,
+    "INFO" / INFO,
+    "DATA" / DATA,
+    "PRMJ" / PRMJ,
+    "PRME" / PRME,
+)
+
 
 EDTB2 = Struct( # Working with a Byte-reversed copy of data
     Padding(9),
@@ -226,6 +256,7 @@ class zoomzt2(object):
     ptcSize = 0
     version = 0
     gce3version = 0
+    maxFX = 0
     def is_connected(self):
         if self.inport == None or self.outport == None:
             return(False)
@@ -277,76 +308,103 @@ class zoomzt2(object):
                 if   d[7] == 0x00:
                     self.model = "G5n"
                     self.version = "3.00"
+                    self.maxFX = 9
                 elif d[7] == 0x02:
                     self.model = "G3n"
                     self.version = "2.20"
+                    self.maxFX = 7
                 elif d[7] == 0x03:
                     self.model = "G3Xn"
                     self.version = "2.20"
+                    self.maxFX = 7
                 elif d[7] == 0x04:
                     self.model = "B3n"
                     self.version = "2.20"
+                    self.maxFX = 7
                 elif d[7] == 0x0c:
                     self.model = "G1 Four"
                     self.version = "2.00"
+                    self.maxFX = 5
                 elif d[7] == 0x0d:
                     self.model = "G1X Four"
                     self.version = "2.00"
+                    self.maxFX = 5
                 elif d[7] == 0x0e:
                     self.model = "B1 FOUR"
                     self.version = "2.00"
+                    self.maxFX = 5
                 elif d[7] == 0x0f:
                     self.model = "B1X Four"
                     self.version = "2.00"
+                    self.maxFX = 5
                 elif d[7] == 0x10:
                     self.model = "GCE-3" # aguess
                     self.version = "1.20"
+                    self.maxFX = 5
                 elif d[7] == 0x11:
                     self.model = "A1 Four"
                     self.version = "1.01"
                 elif d[7] == 0x12:
                     self.model = "A1X Four"
                     self.version = "1.01"
+                    self.maxFX = 5
                 elif d[7] == 0x13:
                     self.model = "??"
                     self.version = "1.50"
+                    self.maxFX = 5
                 elif d[7] == 0x17:
                     self.model = "??"
                     self.version = "1.30"
+                    self.maxFX = 5
                 elif d[7] == 0x19:
                     self.model = "??"
                     self.version = "1.30"
+                    self.maxFX = 5
         elif d[5] == 0x6e and d[6] == 0x00:
             self.version = chr(d[9]) + chr(d[10]) + chr(d[11]) + chr(d[12])
             if   d[7] == 0x00:
                 self.model = "G5n"
+                self.maxFX = 9
             elif d[7] == 0x02:
                 self.model = "G3n"
+                self.maxFX = 7
             elif d[7] == 0x03:
                 self.model = "G3Xn"
+                self.maxFX = 7
             elif d[7] == 0x04:
                 self.model = "B3n"
+                self.maxFX = 7
             elif d[7] == 0x0c:
                 self.model = "G1 Four"
+                self.maxFX = 5
             elif d[7] == 0x0d:
                 self.model = "G1X Four"
+                self.maxFX = 5
             elif d[7] == 0x0e:
                 self.model = "B1 FOUR"
+                self.maxFX = 5
             elif d[7] == 0x0f:
                 self.model = "B1X Four"
+                self.maxFX = 5
             elif d[7] == 0x10:
                 self.model = "GCE-3" # aguess
                 self.version = "1.20"
+                self.maxFX = 5
             elif d[7] == 0x11:
                 self.model = "A1 Four"
+                self.maxFX = 5
             elif d[7] == 0x12:
                 self.model = "A1X Four"
+                self.maxFX = 5
             elif d[7] == 0x13:
                 self.model = "??"
+                self.maxFX = 5
             elif d[7] == 0x17:
                 self.model = "??"
+                self.maxFX = 5
             elif d[7] == 0x19:
                 self.model = "??"
+                self.maxFX = 5
         # how big is patch etc
         data = [0x52, 0x00, 0x6e, 0x44]
         msg = sniffMidiOut("sysex", data)
@@ -366,10 +424,11 @@ class zoomzt2(object):
                 "bankSize": self.bankSize,
                 "ptcSize": self.ptcSize,
                 "version": self.version,
-                "gce3version": self.gce3version
+                "gce3version": self.gce3version,
+                "maxFX": self.maxFX
             }
         print(tD)
-        json5.dump(tD, out1, indent = 6)
+        json.dump(tD, out1, indent = 6)
         out1.close()
 
         # Enable PC Mode
@@ -728,99 +787,73 @@ class zoomzt2(object):
         data = self.file_download(name)        
         self.file_close()
         binconfig = ZD2.parse(data)
-        # print(binconfig)
 
-        if len(data) > 0x88:
-            fileSize=((((data[0x88+2+ 3] * 256) + data[0x88+2 + 2] * 256) + data[0x88 + 2 + 1] * 256) + data[0x88+2 + 0])
-            outBMfile = open(name + ".BMP", "wb")
-            if not outBMfile:
-                sys.exit("Unable to open FILE for writing")
-            outBMfile.write(data[0x88:0x88+fileSize])
-            outBMfile.close()
-            # print("Writing to")
-            outfile = open(name, "wb")
-            if not outfile:
-                sys.exit("Unable to open FILE for writing")
-            # print("data is ", len(data))
-            outfile.write(data)
-            outfile.close()
-            # lets find the OnOff
-            OnOffstart = data.find("OnOff".encode())
-            mmax = []
-            mdefault = []
-            if OnOffstart != 0:
-                logging.info("In OnOffstart")
-                for j in range(0, 10):
-                    mmax.append(data[OnOffstart + j * 0x38 + 12] + 
-                        data[OnOffstart + j * 0x38 + 13] * 256)
-                    mdefault.append(data[OnOffstart + j * 0x38 + 16] + 
-                    data[OnOffstart + j * 0x38 + 17] * 256);
-                    #logging.info("mmax: {}".format((mmax[j]))
-                    #logging.info("mmax: {}".format((mdefault[j]))
+        # print("Writing ZD2")
+        outfile = open(name, "wb")
+        if not outfile:
+            sys.exit("Unable to open FILE for writing")
+        # print("data is ", len(data))
+        outfile.write(data)
+        outfile.close()
 
-            # lets find the TXE1
-            TXE1start = data.find("TXE1".encode())
-            TXdescription = ""
-            if TXE1start != 0:
-                # ts is beginning of TXE1, 4 chars.
-                ts = TXE1start + 4
-                fileSize=((((data[ts + 3] * 256) + data[ts + 2] * 256) + data[ts+ 1] * 256) + data[ts + 0])
+        # writing BMP
+        outBMfile = open(name + ".BMP", "wb")
+        if not outBMfile:
+            sys.exit("Unable to open FILE for writing")
+        outBMfile.write(binconfig['ICON']['data'])
+        outBMfile.close()
 
-                # but now we need to offset the 4 chars for len
-                for j in range(4, fileSize + 4):
-                    if data[j + ts] != 0x0a and data[j + ts] != 0x0d:
-                        TXdescription = TXdescription + chr(data[j + ts])
-            logging.info("Desc {}".format( TXdescription))
-            # so now we try to find the English params?
-            PRMEstart = data.find("PRME".encode())
-            if PRMEstart != 0:
-                j = 0
-                y = data[PRMEstart:-1]
-                # start of the Parameters inside English
-                Paramstart = y.find("Parameters".encode())
-                # now cut from start of Parameters, we want
-                # to start at the []
-                newy = y[Paramstart:-1]
-                bracketstart = newy.find("[".encode())
-                myParams=""
-                myOffset=bracketstart
-                while chr(newy[myOffset + j]) != ']':
-                    if newy[myOffset + j] != 0x0a and newy[myOffset + j] != 0x0d:
-                        myParams = myParams + chr(newy[myOffset + j])
-                    else:
-                        myParams = myParams + " "
-                    j=j+1
-                myParams=myParams + ']'
-                x = json5.loads(myParams)
-                for j in range(0, len(x)):
-                    x[j]['mmax'] = mmax[j+2]
-                    x[j]['mdefault'] = mdefault[j+2]
-                #print(x)
-                # get description the hard way.
-                xAdd = {
-                    "FX" : 
-                    { 
-                        "name": binconfig['name'],
-                        "description": TXdescription,
-                        "version": binconfig['version'],
-                        "fxid": (binconfig['id'] & fxidMask),
-                        "gid": ((binconfig['id'] & gidMask) >> 16) >> 5,
-                        "group": binconfig['group'], 
-                        "groupname": "{}" .format( binconfig['groupname']),
-                        "numParams": len(x),
-                        "numSlots": math.ceil(len(x) / 4),
-                        "filename": name + '.BMP'
-                    }
+        # A1X has training ,. So use json5 to parse it.
+        x = json5.loads(binconfig['PRME']['data'])
+        # lets find the OnOff
+
+        # lets find the TXE1
+        TXdescription = (binconfig['TXE1']['name']).replace('\r','').replace('\n','')
+
+        logging.info("Desc {}".format( TXdescription))
+
+        
+        # lets find the OnOff
+        OnOffstart = data.find("OnOff".encode())
+        mmax = []
+        mdefault = []
+        if OnOffstart != 0:
+            logging.info("In OnOffstart")
+            for j in range(0, 10):
+                mmax.append(data[OnOffstart + j * 0x38 + 12] + 
+                    data[OnOffstart + j * 0x38 + 13] * 256)
+                mdefault.append(data[OnOffstart + j * 0x38 + 16] + 
+                data[OnOffstart + j * 0x38 + 17] * 256);
+
+            numParams = len(x['Parameters'])
+            for j in range(numParams):
+                x['Parameters'][j]['mmax'] = mmax[j+2]
+                x['Parameters'][j]['mdefault'] = mdefault[j+2]
+            #print(x)
+            # get description the hard way.
+            xAdd = {
+                "FX" : 
+                { 
+                    "name": binconfig['name'],
+                    "description": TXdescription,
+                    "version": binconfig['version'],
+                    "fxid": (binconfig['id'] & fxidMask),
+                    "gid": ((binconfig['id'] & gidMask) >> 16) >> 5,
+                    "group": binconfig['group'], 
+                    "groupname": "{}" .format( binconfig['groupname']),
+                    "numParams": numParams,
+                    "numSlots": math.ceil(numParams / 4),
+                    "filename": name + '.BMP'
                 }
-                out_file = open(name + ".json", "w")
-                xAdd['Parameters'] = x
-                json5.dump(xAdd, out_file, indent = 6)
-                out_file.close()
+            }
+            xAdd['Parameters'] = x['Parameters']
+            out_file = open(name + ".json", "w")
+            json.dump(xAdd, out_file, indent = 6)
+            out_file.close()
             return xAdd 
 
     def allpatches(self, total_pedal = None, fxLookup = None):
         thesePatches = []
-        #for i in range(10, 60):
         for i in range(0, self.numPatches):
             print("processing patch {}".format(i))
             data = self.patch_download(i)
@@ -926,7 +959,7 @@ class zoomzt2(object):
         logging.info("PRINTING THESE PATCHES")
         logging.info(thesePatches)
         out_file = open("allpatches.json", "w")
-        json5.dump(thesePatches, out_file, indent = 4)
+        json.dump(thesePatches, out_file, indent = 4)
         out_file.close()
         
 #--------------------------------------------------
@@ -1104,7 +1137,7 @@ def main():
                 fxLookup[myID, myGID] = j 
                 j = j + 1
         out_file = open("allfx.json", "w")
-        json5.dump(total_pedal, out_file, indent = 6)
+        json.dump(total_pedal, out_file, indent = 6)
         out_file.close()
 
         # now find list of Patches, pass in the fxLookup and total_pedal
