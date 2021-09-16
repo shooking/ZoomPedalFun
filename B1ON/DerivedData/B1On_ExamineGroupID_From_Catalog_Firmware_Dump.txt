@@ -10,7 +10,7 @@ Look at offset 0x00205810 onwards, searching for <<<
 Seems to be if byte[2] is clear, the GID is byte[3] / 2
 
 <<<0>>>1		I make these 0x02 in byte position 3 (0 index start)
-				2 / 2 == 1
+				2 / 2 == 1  [[because previous byte & 0xC0 is 0]]
 OPTCOMP.ZDL
 D_COMP.ZDL
 M_COMP.ZDL
@@ -19,7 +19,7 @@ LIMITER.ZDL
 SLWATK.ZDL
 ZNR.ZDL
 <<<1>>>2		I make these 0x04 in byte position 4 (0 index start)
-				4 / 2 = 2
+				4 / 2 = 2  [[because previous byte & 0xC0 is 0]]
 B_GEQ.ZDL
 B_PEQ.ZDL
 SPLITTER.ZDL
@@ -38,9 +38,9 @@ Hmmh I also find Random filter
 <<<2>>>14		I make these 0x0280 (0x80 0x02) interesting
 				NOTE 0x280 >> 5 == 0x14 ... coincidence?
 				So maybe if byte[2] & F0 is not 0 then we
-				((byte[3]&0x0F)<<8 + (byte[2]&0xF0) ) >> 5
-				((0x02&0x0F)<<8 + (0x80&0xF0) ) >> 5
-				((0x02)<<8 + (0x80&0xF0) ) >> 5 = 0x280 >> 5 == 0x14
+				((byte[3]&0x0F)<<8 + (byte[2]&0xC0) ) >> 5
+				((0x02&0x0F)<<8 + (0x80&0xC0) ) >> 5
+				((0x02)<<8 + (0x80&0xC0) ) >> 5 = 0x280 >> 5 == 0x14
 _B_BOOST.ZDL	
 _B_OD.ZDL
 _BASSMUF.ZDL
@@ -49,9 +49,9 @@ _B_METAL.ZDL
 Hmmh I also found others.
 
 <<<14>>>16		I make these 0x02c0 (0xc0 0x02) interesting
-				((byte[3]&0x0F)<<8 + (byte[2]&0xF0) ) >> 5
-				((0x02&0x0F)<<8 + (0xc0&0xF0) ) >> 5
-				((0x02)<<8 + (0xc0&0xF0) ) >> 5 = 0x2c0 >> 5 == 0x16
+				((byte[3]&0x0F)<<8 + (byte[2]&0xC0) ) >> 5
+				((0x02&0x0F)<<8 + (0xc0&0xC0) ) >> 5
+				((0x02)<<8 + (0xc0&0xC0) ) >> 5 = 0x2c0 >> 5 == 0x16
 _BASSDRV.ZDL	
 _DI_PLUS.ZDL
 _BASS_BB.ZDL
@@ -59,10 +59,8 @@ _DI5.ZDL
 _BAS_PRE.ZDL
 _AC_BPRE.ZDL
 
-<<<16>>>5		I make these 0x0a20 (0x20 0x0a) interesting
-				((byte[3]&0x0F)<<8 + (byte[2]&0xF0) ) >> 5
-				((0x0a&0x0F)<<8 + (0x20&0xF0) ) >> 5
-				==0x51 ... hmmh
+<<<16>>>5		here [[because previous byte & 0xC0 is 0]] we take the 0x0a and divide by 2
+				==0x05
 _SVT.ZDL		
 _B_MAN.ZDL
 _HRT3500.ZDL
