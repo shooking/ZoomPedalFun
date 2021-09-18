@@ -13,6 +13,8 @@ Barsik-Barbosik Zoom Firmware Editor: https://github.com/Barsik-Barbosik/Zoom-Fi
 
 Mungewell's Zoom-zt2: https://github.com/mungewell/zoom-zt2
 
+G200kg: https://github.com/g200kg/zoom-ms-utility
+
 SysExTones g1on: https://github.com/SysExTones/g1on
 
 SrMouraSilva: https://github.com/PedalController/PiPedalController
@@ -20,6 +22,8 @@ SrMouraSilva: https://github.com/PedalController/PiPedalController
 ZDownload: https://github.com/fuzboxz/zdownload
 
 Zoom-dev midi docs: https://github.com/zoom-dev/MIDIDocs
+
+PhilDaThrill: https://github.com/PhilDaThrill/MultistompMidi
 
 Decent editors:
 
