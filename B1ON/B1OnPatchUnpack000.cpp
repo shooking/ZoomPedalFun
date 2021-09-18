@@ -48,6 +48,12 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
 		}
 	}
 
+	for (j = 0; j < 10; j++)
+	{
+		cout << unpacked[unpacked.size() - 11 + j] ;
+	}
+	cout << endl;
+	
 	// Start to summarize what we know
 	for (int i = 0; i < 5; i++)
 	{
@@ -67,37 +73,46 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
 
 		// Lets try decode FX ID and group
 		int FXID=(unpacked[18*i + 1] & 15)*256 + unpacked[18*i];
-		int FXGroup= (
-				 (unpacked[18*i + 3] & 15) * 16 + 
-				 (unpacked[18*i + 2] & 240) / 16) / 2;
+		int FXGroup;
+		
 		cout << endl;
+		if ((unpacked[18 * i + 2] & 0XC0) == 0)
+		{
+			FXGroup= (unpacked[18*i + 3] & 0x0F) / 2;
+		} else {
+			FXGroup= (
+				 ( (unpacked[18*i + 3] & 0x0F) << 8 )+ 
+				 ( (unpacked[18*i + 2] & 0xC0))
+			     ) >> 5;
+		}
+		cout << endl;
+		/*
 		printf("[%d][%d][%d][%d]\n", 
 				unpacked[18*i + 0], 
 				unpacked[18*i + 1], 
 				unpacked[18*i + 2], 
 				unpacked[18*i + 3]);
-		printf("FXID[%d] (%s)= %d (%02x), GROUPID = %d (%02x)\n",
+		*/
+		printf("FXID[%d] (%.3s) = %3d (%02x), GROUPID = %d (%02x)\n",
 			       i+1,
 			       (FXID & 1) == 0 ? "OFF" : "ON",
-			       FXID / 32,
-			       FXID / 32,
+			       FXID,
+			       FXID,
 			       FXGroup,
 			       FXGroup);		       
 		cout << endl;
 		for (j = 0; j < 9; j++)
 		{
-			printf("FX%d P%d = %d (%02x) ", i+1, j+1, p[j], p[j]);
+			printf("\tP%d = %4d (%02x)", j+1, p[j], p[j]);
 		}
-		cout << endl;
-	}
-
-	printf("Volume = %d (%02x)\n", unpacked[91], unpacked[91]);
-
-	for (j = 0; j < 10; j++)
-	{
-		cout << unpacked[unpacked.size() - 11 + j] ;
 	}
 	cout << endl;
+
+	printf("NumFX = %2d (%02x)\n", (unpacked[90] & 0xF0) >> 5, (unpacked[90] & 0xF0) >> 5);
+		cout << endl;
+	printf("Volume = %2d (%02x)\n", unpacked[91], unpacked[91]);
+		cout << endl;
+
 
 	return unpacked;
 }
