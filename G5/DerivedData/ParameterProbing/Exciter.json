@@ -1,0 +1,23 @@
+{
+    "fxname": "Exciter",
+    "Parameters": [
+        {
+            "name": "Bass",
+            "mmax": 100,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "Trebl",
+            "mmax": 100,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

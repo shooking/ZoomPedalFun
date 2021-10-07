@@ -1,0 +1,53 @@
+{
+    "fxname": "StereoDly",
+    "Parameters": [
+        {
+            "name": "TimeL",
+            "mmax": 2014,
+            "mdefault": 164,
+            "pedal": false
+        },
+        {
+            "name": "TimeR",
+            "mmax": 2014,
+            "mdefault": 504,
+            "pedal": false
+        },
+        {
+            "name": "Mix",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "LchFB",
+            "mmax": 100,
+            "mdefault": 55,
+            "pedal": true
+        },
+        {
+            "name": "RchFB",
+            "mmax": 100,
+            "mdefault": 37,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "LchLv",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "RchLv",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "fxname": "Cho+Dly",
+    "Parameters": [
+        {
+            "name": "ChoRt",
+            "mmax": 49,
+            "mdefault": 24,
+            "pedal": true
+        },
+        {
+            "name": "ChoMx",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": true
+        },
+        {
+            "name": "DlyTm",
+            "mmax": 2014,
+            "mdefault": 164,
+            "pedal": false
+        },
+        {
+            "name": "DlyFB",
+            "mmax": 100,
+            "mdefault": 40,
+            "pedal": true
+        },
+        {
+            "name": "DlyMx",
+            "mmax": 100,
+            "mdefault": 24,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

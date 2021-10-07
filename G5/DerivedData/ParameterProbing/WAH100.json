@@ -1,0 +1,23 @@
+{
+    "fxname": "WAH100",
+    "Parameters": [
+        {
+            "name": "Freq",
+            "mmax": 50,
+            "mdefault": 0,
+            "pedal": true
+        },
+        {
+            "name": "Depth",
+            "mmax": 100,
+            "mdefault": 40,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "fxname": "BitCrush",
+    "Parameters": [
+        {
+            "name": "Bit",
+            "mmax": 12,
+            "mdefault": 5,
+            "pedal": false
+        },
+        {
+            "name": "SMPL",
+            "mmax": 50,
+            "mdefault": 2,
+            "pedal": true
+        },
+        {
+            "name": "Bal",
+            "mmax": 100,
+            "mdefault": 90,
+            "pedal": true
+        },
+        {
+            "name": "Tone",
+            "mmax": 10,
+            "mdefault": 8,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

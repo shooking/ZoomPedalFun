@@ -1,0 +1,41 @@
+{
+    "fxname": "HD Reverb",
+    "Parameters": [
+        {
+            "name": "Decay",
+            "mmax": 100,
+            "mdefault": 10,
+            "pedal": false
+        },
+        {
+            "name": "Tone",
+            "mmax": 10,
+            "mdefault": 7,
+            "pedal": false
+        },
+        {
+            "name": "Mix",
+            "mmax": 100,
+            "mdefault": 46,
+            "pedal": true
+        },
+        {
+            "name": "PreD",
+            "mmax": 199,
+            "mdefault": 53,
+            "pedal": false
+        },
+        {
+            "name": "HPF",
+            "mmax": 10,
+            "mdefault": 7,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

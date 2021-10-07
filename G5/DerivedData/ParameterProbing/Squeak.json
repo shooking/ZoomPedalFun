@@ -1,0 +1,83 @@
+{
+    "fxname": "Squeak",
+    "Parameters": [
+        {
+            "name": "Gain",
+            "mmax": 100,
+            "mdefault": 40,
+            "pedal": true
+        },
+        {
+            "name": "Tone",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "IE_OK     ",
+            "mmax": 24389,
+            "mdefault": 8275,
+            "pedal": true
+        },
+        {
+            "name": "SATR  ",
+            "mmax": 8274,
+            "mdefault": 32,
+            "pedal": true
+        },
+        {
+            "name": "  ",
+            "mmax": 32,
+            "mdefault": 18783,
+            "pedal": true
+        },
+        {
+            "name": "E_OBJ    ",
+            "mmax": 20063,
+            "mdefault": 21336,
+            "pedal": true
+        },
+        {
+            "name": "OUT  ",
+            "mmax": 8224,
+            "mdefault": 18688,
+            "pedal": true
+        },
+        {
+            "name": "Mode entranc",
+            "mmax": 101,
+            "mdefault": 25965,
+            "pedal": true
+        },
+        {
+            "name": "IALIZE",
+            "mmax": 30063,
+            "mdefault": 29301,
+            "pedal": true
+        },
+        {
+            "name": "nitializing.",
+            "mmax": 11822,
+            "mdefault": 19791,
+            "pedal": true
+        },
+        {
+            "name": "edal to max",
+            "mmax": 25939,
+            "mdefault": 25968,
+            "pedal": true
+        },
+        {
+            "name": "to center",
+            "mmax": 27680,
+            "mdefault": 116,
+            "pedal": true
+        }
+    ]
+}

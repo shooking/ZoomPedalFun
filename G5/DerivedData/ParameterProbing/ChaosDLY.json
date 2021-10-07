@@ -1,0 +1,47 @@
+{
+    "fxname": "ChaosDLY",
+    "Parameters": [
+        {
+            "name": "Chaos",
+            "mmax": 100,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "Time",
+            "mmax": 9,
+            "mdefault": 5,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": false
+        },
+        {
+            "name": "FltOs",
+            "mmax": 100,
+            "mdefault": 40,
+            "pedal": false
+        },
+        {
+            "name": "PDL_L",
+            "mmax": 5,
+            "mdefault": 0,
+            "pedal": true
+        },
+        {
+            "name": "PDL_R",
+            "mmax": 4,
+            "mdefault": 0,
+            "pedal": true
+        },
+        {
+            "name": "PDL_V",
+            "mmax": 100,
+            "mdefault": 0,
+            "pedal": true
+        }
+    ]
+}

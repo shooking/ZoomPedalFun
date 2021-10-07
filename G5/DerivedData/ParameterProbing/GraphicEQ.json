@@ -1,0 +1,47 @@
+{
+    "fxname": "GraphicEQ",
+    "Parameters": [
+        {
+            "name": "160\u001f",
+            "mmax": 24,
+            "mdefault": 12,
+            "pedal": false
+        },
+        {
+            "name": "400\u001f",
+            "mmax": 24,
+            "mdefault": 12,
+            "pedal": false
+        },
+        {
+            "name": "800\u001f",
+            "mmax": 24,
+            "mdefault": 12,
+            "pedal": false
+        },
+        {
+            "name": "3.2k\u001f",
+            "mmax": 24,
+            "mdefault": 12,
+            "pedal": false
+        },
+        {
+            "name": "6.4k\u001f",
+            "mmax": 24,
+            "mdefault": 12,
+            "pedal": false
+        },
+        {
+            "name": "12k\u001f",
+            "mmax": 24,
+            "mdefault": 12,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

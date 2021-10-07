@@ -1,0 +1,29 @@
+{
+    "fxname": "WarpPhase",
+    "Parameters": [
+        {
+            "name": "Speed",
+            "mmax": 77,
+            "mdefault": 24,
+            "pedal": true
+        },
+        {
+            "name": "Reso",
+            "mmax": 10,
+            "mdefault": 7,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "DRCTN",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": true
+        }
+    ]
+}

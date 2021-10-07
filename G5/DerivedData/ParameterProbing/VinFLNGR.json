@@ -1,0 +1,41 @@
+{
+    "fxname": "VinFLNGR",
+    "Parameters": [
+        {
+            "name": "Depth",
+            "mmax": 100,
+            "mdefault": 47,
+            "pedal": true
+        },
+        {
+            "name": "Rate",
+            "mmax": 78,
+            "mdefault": 7,
+            "pedal": true
+        },
+        {
+            "name": "Reso",
+            "mmax": 20,
+            "mdefault": 18,
+            "pedal": true
+        },
+        {
+            "name": "PreD",
+            "mmax": 50,
+            "mdefault": 4,
+            "pedal": true
+        },
+        {
+            "name": "Mix",
+            "mmax": 100,
+            "mdefault": 65,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

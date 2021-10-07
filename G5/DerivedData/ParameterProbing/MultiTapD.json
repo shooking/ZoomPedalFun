@@ -1,0 +1,35 @@
+{
+    "fxname": "MultiTapD",
+    "Parameters": [
+        {
+            "name": "Time",
+            "mmax": 3018,
+            "mdefault": 2999,
+            "pedal": false
+        },
+        {
+            "name": "PTTRN",
+            "mmax": 7,
+            "mdefault": 1,
+            "pedal": false
+        },
+        {
+            "name": "Mix",
+            "mmax": 100,
+            "mdefault": 20,
+            "pedal": true
+        },
+        {
+            "name": "Tone",
+            "mmax": 10,
+            "mdefault": 10,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

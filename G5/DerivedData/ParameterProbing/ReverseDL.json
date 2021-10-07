@@ -1,0 +1,35 @@
+{
+    "fxname": "ReverseDL",
+    "Parameters": [
+        {
+            "name": "Time",
+            "mmax": 2505,
+            "mdefault": 990,
+            "pedal": false
+        },
+        {
+            "name": "F.B",
+            "mmax": 100,
+            "mdefault": 20,
+            "pedal": true
+        },
+        {
+            "name": "Bal",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": true
+        },
+        {
+            "name": "HiDMP",
+            "mmax": 10,
+            "mdefault": 8,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "fxname": "VibroPDL",
+    "Parameters": [
+        {
+            "name": "Depth",
+            "mmax": 100,
+            "mdefault": 40,
+            "pedal": true
+        },
+        {
+            "name": "Rate",
+            "mmax": 100,
+            "mdefault": 30,
+            "pedal": true
+        },
+        {
+            "name": "Bal",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

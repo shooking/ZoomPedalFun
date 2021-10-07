@@ -1,0 +1,53 @@
+{
+    "fxname": "DZ DRIVE",
+    "Parameters": [
+        {
+            "name": "Gain",
+            "mmax": 100,
+            "mdefault": 45,
+            "pedal": true
+        },
+        {
+            "name": "Tube",
+            "mmax": 100,
+            "mdefault": 30,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 93,
+            "pedal": true
+        },
+        {
+            "name": "Trebl",
+            "mmax": 100,
+            "mdefault": 53,
+            "pedal": false
+        },
+        {
+            "name": "Middl",
+            "mmax": 100,
+            "mdefault": 47,
+            "pedal": false
+        },
+        {
+            "name": "Bass",
+            "mmax": 100,
+            "mdefault": 51,
+            "pedal": false
+        },
+        {
+            "name": "Prese",
+            "mmax": 100,
+            "mdefault": 55,
+            "pedal": false
+        },
+        {
+            "name": "CAB",
+            "mmax": 22,
+            "mdefault": 19,
+            "pedal": true
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "fxname": "Rt Closet",
+    "Parameters": [
+        {
+            "name": "Bal",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": true
+        },
+        {
+            "name": "Mode",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "Drive",
+            "mmax": 100,
+            "mdefault": 20,
+            "pedal": true
+        }
+    ]
+}

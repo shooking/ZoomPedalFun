@@ -1,0 +1,29 @@
+{
+    "fxname": "Comp+Phsr",
+    "Parameters": [
+        {
+            "name": "Comp",
+            "mmax": 10,
+            "mdefault": 6,
+            "pedal": false
+        },
+        {
+            "name": "Rate",
+            "mmax": 77,
+            "mdefault": 11,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "Color",
+            "mmax": 3,
+            "mdefault": 3,
+            "pedal": true
+        }
+    ]
+}

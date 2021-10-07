@@ -1,0 +1,41 @@
+{
+    "fxname": "SpctrmBst",
+    "Parameters": [
+        {
+            "name": "Shift",
+            "mmax": 100,
+            "mdefault": 0,
+            "pedal": true
+        },
+        {
+            "name": "min",
+            "mmax": 48,
+            "mdefault": 12,
+            "pedal": false
+        },
+        {
+            "name": "Max",
+            "mmax": 48,
+            "mdefault": 36,
+            "pedal": false
+        },
+        {
+            "name": "Gain",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": true
+        },
+        {
+            "name": "Bal",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 120,
+            "pedal": true
+        }
+    ]
+}

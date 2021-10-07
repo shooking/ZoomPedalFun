@@ -1,0 +1,53 @@
+{
+    "fxname": "BG CRUNCH",
+    "Parameters": [
+        {
+            "name": "Gain",
+            "mmax": 100,
+            "mdefault": 57,
+            "pedal": true
+        },
+        {
+            "name": "Tube",
+            "mmax": 100,
+            "mdefault": 30,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 99,
+            "pedal": true
+        },
+        {
+            "name": "Trebl",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "Middl",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "Bass",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "Prese",
+            "mmax": 100,
+            "mdefault": 60,
+            "pedal": false
+        },
+        {
+            "name": "CAB",
+            "mmax": 22,
+            "mdefault": 6,
+            "pedal": true
+        }
+    ]
+}

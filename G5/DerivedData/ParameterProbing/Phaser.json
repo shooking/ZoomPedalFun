@@ -1,0 +1,23 @@
+{
+    "fxname": "Phaser",
+    "Parameters": [
+        {
+            "name": "Rate",
+            "mmax": 77,
+            "mdefault": 11,
+            "pedal": true
+        },
+        {
+            "name": "Color",
+            "mmax": 3,
+            "mdefault": 3,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

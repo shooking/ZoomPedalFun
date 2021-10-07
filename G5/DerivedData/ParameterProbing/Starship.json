@@ -1,0 +1,47 @@
+{
+    "fxname": "Starship",
+    "Parameters": [
+        {
+            "name": "Accel",
+            "mmax": 100,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "Power",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": false
+        },
+        {
+            "name": "Reso",
+            "mmax": 100,
+            "mdefault": 70,
+            "pedal": false
+        },
+        {
+            "name": "VLCTY",
+            "mmax": 10,
+            "mdefault": 3,
+            "pedal": false
+        },
+        {
+            "name": "PDL_L",
+            "mmax": 50,
+            "mdefault": 0,
+            "pedal": true
+        },
+        {
+            "name": "PDL_R",
+            "mmax": 50,
+            "mdefault": 0,
+            "pedal": true
+        }
+    ]
+}

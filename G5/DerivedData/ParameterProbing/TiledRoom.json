@@ -1,0 +1,35 @@
+{
+    "fxname": "TiledRoom",
+    "Parameters": [
+        {
+            "name": "Decay",
+            "mmax": 29,
+            "mdefault": 19,
+            "pedal": true
+        },
+        {
+            "name": "Tone",
+            "mmax": 10,
+            "mdefault": 4,
+            "pedal": false
+        },
+        {
+            "name": "Mix",
+            "mmax": 100,
+            "mdefault": 46,
+            "pedal": true
+        },
+        {
+            "name": "PreD",
+            "mmax": 99,
+            "mdefault": 9,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

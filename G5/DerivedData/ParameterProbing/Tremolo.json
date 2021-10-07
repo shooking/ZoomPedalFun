@@ -1,0 +1,29 @@
+{
+    "fxname": "Tremolo",
+    "Parameters": [
+        {
+            "name": "Depth",
+            "mmax": 100,
+            "mdefault": 80,
+            "pedal": true
+        },
+        {
+            "name": "Rate",
+            "mmax": 78,
+            "mdefault": 33,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 130,
+            "pedal": true
+        },
+        {
+            "name": "Wave",
+            "mmax": 29,
+            "mdefault": 21,
+            "pedal": true
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "fxname": "MonoPitch",
+    "Parameters": [
+        {
+            "name": "Shift",
+            "mmax": 25,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "Tone",
+            "mmax": 10,
+            "mdefault": 6,
+            "pedal": false
+        },
+        {
+            "name": "Bal",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": true
+        },
+        {
+            "name": "Fine",
+            "mmax": 50,
+            "mdefault": 25,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

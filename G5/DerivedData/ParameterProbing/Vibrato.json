@@ -1,0 +1,35 @@
+{
+    "fxname": "Vibrato",
+    "Parameters": [
+        {
+            "name": "Depth",
+            "mmax": 100,
+            "mdefault": 40,
+            "pedal": false
+        },
+        {
+            "name": "Rate",
+            "mmax": 78,
+            "mdefault": 30,
+            "pedal": true
+        },
+        {
+            "name": "Bal",
+            "mmax": 100,
+            "mdefault": 72,
+            "pedal": true
+        },
+        {
+            "name": "Tone",
+            "mmax": 10,
+            "mdefault": 7,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 120,
+            "pedal": true
+        }
+    ]
+}

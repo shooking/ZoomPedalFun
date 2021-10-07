@@ -1,0 +1,59 @@
+{
+    "fxname": "HotSpice",
+    "Parameters": [
+        {
+            "name": "Sitar",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": false
+        },
+        {
+            "name": "PitMx",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "Input",
+            "mmax": 1,
+            "mdefault": 1,
+            "pedal": false
+        },
+        {
+            "name": "Reso",
+            "mmax": 20,
+            "mdefault": 2,
+            "pedal": false
+        },
+        {
+            "name": "Buzz",
+            "mmax": 100,
+            "mdefault": 20,
+            "pedal": false
+        },
+        {
+            "name": "Sense",
+            "mmax": 100,
+            "mdefault": 25,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": false
+        },
+        {
+            "name": "PDL_L",
+            "mmax": 50,
+            "mdefault": 0,
+            "pedal": true
+        },
+        {
+            "name": "PDL_R",
+            "mmax": 50,
+            "mdefault": 0,
+            "pedal": true
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "fxname": "ZNR",
+    "Parameters": [
+        {
+            "name": "THRSH",
+            "mmax": 24,
+            "mdefault": 9,
+            "pedal": true
+        },
+        {
+            "name": "DETCT",
+            "mmax": 1,
+            "mdefault": 1,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "fxname": "DuoPhase",
+    "Parameters": [
+        {
+            "name": "RateA",
+            "mmax": 77,
+            "mdefault": 46,
+            "pedal": true
+        },
+        {
+            "name": "RateB",
+            "mmax": 51,
+            "mdefault": 5,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "ResoA",
+            "mmax": 10,
+            "mdefault": 0,
+            "pedal": true
+        },
+        {
+            "name": "ResoB",
+            "mmax": 10,
+            "mdefault": 6,
+            "pedal": true
+        },
+        {
+            "name": "Link",
+            "mmax": 2,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "DPT_A",
+            "mmax": 99,
+            "mdefault": 36,
+            "pedal": true
+        },
+        {
+            "name": "DPT_B",
+            "mmax": 99,
+            "mdefault": 62,
+            "pedal": true
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "fxname": "MS CRUNCH",
+    "Parameters": [
+        {
+            "name": "Gain",
+            "mmax": 100,
+            "mdefault": 72,
+            "pedal": true
+        },
+        {
+            "name": "Tube",
+            "mmax": 100,
+            "mdefault": 30,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 98,
+            "pedal": true
+        },
+        {
+            "name": "Trebl",
+            "mmax": 100,
+            "mdefault": 46,
+            "pedal": false
+        },
+        {
+            "name": "Middl",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "Bass",
+            "mmax": 100,
+            "mdefault": 53,
+            "pedal": false
+        },
+        {
+            "name": "Prese",
+            "mmax": 100,
+            "mdefault": 54,
+            "pedal": false
+        },
+        {
+            "name": "CAB",
+            "mmax": 22,
+            "mdefault": 14,
+            "pedal": true
+        }
+    ]
+}

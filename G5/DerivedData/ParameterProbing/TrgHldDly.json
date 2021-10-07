@@ -1,0 +1,35 @@
+{
+    "fxname": "TrgHldDly",
+    "Parameters": [
+        {
+            "name": "Time",
+            "mmax": 990,
+            "mdefault": 40,
+            "pedal": false
+        },
+        {
+            "name": "Duty",
+            "mmax": 75,
+            "mdefault": 75,
+            "pedal": false
+        },
+        {
+            "name": "Mix",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "THRSH",
+            "mmax": 30,
+            "mdefault": 20,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

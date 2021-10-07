@@ -1,0 +1,47 @@
+{
+    "fxname": "RndmFLTR",
+    "Parameters": [
+        {
+            "name": "Speed",
+            "mmax": 77,
+            "mdefault": 34,
+            "pedal": true
+        },
+        {
+            "name": "Range",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": true
+        },
+        {
+            "name": "Reso",
+            "mmax": 10,
+            "mdefault": 6,
+            "pedal": true
+        },
+        {
+            "name": "Type",
+            "mmax": 2,
+            "mdefault": 2,
+            "pedal": false
+        },
+        {
+            "name": "Chara",
+            "mmax": 1,
+            "mdefault": 1,
+            "pedal": false
+        },
+        {
+            "name": "Bal",
+            "mmax": 100,
+            "mdefault": 90,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

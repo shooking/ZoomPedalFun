@@ -1,0 +1,320 @@
+[
+{
+"name": "VolBoostZ", "description": "This effect provides a clean boost without changing frequency characteristics.",
+"Parameters": [ {
+	"zpedal": true,
+"name": "VPosi", "rangehint": "0-100", "pedal": true,
+"description": "Sets the starting position value. After the pedal is moved, the actual position value is used."}, {
+"name": "HPosi", "rangehint": "L100-CNTR-R100", "pedal" : true,
+"description": "Sets the starting position value. After the pedal is moved, the actual position value is used."}, {
+"name": "Curve", "rangehint": "Slow1,Slow2, NRML,Fast",
+"description": "Selects the type of curve used for vertical adjustments."}, {
+"name": "LEFT", "rangehint": "10-300",
+"description": "Sets the volume when pushed all the way left."}, {
+"name": "CNTR", "rangehint": "10-300",
+"description": "Sets the volume when in the center position."}, {
+"name": "RIGHT", "rangehint": "10-300",
+"description": "Sets the volume when pushed all the way right."}, {
+"name": "Level", "rangehint": "0-150",
+"description": "Sets the output level."}]},
+{
+"name": "Filter-Z", "description": "The cut-off frequency and resonance of this filter effect can be controlled using the pedal.",
+"Parameters": [ {
+	"zpedal": true,
+"name": "Freq", "rangehint": "0-100" , "pedal": true,
+"description": "Sets the cut-off frequency."}, {
+"name": "Reso", "rangehint": "0-100", "pedal" : true,
+"description": "Sets the resonance of the filter."}, {
+"name": "Bal", "rangehint": "0-100",
+"description": "Sets the balance between source and effect sounds."}, {
+"name": "Level", "rangehint": "0-150",
+"description": "Sets the output level."}]}, {
+
+
+"name": "Tremolo-Z", "description": "The depth and rate of this tremolo effect can be controlled using the pedal.",
+"Parameters": [ {
+	"zpedal": true,
+"name": "Depth", "rangehint": "0-100", "pedal": true,
+"description": "Sets the modulation depth."}, {
+"name": "Rate", "rangehint": "0-100", "pedal": true,
+"description": "Sets the modulation speed."}, {
+"name": "Level", "rangehint": "0-150",
+"description": "Sets the output level."}, {
+"name": "Wave", "rangehint": "UP 0-UP 9, DWN 0-DWN 9, TRI 0-TRI 9",
+"description": "Sets the waveform used for modulation."}, {
+"name": "PSync", "rangehint": "OFF,ON",
+"description": "When ON, the rate value adjusted by pedal horizontal operation will be synchronized to tempo."}]}, {
+
+
+"name": "Flanger-Z", "description": "The mix and rate of this flanger effect can be controlled using the pedal.",
+"Parameters": [ {
+	"zpedal": true,
+"name": "Mix", "rangehint": "0-100", "pedal": true,
+"description": "Sets the volume of the effect compared to the source sound."}, {
+"name": "Rate", "rangehint": "0-100", "pedal": true,
+"description": "Sets the modulation speed."}, {
+"name": "Depth", "rangehint": "0-100",
+"description": "Sets the modulation depth."}, {
+"name": "PreD", "rangehint": "0-50",
+"description": "Sets the pre-delay time of the effect sound."}, {
+"name": "PSync", "rangehint": "OFF,ON",
+"description": "When ON, the rate value adjusted by pedal horizontal operation is synchronized to tempo."}, {
+"name": "Level", "rangehint": "0-150",
+"description": "Sets the output level."}]}, {
+
+
+"name": "Echo-Z", "description": "The time and feedback of this echo effect can be controlled using the pedal.",
+"Parameters": [ {
+	"zpedal": true,
+"name": "Time", "rangehint": "50-650", "pedal": true,
+"description": "Sets the delay time."}, {
+"name": "F.B 0-100", "pedal" : true,
+"description": "Sets the feedback amount."}, {
+"name": "Mix", "rangehint": "0-100",
+"description": "Sets the volume of the effect compared to the source sound."}, {
+"name": "HiDMP", "rangehint": "0-10", "pedal": true,
+"description": "Sets the attenuation of the high frequencies in the delay sound."}, {
+"name": "Sync", "rangehint": "OFF,ON",
+"description": "When ON, the time value adjusted by pedal vertical operation will be synchronized to tempo."}, {
+"name": "Level", "rangehint": "0-150",
+"description": "Sets the output level."}]}, {
+
+
+"name": "Rotary-Z", "description": "The rotation speed and width of this rotary speaker simulation can be controlled using the pedal.",
+"Parameters": [ {
+	"zpedal": true,
+"name": "Speed", "rangehint": "0-100", "pedal": true,
+"description": "Sets the rotation speed."}, {
+"name": "Width", "rangehint": "0-100", "pedal" : true,
+"description": "Sets the width of the high frequencies."}, {
+"name": "Bal", "rangehint": "0-100",
+"description": "Sets the balance between the horn (high frequencies) and drum (low frequencies)."}, {
+"name": "Level", "rangehint": "0-150",
+"description": "Sets the output level."}, {
+"name": "Drive", "rangehint": "0-100",
+"description": "Sets the amount of amplification of the preamp."}]}, {
+
+
+"name": "TalkPDL-Z", "description": "This effect can make a guitar sound like a human voice.",
+"Parameters": [ {
+	"zpedal": true,
+"name": "VPosi", "rangehint": "0-100", "pedal": true,
+"description": "Sets the starting position value. After the pedal is moved, the actual position value is used."}, {
+"name": "HPosi", "rangehint": "0-100", "pedal" : true,
+"description": "Sets the starting position value. After the pedal is moved, the actual position value is used."}, {
+"name": "Voice", "rangehint": "0-100",
+"description": "Sets the voice quality."}, {
+"name": "Mode", "rangehint": "Step,Soft ",
+"description": "Sets how vowel sounds change."}, {
+"name": "Tone", "rangehint": "0-10",
+"description": "Sets the tone."}, {
+"name": "Level", "rangehint": "0-150",
+"description": "Sets the output level."}]}, {
+ 
+ 
+
+"name": "TRM&PHSR", "description": "This effect allows the pedal to be used for tremolo when shifted left and phaser when shifted right.",
+"Parameters": [ {
+	"zpedal": true,
+"name": "Depth", "rangehint": "L100-R100", "pedal": true,
+"description": "Sets the depth of the effect."}, {
+"name": "TrmRt", "rangehint": "- x20",
+"description": "Sets the rate of the tremolo."}, {
+"name": "PhaRt", "rangehint": "- x20",
+"description": "Sets the rate of the phaser."}, {
+"name": "Wave", "rangehint": "UP 0-UP 9, DWN 0-DWN 9, TRI 0-TRI 9",
+"description": "Selects the waveform used for tremolo modulation."}, {
+"name": "Color", "rangehint": "4 STG , 8 STG , inv 4 , inv 8",
+"description": "Sets the type of phaser color."}, {
+"name": "Level", "rangehint": "0-150",
+"description": "Sets the output level."}]}, {
+
+
+"name": "CHO&REV", "description": "This effect allows the pedal to be used for chorus when shifted left and reverb when shifted right.",
+"Parameters": [ {
+	"zpedal": true,
+"name": "Depth", "rangehint": "L100-R100", "pedal": true,
+"description": "Sets the depth of the effect."}, {
+"name": "ChoRt", "rangehint": "1-50",
+"description": "Sets the rate of the chorus."}, {
+"name": "Decay", "rangehint": "1-30",
+"description": "Sets the length of the decay."}, {
+"name": "RevMx", "rangehint": "0-100",
+"description": "Sets the reverb mix."}, {
+"name": "Level", "rangehint": "0-150",
+"description": "Sets the output level."}]}, {
+
+
+"name": "FLNG&DLY", "description": "This effect allows the pedal to be used for flanging when shifted left and delay when shifted right.",
+"Parameters": [ {
+	"zpedal": true,
+"name": "Depth", "rangehint": "L100-R100", "pedal": true,
+"description": "Sets the depth of the effect."}, {
+"name": "FlgRt", "rangehint": "0-50",
+"description": "Sets the rate of the flanger."}, {
+"name": "DlyTm", "rangehint": "1-2000",
+"description": "Sets the delay time of the delay."}, {
+"name": "FlgDp", "rangehint": "0-100",
+"description": "Sets the depth of the flanger."}, {
+"name": "DlyFB", "rangehint": "0-100",
+"description": "Sets the feedback of the delay."}, {
+"name": "DlyMx", "rangehint": "0-100",
+"description": "Sets the delay mix."}, {
+"name": "Level", "rangehint": "0-150",
+"description": "Sets the output level."}]}, {
+
+
+"name": "OctPitch", "description": "This effect, which is designed for playing single notes, allows the pedal to be used to change the pitch by up to -1 octave when shifted left and up to +1 octave when shifted right.",
+"Parameters": [ {
+	"zpedal": true,
+"name": "Pitch", "rangehint": "L100-R100", "pedal": true,
+"description": "Sets the amount of pitch shift."}, {
+"name": "Tone", "rangehint": "0-10",
+"description": "Sets the tone."}, {
+"name": "Level", "rangehint": "0-150",
+"description": "Sets the output level."}]}, {
+
+
+"name": "W-Shift", "description": "This effect, which is designed for playing single notes, allows the pedal to control pitch and vibrato.",
+"Parameters": [ {
+	"zpedal": true,
+"name": "Pitch", "rangehint": "0-200", "pedal": true,
+"description": "Sets the amount of pitch shift."}, {
+"name": "VIBRT", "rangehint": "0-100", "pedal": true,
+"description": "Sets the amount of vibrato applied."}, {
+"name": "Level", "rangehint": "0-150",
+"description": "Sets the output level."}, {
+"name": "Rate", "rangehint": "0-100",
+"description": "Sets the vibrato speed."}, {
+"name": "Depth", "rangehint": "0-100",
+"description": "Sets the vibrato depth."}, {
+"name": "Tone", "rangehint": "0-10",
+"description": "Sets the tone."}]}, {
+
+
+"name": "HotSpice", "description": "This effect simulates a sitar tone.",
+"Parameters": [ {
+	"zpedal": true,
+"name": "Sitar", "rangehint": "0-100", "pedal": true,
+"description": "Sets the balance between the sitar sound and the original sound."}, {
+"name": "PitMx", "rangehint": "0-100", "pedal" : true,
+"description": "Sets the volume of doubling one octave up."}, {
+"name": "Input", "rangehint": "GtrIn,EfxIn",
+"description": "Selects the source of the input signal used for the sitar effect."}, {
+"name": "Reso", "rangehint": "-10-10",
+"description": "Sets the strength of the resonance motion."}, {
+"name": "Buzz", "rangehint": "0-100",
+"description": "Sets the buzzing tone."}, {
+"name": "Sense", "rangehint": "0-100",
+"description": "Sets the sensitivity of the effect."}, {
+"name": "Level", "rangehint": "0-150",
+"description": "Sets the output level."}]}, {
+
+
+"name": "ChaosDLY", "description": "This chaos effect uses filter and echo.",
+"Parameters": [ {
+	"zpedal": true,
+"name": "Chaos", "rangehint": "0-100", "pedal": true,
+"description": "Sets the depth of the filter and echo."}, {
+"name": "Time", "rangehint": "x2- ", "pedal": true,
+"description": "Sets the echo time."}, {
+"name": "Level", "rangehint": "0-150",
+"description": "Sets the output level."}, {
+"name": "FltOs", "rangehint": "0-100",
+"description": "Sets the minimum frequency of the filter."}]}, {
+
+
+"name": "Starship", "description": "This effect makes a sound like a flying spaceship.",
+"Parameters": [ {
+	"zpedal": true,
+"name": "Accel", "rangehint": "0-100", "pedal": true,
+"description": "Sets the “acceleration” of the sound by changing the sample rate."}, {
+"name": "Power", "rangehint": "0-100", "pedal": true,
+"description": "Sets the “power” by changing the balance of the sound."}, {
+"name": "Level", "rangehint": "0-150",
+"description": "Sets the output level."}, {
+"name": "Reso", "rangehint": "0-100",
+"description": "Sets the strength of the resonance of the effect."}, {
+"name": "VLCTY", "rangehint": "0-10",
+"description": "Sets the speed of the sound change."}]}, {
+
+
+"name": "RNDM Talk", "description": "This talking effect changes vowel sounds at random.",
+"Parameters": [ {
+	"zpedal": true,
+"name": "Speed x2-", "pedal" : true,
+"description": "Sets the speed of vowel sound change."}, {
+"name": "Voice", "rangehint": "0-100", "pedal": true,
+"description": "Sets the quality of the voice."}, {
+"name": "Level", "rangehint": "0-150",
+"description": "Sets the output level."}]}, {
+
+
+"name": "FuzzyBack", "description": "This fuzz effect feeds back overtones when single notes are played.  The feedback sound is sustained when the Z-Pedal is shifted all the way to the right.",
+"Parameters": [ {
+	"zpedal": true,
+"name": "Gain", "rangehint": "0-100", "pedal": true,
+"description": "Sets the gain."}, {
+"name": "HRMNX", "rangehint": "0-100", "pedal": true,
+"description": "Sets the amount of feedback of the overtones.",
+"name": "Level", "rangehint": "0-150"}, {
+"description": "Sets the output level.",
+"name": "Depth", "rangehint": "0-100",
+"description": "Sets the depth of the gain when the pedal is pressed."}]}, {
+
+
+"name": "Granular", "description": "This effect freely granulizes the sound that is sampled regularly.",
+"Parameters": [ {
+	"zpedal": true,
+"name": "Size", "rangehint": "0-100", "pedal": true,
+"description": "Sets the fineness of the grains."}, {
+"name": "Flt", "rangehint": "L100-R100", "pedal": true,
+"description": "Sets the amount of filter applied."}, {
+"name": "Rate", "rangehint": "x2- , Hold",
+"description": "Sets the sampling frequency. When set to Hold, the sound is sampled when picking occurs."}, {
+"name": "FltOs", "rangehint": "0-100",
+"description": "Sets the minimum frequency of the filter."}, {
+"name": "FltRs", "rangehint": "0-100",
+"description": "Sets the strength of the filter resonance."}, {
+"name": "Level", "rangehint": "0-150",
+"description": "Sets the output level."}]}, {
+
+
+"name": "SpaceWorm", "description": "This ring modulator creates a spacey sound.",
+"Parameters": [ {
+	"zpedal": true,
+"name": "Freq", "rangehint": "0-100", "pedal": true,
+"description": "Sets the depth of the ring modulator."}, {
+"name": "Speed", "rangehint": "x9- ", "pedal": true,
+"description": "Sets the speed of the step waveform."}, {
+"name": "Depth", "rangehint": "0-100",
+"description": "Sets the frequency of the ring modulation."}, {
+"name": "Step", "rangehint": "2-32",
+"description": "Sets the number of steps in the step waveform."}, {
+"name": "Level", "rangehint": "0-150",
+"description": "Sets the output level."}]}, {
+"name": "Custom", "description": "Use this to control the parameters of other effects using the Z-Pedal.",
+"Parameters": [ {
+	"zpedal": true,
+"name": "ZP-V : DEST", 
+"description": "Sets the parameter controlled by vertical movement of the Z-Pedal."}, {
+"name": "ZP-V : min", 
+"description": "Sets the value when the pedal is all the way up."}, {
+"name": "ZP-V : max",
+"description": "Sets the value when the pedal is all the way down."}, {
+"name": "ZP-L : DEST",
+"description": "Sets the parameter controlled by left movement of the Z-Pedal."}, {
+"name": "ZP-L: Left",
+"description": "Sets the value when the pedal is all the way left."}, {
+"name": "ZP-L : Center",
+"description": "Sets the value when the pedal is in the center position."}, {
+"name": "ZP-R : DEST",
+"description": "Sets the parameter controlled by right movement of the Z-Pedal."}, {
+"name": "ZP-R : Center",
+"description": "Sets the value when the pedal is in the center position."}, {
+"name": "ZP-R : Right",
+"description": "Sets the value when the pedal is all the way right."
+}
+]
+}
+]

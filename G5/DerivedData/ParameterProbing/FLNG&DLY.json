@@ -1,0 +1,59 @@
+{
+    "fxname": "FLNG&DLY",
+    "Parameters": [
+        {
+            "name": "Depth",
+            "mmax": 200,
+            "mdefault": 100,
+            "pedal": false
+        },
+        {
+            "name": "FlgRt",
+            "mmax": 78,
+            "mdefault": 5,
+            "pedal": false
+        },
+        {
+            "name": "DlyTm",
+            "mmax": 2014,
+            "mdefault": 399,
+            "pedal": false
+        },
+        {
+            "name": "FlgDp",
+            "mmax": 100,
+            "mdefault": 40,
+            "pedal": false
+        },
+        {
+            "name": "DlyFB",
+            "mmax": 100,
+            "mdefault": 20,
+            "pedal": false
+        },
+        {
+            "name": "DlyMx",
+            "mmax": 100,
+            "mdefault": 60,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": false
+        },
+        {
+            "name": "PDL_L",
+            "mmax": 100,
+            "mdefault": 0,
+            "pedal": true
+        },
+        {
+            "name": "PDL_R",
+            "mmax": 100,
+            "mdefault": 0,
+            "pedal": true
+        }
+    ]
+}

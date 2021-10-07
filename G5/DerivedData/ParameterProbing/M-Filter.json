@@ -1,0 +1,53 @@
+{
+    "fxname": "M-Filter",
+    "Parameters": [
+        {
+            "name": "Freq",
+            "mmax": 100,
+            "mdefault": 56,
+            "pedal": true
+        },
+        {
+            "name": "Sense",
+            "mmax": 10,
+            "mdefault": 5,
+            "pedal": false
+        },
+        {
+            "name": "Reso",
+            "mmax": 10,
+            "mdefault": 7,
+            "pedal": true
+        },
+        {
+            "name": "Type",
+            "mmax": 2,
+            "mdefault": 2,
+            "pedal": false
+        },
+        {
+            "name": "Chara",
+            "mmax": 1,
+            "mdefault": 1,
+            "pedal": false
+        },
+        {
+            "name": "VLCTY",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "Bal",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "fxname": "Arena",
+    "Parameters": [
+        {
+            "name": "Decay",
+            "mmax": 29,
+            "mdefault": 14,
+            "pedal": true
+        },
+        {
+            "name": "Tone",
+            "mmax": 10,
+            "mdefault": 7,
+            "pedal": false
+        },
+        {
+            "name": "Mix",
+            "mmax": 100,
+            "mdefault": 56,
+            "pedal": true
+        },
+        {
+            "name": "PreD",
+            "mmax": 99,
+            "mdefault": 89,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

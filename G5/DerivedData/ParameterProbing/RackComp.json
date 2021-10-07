@@ -1,0 +1,29 @@
+{
+    "fxname": "RackComp",
+    "Parameters": [
+        {
+            "name": "THRSH",
+            "mmax": 50,
+            "mdefault": 40,
+            "pedal": true
+        },
+        {
+            "name": "Ratio",
+            "mmax": 9,
+            "mdefault": 5,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "ATTCK",
+            "mmax": 9,
+            "mdefault": 6,
+            "pedal": true
+        }
+    ]
+}

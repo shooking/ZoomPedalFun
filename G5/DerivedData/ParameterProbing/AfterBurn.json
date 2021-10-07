@@ -1,0 +1,53 @@
+{
+    "fxname": "AfterBurn",
+    "Parameters": [
+        {
+            "name": "x1",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": false
+        },
+        {
+            "name": "x3",
+            "mmax": 100,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "x5",
+            "mmax": 100,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "ABS",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": false
+        },
+        {
+            "name": "TONE",
+            "mmax": 10,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "DcCut",
+            "mmax": 10,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "ISO",
+            "mmax": 30,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

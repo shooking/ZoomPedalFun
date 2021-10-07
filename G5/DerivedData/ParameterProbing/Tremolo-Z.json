@@ -1,0 +1,101 @@
+{
+    "fxname": "Tremolo-Z",
+    "Parameters": [
+        {
+            "name": "Depth",
+            "mmax": 100,
+            "mdefault": 80,
+            "pedal": false
+        },
+        {
+            "name": "Rate",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 130,
+            "pedal": false
+        },
+        {
+            "name": "Wave",
+            "mmax": 29,
+            "mdefault": 21,
+            "pedal": false
+        },
+        {
+            "name": "PSync",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": true
+        },
+        {
+            "name": "PDL_L",
+            "mmax": 50,
+            "mdefault": 0,
+            "pedal": true
+        },
+        {
+            "name": "PDL_R",
+            "mmax": 50,
+            "mdefault": 0,
+            "pedal": true
+        },
+        {
+            "name": "\u0019",
+            "mmax": 25,
+            "mdefault": 2,
+            "pedal": true
+        },
+        {
+            "name": "d",
+            "mmax": 100,
+            "mdefault": 1,
+            "pedal": true
+        },
+        {
+            "name": "d",
+            "mmax": 100,
+            "mdefault": 1,
+            "pedal": true
+        },
+        {
+            "name": "d",
+            "mmax": 100,
+            "mdefault": 1,
+            "pedal": true
+        },
+        {
+            "name": "d",
+            "mmax": 100,
+            "mdefault": 1,
+            "pedal": true
+        },
+        {
+            "name": "d",
+            "mmax": 100,
+            "mdefault": 1,
+            "pedal": true
+        },
+        {
+            "name": "d",
+            "mmax": 100,
+            "mdefault": 1,
+            "pedal": true
+        },
+        {
+            "name": "d",
+            "mmax": 100,
+            "mdefault": 1,
+            "pedal": true
+        },
+        {
+            "name": "d",
+            "mmax": 100,
+            "mdefault": 1,
+            "pedal": false
+        }
+    ]
+}

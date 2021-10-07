@@ -1,0 +1,47 @@
+{
+    "fxname": "CrossDLY",
+    "Parameters": [
+        {
+            "name": "Time1",
+            "mmax": 2014,
+            "mdefault": 2007,
+            "pedal": false
+        },
+        {
+            "name": "Time2",
+            "mmax": 2014,
+            "mdefault": 2003,
+            "pedal": false
+        },
+        {
+            "name": "Bal",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": true
+        },
+        {
+            "name": "FB_1",
+            "mmax": 100,
+            "mdefault": 70,
+            "pedal": true
+        },
+        {
+            "name": "FB_2",
+            "mmax": 100,
+            "mdefault": 80,
+            "pedal": true
+        },
+        {
+            "name": "Mix",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

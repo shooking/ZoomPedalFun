@@ -1,0 +1,35 @@
+{
+    "fxname": "Slicer",
+    "Parameters": [
+        {
+            "name": "PTTRN",
+            "mmax": 19,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "Speed",
+            "mmax": 77,
+            "mdefault": 24,
+            "pedal": true
+        },
+        {
+            "name": "Bal",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "THRSH",
+            "mmax": 50,
+            "mdefault": 20,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 130,
+            "pedal": true
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "fxname": "FD COMBO",
+    "Parameters": [
+        {
+            "name": "Gain",
+            "mmax": 100,
+            "mdefault": 24,
+            "pedal": true
+        },
+        {
+            "name": "Tube",
+            "mmax": 100,
+            "mdefault": 30,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 86,
+            "pedal": true
+        },
+        {
+            "name": "Trebl",
+            "mmax": 100,
+            "mdefault": 48,
+            "pedal": false
+        },
+        {
+            "name": "Middl",
+            "mmax": 100,
+            "mdefault": 45,
+            "pedal": false
+        },
+        {
+            "name": "Bass",
+            "mmax": 100,
+            "mdefault": 44,
+            "pedal": false
+        },
+        {
+            "name": "Prese",
+            "mmax": 100,
+            "mdefault": 52,
+            "pedal": false
+        },
+        {
+            "name": "CAB",
+            "mmax": 22,
+            "mdefault": 0,
+            "pedal": true
+        }
+    ]
+}

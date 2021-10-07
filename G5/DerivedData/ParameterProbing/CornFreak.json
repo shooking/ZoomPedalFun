@@ -1,0 +1,47 @@
+{
+    "fxname": "CornFreak",
+    "Parameters": [
+        {
+            "name": "Rate",
+            "mmax": 77,
+            "mdefault": 11,
+            "pedal": true
+        },
+        {
+            "name": "Bal",
+            "mmax": 100,
+            "mdefault": 40,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": false
+        },
+        {
+            "name": "Min",
+            "mmax": 100,
+            "mdefault": 20,
+            "pedal": false
+        },
+        {
+            "name": "Max",
+            "mmax": 100,
+            "mdefault": 80,
+            "pedal": false
+        },
+        {
+            "name": "Loop",
+            "mmax": 15,
+            "mdefault": 7,
+            "pedal": false
+        },
+        {
+            "name": "Wave",
+            "mmax": 2,
+            "mdefault": 0,
+            "pedal": true
+        }
+    ]
+}

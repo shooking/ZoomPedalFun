@@ -1,0 +1,35 @@
+{
+    "fxname": "Enigma",
+    "Parameters": [
+        {
+            "name": "Delay",
+            "mmax": 999,
+            "mdefault": 249,
+            "pedal": false
+        },
+        {
+            "name": "Dry",
+            "mmax": 100,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "Wet",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "FB",
+            "mmax": 100,
+            "mdefault": 40,
+            "pedal": true
+        }
+    ]
+}

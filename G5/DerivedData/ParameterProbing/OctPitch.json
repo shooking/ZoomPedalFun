@@ -1,0 +1,35 @@
+{
+    "fxname": "OctPitch",
+    "Parameters": [
+        {
+            "name": "Pitch",
+            "mmax": 200,
+            "mdefault": 100,
+            "pedal": false
+        },
+        {
+            "name": "Tone",
+            "mmax": 10,
+            "mdefault": 8,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": false
+        },
+        {
+            "name": "PDL_L",
+            "mmax": 100,
+            "mdefault": 0,
+            "pedal": true
+        },
+        {
+            "name": "PDL_R",
+            "mmax": 100,
+            "mdefault": 0,
+            "pedal": true
+        }
+    ]
+}

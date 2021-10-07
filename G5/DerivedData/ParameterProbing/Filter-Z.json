@@ -1,0 +1,41 @@
+{
+    "fxname": "Filter-Z",
+    "Parameters": [
+        {
+            "name": "Freq",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": false
+        },
+        {
+            "name": "Reso ",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "Bal  ",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": false
+        },
+        {
+            "name": "PDL_L",
+            "mmax": 50,
+            "mdefault": 50,
+            "pedal": true
+        },
+        {
+            "name": "PDL_R",
+            "mmax": 50,
+            "mdefault": 0,
+            "pedal": true
+        }
+    ]
+}

@@ -1,0 +1,160 @@
+[{
+      "name":  "M-Filter", "p_id": 0, "z_id": 17} , {
+      "name":  "TheVibe", "p_id": 1, "z_id": 123} , {
+      "name":  "Z-Organ", "p_id": 2, "z_id": 90} , {
+      "name":  "Slicer", "p_id": 3, "z_id": 67} , {
+      "name":  "PhaseDly", "p_id": 4, "z_id": 103} , {
+      "name":  "FilterDly", "p_id": 5, "z_id": 100} , {
+      "name":  "PitchDly", "p_id": 6, "z_id": 101} , {
+      "name":  "StereoDly", "p_id": 7, "z_id": 102} , {
+      "name":  "BitCrush", "p_id": 8, "z_id": 87} , {
+      "name":  "Bomber", "p_id": 9, "z_id": 88} , {
+      "name":  "DuoPhase", "p_id": 10, "z_id": 69} , {
+      "name":  "MonoSynth", "p_id": 11, "z_id": 89} , {
+      "name":  "SeqFLTR", "p_id": 12, "z_id": 19} , {
+      "name":  "RndmFLTR", "p_id": 13, "z_id": 20} , {
+      "name":  "WarpPhase", "p_id": 14, "z_id": 70} , {
+      "name":  "TrgHldDly", "p_id": 15, "z_id": 104} , {
+      "name":  "Chorus Delay", "p_id": 16, "z_id": 116} , {
+      "name":  "Cho+Rev", "p_id": 17, "z_id": 118} , {
+      "name":  "Dly+Rev", "p_id": 18, "z_id": 117} , {
+      "name":  "Comp+Phsr", "p_id": 19, "z_id": 114} , {
+      "name":  "Comp+AWah", "p_id": 20, "z_id": 115} , {
+      "name":  "Flanger V-CHO", "p_id": 21, "z_id": 119} , {
+      "name":  "Comp+OD", "p_id": 22, "z_id": 113} , {
+      "name":  "Comp", "p_id": 23, "z_id": 1} , {
+      "name":  "RackComp", "p_id": 24, "z_id": 2} , {
+      "name":  "M Comp", "p_id": 25, "z_id": 3} , {
+      "name":  "SlowATTCK", "p_id": 26, "z_id": 5} , {
+      "name":  "ZNR", "p_id": 27, "z_id": 6} , {
+      "name":  "NoiseGate", "p_id": 28, "z_id": 7} , {
+      "name":  "DirtyGate", "p_id": 29, "z_id": 8} , {
+      "name":  "GraphicEQ", "p_id": 30, "z_id": 9} , {
+      "name":  "ParaEQ", "p_id": 31, "z_id": 10} , {
+      "name":  "CombFLTR", "p_id": 32, "z_id": 12} , {
+      "name":  "AutoWah", "p_id": 33, "z_id": 13} , {
+      "name":  "Resonance", "p_id": 34, "z_id": 14} , {
+      "name":  "Step", "p_id": 35, "z_id": 18} , {
+      "name":  "Cry", "p_id": 36, "z_id": 15} , {
+      "name":  "Octave", "p_id": 37, "z_id": 80} , {
+      "name":  "Tremolo", "p_id": 38, "z_id": 65} , {
+      "name":  "Phaser", "p_id": 39, "z_id": 68} , {
+      "name":  "RingMod", "p_id": 40, "z_id": 86} , {
+      "name":  "Chorus", "p_id": 41, "z_id": 71} , {
+      "name":  "Detune", "p_id": 42, "z_id": 72} , {
+      "name":  "VintageCE", "p_id": 43, "z_id": 73} , {
+      "name":  "StereoCho", "p_id": 44, "z_id": 74} , {
+      "name":  "Ensemble", "p_id": 45, "z_id": 75} , {
+      "name":  "VinFLNGR", "p_id": 46, "z_id": 76} , {
+      "name":  "DynaFLNGR", "p_id": 47, "z_id": 78} , {
+      "name":  "Vibrato", "p_id": 48, "z_id": 79} , {
+      "name":  "PitchSHFT", "p_id": 49, "z_id": 81} , {
+      "name":  "BendCHO", "p_id": 50, "z_id": 84} , {
+      "name":  "MonoPitch", "p_id": 51, "z_id": 82} , {
+      "name":  "HPS", "p_id": 52, "z_id": 83} , {
+      "name":  "Delay", "p_id": 53, "z_id": 93} , {
+      "name":  "TapeEcho", "p_id": 54, "z_id": 94} , {
+      "name":  "ModDelay", "p_id": 55, "z_id": 95} , {
+      "name":  "AnalogDly", "p_id": 56, "z_id": 96} , {
+      "name":  "ReverseDL", "p_id": 57, "z_id": 97} , {
+      "name":  "MultiTapD", "p_id": 58, "z_id": 98} , {
+      "name":  "DynaDelay", "p_id": 59, "z_id": 99} , {
+      "name":  "Hall", "p_id": 60, "z_id": 106} , {
+      "name":  "Room", "p_id": 61, "z_id": 107} , {
+      "name":  "TiledRoom", "p_id": 62, "z_id": 108} , {
+      "name":  "Spring", "p_id": 63, "z_id": 109} , {
+      "name":  "Arena", "p_id": 64, "z_id": 110} , {
+      "name":  "EarlyRef", "p_id": 65, "z_id": 111} , {
+      "name":  "Air", "p_id": 66, "z_id": 112} , {
+      "name":  "PedarlVx", "p_id": 67, "z_id": 120} , {
+      "name":  "PedalCry", "p_id": 68, "z_id": 121} , {
+      "name":  "PDL Pitch", "p_id": 69, "z_id": 124} , {
+      "name":  "PDL MnPit", "p_id": 70, "z_id": 125} , {
+      "name":  "Booster", "p_id": 71, "z_id": 22} , {
+      "name":  "OverDrive", "p_id": 72, "z_id": 23} , {
+      "name":  "T Scream", "p_id": 73, "z_id": 24} , {
+      "name":  "Governor", "p_id": 74, "z_id": 25} , {
+      "name":  "Dist+", "p_id": 75, "z_id": 26} , {
+      "name":  "Dist 1", "p_id": 76, "z_id": 27} , {
+      "name":  "Squeak", "p_id": 77, "z_id": 28} , {
+      "name":  "FuzzSmile", "p_id": 78, "z_id": 29} , {
+      "name":  "GreatMuff", "p_id": 79, "z_id": 30} , {
+      "name":  "MetalWRLD", "p_id": 80, "z_id": 31} , {
+      "name":  "HotBox", "p_id": 81, "z_id": 32} , {
+      "name":  "Z Wild", "p_id": 82, "z_id": 39} , {
+      "name":  "Lead", "p_id": 83, "z_id": 40} , {
+      "name":  "ExtremeDS", "p_id": 84, "z_id": 41} , {
+      "name":  "Aco.Sim", "p_id": 85, "z_id": 42} , {
+      "name":  "Z Clean", "p_id": 86, "z_id": 33} , {
+      "name":  "Z MP1", "p_id": 87, "z_id": 34} , {
+      "name":  "Z Bottom", "p_id": 88, "z_id": 35} , {
+      "name":  "Z Dream", "p_id": 89, "z_id": 36} , {
+      "name":  "Z Scream", "p_id": 90, "z_id": 37} , {
+      "name":  "Z Neos", "p_id": 91, "z_id": 38} , {
+      "name":  "FD COMBO", "p_id": 92, "z_id": 43} , {
+      "name":  "VX COMBO", "p_id": 93, "z_id": 47} , {
+      "name":  "US BLUES", "p_id": 94, "z_id": 46} , {
+      "name":  "BG CRUNCH", "p_id": 95, "z_id": 49} , {
+      "name":  "HW STACK", "p_id": 96, "z_id": 54} , {
+      "name":  "TANGERINE", "p_id": 97, "z_id": 55} , {
+      "name":  "MS CRUNCH", "p_id": 98, "z_id": 57} , {
+      "name":  "MS DRIVE", "p_id": 99, "z_id": 59} , {
+      "name":  "BG DRIVE", "p_id": 100, "z_id": 61} , {
+      "name":  "DZ DRIVE", "p_id": 101, "z_id": 62} , {
+      "name":  "TW ROCK", "p_id": 102, "z_id": 52} , {
+      "name":  "MATCH30", "p_id": 103, "z_id": 50} , {
+      "name":  "FD VIBRO", "p_id": 104, "z_id": 45} , {
+      "name":  "HD Reverb", "p_id": 105, "z_id": 105} , {
+      "name":  "Flanger", "p_id": 106, "z_id": 77} , {
+      "name":  "THRU", "p_id": 107, "z_id": 1000} , {
+      "name":  "TONE CITY", "p_id": 108, "z_id": 53} , {
+      "name":  "B-BREAKER", "p_id": 109, "z_id": 56} , {
+      "name":  "BGN DRIVE", "p_id": 110, "z_id": 60} , {
+      "name":  "DELUXE-R", "p_id": 111, "z_id": 44} , {
+      "name":  "ALIEN", "p_id": 112, "z_id": 63} , {
+      "name":  "REVO-1", "p_id": 113, "z_id": 64} , {
+      "name":  "CAR DRIVE", "p_id": 114, "z_id": 51} , {
+      "name":  "Exciter", "p_id": 115, "z_id": 11} , {
+      "name":  "AutoPan", "p_id": 116, "z_id": 91} , {
+      "name":  "DuoTrem", "p_id": 117, "z_id": 66} , {
+      "name":  "fCycle", "p_id": 118, "z_id": 21} , {
+      "name":  "SlowFLTR", "p_id": 119, "z_id": 16} , {
+      "name":  "StereoCmp", "p_id": 120, "z_id": 500} , {
+      "name":  "SteroEQ", "p_id": 121, "z_id": 501} , {
+      "name":  "WAH100", "p_id": 122, "z_id": 122} , {
+      "name":  "Rt Closet", "p_id": 123, "z_id": 92} , {
+      "name":  "THRU", "p_id": 124, "z_id": 1001} , {
+      "name":  "CrossDLY", "p_id": 125, "z_id": 502} , {
+      "name":  "THRU", "p_id": 126, "z_id": 1002} , {
+      "name":  "THRU", "p_id": 127, "z_id": 1003} , {
+      "name":  "THRU", "p_id": 128, "z_id": 1004} , {
+      "name":  "SawFiler", "p_id": 129, "z_id": 503} , {
+      "name":  "Psych-Pha", "p_id": 130, "z_id": 504} , {
+      "name":  "VibroPDL", "p_id": 131, "z_id": 505} , {
+      "name":  "Thru", "p_id": 132, "z_id": 1005} , {
+      "name":  "SpctrmBst", "p_id": 133, "z_id": 506} , {
+      "name":  "HFM FltDL", "p_id": 134, "z_id": 507} , {
+      "name":  "OptComp", "p_id": 135, "z_id": 4} , {
+      "name":  "160 Comp", "p_id": 136, "z_id": 508} , {
+      "name":  "Z-Syn", "p_id": 137, "z_id": 509} , {
+      "name":  "CornFreak", "p_id": 138, "z_id": 510} , {
+      "name":  "Enigma", "p_id": 139, "z_id": 511} , {
+      "name":  "MS 1959", "p_id": 140, "z_id": 58} , {
+      "name":  "VX JMI", "p_id":141, "z_id": 48} , {
+      "name":  "MojoRolle", "p_id": 142, "z_id": 85} , {
+      "name":  "THRU", "p_id": 143, "z_id": 1006} , {
+      "name":  "GtrMixer", "p_id": 144, "z_id": 512} , {
+      "name":  "AfterBurn", "p_id": 145, "z_id": 513} , {
+      "name":  "THRU", "p_id": 146, "z_id": 1007} , {
+      "name":  "THRU", "p_id": 147, "z_id": 1008} , {
+      "name":  "Granular", "p_id": 148, "z_id": 514} , {
+      "name":  "THRU", "p_id": 149, "z_id": 1009} , {
+      "name":  "THRU", "p_id": 150, "z_id": 1010} , {
+      "name":  "THRU", "p_id": 151, "z_id": 1011} , {
+      "name":  "THRU", "p_id": 152, "z_id": 1012} , {
+      "name":  "Drive Z Delay", "p_id": 153, "z_id": 515} , {
+      "name":  "THRU", "p_id": 154, "z_id": 1013} , {
+      "name":  "DT Slicer", "p_id": 155, "z_id": 516} , {
+      "name":  "Granular", "p_id": 156, "z_id": 517} , {
+      "name":  "Fuzzmonix", "p_id": 157, "z_id": 518 }
+]

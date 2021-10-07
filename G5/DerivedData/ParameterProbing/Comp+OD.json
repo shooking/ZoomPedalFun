@@ -1,0 +1,29 @@
+{
+    "fxname": "Comp+OD",
+    "Parameters": [
+        {
+            "name": "Comp",
+            "mmax": 10,
+            "mdefault": 3,
+            "pedal": false
+        },
+        {
+            "name": "Gain",
+            "mmax": 100,
+            "mdefault": 20,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "Tone",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": true
+        }
+    ]
+}

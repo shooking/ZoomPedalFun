@@ -1,0 +1,2314 @@
+[
+  {
+"z_id": "001", "name": "Comp", "description": "This compressor in the style of the MXR Dyna Comp.", "Parameters":[
+    {
+"name": "Sense", "rangehint": "0-10", "pedal": true, "description":"Adjusts the compressor sensitivity."}
+    ,
+    {
+"name": "Tone", "rangehint": "0-10", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "ATTCK", "rangehint": "Slow, Fast", "description":"Sets compressor attack speed to Fast or Slow."}
+  ]}
+
+  ,
+  {
+"z_id": "002", "name": "RackComp", "description": "This compressor allows more detailed adjustment than COMP.", "Parameters":[
+    {
+"name": "THRSH", "rangehint": "0-50", "pedal": true, "description":"Sets the level that activates the compressor."}
+    ,
+    {
+"name": "Ratio", "rangehint": "1-10", "description":"Adjusts the compression ratio."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "ATTCK", "rangehint": "1-10", "description":"Adjusts the compressor attack rate."}
+  ]}
+
+  ,
+  {
+"z_id": "003", "name": "M Comp", "description": "This compressor provides a more natural sound.", "Parameters":[
+    {
+"name": "THRSH", "rangehint": "0-50", "pedal": true, "description":"Sets the level that activates the compressor."}
+    ,
+    {
+"name": "Ratio", "rangehint": "1-10", "description":"Adjusts the compression ratio."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "ATTCK", "rangehint": "1-10", "description":"Adjusts the compressor attack rate."}
+  ]}
+
+  ,
+  {
+"z_id": "004", "name": "OptComp", "description": "This compressor is in the style of an APHEX Punch Factory.", "Parameters":[
+    {
+"name": "Drive", "rangehint": "0-10", "description":"Adjusts the depth of the compression."}
+    ,
+    {
+"name": "Tone", "rangehint": "0-100", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "005", "name": "SlowATTCK", "description": "This effect slows the attack of each note, resulting in a violin-like performance.", "Parameters":[
+    {
+"name": "Time", "rangehint": "1-50", "pedal": true, "description":"Adjusts the attack time."}
+    ,
+    {
+"name": "Curve", "rangehint": "0-10", "pedal": true, "description":"Set the curve of volume change during attack."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "006", "name": "ZNR", "description": "ZOOM's unique noise reduction cuts noise during pauses in playing without affecting the tone.", "Parameters":[
+    {
+"name": "THRSH", "rangehint": "1-25", "pedal": true, "description":"Adjusts the effect sensitivity."}
+    ,
+    {
+"name": "DETCT", "rangehint": "GtrIn, EfxIn", "description":"Sets control signal detection level."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "007", "name": "NoiseGate", "description": "This is a noise gate that cuts the sound during playing pauses.", "Parameters":[
+    {
+"name": "THRSH", "rangehint": "1-25", "pedal": true, "description":"Adjusts the effect sensitivity."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "008", "name": "DirtyGate", "description": "This vintage style gate features a characteristic way of closing.", "Parameters":[
+    {
+"name": "THRSH", "rangehint": "1-25", "pedal": true, "description":"Adjusts the effect sensitivity."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "009", "name": "GraphicEQ", "description": "This unit has a six band equalizer.", "Parameters":[
+    {
+"name": "160Hz", "rangehint": "-12-12", "description":"Boosts or cuts the low (160 Hz) frequency band."}
+    ,
+    {
+"name": "400Hz", "rangehint": "-12-12", "description":"Boosts or cuts the low-middle (400 Hz) frequency band."}
+    ,
+    {
+"name": "800Hz", "rangehint": "-12-12", "description":"Boosts or cuts the middle (800 Hz) frequency band."}
+    ,
+    {
+"name": "3.2kHz", "rangehint": "-12-12", "description":"Boosts or cuts the high (3.2 kHz) frequency band."}
+    ,
+    {
+"name": "6.4kHz", "rangehint": "-12-12", "description":"Boosts or cuts the extremely high (6.4 kHz) frequency band."}
+    ,
+    {
+"name": "12kHz", "rangehint": "-12-12", "description":"Boosts or cuts the harmonics (12 kHz) frequency band."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "010", "name": "ParaEQ", "description": "This is a 2-band parametric equalizer.", "Parameters":[
+    {
+"name": "Freq1", "rangehint": "20Hz-20kHz", "description":"Adjusts center frequency of EQ1."}
+    ,
+    {
+"name": "Q1", "rangehint": "0.5, 1, 2, 4, 8, 16", "description":"Adjusts EQ1 Q."}
+    ,
+    {
+"name": "Gain1", "rangehint": "-12-12", "description":"Adjusts EQ1 gain."}
+    ,
+    {
+"name": "Freq2", "rangehint": "20Hz-20kHz", "description":"Adjusts center frequency of EQ2."}
+    ,
+    {
+"name": "Q2", "rangehint": "0.5, 1, 2, 4, 8, 16", "description":"Adjusts EQ2 Q."}
+    ,
+    {
+"name": "Gain2", "rangehint": "-12-12", "description":"Adjusts EQ2 gain."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "011", "name": "Exciter", "description": "Adjusts the depth of the compression.", "Parameters":[
+    {
+"name": "Bass", "rangehint": "0-100", "description":"Adjusts the amount of low-frequency phase correction."}
+    ,
+    {
+"name": "Trebl", "rangehint": "0-100", "description":"Adjusts the amount of high-frequency phase correction."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the level of the signal after it has passed through the module."}
+  ]}
+
+  ,
+  {
+"z_id": "012", "name": "CombFLTR", "description": "This effect uses the comb filter that results from fixing the modulation of the flanger like an equalizer.", "Parameters":[
+    {
+"name": "Freq", "rangehint": "1-50", "pedal": true, "description":"This sets the emphasized frequency."}
+    ,
+    {
+"name": "Reso", "rangehint": "-10-0-10", "pedal": true, "description":"Adjusts the intensity of the resonance sound of the effect."}
+    ,
+    {
+"name": "Mix", "rangehint": "0-100", "pedal": true, "description":"Adjusts the amount of effected sound that is mixed with the original sound."}
+    ,
+    {
+"name": "HiDMP", "rangehint": "0-10", "description":"Adjusts the treble attenuation of the effect sound."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "013", "name": "AutoWah", "description": "This effect varies wah in accordance with picking intensity.", "Parameters":[
+    {
+"name": "Sense", "rangehint": "-10-1, 1-10", "pedal": true, "description":"Adjusts the sensitivity of the effect."}
+    ,
+    {
+"name": "Reso", "rangehint": "0-10", "pedal": true, "description":"Adjusts the intensity of the resonance sound."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "014", "name": "Resonance", "description": "This effect varies the resonance filter frequency according to picking intensity.", "Parameters":[
+    {
+"name": "Sense", "rangehint": "-10-1, 1-10", "pedal": true, "description":"Adjusts the sensitivity of the effect."}
+    ,
+    {
+"name": "Reso", "rangehint": "0-10", "pedal": true, "description":"Adjusts the intensity of the resonance sound."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "015", "name": "Cry", "description": "This effect varies the sound like a talking modulator.", "Parameters":[
+    {
+"name": "Range", "rangehint": "1-10", "pedal": true, "description":"Adjusts the frequency range processed by the effect."}
+    ,
+    {
+"name": "Reso", "rangehint": "0-10", "pedal": true, "description":"Adjusts the intensity of the modulation resonance sound."}
+    ,
+    {
+"name": "Sense", "rangehint": "-10-1, 1-10", "pedal": true, "description":"Adjusts the sensitivity of the effect."}
+    ,
+    {
+"name": "Bal", "rangehint": "0-100", "pedal": true, "description":"Adjusts the balance between original and effect sounds."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "016", "name": "SlowFLTR", "description": "The frequency of this filter effect changes, triggered by picking.", "Parameters":[
+    {
+"name": "Time", "rangehint": "1-50", "pedal": true, "description": "Sets the time taken to change the sound.", "name": "Curve", "rangehint": "0-10", "description":"Adjusts the curve of the sound change."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "Reso", "rangehint": "0-10", "pedal": true, "description":"Adjusts the intensity of the modulation resonance."}
+    ,
+    {
+"name": "Chara", "rangehint": "2Pole,4Pole", "description":"Adjusts amount of filter applied."}
+    ,
+    {
+"name": "DRCTN", "rangehint": "Open,Close", "description":"Sets the direction of the change."}
+  ]}
+
+  ,
+  {
+"z_id": "017", "name": "M-Filter", "description": "This envelope filter has the flavor of a MOOG MF-101 low pass filter and can be set in a wide range.", "Parameters":[
+    {
+"name": "Freq", "rangehint": "0-100", "pedal": true, "description":"Sets minimum frequency of envelope filter."}
+    ,
+    {
+"name": "Sense", "rangehint": "0-10", "description": "Sets effect sensitivity."}
+    , {
+"name": "Reso", "rangehint": "0-10", "pedal": true, "description": "Sets effect resonance."}
+    ,
+    {
+"name": "Type", "rangehint": "HPF, BPF, LPF", "description":"Sets filter type."}
+    ,
+    {
+"name": "Chara", "rangehint": "2Pole, 4Pole", "description":"Adjusts amount of filter applied."}
+    ,
+    {
+"name": "VLCTY", "rangehint": "Fast, Slow", "description":"Sets speed of filter action."}
+    ,
+    {
+"name": "Bal", "rangehint": "0-100", "pedal": true, "description":"Adjusts the balance between original and effect sounds."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "018", "name": "Step", "description": "This special effect gives the sound a stepped quality.", "Parameters":[
+    {
+"name": "Depth", "rangehint": "0-100", "description":"Sets the depth of the modulation."}
+    ,
+    {
+"name": "Rate", "rangehint": "0-50", "pedal": true, "description":"Sets the speed of the modulation."}
+    ,
+    {
+"name": "Reso", "rangehint": "0-10", "pedal": true, "description":"Adjusts the intensity of the modulation resonance sound."}
+    ,
+    {
+"name": "Shape", "rangehint": "0-10", "description":"Adjusts the effect envelope."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "019", "name": "SeqFLTR", "description": "The sequence filter has the flavor of a Z.Vex Seek-Wah.", "Parameters":[
+    {
+"name": "Step", "rangehint": "2-8", "description":"Adjusts number of sequence steps."}
+    ,
+    {
+"name": "PTTRN", "rangehint": "1-8", "description": "Sets effect pattern.", "name": "Speed", "rangehint": "1-50", "pedal": true, "description":"Sets modulation speed."}
+    ,
+    {
+"name": "Shape", "rangehint": "0-10", "description":"Sets effect sound envelope."}
+    ,
+    {
+"name": "Reso", "rangehint": "0-10", "pedal": true, "description":"Sets effect resonance."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "020", "name": "RndmFLTR", "description": "This filter effect changes character randomly.", "Parameters":[
+    {
+"name": "Speed", "rangehint": "1-50", "pedal": true, "description":"Sets modulation speed."}
+    ,
+    {
+"name": "Range", "rangehint": "0-100", "pedal": true, "description":"Adjusts frequency range affected."}
+    ,
+    {
+"name": "Reso", "rangehint": "0-10", "pedal": true, "description":"Sets effect resonance."}
+    ,
+    {
+"name": "Type", "rangehint": "HPF, BPF, LPF", "description": "Sets filter type.", "name": "Chara", "rangehint": "2Pole, 4Pole", "description":"Adjusts amount of filter applied."}
+    ,
+    {
+"name": "Bal", "rangehint": "0-100", "pedal": true, "description":"Adjusts the balance between original and effect sounds."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "021", "name": "fCycle", "description": "This filter effect changes tone characteristics cyclically.", "Parameters":[
+    {
+"name": "Rate", "rangehint": "1-50", "pedal": true, "description":"Sets the speed of the modulation."}
+    ,
+    {
+"name": "Wave", "rangehint": "Sine,Tri, SawUp.SawDn", "description":"Sets the modulation waveform."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "Depth", "rangehint": "0-100", "pedal": true, "description": "Sets the depth of the modulation.", "name": "Reso", "rangehint": "0-10", "pedal": true, "description":"Adjusts the intensity of the modulation resonance."}
+  ]}
+
+  ,
+  {
+"z_id": "022", "name": "Booster", "description": "The booster increases signal gain to make the sound more powerful.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tone", "rangehint": "0-100", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "023", "name": "OverDrive", "description": "Simulation of the Boss OD-1, the compact effect box that was the first to take the 'overdrive' title.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description": "Adjusts the gain.", "name": "Tone", "rangehint": "0-100", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "024", "name": "T Scream", "description": "Simulation of the Ibanez TS808, which is loved by many guitarists as a booster and has inspired numerous clones.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tone", "rangehint": "0-100", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "025", "name": "Governor", "description": "Simulation of the Guv'nor distortion effect from Marshall.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tone", "rangehint": "0-100", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "026", "name": "Dist+", "description": "Simulation of the MXR distortion+ effect that made distortion popular worldwide.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tone", "rangehint": "0-100", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "027", "name": "Dist 1", "description": "Simulation of the Boss DS-1 distortion pedal, which has been a long-seller.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tone", "rangehint": "0-100", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "028", "name": "Squeak", "description": "Simulation of the popular Pro Co Rat famous for its edgy distortion sound.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tone", "rangehint": "0-100", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "029", "name": "FuzzSmile", "description": "Simulation of the Fuzz Face, which has made rock history with its humorous panel design and smashing sound.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description": "Adjusts the gain.", "name": "Tone", "rangehint": "0-100", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "030", "name": "GreatMuff", "description": "Simulation of the Electro-Harmonix Big Muff, which is loved by famous artists around the world for its fat, sweet fuzz sound.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "name": "Tone", "rangehint": "0-100", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "031", "name": "MetalWRLD", "description": "Simulation of the Boss Metal Zone, which is characterized by long sustain and a powerful lower midrange.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tone", "rangehint": "0-100", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "032", "name": "HotBox", "description": "Simulation of the compact Matchless Hotbox pre-amplifier with a built-in tube.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tone", "rangehint": "0-100", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "033", "name": "Z Clean", "description": "ZOOM original unadorned clean sound.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tone", "rangehint": "0-100", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "034", "name": "Z MP1", "description": "An original sound created by merging characteristics of an ADA MP1 and a MARSHALL JCM800.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tone", "rangehint": "0-100", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "035", "name": "Z Bottom", "description": "A high gain sound that emphasizes low and middle frequencies.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tone", "rangehint": "0-100", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "036", "name": "Z Dream", "description": "A high gain sound for lead playing based on the Mesa Boogie Road King Series II Lead channel.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tone", "rangehint": "0-100", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "037", "name": "Z Scream", "description": "An original high gain sound balanced from low to high frequencies.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tone", "rangehint": "0-100", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "038", "name": "Z Neos", "description": "A crunch sound modeled on the sound of a modified British class A combo amplifier.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tone", "rangehint": "0-100", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "039", "name": "Z Wild", "description": "A high gain sound with even more overdrive boost.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"description":"Adjusts the tone."}
+    ,
+    {
+"name": "Tone", "rangehint": "0-100", "name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "040", "name": "Lead", "description": "Lead a bright and smooth distortion sound.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tone", "rangehint": "0-100", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "041", "name": "ExtremeDS", "description": "This distortion effect boasts the highest gain in the world.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tone", "rangehint": "0-100", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "042", "name": "Aco.Sim", "description": "This effect changes the tone of an electric guitar to make it sound like an acoustic guitar.", "Parameters":[
+    {
+"name": "Top", "rangehint": "0-100", "pedal": true, "description":"Adjusts the unique string tone of acoustic guitars."}
+    ,
+    {
+"name": "Body", "rangehint": "0-100", "description":"Adjusts the body resonance of acoustic guitars."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "043", "name": "FD COMBO", "description": "Modeled sound of a Fender Twin Reverb ('65), which is loved by guitarists in various genres.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tube", "rangehint": "0-100", "description":"Adjusts tube amp compression."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "Trebl", "rangehint": "0-100", "description":"Adjusts volume of high frequencies."}
+    ,
+    {
+"name": "Middl", "rangehint": "0-100", "description":"Adjusts volume of middle frequencies."}
+    ,
+    {
+"name": "Bass", "rangehint": "0-100", "description":"Adjusts volume of low frequencies."}
+    ,
+    {
+"name": "Prese", "rangehint": "0-100", "description":"Adjusts volume of super-high frequencies."}
+    ,
+    {
+"name": "CAB", "rangehint": "See Table 1", "description":"Selects cabinet."}
+  ]}
+
+  ,
+  {
+"z_id": "044", "name": "DELUXE-R", "description": "This models the sound of a Fender Deluxe Reverb made in 1965.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tube", "rangehint": "0-100", "description":"Adjusts tube amp compression."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "Trebl", "rangehint": "0-100", "description":"Adjusts volume of high frequencies."}
+    ,
+    {
+"name": "Middl", "rangehint": "0-100", "description":"Adjusts volume of middle frequencies."}
+    ,
+    {
+"name": "Bass", "rangehint": "0-100", "description":"Adjusts volume of low frequencies."}
+    ,
+    {
+"name": "Prese", "rangehint": "0-100", "description":"Adjusts volume of super-high frequencies."}
+    ,
+    {
+"name": "CAB", "rangehint": "See Table 1", "description":"Selects cabinet."}
+  ]}
+
+  ,
+  {
+"z_id": "045", "name": "FD VIBRO", "description": "Modeled sound of a '63 Fender Vibroverb.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tube", "rangehint": "0-100", "description":"Adjusts tube amp compression."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "Trebl", "rangehint": "0-100", "description":"Adjusts volume of high frequencies."}
+    ,
+    {
+"name": "Middl", "rangehint": "0-100", "description":"Adjusts volume of middle frequencies."}
+    ,
+    {
+"name": "Bass", "rangehint": "0-100", "description":"Adjusts volume of low frequencies."}
+    ,
+    {
+"name": "Prese", "rangehint": "0-100", "description":"Adjusts volume of super-high frequencies."}
+    ,
+    {
+"name": "CAB", "rangehint": "See Table 1", "description":"Selects cabinet."}
+  ]}
+
+  ,
+  {
+"z_id": "046", "name": "US BLUES", "description": "Crunch sound of a Fender Tweed Bassman.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tube", "rangehint": "0-100", "description":"Adjusts tube amp compression."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "Trebl", "rangehint": "0-100", "description":"Adjusts volume of high frequencies."}
+    ,
+    {
+"name": "Middl", "rangehint": "0-100", "description":"Adjusts volume of middle frequencies."}
+    ,
+    {
+"name": "Bass", "rangehint": "0-100", "description":"Adjusts volume of low frequencies."}
+    ,
+    {
+"name": "Prese", "rangehint": "0-100", "description":"Adjusts volume of super-high frequencies."}
+    ,
+    {
+"name": "CAB", "rangehint": "See Table 1", "description":"Selects cabinet."}
+  ]}
+
+  ,
+  {
+"z_id": "047", "name": "VX COMBO", "description": "Modeled sound of a British combo amplifier representing the 1960s Liverpool sound.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tube", "rangehint": "0-100", "description":"Adjusts tube amp compression."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "Trebl", "rangehint": "0-100", "description":"Adjusts volume of high frequencies."}
+    ,
+    {
+"name": "Middl", "rangehint": "0-100", "description":"Adjusts volume of middle frequencies."}
+    ,
+    {
+"name": "Bass", "rangehint": "0-100", "description":"Adjusts volume of low frequencies."}
+    ,
+    {
+"name": "Prese", "rangehint": "0-100", "description":"Adjusts volume of super-high frequencies."}
+    ,
+    {
+"name": "CAB", "rangehint": "See Table 1", "description":"Selects cabinet."}
+  ]}
+
+  ,
+  {
+"z_id": "048", "name": "VX", "description": "JMI This simulates the sound of an early model of a class-A British combo amp.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tube", "rangehint": "0-100", "description":"Adjusts tube amp compression."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "Trebl", "rangehint": "0-100", "description":"Adjusts volume of high frequencies."}
+    ,
+    {
+"name": "Middl", "rangehint": "0-100", "description":"Adjusts volume of middle frequencies."}
+    ,
+    {
+"name": "Bass", "rangehint": "0-100", "description":"Adjusts volume of low frequencies."}
+    ,
+    {
+"name": "Prese", "rangehint": "0-100", "description":"Adjusts volume of super-high frequencies."}
+    ,
+    {
+"name": "CAB", "rangehint": "See Table 1", "description":"Selects cabinet."}
+  ]}
+
+  ,
+  {
+"z_id": "049", "name": "BG CRUNCH", "description": "Crunch sound of a Mesa Boogie MkIII combo amp.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tube", "rangehint": "0-100", "description":"Adjusts tube amp compression."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "Trebl", "rangehint": "0-100", "description":"Adjusts volume of high frequencies."}
+    ,
+    {
+"name": "Middl", "rangehint": "0-100", "description":"Adjusts volume of middle frequencies."}
+    ,
+    {
+"name": "Bass", "rangehint": "0-100", "description":"Adjusts volume of low frequencies."}
+    ,
+    {
+"name": "Prese", "rangehint": "0-100", "description":"Adjusts volume of super-high frequencies."}
+    ,
+    {
+"name": "CAB", "rangehint": "See Table 1", "description":"Selects cabinet."}
+  ]}
+
+  ,
+  {
+"z_id": "050", "name": "MATCH 30", "description": "Modeled sound of a DC-30 (channel 1), the Matchless flagship combo amp.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tube", "rangehint": "0-100", "description":"Adjusts tube amp compression."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "Trebl", "rangehint": "0-100", "description":"Adjusts volume of high frequencies."}
+    ,
+    {
+"name": "Middl", "rangehint": "0-100", "description":"Adjusts volume of middle frequencies."}
+    ,
+    {
+"name": "Bass", "rangehint": "0-100", "description":"Adjusts volume of low frequencies."}
+    ,
+    {
+"name": "Prese", "rangehint": "0-100", "description":"Adjusts volume of super-high frequencies."}
+    ,
+    {
+"name": "CAB", "rangehint": "See Table 1", "description":"Selects cabinet."}
+  ]}
+
+  ,
+  {
+"z_id": "051", "name": "CAR DRIVE", "description": "This models the sound of a Carr Mercury high-end small combo amp.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tube", "rangehint": "0-100", "description":"Adjusts tube amp compression."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "Trebl", "rangehint": "0-100", "description":"Adjusts volume of high frequencies."}
+    ,
+    {
+"name": "Middl", "rangehint": "0-100", "description":"Adjusts volume of middle frequencies."}
+    ,
+    {
+"name": "Bass", "rangehint": "0-100", "description":"Adjusts volume of low frequencies."}
+    ,
+    {
+"name": "Prese", "rangehint": "0-100", "description":"Adjusts volume of super-high frequencies."}
+    ,
+    {
+"name": "CAB", "rangehint": "See Table 1", "description":"Selects cabinet."}
+  ]}
+
+  ,
+  {
+"z_id": "052", "name": "TW ROCK", "description": "This crunch sound uses the drive channel of a Two Rock Emerald 50, an American boutique amplifier.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tube", "rangehint": "0-100", "description":"Adjusts tube amp compression."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "Trebl", "rangehint": "0-100", "description":"Adjusts volume of high frequencies."}
+    ,
+    {
+"name": "Middl", "rangehint": "0-100", "description":"Adjusts volume of middle frequencies."}
+    ,
+    {
+"name": "Bass", "rangehint": "0-100", "description":"Adjusts volume of low frequencies."}
+    ,
+    {
+"name": "Prese", "rangehint": "0-100", "description":"Adjusts volume of super-high frequencies."}
+    ,
+    {
+"name": "CAB", "rangehint": "See Table 1", "description":"Selects cabinet."}
+  ]}
+
+  ,
+  {
+"z_id": "053", "name": "TONE CITY", "description": "This models the sound of a Sound City 50 Plus Mark 2, a legendary British amplifier.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tube", "rangehint": "0-100", "description":"Adjusts tube amp compression."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "Trebl", "rangehint": "0-100", "description":"Adjusts volume of high frequencies."}
+    ,
+    {
+"name": "Middl", "rangehint": "0-100", "description":"Adjusts volume of middle frequencies."}
+    ,
+    {
+"name": "Bass", "rangehint": "0-100", "description":"Adjusts volume of low frequencies."}
+    ,
+    {
+"name": "Prese", "rangehint": "0-100", "description":"Adjusts volume of super-high frequencies."}
+    ,
+    {
+"name": "CAB", "rangehint": "See Table 1", "description":"Selects cabinet."}
+  ]}
+
+  ,
+  {
+"z_id": "054", "name": "HW STACK", "description": "Modeled sound of the legendary Hiwatt Custom 100 all-tube amplifier from the UK.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tube", "rangehint": "0-100", "description":"Adjusts tube amp compression."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "Trebl", "rangehint": "0-100", "description":"Adjusts volume of high frequencies."}
+    ,
+    {
+"name": "Middl", "rangehint": "0-100", "description":"Adjusts volume of middle frequencies."}
+    ,
+    {
+"name": "Bass", "rangehint": "0-100", "description":"Adjusts volume of low frequencies."}
+    ,
+    {
+"name": "Prese", "rangehint": "0-100", "description":"Adjusts volume of super-high frequencies."}
+    ,
+    {
+"name": "CAB", "rangehint": "See Table 1", "description":"Selects cabinet."}
+  ]}
+
+  ,
+  {
+"z_id": "055", "name": "TANGERINE", "description": "This models the Orange Graphic 120 with its unique design and sound.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tube", "rangehint": "0-100", "description":"Adjusts tube amp compression."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "Trebl", "rangehint": "0-100", "description":"Adjusts volume of high frequencies."}
+    ,
+    {
+"name": "Middl", "rangehint": "0-100", "description":"Adjusts volume of middle frequencies."}
+    ,
+    {
+"name": "Bass", "rangehint": "0-100", "description":"Adjusts volume of low frequencies."}
+    ,
+    {
+"name": "Prese", "rangehint": "0-100", "description":"Adjusts volume of super-high frequencies."}
+    ,
+    {
+"name": "CAB", "rangehint": "See Table 1", "description":"Selects cabinet."}
+  ]}
+
+  ,
+  {
+"z_id": "056", "name": "B-BREAKER", "description": "This models the sound of a Marshall 1962 Bluesbreaker combo amp.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tube", "rangehint": "0-100", "description":"Adjusts tube amp compression."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "Trebl", "rangehint": "0-100", "description":"Adjusts volume of high frequencies."}
+    ,
+    {
+"name": "Middl", "rangehint": "0-100", "description":"Adjusts volume of middle frequencies."}
+    ,
+    {
+"name": "Bass", "rangehint": "0-100", "description":"Adjusts volume of low frequencies."}
+    ,
+    {
+"name": "Prese", "rangehint": "0-100", "description":"Adjusts volume of super-high frequencies."}
+    ,
+    {
+"name": "CAB", "rangehint": "See Table 1", "description":"Selects cabinet."}
+  ]}
+
+  ,
+  {
+"z_id": "057", "name": "MS CRUNCH", "description": "The crunch sound of the Marshall 1959 that has given birth to many legends.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tube", "rangehint": "0-100", "description":"Adjusts tube amp compression."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "Trebl", "rangehint": "0-100", "description":"Adjusts volume of high frequencies."}
+    ,
+    {
+"name": "Middl", "rangehint": "0-100", "description":"Adjusts volume of middle frequencies."}
+    ,
+    {
+"name": "Bass", "rangehint": "0-100", "description":"Adjusts volume of low frequencies."}
+    ,
+    {
+"name": "Prese", "rangehint": "0-100", "description":"Adjusts volume of super-high frequencies."}
+    ,
+    {
+"name": "CAB", "rangehint": "See Table 1", "description":"Selects cabinet."}
+  ]}
+
+  ,
+  {
+"z_id": "058", "name": "MS 1959", "description": "This models the sound of a Marshall 1959 Plexi made in 1969.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tube", "rangehint": "0-100", "description":"Adjusts tube amp compression."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "Trebl", "rangehint": "0-100", "description":"Adjusts volume of high frequencies."}
+    ,
+    {
+"name": "Middl", "rangehint": "0-100", "description":"Adjusts volume of middle frequencies."}
+    ,
+    {
+"name": "Bass", "rangehint": "0-100", "description":"Adjusts volume of low frequencies."}
+    ,
+    {
+"name": "Prese", "rangehint": "0-100", "description":"Adjusts volume of super-high frequencies."}
+    ,
+    {
+"name": "CAB", "rangehint": "See Table 1", "description":"Selects cabinet."}
+  ]}
+
+  ,
+  {
+"z_id": "059", "name": "MS DRIVE", "description": "The high gain sound of a JCM2000 Marshall stack amp.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tube", "rangehint": "0-100", "description":"Adjusts tube amp compression."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "Trebl", "rangehint": "0-100", "description":"Adjusts volume of high frequencies."}
+    ,
+    {
+"name": "Middl", "rangehint": "0-100", "description":"Adjusts volume of middle frequencies."}
+    ,
+    {
+"name": "Bass", "rangehint": "0-100", "description":"Adjusts volume of low frequencies."}
+    ,
+    {
+"name": "Prese", "rangehint": "0-100", "description":"Adjusts volume of super-high frequencies."}
+    ,
+    {
+"name": "CAB", "rangehint": "See Table 1", "description":"Selects cabinet."}
+  ]}
+
+  ,
+  {
+"z_id": "061", "name": "BG DRIVE", "description": "The high gain sound of the Mesa Boogie Dual Rectifier red channel (Vintage mode).", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tube", "rangehint": "0-100", "description":"Adjusts tube amp compression."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "Trebl", "rangehint": "0-100", "description":"Adjusts volume of high frequencies."}
+    ,
+    {
+"name": "Middl", "rangehint": "0-100", "description":"Adjusts volume of middle frequencies."}
+    ,
+    {
+"name": "Bass", "rangehint": "0-100", "description":"Adjusts volume of low frequencies."}
+    ,
+    {
+"name": "Prese", "rangehint": "0-100", "description":"Adjusts volume of super-high frequencies."}
+    ,
+    {
+"name": "CAB", "rangehint": "See Table 1", "description":"Selects cabinet."}
+  ]}
+
+  ,
+  {
+"z_id": "062", "name": "DZ DRIVE", "description": "The 3-channel high gain sound of a Diezel Herbet, which is handmade German guitar amplier that allows control of three independent channels", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tube", "rangehint": "0-100", "description":"Adjusts tube amp compression."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "Trebl", "rangehint": "0-100", "description":"Adjusts volume of high frequencies."}
+    ,
+    {
+"name": "Middl", "rangehint": "0-100", "description":"Adjusts volume of middle frequencies."}
+    ,
+    {
+"name": "Bass", "rangehint": "0-100", "description":"Adjusts volume of low frequencies."}
+    ,
+    {
+"name": "Prese", "rangehint": "0-100", "description":"Adjusts volume of super-high frequencies."}
+    ,
+    {
+"name": "CAB", "rangehint": "See Table 1", "description":"Selects cabinet."}
+  ]}
+
+  ,
+  {
+"z_id": "063", "name": "ALIEN", "description": "This simulates the high-gain sound of the Engl Invader, which features a powerful low-end.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tube", "rangehint": "0-100", "description":"Adjusts tube amp compression."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "Trebl", "rangehint": "0-100", "description":"Adjusts volume of high frequencies."}
+    ,
+    {
+"name": "Middl", "rangehint": "0-100", "description":"Adjusts volume of middle frequencies."}
+    ,
+    {
+"name": "Bass", "rangehint": "0-100", "description":"Adjusts volume of low frequencies."}
+    ,
+    {
+"name": "Prese", "rangehint": "0-100", "description":"Adjusts volume of super-high frequencies."}
+    ,
+    {
+"name": "CAB", "rangehint": "See Table 1", "description":"Selects cabinet."}
+  ]}
+
+  ,
+  {
+"z_id": "064", "name": "REVO-1", "description": "This simulates the high-gain sound of a Krank Revolution 1 Plus.", "Parameters":[
+    {
+"name": "Gain", "rangehint": "0-100", "pedal": true, "description":"Adjusts the gain."}
+    ,
+    {
+"name": "Tube", "rangehint": "0-100", "description":"Adjusts tube amp compression."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "Trebl", "rangehint": "0-100", "description":"Adjusts volume of high frequencies."}
+    ,
+    {
+"name": "Middl", "rangehint": "0-100", "description":"Adjusts volume of middle frequencies."}
+    ,
+    {
+"name": "Bass", "rangehint": "0-100", "description":"Adjusts volume of low frequencies."}
+    ,
+    {
+"name": "Prese", "rangehint": "0-100", "description":"Adjusts volume of super-high frequencies."}
+    ,
+    {
+"name": "CAB", "rangehint": "See Table 1", "description":"Selects cabinet."}
+  ]}
+
+  ,
+  {
+"z_id": "065", "name": "Tremolo", "description": "This effect varies the volume at a regular rate.", "Parameters":[
+    {
+"name": "Depth", "rangehint": "0-100", "pedal": true, "description":"Adjust the depth of the modulation."}
+    ,
+    {
+"name": "Rate", "rangehint": "0-50", "pedal": true, "description":"Adjusts the rate of the modulation."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "Wave", "rangehint": "UP 0-UP 9, DWN 0-DWN 9, TRI 0-TRI 9", "pedal": true, "description":"Sets the modulation waveform."}
+  ]}
+
+  ,
+  {
+"z_id": "066", "name": "DuoTrem", "description": "This effect combines two tremolos.", "Parameters":[
+    {
+"name": "RateA", "rangehint": "0-50", "pedal": true, "description":"Adjusts speed of LFO A modulation."}
+    ,
+    {
+"name": "RateB", "rangehint": "0-50", "pedal": true, "description":"Adjusts speed of LFO B modulation."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "DPT_A", "rangehint": "0-100", "pedal": true, "description":"Adjusts depth of LFO A modulation."}
+    ,
+    {
+"name": "DPT_B", "rangehint": "0-100", "pedal": true, "description":"Adjusts depth of LFO B modulation."}
+    ,
+    {
+"name": "Link", "rangehint": "Seri, Para, STR", "description":"Sets how the two tremolos are connected."}
+    ,
+    {
+"name": "WaveA", "rangehint": "UP 0-UP 9 , DWN 0-DWN 9 , TRI 0-TRI 9", "description":"Sets the modulation waveform of LFO A."}
+    ,
+    {
+"name": "WaveB", "rangehint": "UP 0-UP 9 , DWN 0-DWN 9 , TRI 0-TRI 9", "description":"Sets the modulation waveform of LFO B."}
+  ]}
+
+  ,
+  {
+"z_id": "067", "name": "Slicer", "description": "This effect creates a rhythmical sound by continuously slicing the input.", "Parameters":[
+    {
+"name": "PTTRN", "rangehint": "1-20", "description": "Sets effect pattern.", "name": "Speed", "rangehint": "1-50", "pedal": true, "description": "Sets modulation speed.", "name": "Bal", "rangehint": "0-100", "pedal": true, "description":"Adjusts the balance between original and effect sounds."}
+    ,
+    {
+"name": "THRSH", "rangehint": "0-50", "description":"Adjusts effect threshold."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "068", "name": "Phaser", "description": "This effect adds a phasing variation to the sound.", "Parameters":[
+    {
+"name": "Rate", "rangehint": "1-50", "pedal": true, "description":"Sets the speed of the modulation."}
+    ,
+    {
+"name": "Color", "rangehint": "4 STG, 8 STG, inv 4, inv 8", "description":"Sets the tone of the effect type."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "069", "name": "DuoPhase", "description": "This effect combines two phasers.", "Parameters":[
+    {
+"name": "RateA", "rangehint": "1-50", "pedal": true, "description":"Adjusts speed of LFO A modulation."}
+    ,
+    {
+"name": "RateB", "rangehint": "1-50, SyncA, RvrsA", "pedal": true, "description":"Adjusts speed of LFO B modulation."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "ResoA", "rangehint": "0-10", "pedal": true, "description":"Adjusts resonance of LFO A modulation."}
+    ,
+    {
+"name": "ResoB", "rangehint": "0-10", "pedal": true, "description":"Adjusts resonance of LFO B modulation."}
+    ,
+    {
+"name": "Link", "rangehint": "Seri, Para, STR", "description":"Sets how two phasers are connected."}
+    ,
+    {
+"name": "DPT_A", "rangehint": "1-100", "pedal": true, "description":"Adjusts depth of LFO A modulation."}
+    ,
+    {
+"name": "DPT_B", "rangehint": "1-100", "pedal": true, "description":"Adjusts depth of LFO B modulation."}
+  ]}
+
+  ,
+  {
+"z_id": "070", "name": "WarpPhase", "description": "This phaser has a one way effect.", "Parameters":[
+    {
+"name": "Speed", "rangehint": "1-50", "pedal": true, "description":"Sets modulation speed."}
+    ,
+    {
+"name": "Reso", "rangehint": "0-10", "pedal": true, "description":"Sets effect resonance."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "DRCTN", "rangehint": "Go, Back", "description":"Sets direction of warping."}
+  ]}
+
+  ,
+  {
+"z_id": "071", "name": "Chorus", "description": "This effect mixes a shifted pitch with the original sound to add movement and thickness.", "Parameters":[
+    {
+"name": "Depth", "rangehint": "0-100", "description": "Sets the depth of the modulation.", "name": "Rate", "rangehint": "1-50", "pedal": true, "description": "Sets the speed of the modulation.", "name": "Mix", "rangehint": "0-100", "pedal": true, "description":"Adjusts the amount of effected sound that is mixed with the original sound."}
+    ,
+    {
+"name": "Tone", "rangehint": "0-10", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "072", "name": "Detune", "description": "By mixing an effect sound that is slightly pitch-shifted with the original sound, this effect type has a chorus effect without much sense of modulation.", "Parameters":[
+    {
+"name": "Cent", "rangehint": "-25-25", "description":"Adjusts the detuning in cents, which are fine increments of 1/100-semitone."}
+    ,
+    {
+"name": "PreD", "rangehint": "0-50", "description": "Sets the pre-delay time of the effect sound.", "name": "Mix", "rangehint": "0-100", "pedal": true, "description":"Adjusts the amount of effected sound that is mixed with the original sound."}
+    ,
+    {
+"name": "Tone", "rangehint": "0-10", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "073", "name": "VintageCE", "description": "This is a simulation of the BOSS CE-1.", "Parameters":[
+    {
+"name": "Comp", "rangehint": "0-9", "description": "Sets the sensitivity of the compressor.", "name": "Rate", "rangehint": "1-50", "pedal": true, "description": "Sets the speed of the modulation.", "name": "Mix", "rangehint": "0-100", "pedal": true, "description":"Adjusts the amount of effected sound that is mixed with the original sound."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "074", "name": "StereoCho", "description": "This is a stereo chorus with a clear tone.", "Parameters":[
+    {
+"name": "Depth", "rangehint": "0-100", "pedal": true, "description": "Sets the depth of the modulation.", "name": "Rate", "rangehint": "1-50", "pedal": true, "description": "Sets the speed of the modulation.", "name": "Mix", "rangehint": "0-100", "pedal": true, "description":"Adjusts the amount of effected sound that is mixed with the original sound."}
+    ,
+    {
+"name": "Tone", "rangehint": "0-10", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "075", "name": "Ensemble", "description": "This is a chorus ensemble that features three-dimensional movement.", "Parameters":[
+    {
+"name": "Depth", "rangehint": "0-100", "description": "Sets the depth of the modulation.", "name": "Rate", "rangehint": "1-50", "pedal": true, "description": "Sets the speed of the modulation.", "name": "Mix", "rangehint": "0-100", "pedal": true, "description":"Adjusts the amount of effected sound that is mixed with the original sound."}
+    ,
+    {
+"name": "Tone", "rangehint": "0-10", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "076", "name": "VinFLNGR", "description": "This analog flanger sound is similar to an MXR M-117R.", "Parameters":[
+    {
+"name": "Depth", "rangehint": "0-100", "pedal": true, "description": "Sets the depth of the modulation.", "name": "Rate", "rangehint": "0-50", "pedal": true, "description": "Sets the speed of the modulation.", "name": "Reso", "rangehint": "-10-10", "pedal": true, "description":"Adjusts the intensity of the modulation resonance."}
+    ,
+    {
+"name": "PreD", "rangehint": "0-50", "pedal": true, "description": "Sets pre-delay time of effect sound.", "name": "Mix", "rangehint": "0-100", "pedal": true, "description":"Adjusts the amount of effected sound that is mixed with the original sound."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "077", "name": "Flanger", "description": "This is a jet sound like an ADA flanger.", "Parameters":[
+    {
+"name": "Depth", "rangehint": "0-100", "pedal": true, "description": "Sets the depth of the modulation.", "name": "Rate", "rangehint": "0-50", "pedal": true, "description": "Sets the speed of the modulation.", "name": "Reso", "rangehint": "-10-10", "pedal": true, "description":"Adjusts the intensity of the modulation resonance."}
+    ,
+    {
+"name": "PreD", "rangehint": "0-50", "pedal": true, "description": "Sets pre-delay time of effect sound.", "name": "Mix", "rangehint": "0-100", "pedal": true, "description":"Adjusts the amount of effected sound that is mixed with the original sound."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "078", "name": "DynaFLNGR", "description": "The volume of the effect sound changes according to the input signal level with this dynamic flanger.", "Parameters":[
+    {
+"name": "Depth", "rangehint": "0-100", "description": "Sets the depth of the modulation.", "name": "Rate", "rangehint": "0-50", "pedal": true, "description": "Sets the speed of the modulation.", "name": "Sense", "rangehint": "-10-1, 1-10", "pedal": true, "description":"Adjusts the sensitivity of the effect."}
+    ,
+    {
+"name": "Reso", "rangehint": "-10-10", "pedal": true, "description":"Adjusts the intensity of the modulation resonance."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "079", "name": "Vibrato", "description": "This effect automatically adds vibrato.", "Parameters":[
+    {
+"name": "Depth", "rangehint": "0-100", "description": "Sets the depth of the modulation.", "name": "Rate", "rangehint": "0-50", "pedal": true, "description": "Sets the speed of the modulation.", "name": "Bal", "rangehint": "0-100", "pedal": true, "description":"Adjusts the balance between original and effect sounds."}
+    ,
+    {
+"name": "Tone", "rangehint": "0-10", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "080", "name": "Octave", "description": "This effect adds sound one octave and two octaves below the original sound.", "Parameters":[
+    {
+"name": "Oct1", "rangehint": "0-100", "pedal": true, "description":"Adjusts the level of the sound one octave below the effect sound. "}
+    ,
+    {
+"name": "Oct2", "rangehint": "0-100", "pedal": true, "description":"Adjusts the level of the sound two octaves below the effect sound."}
+    ,
+    {
+"name": "Dry", "rangehint": "0-100", "pedal": true, "description":"Adjusts the volume of the unaffected sound."}
+    ,
+    {
+"name": "Chara", "rangehint": "0-100", "description":"Adjusts effect character."}
+    ,
+    {
+"name": "Tone", "rangehint": "0-10", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "081", "name": "PitchSHFT", "description": "This effect shifts the pitch up or down.", "Parameters":[
+    {
+"name": "Shift", "rangehint": "-12-12 , 24", "description":"Adjusts the pitch shift amount in semitones. Selecting -0- gives a detuning effect."}
+    ,
+    {
+"name": "Tone", "rangehint": "0-10", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Bal", "rangehint": "0-100", "pedal": true, "description":"Adjusts the balance between original and effect sounds."}
+    ,
+    {
+"name": "Fine", "rangehint": "-25-25", "description": "Allows fine adjustment of pitch shift amount in Cent (1/100 semitone) steps.", "name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "082", "name": "MonoPitch", "description": "This is a pitch shifter with little sound variance for monophonic (single note) playing.", "Parameters":[
+    {
+"name": "Shift", "rangehint": "-12 - 12 , 24", "description":"Adjusts the pitch shift amount in semitones.  Selecting -0- gives a detuning effect. and effect sounds."}
+    ,
+    {
+"name": "Tone", "rangehint": "0-10", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Bal", "rangehint": "0-100", "pedal": true, "description":"Adjusts the balance between original"}
+    ,
+    {
+"name": "Fine", "rangehint": "-25 - 25", "description": "Allows fine adjustment of pitch shift amount in Cent (1/100 semitone) steps.", "name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "083", "name": "HPS", "description": "This intelligent pitch shifter outputs the effect sound with the pitch shifted according to scale and key settings.", "Parameters":[
+    {
+"name": "Scale", "rangehint": "-6, -5, -4, -3, -m, m, 3, 4, 5, 6 (See Table 2)", "description": "Sets the pitch of the pitch-shifted sound added to the original sound.", "name": "Key", "rangehint": "C, C#, D, D#, E, F, F#, G, G#, A, A#, B", "description": "Sets the tonic (root) of the scale used for pitch shifting.", "name": "Mix", "rangehint": "0-100", "pedal": true, "description":"Adjusts the amount of effected sound that is mixed with the original sound."}
+    ,
+    {
+"name": "Tone", "rangehint": "0-10", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "084", "name": "BendCho", "description": "This effect provides pitch bending that uses the input signal as trigger and processes each note separately.", "Parameters":[
+    {
+"name": "Depth", "rangehint": "0-100", "description":"Adjusts the effect depth."}
+    ,
+    {
+"name": "Time", "rangehint": "0-50", "pedal": true, "description": "Sets time before effect starts.", "name": "Bal", "rangehint": "0-100", "pedal": true, "description":"Adjusts the balance between original and effect sounds."}
+    ,
+    {
+"name": "Mode", "rangehint": "Up, Down", "description": "Sets direction of pitch bend.", "name": "Tone", "rangehint": "0-10", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "085", "name": "MojoRolle", "description": "This effect modulates the pitch after picking.", "Parameters":[
+    {
+"name": "Depth", "rangehint": "0-100", "pedal": true, "description":"Sets the depth of the modulation."}
+    ,
+    {
+"name": "Speed", "rangehint": "0-100", "pedal": true, "description":"Sets the speed of the modulation."}
+    ,
+    {
+"name": "Rise", "rangehint": "0-100", "pedal": true, "description":"Sets the time before the effect begins to modulate the pitch."}
+    ,
+    {
+"name": "Mode", "rangehint": "Up-Dn, Up, Dn", "description":"Sets the direction of pitch modulation."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "086", "name": "RingMod", "description": "This effect produces a metallic ringing sound. Adjusting the -Freq- parameter results in a drastic change of sound character.", "name": "Freq", "rangehint": "1-50", "pedal": true, "description": "Sets the frequency of the modulation.", "Parameters":[
+    {
+"name": "Tone", "rangehint": "0-10", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Bal", "rangehint": "0-100", "pedal": true, "description":"Adjusts the balance between original and effect sounds."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "087", "name": "BitCrush", "description": "This effect creates a lo-fi sound.", "Parameters":[
+    {
+"name": "Bit", "rangehint": "4-16", "description":"Sets bit depth."}
+    ,
+    {
+"name": "SMPL", "rangehint": "0-50", "pedal": true, "description":"Sets sampling rate."}
+    ,
+    {
+"name": "Bal", "rangehint": "0-100", "pedal": true, "description":"Adjusts the balance between original and effect sounds."}
+    ,
+    {
+"name": "Tone", "rangehint": "0-10", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "088", "name": "Bomber", "description": "This effect produces an explosive sound when picking.", "fs": "Trigger", "Parameters":[
+    {
+"name": "PTTRN", "rangehint": "HndGn, Arm, Bomb, Thndr", "description":"Sets type of effect sound."}
+    ,
+    {
+"name": "Decay", "rangehint": "1-100", "pedal": true, "description":"Sets length of reverberations."}
+    ,
+    {
+"name": "Bal", "rangehint": "0-100", "pedal": true, "description":"Adjusts the balance between original and effect sounds."}
+    ,
+    {
+"name": "THRSH", "rangehint": "0-50", "description":"Adjusts effect threshold."}
+    ,
+    {
+"name": "Power", "rangehint": "0-30", "description":"Adjusts strength of explosive sound."}
+    ,
+    {
+"name": "Tone", "rangehint": "0-10", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "089", "name": "MonoSynth", "description": "This effect produces the sound of a monophonic (single-note playing) guitar synthesizer that detects the pitch of the input signal.", "Parameters":[
+    {
+"name": "Synth", "rangehint": "0-100", "pedal": true, "description":"Adjusts synthesizer sound level."}
+    ,
+    {
+"name": "Dry", "rangehint": "0-100", "pedal": true, "description":"Adjusts level of original sound."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "Wave", "rangehint": "Sine, Tri, SawUp, SawDn", "description": "Sets waveform.", "name": "Tone", "rangehint": "0-10", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Speed", "rangehint": "0-100", "pedal": true, "description":"Adjusts smoothness of pitch change."}
+  ]}
+
+  ,
+  {
+"z_id": "090", "name": "Z-Organ", "description": "This effect simulates an organ sound.", "Parameters":[
+    {
+"name": "Upper", "rangehint": "0-100", "pedal": true, "description":"Adjusts volume of high frequencies."}
+    ,
+    {
+"name": "Lower", "rangehint": "0-100", "pedal": true, "description":"Adjusts volume of low frequencies."}
+    ,
+    {
+"name": "Dry", "rangehint": "0-100", "pedal": true, "description":"Adjusts level of original sound."}
+    ,
+    {
+"name": "HPF", "rangehint": "0-10", "description":"Adjusts high-pass filter cutoff frequency."}
+    ,
+    {
+"name": "LPF", "rangehint": "0-10", "description":"Adjusts low-pass filter cutoff frequency."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "091", "name": "AutoPan", "description": "This effect cyclically moves the panning position of the sound.", "Parameters":[
+    {
+"name": "Rate", "rangehint": "0 - 50", "pedal": true, "description":"Sets the speed of the modulation."}
+    ,
+    {
+"name": "Width", "rangehint": "L50 - R50", "pedal": true, "description":"Sets the width of the panning."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "Depth", "rangehint": "0-10", "pedal": true, "description":"Sets the depth of the modulation."}
+    ,
+    {
+"name": "Clip", "rangehint": "0-10", "pedal": true, "description":"Adjusts the amount of waveform clipping. Higher values emphasize the auto-panning effect more."}
+  ]}
+
+  ,
+  {
+"z_id": "092", "name": "Rt Closet", "description": "Simulates a rotary speaker.", "Parameters":[
+    {
+"name": "Bal", "rangehint": "0-100", "pedal": true, "description":"Adjusts the balance between the horn (high frequencies) and the drum (low frequencies)."}
+    ,
+    {
+"name": "Mode", "rangehint": "Slow,Fast", "pedal": true, "description":"Sets the rotary mode."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "Drive", "rangehint": "0-100", "description":"Adjusts the amount of amplification from the preamp."}
+  ]}
+
+  ,
+  {
+"z_id": "093", "name": "Delay", "description": "This long delay has a maximum length of 5000 mS.", "fs": "Hold, InputMute", "Parameters":[
+    {
+"name": "Time", "rangehint": "1-5000", "description":"Sets the delay time."}
+    ,
+    {
+"name": "F.B", "rangehint": "0-100", "pedal": true, "description":"Adjusts the feedback amount."}
+    ,
+    {
+"name": "Mix", "rangehint": "0-100", "pedal": true, "description":"Adjusts the amount of effected sound that is mixed with the original sound."}
+    ,
+    {
+"name": "HiDMP", "rangehint": "0-10", "description":"Adjusts the treble attenuation of the delay sound."}
+    ,
+    {
+"name": "P-P", "rangehint": "MONO, P-P", "description":"Sets delay output to mono or ping-pong."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "094", "name": "TapeEcho", "fs": "InputMute", "description": "This effect simulates a tape echo. Changing the -Time- parameter changes the pitch of the echoes.", "Parameters":[
+    {
+"name": "Time", "rangehint": "1-2000", "pedal": true, "description":"Sets the delay time."}
+    ,
+    {
+"name": "F.B", "rangehint": "0-100", "pedal": true, "description":"Adjusts the feedback amount."}
+    ,
+    {
+"name": "Mix", "rangehint": "0-100", "pedal": true, "description":"Adjusts the amount of effected sound that is mixed with the original sound."}
+    ,
+    {
+"name": "HiDMP", "rangehint": "0-10", "description":"Adjusts the treble attenuation of the delay sound."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "095", "name": "ModDelay", "description": "This delay effect allows the use of modulation.", "fs": "InputMute", "Parameters":[
+    {
+"name": "Time", "rangehint": "1-2000", "description":"Sets the delay time."}
+    ,
+    {
+"name": "F.B", "rangehint": "0-100", "pedal": true, "description":"Adjusts the feedback amount. "}
+    ,
+    {
+"name": "Mix", "rangehint": "0-100", "pedal": true, "description":"Adjusts the amount of effected sound that is mixed with the original sound."}
+    ,
+    {
+"name": "Rate", "rangehint": "1-50", "pedal": true, "description":"Sets the speed of the modulation."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "096", "name": "AnalogDly", "description": "This analog delay simulation has a long delay with a maximum length of 5000 mS.", "fs": "Hold, InputMute", "Parameters":[
+    {
+"name": "Time", "rangehint": "1-5000", "description":"Sets the delay time."}
+    ,
+    {
+"name": "F.B", "rangehint": "0-100", "pedal": true, "description":"Adjusts the feedback amount."}
+    ,
+    {
+"name": "Mix", "rangehint": "0-100", "pedal": true, "description":"Adjusts the amount of effected sound that is mixed with the original sound."}
+    ,
+    {
+"name": "HiDMP", "rangehint": "0-10", "pedal": true, "description":"Adjusts the treble attenuation of the delay sound."}
+    ,
+    {
+"name": "P-P", "rangehint": "MONO, P-P", "description":"Sets delay output to mono or ping-pong."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "097", "name": "ReverseDL", "description": "This reverse delay is a long delay with a maximum length of 2500 mS.", "fs": "Hold, InputMute", "Parameters":[
+    {
+"name": "Time", "rangehint": "10-2500", "description":"Sets the delay time."}
+    ,
+    {
+"name": "F.B", "rangehint": "0-100", "pedal": true, "description":"Adjusts the feedback amount."}
+    ,
+    {
+"name": "Bal", "rangehint": "0-100", "pedal": true, "description":"Adjusts the balance between original and effect sounds."}
+    ,
+    {
+"name": "HiDMP", "rangehint": "0-10", "description":"Adjusts the treble attenuation of the delay sound."}
+    ,
+    {
+"name": "Level", "rangehint": "0-150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "098", "name": "MultiTapD", "description": "This effect produces several delay sounds with different delay times.", "fs": "InputMute", "Parameters":[
+    {
+"name": "Time", "rangehint": "1-3000", "description":"Sets the delay time."}
+    ,
+    {
+"name": "PTTRN", "rangehint": "1-8", "description":"Sets the tap pattern, which varies from rhythmical to random patterns."}
+    ,
+    {
+"name": "Mix", "rangehint": "0 - 100", "pedal":true}
+    ,
+    {
+"description":"Adjusts the amount of effected sound that is mixed with the original sound."}
+    ,
+    {
+"name": "Tone", "rangehint": "0 - 10", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Level", "rangehint": "0 - 15", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "099", "name": "DynaDelay", "description": "This dynamic delay adjusts the volume of the effect sound according to the input signal level.", "fs": "InputMute", "Parameters":[
+    {
+"name": "Time", "rangehint": "1 - 2000", "description":"Sets the delay time."}
+    ,
+    {
+"name": "Sense", "rangehint": "- 10 - 1, 1 - 10", "pedal": true, "description":"Adjusts the effect sensitivity."}
+    ,
+    {
+"name": "Mix", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts the amount of effected sound that is mixed with the original sound."}
+    ,
+    {
+"name": "F.B", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts the feedback amount."}
+    ,
+    {
+"name": "Level", "rangehint": "0 - 150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "100", "name": "FilterDly", "description": "This effect filters a delayed sound.", "fs": "InputMute", "Parameters":[
+    {
+"name": "Time", "rangehint": "1 - 2000", "description":"Sets the delay time."}
+    ,
+    {
+"name": "F.B", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts the feedback amount."}
+    ,
+    {
+"name": "Mix", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts the amount of effected sound that is mixed with the original sound."}
+    ,
+    {
+"name": "Rate", "rangehint": "1 - 50", "pedal": true, "description":"Sets the speed of the modulation."}
+    ,
+    {
+"name": "Depth", "rangehint": "0 - 100", "pedal": true, "description":"Sets the depth of the modulation."}
+    ,
+    {
+"name": "Reso", "rangehint": "0 - 10", "pedal": true, "description":"Adjusts the intensity of the modulation resonance."}
+    ,
+    {
+"name": "Level", "rangehint": "0 - 150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "101", "name": "PitchDly", "description": "This effect applies pitch shift to a delayed sound.", "fs": "InputMute", "Parameters":[
+    {
+"name": "Time", "rangehint": "1 - 2000", "description":"Sets the delay time."}
+    ,
+    {
+"name": "Pitch", "rangehint": "- 12 - 12", "pedal": true, "description":"Sets volume of pitch shift applied to delayed sound."}
+    ,
+    {
+"name": "Mix", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts the amount of effected sound that is mixed with the original sound."}
+    ,
+    {
+"name": "F.B", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts the feedback amount."}
+    ,
+    {
+"name": "Tone", "rangehint": "0 - 10", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Level", "rangehint": "0 - 150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "102", "name": "StereoDly", "description": "This stereo delay allows the left and right delay times to be set separately.", "fs": "InputMute", "Parameters":[
+    {
+"name": "TimeL", "rangehint": "1 - 2000", "description":"Adjusts delay time of left channel delay."}
+    ,
+    {
+"name": "TimeR", "rangehint": "1 - 2000", "description":"Adjusts delay time of right channel delay."}
+    ,
+    {
+"name": "Mix", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts the amount of effected sound that is mixed with the original sound."}
+    ,
+    {
+"name": "LchFB", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts delay feedback of left channel."}
+    ,
+    {
+"name": "RchFB", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts delay feedback of right channel."}
+    ,
+    {
+"name": "Level", "rangehint": "0 - 150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "LchLv", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts delay output of left channel."}
+    ,
+    {
+"name": "RchLv", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts delay output of right channel."}
+  ]}
+
+  ,
+  {
+"z_id": "103", "name": "PhaseDly", "description": "This effect applies a phaser to a delayed sound.", "fs": "InputMute", "Parameters":[
+    {
+"name": "Time", "rangehint": "1 - 2000", "description":"Sets the delay time."}
+    ,
+    {
+"name": "F.B", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts the feedback amount."}
+    ,
+    {
+"name": "Mix", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts the amount of effected sound that is mixed with the original sound."}
+    ,
+    {
+"name": "Rate", "rangehint": "1 - 50", "pedal": true, "description":"Sets the speed of the modulation."}
+    ,
+    {
+"name": "Color", "rangehint": "4 STG, 8 STG, inv 4, inv 8", "description":"Sets the tone of the effect type."}
+    ,
+    {
+"name": "Level", "rangehint": "0 - 150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "104", "name": "TrgHldDly", "description": "This delay samples and holds using picking as the trigger.", "fs": "InputMute", "Parameters":[
+    {
+"name": "Time", "rangehint": "10 - 1000", "description":"Sets the delay time."}
+    ,
+    {
+"name": "Duty", "rangehint": "25 - 100", "description":"Sets the time that the sample - and - hold sound is produced."}
+    ,
+    {
+"name": "Mix", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts the amount of effected sound that is mixed with the original sound."}
+    ,
+    {
+"name": "THRSH", "rangehint": "0 - 30", "description":"Adjusts effect threshold."}
+    ,
+    {
+"name": "Level", "rangehint": "0 - 150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "105", "name": "HD Reverb", "description": "This is a high - definition reverb.", "fs": "InputMute", "Parameters":[
+    {
+"name": "Decay", "rangehint": "0 - 100", "description":"Sets the duration of the reverberations."}
+    ,
+    {
+"name": "Tone", "rangehint": "0 - 10", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Mix", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts the amount of effected sound that is mixed with the original sound."}
+    ,
+    {
+"name": "PreD", "rangehint": "1 - 200", "description":"Adjusts the delay between input of the original sound and start of the reverb sound."}
+    ,
+    {
+"name": "HPF", "rangehint": "0 - 10", "description":"Adjusts high - pass filter cutoff frequency."}
+    ,
+    {
+"name": "Level", "rangehint": "0 - 150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "106", "name": "Hall", "description": "This reverb effect simulates the acoustics of a concert hall.", "fs": "InputMute", "Parameters":[
+    {
+"name": "Decay", "rangehint": "1 - 30", "pedal": true, "description":"Sets the duration of the reverberations."}
+    ,
+    {
+"name": "Tone", "rangehint": "0 - 10", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Mix", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts the amount of effected sound that is mixed with the original sound."}
+    ,
+    {
+"name": "PreD", "rangehint": "1 - 100", "description":"Adjusts the delay between input of the original sound and start of the reverb sound."}
+    ,
+    {
+"name": "Level", "rangehint": "0 - 150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "107", "name": "Room", "description": "This reverb effect simulates the acoustics of a room.", "fs": "InputMute", "Parameters":[
+    {
+"name": "Decay", "rangehint": "1 - 30", "pedal": true, "description":"Sets the duration of the reverberations."}
+    ,
+    {
+"name": "Tone", "rangehint": "0 - 10", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Mix", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts the amount of effected sound that is mixed with the original sound."}
+    ,
+    {
+"name": "PreD", "rangehint": "1 - 100", "description":"Adjusts the delay between input of the original sound and start of the reverb sound."}
+    ,
+    {
+"name": "Level", "rangehint": "0 - 150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "108", "name": "TiledRoom", "description": "This reverb effect simulates the acoustics of a tiled room.", "fs": "InputMute", "Parameters":[
+    {
+"name": "Decay", "rangehint": "1 - 30", "pedal": true, "description":"Sets the duration of the reverberations."}
+    ,
+    {
+"name": "Tone", "rangehint": "0 - 10", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Mix", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts the amount of effected sound that is mixed with the original sound."}
+    ,
+    {
+"name": "PreD", "rangehint": "1 - 100", "description":"Adjusts the delay between input of the original sound and start of the reverb sound."}
+    ,
+    {
+"name": "Level", "rangehint": "0 - 150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "109", "name": "Spring", "description": "This reverb effect simulates a spring reverb.", "fs": "InputMute", "Parameters":[
+    {
+"name": "Decay", "rangehint": "1 - 30", "pedal": true, "description":"Sets the duration of the reverberations."}
+    ,
+    {
+"name": "Tone", "rangehint": "0 - 10", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Mix", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts the amount of effected sound that is mixed with the original sound."}
+    ,
+    {
+"name": "PreD", "rangehint": "1 - 100", "description":"Adjusts the delay between input of the original sound and start of the reverb sound."}
+    ,
+    {
+"name": "Level", "rangehint": "0 - 150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "110", "name": "Arena", "description": "This reverb effect simulates the acoustics of a large enclosure such as a sports arena.", "Parameters":[
+    {
+"name": "Decay", "rangehint": "1 - 30", "pedal": true, "description":"Sets the duration of the reverberations."}
+    ,
+    {
+"name": "Tone", "rangehint": "0 - 10", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Mix", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts the amount of effected sound that is mixed with the original sound."}
+    ,
+    {
+"name": "PreD", "rangehint": "1 - 100", "description":"Adjusts the delay between input of the original sound and start of the reverb sound."}
+    ,
+    {
+"name": "Level", "rangehint": "0 - 150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "111", "name": "EarlyRef", "description": "This effect reproduces only the early reflections of reverb.", "Parameters":[
+    {
+"name": "Decay", "rangehint": "1 - 30", "description":"Adjusts the duration of the reverb."}
+    ,
+    {
+"name": "Shape", "rangehint": "- 10 - 10", "pedal": true, "description":"Adjusts the effect envelope."}
+    ,
+    {
+"name": "Mix", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts the amount of effected sound that is mixed with the original sound."}
+    ,
+    {
+"name": "Tone", "rangehint": "0 - 10", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Level", "rangehint": "0 - 150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "112", "name": "Air", "description": "This effect reproduces the ambience of a room, to create spatial depth.", "Parameters":[
+    {
+"name": "Size", "rangehint": "1 - 100", "description":"Sets the size of the space."}
+    ,
+    {
+"name": "Tone", "rangehint": "0 - 10", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Mix", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts the amount of effected sound that is mixed with the original sound."}
+    ,
+    {
+"name": "Ref", "rangehint": "0 - 10", "pedal": true, "description":"Adjusts the amount of reflection from the wall."}
+    ,
+    {
+"name": "Level", "rangehint": "0 - 150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "113", "name": "Comp + OD", "description": "This effect combines compressor and overdrive.", "Parameters":[
+    {
+"name": "Comp", "rangehint": "0 - 10", "description":"Sets compressor strength."}
+    ,
+    {
+"name": "Gain", "rangehint": "0 - 100", "pedal": true, "description":"Sets overdrive gain."}
+    ,
+    {
+"name": "Level", "rangehint": "0 - 150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "Tone", "rangehint": "0 - 100", "description":" Sets overdrive tone."}
+  ]}
+
+  ,
+  {
+"z_id": "114", "name": "Comp + Phsr", "description": "This effect combines compressor and phaser.", "Parameters":[
+    {
+"name": "Comp", "rangehint": "0 - 10", "description":"Sets compressor strength."}
+    ,
+    {
+"name": "Rate", "rangehint": "1 - 50", "pedal": true, "description":"Sets the speed of the modulation."}
+    ,
+    {
+"name": "Level", "rangehint": "0 - 150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "Color", "rangehint": "4 STG, 8 STG, inv 4, inv 8", "description":" Sets phaser color."}
+  ]}
+
+  ,
+  {
+"z_id": "115", "name": "Comp + AWah", "description": "This effect combines compressor and auto - wah.", "Parameters":[
+    {
+"name": "Comp", "rangehint": "0 - 10", "description":"Sets compressor strength."}
+    ,
+    {
+"name": "Sense", "rangehint": "- 10 - 1, 1 - 10", "pedal": true, "description":"Sets auto - wah sensitivity."}
+    ,
+    {
+"name": "Level", "rangehint": "0 - 150", "pedal": true, "description":"Adjusts the output level."}
+    ,
+    {
+"name": "Reso", "rangehint": "0 - 10", "pedal": true, "description":" Sets resonance of auto - wah."}
+  ]}
+
+  ,
+  {
+"z_id": "116", "name": "Cho + Dly", "description": "This effect combines chorus and delay.", "Parameters":[
+    {
+"name": "ChoRt", "rangehint": "1 - 50", "pedal": true, "description":"Adjusts chorus rate."}
+    ,
+    {
+"name": "ChoMx", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts chorus mix."}
+    ,
+    {
+"name": "DlyTm", "rangehint": "1 - 2000", "description":"Adjusts delay time."}
+    ,
+    {
+"name": "DlyFB", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts delay feedback."}
+    ,
+    {
+"name": "DlyMx", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts delay mix."}
+    ,
+    {
+"name": "Level", "rangehint": "0 - 150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "117", "name": "Dly + Rev", "description": "This effect combines delay and reverb.", "Parameters":[
+    {
+"name": "DlyTm", "rangehint": "1 - 2000", "description":"Adjusts delay time."}
+    ,
+    {
+"name": "DlyMx", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts delay mix."}
+    ,
+    {
+"name": "RevMx", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts reverb mix."}
+    ,
+    {
+"name": "DlyFB", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts delay feedback."}
+    ,
+    {
+"name": "Level", "rangehint": "0 - 150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "118", "name": "Cho + Rev", "description": "This effect combines chorus and reverb.", "Parameters":[
+    {
+"name": "ChoRt", "rangehint": "1 - 50", "pedal": true, "description":"Adjusts chorus rate."}
+    ,
+    {
+"name": "ChoMx", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts chorus mix."}
+    ,
+    {
+"name": "RevMx", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts reverb mix."}
+    ,
+    {
+"name": "Level", "rangehint": "0 - 150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "119", "name": "FLG + VCho", "description": "This effect combines flanger and vintage chorus.", "Parameters":[
+    {
+"name": "FlgDp", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts flanger depth."}
+    ,
+    {
+"name": "FlgRt", "rangehint": "0 - 50", "pedal": true, "description":"Adjusts flanger rate."}
+    ,
+    {
+"name": "ChoMx", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts vintage chorus mix."}
+    ,
+    {
+"name": "ChoRt", "rangehint": "1 - 50", "pedal": true, "description":"Adjusts vintage chorus rate."}
+    ,
+    {
+"name": "Level", "rangehint": "0 - 150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "120", "name": "PedalVx", "description": "This simulates a vintage british wah pedal.", "Parameters":[
+    {
+"name": "Freq", "rangehint": "1 - 50", "pedal": true, "description":"Adjusts the emphasized frequency."}
+    ,
+    {
+"name": "DryMX", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts the mix with the unaffected sound."}
+    ,
+    {
+"name": "Level", "rangehint": "0 - 150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "121", "name": "PedalCry", "description": "This simulates a vintage CRYBABY wah pedal.", "Parameters":[
+    {
+"name": "Freq", "rangehint": "1 - 50", "pedal": true, "description":"Adjusts the emphasized frequency."}
+    ,
+    {
+"name": "DryMX", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts the mix with the unaffected sound."}
+    ,
+    {
+"name": "Level", "rangehint": "0 - 150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "122", "name": "WAH100", "description": "Simulates an Ibanez wah pedal.", "Parameters":[
+    {
+"name": "Freq", "rangehint": "0 - 50", "pedal": true, "description":"Adjusts the emphasized frequency."}
+    ,
+    {
+"description":"When an expression pedal is not used, the effect is similar to a half open pedal."}
+    ,
+    {
+"name": "Depth", "rangehint": "0 - 100", "pedal": true, "description":"Sets the depth of the modulation."}
+    ,
+    {
+"name": "Level", "rangehint": "0 - 150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "123", "name": "TheVibe", "description": "This vibe sound features unique undulations.", "Parameters":[
+    {
+"name": "Speed", "rangehint": "0 - 50", "pedal": true, "description":"Sets modulation speed."}
+    ,
+    {
+"name": "Depth", "rangehint": "0 - 100", "pedal": true, "description":"Sets the depth of the modulation."}
+    ,
+    {
+"name": "Bias", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts bias of waveform modulation."}
+    ,
+    {
+"name": "Wave", "rangehint": "0 - 100", "pedal": true, "description":"Adjusts modulation waveform."}
+    ,
+    {
+"name": "Mode", "rangehint": "VIBRT, CHORS", "description":"Sets effect to vibrato or chorus."}
+    ,
+    {
+"name": "Level", "rangehint": "0 - 150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "124", "name": "PDL Pitch", "description": "Use an expression pedal to change the pitch in real time with this effect.", "Parameters":[
+    {
+"name": "Color", "rangehint": "1 - 9 (See Table 3)", "description":" Sets the type of pitch change control with the expression pedal."}
+    ,
+    {
+"name": "Tone", "rangehint": "0 - 10", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Bend", "rangehint": "0 - 100", "pedal": true, "description":" Sets the amount of pitch shift."}
+    ,
+    {
+"name": "Mode", "rangehint": "Up, Down", "description":" Sets the direction of the pitch change to Up or Down."}
+    ,
+    {
+"name": "Level", "rangehint": "0 - 150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+  ,
+  {
+"z_id": "125", "name": "PDL MnPit", "description": "This is a pitch shifter specially for monophonic sound (single - note playing), which allows the pitch to be shifted in real time with the expression pedal.", "Parameters":[
+    {
+"name": "Color", "rangehint": "1 - 9 (See Table 3)", "description":" Sets the type of pitch change control with the expression pedal."}
+    ,
+    {
+"name": "Tone", "rangehint": "0 - 10", "description":"Adjusts the tone."}
+    ,
+    {
+"name": "Bend", "rangehint": "0 - 100", "pedal": true, "description":" Sets the amount of pitch shift."}
+    ,
+    {
+"name": "Mode", "rangehint": "Up, Down", "description":" Sets the direction of the pitch change to Up or Down."}
+    ,
+    {
+"name": "Level", "rangehint": "0 - 150", "pedal": true, "description":"Adjusts the output level."}
+  ]}
+
+]

@@ -1,0 +1,53 @@
+{
+    "fxname": "SawFilter",
+    "Parameters": [
+        {
+            "name": "Speed",
+            "mmax": 128,
+            "mdefault": 116,
+            "pedal": true
+        },
+        {
+            "name": "Step",
+            "mmax": 30,
+            "mdefault": 6,
+            "pedal": true
+        },
+        {
+            "name": "Bal",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": true
+        },
+        {
+            "name": "Start",
+            "mmax": 100,
+            "mdefault": 24,
+            "pedal": true
+        },
+        {
+            "name": "End",
+            "mmax": 100,
+            "mdefault": 62,
+            "pedal": true
+        },
+        {
+            "name": "Reso",
+            "mmax": 10,
+            "mdefault": 8,
+            "pedal": true
+        },
+        {
+            "name": "Mode",
+            "mmax": 1,
+            "mdefault": 1,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

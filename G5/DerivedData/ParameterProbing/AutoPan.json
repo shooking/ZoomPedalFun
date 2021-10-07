@@ -1,0 +1,35 @@
+{
+    "fxname": "AutoPan",
+    "Parameters": [
+        {
+            "name": "Rate",
+            "mmax": 78,
+            "mdefault": 5,
+            "pedal": true
+        },
+        {
+            "name": "Width",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "Depth",
+            "mmax": 10,
+            "mdefault": 7,
+            "pedal": true
+        },
+        {
+            "name": "Clip",
+            "mmax": 10,
+            "mdefault": 0,
+            "pedal": true
+        }
+    ]
+}

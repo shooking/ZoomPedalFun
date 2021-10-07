@@ -1,0 +1,47 @@
+{
+    "fxname": "Granular",
+    "Parameters": [
+        {
+            "name": "Rate",
+            "mmax": 9,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "Size",
+            "mmax": 100,
+            "mdefault": 3,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": false
+        },
+        {
+            "name": "FltBl",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": false
+        },
+        {
+            "name": "FltOs",
+            "mmax": 100,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "PDL_L",
+            "mmax": 5,
+            "mdefault": 0,
+            "pedal": true
+        },
+        {
+            "name": "PDL_R",
+            "mmax": 4,
+            "mdefault": 0,
+            "pedal": true
+        }
+    ]
+}

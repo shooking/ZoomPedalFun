@@ -1,0 +1,53 @@
+{
+    "fxname": "TalkPDL-Z",
+    "Parameters": [
+        {
+            "name": "VPosi",
+            "mmax": 100,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "HPosi",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "Voice",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "Mode",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "Tone",
+            "mmax": 10,
+            "mdefault": 7,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 110,
+            "pedal": false
+        },
+        {
+            "name": "PDL_L",
+            "mmax": 50,
+            "mdefault": 50,
+            "pedal": true
+        },
+        {
+            "name": "PDL_R",
+            "mmax": 50,
+            "mdefault": 0,
+            "pedal": true
+        }
+    ]
+}

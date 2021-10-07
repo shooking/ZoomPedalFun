@@ -1,0 +1,53 @@
+{
+    "fxname": "Psych-Pha",
+    "Parameters": [
+        {
+            "name": "Wave",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": true
+        },
+        {
+            "name": "Rate",
+            "mmax": 128,
+            "mdefault": 112,
+            "pedal": true
+        },
+        {
+            "name": "S.HLD",
+            "mmax": 128,
+            "mdefault": 105,
+            "pedal": true
+        },
+        {
+            "name": "OFST",
+            "mmax": 100,
+            "mdefault": 10,
+            "pedal": true
+        },
+        {
+            "name": "DEPTH",
+            "mmax": 100,
+            "mdefault": 80,
+            "pedal": true
+        },
+        {
+            "name": "Reso",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": true
+        },
+        {
+            "name": "STAGE",
+            "mmax": 1,
+            "mdefault": 1,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 130,
+            "pedal": true
+        }
+    ]
+}

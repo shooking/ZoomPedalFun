@@ -1,0 +1,35 @@
+{
+    "fxname": "EarlyRef",
+    "Parameters": [
+        {
+            "name": "Decay",
+            "mmax": 29,
+            "mdefault": 14,
+            "pedal": false
+        },
+        {
+            "name": "Shape",
+            "mmax": 20,
+            "mdefault": 20,
+            "pedal": true
+        },
+        {
+            "name": "Mix",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": true
+        },
+        {
+            "name": "Tone",
+            "mmax": 10,
+            "mdefault": 6,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

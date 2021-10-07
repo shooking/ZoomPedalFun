@@ -1,0 +1,53 @@
+{
+    "fxname": "SpaceWorm",
+    "Parameters": [
+        {
+            "name": "Freq",
+            "mmax": 100,
+            "mdefault": 20,
+            "pedal": false
+        },
+        {
+            "name": "Speed",
+            "mmax": 15,
+            "mdefault": 2,
+            "pedal": false
+        },
+        {
+            "name": "Depth",
+            "mmax": 100,
+            "mdefault": 80,
+            "pedal": false
+        },
+        {
+            "name": "Step",
+            "mmax": 30,
+            "mdefault": 6,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 120,
+            "pedal": false
+        },
+        {
+            "name": "PDL_V",
+            "mmax": 100,
+            "mdefault": 0,
+            "pedal": true
+        },
+        {
+            "name": "PDL_L",
+            "mmax": 7,
+            "mdefault": 0,
+            "pedal": true
+        },
+        {
+            "name": "PDL_R",
+            "mmax": 8,
+            "mdefault": 0,
+            "pedal": true
+        }
+    ]
+}

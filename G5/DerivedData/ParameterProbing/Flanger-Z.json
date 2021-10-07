@@ -1,0 +1,53 @@
+{
+    "fxname": "Flanger-Z",
+    "Parameters": [
+        {
+            "name": "Mix",
+            "mmax": 100,
+            "mdefault": 65,
+            "pedal": false
+        },
+        {
+            "name": "Rate",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "Depth",
+            "mmax": 100,
+            "mdefault": 47,
+            "pedal": false
+        },
+        {
+            "name": "PreD",
+            "mmax": 50,
+            "mdefault": 4,
+            "pedal": false
+        },
+        {
+            "name": "PSync",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": false
+        },
+        {
+            "name": "PDL_L",
+            "mmax": 50,
+            "mdefault": 0,
+            "pedal": true
+        },
+        {
+            "name": "PDL_R",
+            "mmax": 50,
+            "mdefault": 0,
+            "pedal": true
+        }
+    ]
+}

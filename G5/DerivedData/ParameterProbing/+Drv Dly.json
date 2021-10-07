@@ -1,0 +1,35 @@
+{
+    "fxname": "+Drv Dly",
+    "Parameters": [
+        {
+            "name": "DrvMx",
+            "mmax": 100,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "DlyMx",
+            "mmax": 100,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": false
+        },
+        {
+            "name": "DlyTm",
+            "mmax": 2014,
+            "mdefault": 10,
+            "pedal": false
+        },
+        {
+            "name": "Gain",
+            "mmax": 100,
+            "mdefault": 0,
+            "pedal": true
+        }
+    ]
+}

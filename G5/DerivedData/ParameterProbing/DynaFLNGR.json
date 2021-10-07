@@ -1,0 +1,35 @@
+{
+    "fxname": "DynaFLNGR",
+    "Parameters": [
+        {
+            "name": "Depth",
+            "mmax": 100,
+            "mdefault": 30,
+            "pedal": false
+        },
+        {
+            "name": "Rate",
+            "mmax": 78,
+            "mdefault": 38,
+            "pedal": true
+        },
+        {
+            "name": "Sense",
+            "mmax": 19,
+            "mdefault": 0,
+            "pedal": true
+        },
+        {
+            "name": "Reso",
+            "mmax": 20,
+            "mdefault": 15,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

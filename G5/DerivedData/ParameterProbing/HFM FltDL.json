@@ -1,0 +1,47 @@
+{
+    "fxname": "HFM FltDL",
+    "Parameters": [
+        {
+            "name": "Rate",
+            "mmax": 128,
+            "mdefault": 35,
+            "pedal": true
+        },
+        {
+            "name": "Time",
+            "mmax": 2014,
+            "mdefault": 2007,
+            "pedal": false
+        },
+        {
+            "name": "Mix",
+            "mmax": 100,
+            "mdefault": 85,
+            "pedal": true
+        },
+        {
+            "name": "F.B",
+            "mmax": 100,
+            "mdefault": 28,
+            "pedal": true
+        },
+        {
+            "name": "Depth",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "Reso",
+            "mmax": 10,
+            "mdefault": 3,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}
