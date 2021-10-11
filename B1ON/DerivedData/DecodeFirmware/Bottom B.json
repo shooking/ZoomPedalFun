@@ -1,0 +1,26 @@
+{
+    "fxname": "Bottom B",
+    "fxid": "0x2c",
+    "gid": "0x2",
+    "version": "1.01",
+    "Parameters": [
+        {
+            "name": "Bass",
+            "mmax": 10,
+            "mdefault": 6,
+            "pedal": false
+        },
+        {
+            "name": "Trebl",
+            "mmax": 10,
+            "mdefault": 7,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 60,
+            "pedal": true
+        }
+    ]
+}

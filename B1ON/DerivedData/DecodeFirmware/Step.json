@@ -1,0 +1,38 @@
+{
+    "fxname": "Step",
+    "fxid": "0xa0",
+    "gid": "0x2",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Depth",
+            "mmax": 100,
+            "mdefault": 60,
+            "pedal": false
+        },
+        {
+            "name": "Rate",
+            "mmax": 78,
+            "mdefault": 25,
+            "pedal": true
+        },
+        {
+            "name": "Reso",
+            "mmax": 10,
+            "mdefault": 8,
+            "pedal": true
+        },
+        {
+            "name": "Shape",
+            "mmax": 10,
+            "mdefault": 10,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

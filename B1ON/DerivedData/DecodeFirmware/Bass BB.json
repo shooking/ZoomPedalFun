@@ -1,0 +1,38 @@
+{
+    "fxname": "Bass BB",
+    "fxid": "0x30",
+    "gid": "0x14",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Gain",
+            "mmax": 100,
+            "mdefault": 84,
+            "pedal": true
+        },
+        {
+            "name": "Bass",
+            "mmax": 20,
+            "mdefault": 13,
+            "pedal": false
+        },
+        {
+            "name": "Trebl",
+            "mmax": 20,
+            "mdefault": 16,
+            "pedal": false
+        },
+        {
+            "name": "Blend",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 70,
+            "pedal": true
+        }
+    ]
+}

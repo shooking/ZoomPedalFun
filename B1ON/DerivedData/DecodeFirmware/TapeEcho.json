@@ -1,0 +1,44 @@
+{
+    "fxname": "TapeEcho",
+    "fxid": "0x10",
+    "gid": "0x8",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Time",
+            "mmax": 2014,
+            "mdefault": 559,
+            "pedal": true
+        },
+        {
+            "name": "F.B",
+            "mmax": 100,
+            "mdefault": 64,
+            "pedal": true
+        },
+        {
+            "name": "Mix",
+            "mmax": 100,
+            "mdefault": 56,
+            "pedal": true
+        },
+        {
+            "name": "HiDMP",
+            "mmax": 10,
+            "mdefault": 5,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "Tail",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": true
+        }
+    ]
+}

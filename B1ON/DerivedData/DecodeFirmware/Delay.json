@@ -1,0 +1,50 @@
+{
+    "fxname": "Delay",
+    "fxid": "0x8",
+    "gid": "0x8",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Time",
+            "mmax": 4022,
+            "mdefault": 559,
+            "pedal": true
+        },
+        {
+            "name": "F.B",
+            "mmax": 100,
+            "mdefault": 30,
+            "pedal": true
+        },
+        {
+            "name": "Mix",
+            "mmax": 100,
+            "mdefault": 70,
+            "pedal": true
+        },
+        {
+            "name": "HiDMP",
+            "mmax": 10,
+            "mdefault": 10,
+            "pedal": false
+        },
+        {
+            "name": "P-P",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "Tail",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": true
+        }
+    ]
+}

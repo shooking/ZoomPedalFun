@@ -1,3 +1,10 @@
+import sys
+import os
+import glob
+from csplitb import CSplitB
+
+
+
 # -*- coding: ascii -*-
 import sys
 import json
@@ -26,17 +33,16 @@ def check(zdlData):
         mpedal = []
         numParameters = 0
         #print("OnOffStart at {}".format(OnOffstart))
-        for j in range(0, 20):
+        for j in range(0, 10):
             if  not ( data[OnOffstart + (j+1) * OnOffblockSize - 1] == 0x00
                  and  data[OnOffstart + (j+1) * OnOffblockSize - 2] == 0x00):
                 # ZD2 format has a length and PRME offset. ZDL has none of this.
                 print("End of the parameters")
                 break;
-            if not (      data[OnOffstart + (j) * OnOffblockSize + 0x18  ] == 0x00
-                  and data[OnOffstart + (j) * OnOffblockSize + 0x19] == 0x00
-                  and data[OnOffstart + (j) * OnOffblockSize + 0x1A] == 0x00
-                  and data[OnOffstart + (j) * OnOffblockSize + 0x1B] == 0x00 ):
-                print("Empty next slot")
+            if (      data[OnOffstart + (j) * OnOffblockSize    ] == 0x00
+                  and data[OnOffstart + (j) * OnOffblockSize + 1] == 0x00
+                  and data[OnOffstart + (j) * OnOffblockSize + 2] == 0x00
+                  and data[OnOffstart + (j) * OnOffblockSize + 3] == 0x00 ):
                 break
             currName = ""
             for i in range(12):
@@ -89,14 +95,61 @@ def check(zdlData):
         f.close()
         return fxName+'.ZDL'
 
-
-# handles a processed ZDL
-# if you want to extract from the firmware you have to
-# read the fileblocks and handle appropriately.
 if __name__ == "__main__":
     if len(sys.argv) == 2:
         f = open(sys.argv[1], "rb")
-        data = f.read()
+        # we are looking for 6 bytes then 0000000053495A45
+        # lets assume the pattern will be past 6th bytearray
+        # and we need at least 8 bytes left to read pattern
+        rawX = f.read()
         f.close()
-
-        check(data)
+        ZDL=bytearray()
+        # note the loop variable is updated in the loop!
+        for i in range(len(rawX) - 8):
+            if (rawX[i  ] == 0x00 and
+                rawX[i+1] == 0x00 and
+                rawX[i+2] == 0x00 and
+                rawX[i+3] == 0x00 and
+                rawX[i+4] == 0x53 and
+                rawX[i+5] == 0x49 and
+                rawX[i+6] == 0x5A and
+                rawX[i+7] == 0x45):
+                # a match -- assert that previous bytes
+                checkMe = rawX[i-6:i]
+                prevBlock = checkMe[1] * 256 + checkMe[0]
+                nextBlock = checkMe[3] * 256 + checkMe[2]
+                sizeBlock = checkMe[5] * 256 + checkMe[4]
+                #print("{} {} {}: {}".format(prevBlock, nextBlock, sizeBlock, i))
+                # should be beginning of a block ... so prevBlock should be FFFF
+                if prevBlock != 65535:
+                    print("Something wrong with this ZDL")
+                else:
+                    # now we got to keep going, sizeBlock at a time,
+                    # a block will always be max 4090 large. Even if we get less
+                    # the contents will be padded with FF
+                    blockCount = 0
+                    while (nextBlock != 0xFFFF):
+                        blockCount = blockCount + 1
+                        # this should be removing unused/formatting bytes
+                        ZDL.extend(rawX[i:i + sizeBlock])
+                        i = i + 4096
+                        checkMe = rawX[i-6:i]
+                        prevBlock = checkMe[1] * 256 + checkMe[0]
+                        #print("new prevBlock {} old nextBlock: {}".format(prevBlock, nextBlock))
+                        #print("new prevBlock == old nextBlock: {}".format(prevBlock==nextBlock))
+                        nextBlock = checkMe[3] * 256 + checkMe[2]
+                        sizeBlock = checkMe[5] * 256 + checkMe[4]
+                        #print("{} {} {}: {}".format(prevBlock, nextBlock, sizeBlock, i))
+                    if nextBlock == 0xFFFF:
+                        blockCount = blockCount + 1
+                        ZDL.extend(rawX[i:i + sizeBlock])
+                        # still must take a whole block
+                        i = i + 4096
+                        # now write out the ZDL. Function writes out JSON
+                        #print(ZDL)
+                        fxnamefile = check(ZDL)                          
+                        g = open(fxnamefile, "wb")
+                        g.write(ZDL)
+                        g.close()
+                        ZDL=bytearray()
+                        print("{}  {}".format(fxnamefile, blockCount))

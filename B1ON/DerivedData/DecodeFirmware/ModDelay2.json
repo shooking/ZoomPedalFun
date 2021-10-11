@@ -1,0 +1,50 @@
+{
+    "fxname": "ModDelay2",
+    "fxid": "0x28",
+    "gid": "0x8",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Time",
+            "mmax": 2014,
+            "mdefault": 529,
+            "pedal": true
+        },
+        {
+            "name": "F.B",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": true
+        },
+        {
+            "name": "Mix",
+            "mmax": 100,
+            "mdefault": 45,
+            "pedal": true
+        },
+        {
+            "name": "Rate",
+            "mmax": 49,
+            "mdefault": 16,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "Depth",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "Tail",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": true
+        }
+    ]
+}

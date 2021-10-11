@@ -1,0 +1,56 @@
+{
+    "fxname": "acoustic",
+    "fxid": "0x60",
+    "gid": "0x5",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Bass",
+            "mmax": 20,
+            "mdefault": 15,
+            "pedal": false
+        },
+        {
+            "name": "Mid",
+            "mmax": 20,
+            "mdefault": 15,
+            "pedal": false
+        },
+        {
+            "name": "Trebl",
+            "mmax": 20,
+            "mdefault": 17,
+            "pedal": false
+        },
+        {
+            "name": "Mid_F",
+            "mmax": 30,
+            "mdefault": 19,
+            "pedal": false
+        },
+        {
+            "name": "Gain",
+            "mmax": 100,
+            "mdefault": 40,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 85,
+            "pedal": true
+        },
+        {
+            "name": "BRGHT",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "CAB",
+            "mmax": 12,
+            "mdefault": 4,
+            "pedal": false
+        }
+    ]
+}

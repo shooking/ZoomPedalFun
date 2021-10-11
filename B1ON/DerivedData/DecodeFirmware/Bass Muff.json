@@ -1,0 +1,38 @@
+{
+    "fxname": "Bass Muff",
+    "fxid": "0x30",
+    "gid": "0x14",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Gain",
+            "mmax": 100,
+            "mdefault": 88,
+            "pedal": true
+        },
+        {
+            "name": "Tone",
+            "mmax": 100,
+            "mdefault": 95,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "Mode",
+            "mmax": 1,
+            "mdefault": 1,
+            "pedal": false
+        },
+        {
+            "name": "Bal",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "fxname": "WarpPhase",
+    "fxid": "0x3a",
+    "gid": "0x6",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Speed",
+            "mmax": 77,
+            "mdefault": 24,
+            "pedal": true
+        },
+        {
+            "name": "Reso",
+            "mmax": 10,
+            "mdefault": 7,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "DRCTN",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": true
+        },
+        {
+            "name": "\u0016",
+            "mmax": 0,
+            "mdefault": 8217,
+            "pedal": false
+        },
+        {
+            "name": "\u0018.",
+            "mmax": 0,
+            "mdefault": 11801,
+            "pedal": false
+        },
+        {
+            "name": "\u0019x5",
+            "mmax": 0,
+            "mdefault": 30745,
+            "pedal": false
+        },
+        {
+            "name": "\u0019x11",
+            "mmax": 0,
+            "mdefault": 30745,
+            "pedal": false
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "fxname": "Bass Pre",
+    "fxid": "0x50",
+    "gid": "0x14",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Bass",
+            "mmax": 10,
+            "mdefault": 3,
+            "pedal": false
+        },
+        {
+            "name": "Trebl",
+            "mmax": 10,
+            "mdefault": 3,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 80,
+            "pedal": true
+        },
+        {
+            "name": "Mid",
+            "mmax": 20,
+            "mdefault": 14,
+            "pedal": false
+        },
+        {
+            "name": "Freq",
+            "mmax": 23,
+            "mdefault": 7,
+            "pedal": true
+        }
+    ]
+}

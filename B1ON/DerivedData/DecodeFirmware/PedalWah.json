@@ -1,0 +1,26 @@
+{
+    "fxname": "PedalWah",
+    "fxid": "0x60",
+    "gid": "0xb",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Freq",
+            "mmax": 49,
+            "mdefault": 37,
+            "pedal": true
+        },
+        {
+            "name": "DryMX",
+            "mmax": 100,
+            "mdefault": 0,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

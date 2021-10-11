@@ -1,0 +1,44 @@
+{
+    "fxname": "TheVibe",
+    "fxid": "0x40",
+    "gid": "0x6",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Speed",
+            "mmax": 50,
+            "mdefault": 25,
+            "pedal": true
+        },
+        {
+            "name": "Depth",
+            "mmax": 100,
+            "mdefault": 60,
+            "pedal": true
+        },
+        {
+            "name": "Bias",
+            "mmax": 100,
+            "mdefault": 48,
+            "pedal": true
+        },
+        {
+            "name": "Wave",
+            "mmax": 100,
+            "mdefault": 24,
+            "pedal": true
+        },
+        {
+            "name": "Mode",
+            "mmax": 1,
+            "mdefault": 1,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

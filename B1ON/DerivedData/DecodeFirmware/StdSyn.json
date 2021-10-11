@@ -1,0 +1,44 @@
+{
+    "fxname": "StdSyn",
+    "fxid": "0x70",
+    "gid": "0x7",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Sense",
+            "mmax": 100,
+            "mdefault": 10,
+            "pedal": true
+        },
+        {
+            "name": "Sound",
+            "mmax": 3,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "Tone",
+            "mmax": 10,
+            "mdefault": 7,
+            "pedal": false
+        },
+        {
+            "name": "Synth",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "Dry",
+            "mmax": 100,
+            "mdefault": 40,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

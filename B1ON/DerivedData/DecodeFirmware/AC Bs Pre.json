@@ -1,0 +1,56 @@
+{
+    "fxname": "AC Bs Pre",
+    "fxid": "0x60",
+    "gid": "0x14",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Gain",
+            "mmax": 100,
+            "mdefault": 60,
+            "pedal": true
+        },
+        {
+            "name": "Depth",
+            "mmax": 10,
+            "mdefault": 10,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "Bass",
+            "mmax": 20,
+            "mdefault": 10,
+            "pedal": false
+        },
+        {
+            "name": "L-Mid",
+            "mmax": 20,
+            "mdefault": 8,
+            "pedal": false
+        },
+        {
+            "name": "LM_F",
+            "mmax": 30,
+            "mdefault": 20,
+            "pedal": false
+        },
+        {
+            "name": "Mid",
+            "mmax": 20,
+            "mdefault": 7,
+            "pedal": false
+        },
+        {
+            "name": "H-Mid",
+            "mmax": 20,
+            "mdefault": 13,
+            "pedal": false
+        }
+    ]
+}

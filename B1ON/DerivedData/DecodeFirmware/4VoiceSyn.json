@@ -1,0 +1,44 @@
+{
+    "fxname": "4VoiceSyn",
+    "fxid": "0xd0",
+    "gid": "0x7",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "ATTCK",
+            "mmax": 10,
+            "mdefault": 0,
+            "pedal": true
+        },
+        {
+            "name": "Mode",
+            "mmax": 8,
+            "mdefault": 3,
+            "pedal": false
+        },
+        {
+            "name": "Scale",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "Synth",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "Dry",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

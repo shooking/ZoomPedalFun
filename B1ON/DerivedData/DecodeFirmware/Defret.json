@@ -1,0 +1,32 @@
+{
+    "fxname": "Defret",
+    "fxid": "0xa0",
+    "gid": "0x7",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Sense",
+            "mmax": 30,
+            "mdefault": 11,
+            "pedal": true
+        },
+        {
+            "name": "Color",
+            "mmax": 9,
+            "mdefault": 7,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 140,
+            "pedal": true
+        },
+        {
+            "name": "Tone",
+            "mmax": 49,
+            "mdefault": 36,
+            "pedal": true
+        }
+    ]
+}

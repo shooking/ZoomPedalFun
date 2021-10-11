@@ -1,0 +1,38 @@
+{
+    "fxname": "MojoRolle",
+    "fxid": "0x160",
+    "gid": "0x6",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Depth",
+            "mmax": 100,
+            "mdefault": 37,
+            "pedal": true
+        },
+        {
+            "name": "Speed",
+            "mmax": 128,
+            "mdefault": 57,
+            "pedal": true
+        },
+        {
+            "name": "Rise",
+            "mmax": 100,
+            "mdefault": 75,
+            "pedal": true
+        },
+        {
+            "name": "Mode",
+            "mmax": 2,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

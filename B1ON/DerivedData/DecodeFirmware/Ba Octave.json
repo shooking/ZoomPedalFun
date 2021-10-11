@@ -1,0 +1,44 @@
+{
+    "fxname": "Ba Octave",
+    "fxid": "0x118",
+    "gid": "0x6",
+    "version": "1.01",
+    "Parameters": [
+        {
+            "name": "Oct",
+            "mmax": 100,
+            "mdefault": 80,
+            "pedal": true
+        },
+        {
+            "name": "Dry",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "Tone",
+            "mmax": 10,
+            "mdefault": 8,
+            "pedal": false
+        },
+        {
+            "name": "Low",
+            "mmax": 10,
+            "mdefault": 3,
+            "pedal": false
+        },
+        {
+            "name": "Mid",
+            "mmax": 10,
+            "mdefault": 4,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

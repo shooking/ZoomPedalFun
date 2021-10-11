@@ -1,0 +1,56 @@
+{
+    "fxname": "Monotone",
+    "fxid": "0x80",
+    "gid": "0x5",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Bass",
+            "mmax": 20,
+            "mdefault": 13,
+            "pedal": false
+        },
+        {
+            "name": "Mid",
+            "mmax": 20,
+            "mdefault": 18,
+            "pedal": false
+        },
+        {
+            "name": "Trebl",
+            "mmax": 20,
+            "mdefault": 13,
+            "pedal": false
+        },
+        {
+            "name": "Mid_F",
+            "mmax": 30,
+            "mdefault": 13,
+            "pedal": false
+        },
+        {
+            "name": "Gain",
+            "mmax": 100,
+            "mdefault": 40,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 70,
+            "pedal": true
+        },
+        {
+            "name": "Char",
+            "mmax": 2,
+            "mdefault": 2,
+            "pedal": false
+        },
+        {
+            "name": "CAB",
+            "mmax": 12,
+            "mdefault": 9,
+            "pedal": false
+        }
+    ]
+}

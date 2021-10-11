@@ -1,0 +1,38 @@
+{
+    "fxname": "DualComp",
+    "fxid": "0xa0",
+    "gid": "0x1",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Hi",
+            "mmax": 50,
+            "mdefault": 24,
+            "pedal": true
+        },
+        {
+            "name": "Lo",
+            "mmax": 50,
+            "mdefault": 15,
+            "pedal": true
+        },
+        {
+            "name": "Freq",
+            "mmax": 9,
+            "mdefault": 9,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "Tone",
+            "mmax": 10,
+            "mdefault": 2,
+            "pedal": true
+        }
+    ]
+}

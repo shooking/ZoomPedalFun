@@ -1,0 +1,44 @@
+{
+    "fxname": "Z-Organ",
+    "fxid": "0x40",
+    "gid": "0x7",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Upper",
+            "mmax": 100,
+            "mdefault": 70,
+            "pedal": true
+        },
+        {
+            "name": "Lower",
+            "mmax": 100,
+            "mdefault": 80,
+            "pedal": true
+        },
+        {
+            "name": "Dry",
+            "mmax": 100,
+            "mdefault": 80,
+            "pedal": true
+        },
+        {
+            "name": "HPF",
+            "mmax": 10,
+            "mdefault": 3,
+            "pedal": false
+        },
+        {
+            "name": "LPF",
+            "mmax": 10,
+            "mdefault": 8,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

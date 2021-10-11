@@ -1,0 +1,38 @@
+{
+    "fxname": "BaPDLPit",
+    "fxid": "0x80",
+    "gid": "0xb",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Color",
+            "mmax": 8,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "Tone",
+            "mmax": 10,
+            "mdefault": 10,
+            "pedal": false
+        },
+        {
+            "name": "Bend",
+            "mmax": 100,
+            "mdefault": 0,
+            "pedal": true
+        },
+        {
+            "name": "Mode",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

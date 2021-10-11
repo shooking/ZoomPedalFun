@@ -1,0 +1,56 @@
+{
+    "fxname": "D.I Plus",
+    "fxid": "0x20",
+    "gid": "0x14",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Bass",
+            "mmax": 20,
+            "mdefault": 13,
+            "pedal": false
+        },
+        {
+            "name": "Mid",
+            "mmax": 20,
+            "mdefault": 12,
+            "pedal": false
+        },
+        {
+            "name": "Trebl",
+            "mmax": 20,
+            "mdefault": 12,
+            "pedal": false
+        },
+        {
+            "name": "Gain",
+            "mmax": 100,
+            "mdefault": 80,
+            "pedal": true
+        },
+        {
+            "name": "Blend",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 120,
+            "pedal": true
+        },
+        {
+            "name": "Color",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "CHAN",
+            "mmax": 1,
+            "mdefault": 1,
+            "pedal": true
+        }
+    ]
+}

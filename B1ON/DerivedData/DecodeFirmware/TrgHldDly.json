@@ -1,0 +1,44 @@
+{
+    "fxname": "TrgHldDly",
+    "fxid": "0xb0",
+    "gid": "0x8",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Time",
+            "mmax": 990,
+            "mdefault": 40,
+            "pedal": false
+        },
+        {
+            "name": "Duty",
+            "mmax": 75,
+            "mdefault": 75,
+            "pedal": false
+        },
+        {
+            "name": "Mix",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "THRSH",
+            "mmax": 30,
+            "mdefault": 20,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "Tail",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": true
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "fxname": "D Comp",
+    "fxid": "0x18",
+    "gid": "0x1",
+    "version": "1.01",
+    "Parameters": [
+        {
+            "name": "Sense",
+            "mmax": 10,
+            "mdefault": 3,
+            "pedal": true
+        },
+        {
+            "name": "Tone",
+            "mmax": 10,
+            "mdefault": 8,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 125,
+            "pedal": true
+        },
+        {
+            "name": "ATTCK",
+            "mmax": 1,
+            "mdefault": 1,
+            "pedal": true
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "fxname": "SMR",
+    "fxid": "0x40",
+    "gid": "0x5",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Bass",
+            "mmax": 20,
+            "mdefault": 13,
+            "pedal": false
+        },
+        {
+            "name": "Mid",
+            "mmax": 20,
+            "mdefault": 17,
+            "pedal": false
+        },
+        {
+            "name": "Trebl",
+            "mmax": 20,
+            "mdefault": 9,
+            "pedal": false
+        },
+        {
+            "name": "Mid_F",
+            "mmax": 30,
+            "mdefault": 13,
+            "pedal": false
+        },
+        {
+            "name": "Gain",
+            "mmax": 100,
+            "mdefault": 40,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 60,
+            "pedal": true
+        },
+        {
+            "name": "ENHNC",
+            "mmax": 10,
+            "mdefault": 1,
+            "pedal": false
+        },
+        {
+            "name": "CAB",
+            "mmax": 12,
+            "mdefault": 4,
+            "pedal": false
+        }
+    ]
+}

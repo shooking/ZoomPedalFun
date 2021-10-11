@@ -1,0 +1,32 @@
+{
+    "fxname": "Bass_TS",
+    "fxid": "0xa0",
+    "gid": "0x14",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Gain",
+            "mmax": 100,
+            "mdefault": 35,
+            "pedal": true
+        },
+        {
+            "name": "Tone",
+            "mmax": 100,
+            "mdefault": 74,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 110,
+            "pedal": true
+        },
+        {
+            "name": "Bal",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": true
+        }
+    ]
+}

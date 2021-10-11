@@ -1,0 +1,32 @@
+{
+    "fxname": "Ba Boost",
+    "fxid": "0x10",
+    "gid": "0x14",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Gain",
+            "mmax": 100,
+            "mdefault": 35,
+            "pedal": true
+        },
+        {
+            "name": "Bass",
+            "mmax": 20,
+            "mdefault": 10,
+            "pedal": false
+        },
+        {
+            "name": "Trebl",
+            "mmax": 20,
+            "mdefault": 8,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 78,
+            "pedal": true
+        }
+    ]
+}

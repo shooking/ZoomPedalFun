@@ -1,0 +1,32 @@
+{
+    "fxname": "B_FzSmile",
+    "fxid": "0xc0",
+    "gid": "0x14",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Gain",
+            "mmax": 100,
+            "mdefault": 43,
+            "pedal": true
+        },
+        {
+            "name": "Tone",
+            "mmax": 100,
+            "mdefault": 70,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "Bal",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

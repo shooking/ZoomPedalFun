@@ -1,0 +1,32 @@
+{
+    "fxname": "PDL Reso",
+    "fxid": "0x70",
+    "gid": "0xb",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Freq",
+            "mmax": 49,
+            "mdefault": 11,
+            "pedal": true
+        },
+        {
+            "name": "Reso",
+            "mmax": 10,
+            "mdefault": 7,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 130,
+            "pedal": true
+        },
+        {
+            "name": "DryMX",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": true
+        }
+    ]
+}

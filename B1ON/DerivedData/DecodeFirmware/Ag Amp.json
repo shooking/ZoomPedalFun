@@ -1,0 +1,56 @@
+{
+    "fxname": "Ag Amp",
+    "fxid": "0x70",
+    "gid": "0x5",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Bass",
+            "mmax": 20,
+            "mdefault": 13,
+            "pedal": false
+        },
+        {
+            "name": "Mid",
+            "mmax": 20,
+            "mdefault": 14,
+            "pedal": false
+        },
+        {
+            "name": "Trebl",
+            "mmax": 20,
+            "mdefault": 17,
+            "pedal": false
+        },
+        {
+            "name": "Mid_F",
+            "mmax": 30,
+            "mdefault": 13,
+            "pedal": false
+        },
+        {
+            "name": "Gain",
+            "mmax": 100,
+            "mdefault": 40,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 75,
+            "pedal": true
+        },
+        {
+            "name": "Char",
+            "mmax": 3,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "CAB",
+            "mmax": 12,
+            "mdefault": 5,
+            "pedal": false
+        }
+    ]
+}

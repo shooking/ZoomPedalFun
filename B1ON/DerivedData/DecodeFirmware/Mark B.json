@@ -1,0 +1,56 @@
+{
+    "fxname": "Mark B",
+    "fxid": "0xc0",
+    "gid": "0x5",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Bass",
+            "mmax": 20,
+            "mdefault": 16,
+            "pedal": false
+        },
+        {
+            "name": "Mid",
+            "mmax": 20,
+            "mdefault": 13,
+            "pedal": false
+        },
+        {
+            "name": "Trebl",
+            "mmax": 20,
+            "mdefault": 13,
+            "pedal": false
+        },
+        {
+            "name": "Mid_F",
+            "mmax": 30,
+            "mdefault": 12,
+            "pedal": false
+        },
+        {
+            "name": "Gain",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 80,
+            "pedal": true
+        },
+        {
+            "name": "Color",
+            "mmax": 6,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "CAB",
+            "mmax": 12,
+            "mdefault": 11,
+            "pedal": false
+        }
+    ]
+}

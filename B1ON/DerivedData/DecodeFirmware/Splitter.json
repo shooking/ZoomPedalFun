@@ -1,0 +1,32 @@
+{
+    "fxname": "Splitter",
+    "fxid": "0x28",
+    "gid": "0x2",
+    "version": "1.01",
+    "Parameters": [
+        {
+            "name": "Hi",
+            "mmax": 50,
+            "mdefault": 19,
+            "pedal": true
+        },
+        {
+            "name": "Lo",
+            "mmax": 50,
+            "mdefault": 16,
+            "pedal": true
+        },
+        {
+            "name": "Freq",
+            "mmax": 15,
+            "mdefault": 2,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 95,
+            "pedal": true
+        }
+    ]
+}

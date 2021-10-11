@@ -1,0 +1,44 @@
+{
+    "fxname": "ParticleR",
+    "fxid": "0x190",
+    "gid": "0x9",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "DWELL",
+            "mmax": 100,
+            "mdefault": 40,
+            "pedal": true
+        },
+        {
+            "name": "GAIN",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "MODE",
+            "mmax": 2,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "MIX",
+            "mmax": 100,
+            "mdefault": 60,
+            "pedal": true
+        },
+        {
+            "name": "MONO",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "Tail",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": true
+        }
+    ]
+}

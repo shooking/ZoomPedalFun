@@ -1,0 +1,56 @@
+{
+    "fxname": "Z-Syn",
+    "fxid": "0x90",
+    "gid": "0x7",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Wave",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "Decay",
+            "mmax": 100,
+            "mdefault": 72,
+            "pedal": true
+        },
+        {
+            "name": "Tone",
+            "mmax": 10,
+            "mdefault": 7,
+            "pedal": false
+        },
+        {
+            "name": "Freq",
+            "mmax": 10,
+            "mdefault": 2,
+            "pedal": false
+        },
+        {
+            "name": "Range",
+            "mmax": 20,
+            "mdefault": 8,
+            "pedal": false
+        },
+        {
+            "name": "Reso",
+            "mmax": 20,
+            "mdefault": 18,
+            "pedal": false
+        },
+        {
+            "name": "Synth",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "Dry",
+            "mmax": 100,
+            "mdefault": 0,
+            "pedal": true
+        }
+    ]
+}
