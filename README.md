@@ -1,5 +1,5 @@
 # ZoomPedalFun
-A collection of tips and tricks for Zoom B1On, B1XFour and G1XFour pedals.
+A collection of tips and tricks for Zoom B1On, B1XFour and G1XFour pedals. Now extended to G5, G3n, G5n, MS-70CDR.
 
 The aim of this work is to allow others to trial any tips & tricks found, at their own risk, to get more fun out of these wonderful pedals.
 
@@ -32,6 +32,10 @@ ToneLib: https://tonelib.net/
 Offical pages:
 
 Zoom: https://www.zoom.co.jp/products/effects-preamps/guitar
+
+Harware hacks:
+
+Ash Bass: http://ashbass.com/AshBassGuitar/Zoom/
 
 AIMS
 
