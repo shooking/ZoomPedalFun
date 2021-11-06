@@ -14,7 +14,8 @@ import math
 import logging
 logging.basicConfig(filename='midi.log', level=logging.DEBUG)
 
-gidMask = 0x0FFFFFFF
+#gidMask = 0x0FFFFFFF
+gidMask = 0xFFFFFFFF
 fxidMask = 0xFFFF
 #--------------------------------------------------
 # Define ZT2/ZD2 file format using Construct (v2.10)
@@ -831,6 +832,12 @@ class zoomzt2(object):
                 x['Parameters'][j]['mdefault'] = mdefault[j+2]
             #print(x)
             # get description the hard way.
+            # DIRTY SHOOKING HACK
+            # If we find a A1X4 MDL (gid 34) make it 162
+            myGid = ((binconfig['id'] & gidMask) >> 16) >> 5
+            if myGid == 34:
+                myGid = 34 + 128
+
             xAdd = {
                 "FX" : 
                 { 
@@ -838,7 +845,7 @@ class zoomzt2(object):
                     "description": TXdescription,
                     "version": binconfig['version'],
                     "fxid": (binconfig['id'] & fxidMask),
-                    "gid": ((binconfig['id'] & gidMask) >> 16) >> 5,
+                    "gid": myGid,
                     "group": binconfig['group'], 
                     "groupname": "{}" .format( binconfig['groupname']),
                     "numParams": numParams,
@@ -911,6 +918,14 @@ class zoomzt2(object):
                     fxnumSlots=1
                     if fxLookup is not None and total_pedal is not None:
                         try:
+                            # DIRTY SHOOKING HACK
+                            # we dont have name (it is in a patch)
+                            # Mungewell's decoder things id is 28 bits
+                            # but we need the full 32.
+                            # GID of 34 (and maybe others) needs to be 162
+                            if thisFX['gid'] == 34:
+                                thisFX['gid'] = 162 # 34 + 128
+
                             npi = fxLookup[thisFX['fxid'], thisFX['gid']]
                             baseFX = total_pedal[npi]['FX']
                             np = baseFX['numParams']

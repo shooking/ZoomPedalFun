@@ -48,7 +48,7 @@ activeFX = None
 
 def FXM_ID(ioport, slot, fxid, gid):
     sysex = mido.Message('sysex')
-    sendString = [0x52, 0x00, 0x6e, 0x64, 0x03, 0x00, slot - 1, 1, fxid & 0x7f, (fxid>>7) & 0x7f, 0, gid, 0]
+    sendString = [0x52, 0x00, 0x6e, 0x64, 0x03, 0x00, slot - 1, 1, fxid & 0x7f, (fxid>>7) & 0x7f, 0, gid & 0x7f, (gid >> 7) & 0x7f]
     sysex.data = sendString
     ioport.send(sysex)
 
@@ -409,8 +409,10 @@ def GenFX(lim):
     return [{'onoff' : None, 'label': None, 'slot': x + 1, 'effect': None, 'name': None, 'params': [ 0 for y in range(9)]} for x in range(lim)]
 
 def InitializeFXState(currFX):
+    x = 0
     for fx in currFX:
         fx = {'onoff' : None, 'label': None, 'slot': x + 1, 'effect': None, 'name' : None}
+        x = x + 1
 
 currFX = GenFX(9)
 if __name__ == "__main__":
