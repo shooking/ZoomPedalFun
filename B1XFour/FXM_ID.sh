@@ -39,8 +39,12 @@ hexFXValueHigh=`printf "%02x" $hexFXHigh`
 
 # We read in the FX GROUP and convert to low/high
 theValue=$3
-#theValueMod=$(($theValue * 8 ))
 theValueMod=$(($theValue))
+hexGPLow=$(($theValueMod & 127))
+hexGPHigh=$(( ($theValueMod / 128) & 127 ))
+hexGPValueLow=`printf "%02x" $hexGPLow`
+hexGPValueHigh=`printf "%02x" $hexGPHigh`
+
 
 # we switch FX on
 OnOff=`printf "%02x" 1`
@@ -49,7 +53,7 @@ hexGroupVal=`printf "%02x" $theValueMod`
 
 #                                 sl    ID       GID
 #            F0 52 00 6E 64 03 00 00 01 30 00 00 08 00 F7
-probeString="F0 52 00 6E 64 03 00 ${hexSlot} ${OnOff} ${hexFXValueLow} ${hexFXValueHigh} 00 ${hexGroupVal} 00 F7"
+probeString="F0 52 00 6E 64 03 00 ${hexSlot} ${OnOff} ${hexFXValueLow} ${hexFXValueHigh} 00 ${hexGPValueLow} ${hexGPValueHigh} F7"
 echo ${probeString}
 theFile=temp.$$
 amidi -p ${MIDI_DEV} -S ${probeString} -r ${theFile} -t 1 ; hexdump -C ${theFile}; rm ${theFile}
