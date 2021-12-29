@@ -1,0 +1,48 @@
+{
+      "FX": {
+            "name": "DYN Drive",
+            "description": "This effect easily achieves the warm drive tone of a tube amp.",
+            "version": "1.30",
+            "fxid": 96,
+            "gid": 24,
+            "group": 3,
+            "groupname": "DRIVE",
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "DYNDRIVE.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Gain",
+                  "explanation": "Adjusts the gain.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 78
+            },
+            {
+                  "name": "Tone",
+                  "explanation": "Adjusts the tone.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 67
+            },
+            {
+                  "name": "Mode",
+                  "explanation": "Sets the sound style.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 1
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 46
+            }
+      ]
+}

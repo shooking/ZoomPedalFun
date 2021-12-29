@@ -1,0 +1,48 @@
+{
+      "FX": {
+            "name": "Detune",
+            "description": "By mixing an effect sound that is slightly pitch-shifted with the original sound, this effect type has a chorus effect without much sense of modulation.",
+            "version": "1.40",
+            "fxid": 160,
+            "gid": 48,
+            "group": 6,
+            "groupname": "MODULATION",
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "DETUNE.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Cent",
+                  "explanation": "Adjusts the detuning in cents, which are fine increments of 1/100-semitone.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 50,
+                  "mdefault": 35
+            },
+            {
+                  "name": "PreD",
+                  "explanation": "Sets the pre-delay time of the effect sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 50,
+                  "mdefault": 0
+            },
+            {
+                  "name": "Tone",
+                  "explanation": "Adjusts the tone.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 10,
+                  "mdefault": 8
+            },
+            {
+                  "name": "Mix",
+                  "explanation": "Adjusts the amount of effected sound that is mixed with the original sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 52
+            }
+      ]
+}

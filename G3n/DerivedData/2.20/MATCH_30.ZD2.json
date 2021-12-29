@@ -1,0 +1,80 @@
+{
+      "FX": {
+            "name": "MATCH30",
+            "description": "This models the sound of the Matchless DC-30.",
+            "version": "1.10",
+            "fxid": 160,
+            "gid": 32,
+            "group": 4,
+            "groupname": "AMP",
+            "numParams": 8,
+            "numSlots": 2,
+            "filename": "MATCH_30.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Gain1",
+                  "explanation": "Adjusts the gain of channel1.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 101,
+                  "mdefault": 36
+            },
+            {
+                  "name": "Bass1",
+                  "explanation": "Adjusts volume of low frequencies in the channel1.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 47
+            },
+            {
+                  "name": "TRBL1",
+                  "explanation": "Adjusts volume of high frequencies in the channel1.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 49
+            },
+            {
+                  "name": "Gain2",
+                  "explanation": "Adjusts the gain of channel2.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 101,
+                  "mdefault": 0
+            },
+            {
+                  "name": "Tone2",
+                  "explanation": "Adjusts the tone of channel2.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 5,
+                  "mdefault": 1
+            },
+            {
+                  "name": "Cut",
+                  "explanation": "Adjusts the tone.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 0
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 101,
+                  "mdefault": 34
+            },
+            {
+                  "name": "SOLO",
+                  "explanation": "Sets the volume when the control switch is on.",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 8,
+                  "mdefault": 2
+            }
+      ]
+}

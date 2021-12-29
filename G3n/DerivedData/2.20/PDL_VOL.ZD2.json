@@ -1,0 +1,48 @@
+{
+      "FX": {
+            "name": "PDL Vol",
+            "description": "The volume curve of the volume pedal can be set.",
+            "version": "1.50",
+            "fxid": 16,
+            "gid": 88,
+            "group": 11,
+            "groupname": "PEDAL",
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "PDL_VOL.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": true,
+                  "mmax": 100,
+                  "mdefault": 100
+            },
+            {
+                  "name": "Min",
+                  "explanation": "Adjusts the volume when the pedal is at minimum position.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 0
+            },
+            {
+                  "name": "Max",
+                  "explanation": "Adjusts the volume when the pedal is at maximum position.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 100
+            },
+            {
+                  "name": "Curve",
+                  "explanation": "Sets the volume curve.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 0
+            }
+      ]
+}

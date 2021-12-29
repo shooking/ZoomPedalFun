@@ -1,0 +1,48 @@
+{
+      "FX": {
+            "name": "FD MA2x12",
+            "description": "This models the sound of a Fender ToneMaster2x12 cabinet with two 12\" Celestion G12-80 speakers.",
+            "version": "1.30",
+            "fxid": 43,
+            "gid": 40,
+            "group": 5,
+            "groupname": "CABINET",
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "FDMA2X12.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "MIC",
+                  "explanation": "MIC=OFF: This tone is optimized for using amp modeling with a guitar amp.\nMIC=ON: This tone is optimized for using amp modeling with headphones or monitor speakers.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 0
+            },
+            {
+                  "name": "D57:D421",
+                  "explanation": "This adjusts the volume balance between the Shure SM57 and the Sennheiser MD421.\nWhen the MIC parameter is set to OFF, this setting has no effect.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "Hi",
+                  "explanation": "Adjusts volume of high frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "Lo",
+                  "explanation": "Adjusts volume of low frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            }
+      ]
+}

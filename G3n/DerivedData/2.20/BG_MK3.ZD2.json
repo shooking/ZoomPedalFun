@@ -1,0 +1,80 @@
+{
+      "FX": {
+            "name": "BG MK3",
+            "description": "This models the sound of the Mesa Boogie Mark III combo amp.",
+            "version": "1.20",
+            "fxid": 66,
+            "gid": 32,
+            "group": 4,
+            "groupname": "AMP",
+            "numParams": 8,
+            "numSlots": 2,
+            "filename": "BG_MK3.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Bass",
+                  "explanation": "Adjusts volume of low frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 52
+            },
+            {
+                  "name": "MID",
+                  "explanation": "Adjusts volume of middle frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 85
+            },
+            {
+                  "name": "Treble",
+                  "explanation": "Adjusts volume of high frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 40
+            },
+            {
+                  "name": "PRSNC",
+                  "explanation": "Adjusts volume of super-high frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 40
+            },
+            {
+                  "name": "Gain1",
+                  "explanation": "Adjusts the gain of the first stage.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 75
+            },
+            {
+                  "name": "Gain2",
+                  "explanation": "Adjusts the gain of the second stage.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 75
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 78
+            },
+            {
+                  "name": "SOLO",
+                  "explanation": "Sets the volume when the control switch is on.",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 8,
+                  "mdefault": 2
+            }
+      ]
+}

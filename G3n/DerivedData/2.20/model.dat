@@ -1,0 +1,9 @@
+{
+      "model": "G3n",
+      "numPatches": 150,
+      "bankSize": 3,
+      "ptcSize": 736,
+      "version": "2.20",
+      "gce3version": 0,
+      "maxFX": 7
+}

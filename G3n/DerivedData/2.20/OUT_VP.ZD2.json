@@ -1,0 +1,24 @@
+{
+      "FX": {
+            "name": "Output VP",
+            "description": "This controls the product output level. This volume will be kept even when the patch is changed.",
+            "version": "1.40",
+            "fxid": 65520,
+            "gid": 95,
+            "group": 11,
+            "groupname": "PEDAL",
+            "numParams": 1,
+            "numSlots": 1,
+            "filename": "OUT_VP.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "-",
+                  "explanation": "-",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 5075,
+                  "mdefault": 4947
+            }
+      ]
+}

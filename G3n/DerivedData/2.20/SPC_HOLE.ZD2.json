@@ -1,0 +1,80 @@
+{
+      "FX": {
+            "name": "SpaceHole",
+            "description": "This effect combines delay and reverb.",
+            "version": "1.20",
+            "fxid": 144,
+            "gid": 72,
+            "group": 9,
+            "groupname": "REVERB",
+            "numParams": 8,
+            "numSlots": 2,
+            "filename": "SPC_HOLE.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "PreD",
+                  "explanation": "Adjusts the delay between input of the original sound and start of the reverb sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1000,
+                  "mdefault": 80
+            },
+            {
+                  "name": "Decay",
+                  "explanation": "Sets the duration of the reverberations.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 200,
+                  "mdefault": 50
+            },
+            {
+                  "name": "F.B",
+                  "explanation": "Adjusts the feedback amount. ",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 45
+            },
+            {
+                  "name": "Mix",
+                  "explanation": "Adjusts the amount of effected sound that is mixed with the original sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 40
+            },
+            {
+                  "name": "Depth",
+                  "explanation": "Sets the depth of the modulation.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 58
+            },
+            {
+                  "name": "Speed",
+                  "explanation": "Sets the speed of the modulation.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 39
+            },
+            {
+                  "name": "Size",
+                  "explanation": "Adjusts the size of the reverb space.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 29
+            },
+            {
+                  "name": "INPUT",
+                  "explanation": "Sets the foot switch function.",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 0
+            }
+      ]
+}

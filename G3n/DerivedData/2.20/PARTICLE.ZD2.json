@@ -1,0 +1,48 @@
+{
+      "FX": {
+            "name": "ParticleR",
+            "description": "This is a unique complex reverb.",
+            "version": "1.30",
+            "fxid": 192,
+            "gid": 72,
+            "group": 9,
+            "groupname": "REVERB",
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "PARTICLE.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Mode",
+                  "explanation": "Sets how the reverb sound changes.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 2,
+                  "mdefault": 0
+            },
+            {
+                  "name": "Decay",
+                  "explanation": "Sets the duration of the reverberations.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 75
+            },
+            {
+                  "name": "Mix",
+                  "explanation": "Adjusts the amount of effected sound that is mixed with the original sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 60
+            },
+            {
+                  "name": "Tail",
+                  "explanation": "When ON, effect sound continues even after effect is turned off. When OFF, effect sound stops right when effect is turned off.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 1
+            }
+      ]
+}

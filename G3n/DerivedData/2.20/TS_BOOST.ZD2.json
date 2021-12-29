@@ -1,0 +1,80 @@
+{
+      "FX": {
+            "name": "TS+Boost",
+            "description": "This effect combines TS Drive and Booster.",
+            "version": "1.30",
+            "fxid": 256,
+            "gid": 24,
+            "group": 3,
+            "groupname": "DRIVE",
+            "numParams": 8,
+            "numSlots": 2,
+            "filename": "TS_BOOST.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Gain",
+                  "explanation": "Adjusts gain of TS Drive.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 34
+            },
+            {
+                  "name": "Tone",
+                  "explanation": "Adjusts tone of TS Drive.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts volume of TS Drive.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 75
+            },
+            {
+                  "name": "Comp",
+                  "explanation": "Sets the clipping type of TS Drive.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 2,
+                  "mdefault": 1
+            },
+            {
+                  "name": "BOOST",
+                  "explanation": "Adjusts gain of Booster.",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 60
+            },
+            {
+                  "name": "BASS",
+                  "explanation": "Adjusts low frequencies volume of booster.",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 40
+            },
+            {
+                  "name": "TREBLE",
+                  "explanation": "Adjusts high frequencies volume of booster.",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "CONNECT",
+                  "explanation": "Set the connection order of TS Drive and Booster.",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 0
+            }
+      ]
+}

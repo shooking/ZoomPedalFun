@@ -1,0 +1,48 @@
+{
+      "FX": {
+            "name": "HD Hall",
+            "description": "This is a dense hall reverb.",
+            "version": "1.50",
+            "fxid": 64,
+            "gid": 72,
+            "group": 9,
+            "groupname": "REVERB",
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "HD_HALL.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "PreD",
+                  "explanation": "Adjusts the delay between input of the original sound and start of the reverb sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 199,
+                  "mdefault": 80
+            },
+            {
+                  "name": "Decay",
+                  "explanation": "Sets the duration of the reverberations.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 45
+            },
+            {
+                  "name": "Mix",
+                  "explanation": "Adjusts the amount of effected sound that is mixed with the original sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 62
+            },
+            {
+                  "name": "Tail",
+                  "explanation": "When ON, effect sound continues even after effect is turned off. When OFF, effect sound stops right when effect is turned off.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 0
+            }
+      ]
+}

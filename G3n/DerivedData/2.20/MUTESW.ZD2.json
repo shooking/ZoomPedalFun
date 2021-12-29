@@ -1,0 +1,48 @@
+{
+      "FX": {
+            "name": "MuteSW",
+            "description": "This effect allows you to mute the volume using the foot switch. ",
+            "version": "1.40",
+            "fxid": 80,
+            "gid": 8,
+            "group": 1,
+            "groupname": "DYNAMICS",
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "MUTESW.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Edge",
+                  "explanation": "Sets how smoothly the volume changes. As the parameter value increases, the change becomes smoother.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 13
+            },
+            {
+                  "name": "Speed",
+                  "explanation": "Adjust the recovery time from muting.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 100
+            },
+            {
+                  "name": "INVRT",
+                  "explanation": "Sets the foot switch control direction.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 0
+            },
+            {
+                  "name": "ON/OFF",
+                  "explanation": "Sets the foot switch function.",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 2,
+                  "mdefault": 1
+            }
+      ]
+}

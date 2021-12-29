@@ -1,0 +1,24 @@
+{
+      "FX": {
+            "name": "LP-STEREO",
+            "description": " ",
+            "version": "0.01",
+            "fxid": 32,
+            "gid": 248,
+            "group": 31,
+            "groupname": "LOOPER",
+            "numParams": 1,
+            "numSlots": 1,
+            "filename": "LP-ST_100.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "-",
+                  "explanation": "-",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 0,
+                  "mdefault": 18688
+            }
+      ]
+}

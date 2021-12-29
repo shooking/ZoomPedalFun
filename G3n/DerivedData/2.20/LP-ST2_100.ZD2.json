@@ -1,0 +1,24 @@
+{
+      "FX": {
+            "name": "LP-ST2",
+            "description": " ",
+            "version": "0.01",
+            "fxid": 64,
+            "gid": 248,
+            "group": 31,
+            "groupname": "LOOPER",
+            "numParams": 1,
+            "numSlots": 1,
+            "filename": "LP-ST2_100.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "-",
+                  "explanation": "-",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 0,
+                  "mdefault": 18688
+            }
+      ]
+}

@@ -1,0 +1,48 @@
+{
+      "FX": {
+            "name": "OSC Echo",
+            "description": "The expression pedal controls the delay oscillation of this effect.",
+            "version": "1.20",
+            "fxid": 192,
+            "gid": 88,
+            "group": 11,
+            "groupname": "PEDAL",
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "OSC_ECHO.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "OSC",
+                  "explanation": "Adjusts the delay time and feedback.",
+                  "blackback": false,
+                  "pedal": true,
+                  "mmax": 100,
+                  "mdefault": 0
+            },
+            {
+                  "name": "T-Min",
+                  "explanation": "Adjusts the delay time when the pedal is at minimum position.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 481,
+                  "mdefault": 311
+            },
+            {
+                  "name": "T-Max",
+                  "explanation": "Adjusts the delay time when the pedal is at maximum position.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 481,
+                  "mdefault": 81
+            },
+            {
+                  "name": "Mix",
+                  "explanation": "Adjusts the amount of effected sound that is mixed with the original sound.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 80
+            }
+      ]
+}

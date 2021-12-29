@@ -1,0 +1,24 @@
+{
+      "FX": {
+            "name": "Rhythm",
+            "description": " ",
+            "version": "0.01",
+            "fxid": 16,
+            "gid": 240,
+            "group": 30,
+            "groupname": "RHYTHM",
+            "numParams": 1,
+            "numSlots": 1,
+            "filename": "RHYTHM_100.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "-",
+                  "explanation": "-",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 0,
+                  "mdefault": 18688
+            }
+      ]
+}

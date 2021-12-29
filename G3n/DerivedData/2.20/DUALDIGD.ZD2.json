@@ -1,0 +1,80 @@
+{
+      "FX": {
+            "name": "Dual DLY",
+            "description": "This effect combines 2 delays and is based on the Eventide TimeFactor DigitalDelay.",
+            "version": "1.20",
+            "fxid": 160,
+            "gid": 64,
+            "group": 8,
+            "groupname": "DELAY",
+            "numParams": 8,
+            "numSlots": 2,
+            "filename": "DUALDIGD.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "TimeA",
+                  "explanation": "Adjusts the delay time of Delay A.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 2005,
+                  "mdefault": 500
+            },
+            {
+                  "name": "F.B A",
+                  "explanation": "Adjusts the Delay A feedback amount.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 110,
+                  "mdefault": 50
+            },
+            {
+                  "name": "TimeB",
+                  "explanation": "Adjusts the delay time of Delay B.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 2005,
+                  "mdefault": 375
+            },
+            {
+                  "name": "F.B B",
+                  "explanation": "Adjusts the Delay B feedback amount.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 110,
+                  "mdefault": 50
+            },
+            {
+                  "name": "DlyMx",
+                  "explanation": "Adjust the mix of the Delay A and B effect sounds.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 25
+            },
+            {
+                  "name": "BAL",
+                  "explanation": "Adjusts the balance between original and effect sounds.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "Depth",
+                  "explanation": "Sets the depth of the modulation. Also sets the output to mono (M0.M50) or stereo (S0.S50).",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 101,
+                  "mdefault": 30
+            },
+            {
+                  "name": "Speed",
+                  "explanation": "Sets the speed of the modulation.",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 50,
+                  "mdefault": 25
+            }
+      ]
+}

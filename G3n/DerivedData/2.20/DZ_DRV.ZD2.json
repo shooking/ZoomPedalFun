@@ -1,0 +1,80 @@
+{
+      "FX": {
+            "name": "DZ DRV",
+            "description": "This models the sound of the Diezel Herbert Channel2.",
+            "version": "1.10",
+            "fxid": 144,
+            "gid": 32,
+            "group": 4,
+            "groupname": "AMP",
+            "numParams": 8,
+            "numSlots": 2,
+            "filename": "DZ_DRV.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Bass",
+                  "explanation": "Adjusts volume of low frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "MID",
+                  "explanation": "Adjusts volume of middle frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 70
+            },
+            {
+                  "name": "Treble",
+                  "explanation": "Adjusts volume of high frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 60
+            },
+            {
+                  "name": "PRSNC",
+                  "explanation": "Adjusts volume of super-high frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 40
+            },
+            {
+                  "name": "Gain",
+                  "explanation": "Adjusts the gain.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 60
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 80
+            },
+            {
+                  "name": "Deep",
+                  "explanation": "Emphasizes low frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 0
+            },
+            {
+                  "name": "MID CUT",
+                  "explanation": "Cuts middle frequencies.",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 0
+            }
+      ]
+}

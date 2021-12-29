@@ -1,0 +1,48 @@
+{
+      "FX": {
+            "name": "DIST 1",
+            "description": "This models the sound of a BOSS DS-1 DISTORTION.",
+            "version": "1.30",
+            "fxid": 288,
+            "gid": 24,
+            "group": 3,
+            "groupname": "DRIVE",
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "DIST_1.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Gain",
+                  "explanation": "Adjusts the gain.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 61
+            },
+            {
+                  "name": "Tone",
+                  "explanation": "Adjusts the tone.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 41
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume. ",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 100
+            },
+            {
+                  "name": "Comp",
+                  "explanation": "Sets the clipping type of DIST 1.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 0
+            }
+      ]
+}

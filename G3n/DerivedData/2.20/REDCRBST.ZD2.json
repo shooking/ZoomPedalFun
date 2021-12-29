@@ -1,0 +1,80 @@
+{
+      "FX": {
+            "name": "RedCR+BST",
+            "description": "This effect combines RedCrunch and Booster.",
+            "version": "1.20",
+            "fxid": 272,
+            "gid": 24,
+            "group": 3,
+            "groupname": "DRIVE",
+            "numParams": 8,
+            "numSlots": 2,
+            "filename": "REDCRBST.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Gain",
+                  "explanation": "Adjusts gain of RedCrunch.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 68
+            },
+            {
+                  "name": "Tone",
+                  "explanation": "Adjusts tone of RedCrunch.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "PRSNC",
+                  "explanation": "Adjusts presence of RedCrunch.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 52
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts volume of RedCrunch.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 61
+            },
+            {
+                  "name": "Comp",
+                  "explanation": "Sets the clipping type of RedCrunch.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 2,
+                  "mdefault": 1
+            },
+            {
+                  "name": "LO/HI",
+                  "explanation": "Sets the gain range.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 1
+            },
+            {
+                  "name": "BOOST",
+                  "explanation": "Adjusts gain of Booster.",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 42
+            },
+            {
+                  "name": "CONNECT",
+                  "explanation": "Set the connection order of RedCrunch and Booster.",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 1
+            }
+      ]
+}

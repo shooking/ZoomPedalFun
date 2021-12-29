@@ -1,0 +1,48 @@
+{
+      "FX": {
+            "name": "AutoPan",
+            "description": "This effect moves the sound image cyclically left and right.",
+            "version": "1.40",
+            "fxid": 32,
+            "gid": 56,
+            "group": 7,
+            "groupname": "SFX",
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "AUTOPAN.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Rate",
+                  "explanation": "Sets the speed of the modulation.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 78,
+                  "mdefault": 5
+            },
+            {
+                  "name": "Width",
+                  "explanation": "Sets the width of the panning.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 50,
+                  "mdefault": 50
+            },
+            {
+                  "name": "Clip",
+                  "explanation": "Adjusts the amount of waveform clipping. Higher values emphasize the auto-panning effect more.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 10,
+                  "mdefault": 0
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 80
+            }
+      ]
+}

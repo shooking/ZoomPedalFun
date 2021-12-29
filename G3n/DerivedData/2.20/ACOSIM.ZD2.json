@@ -1,0 +1,48 @@
+{
+      "FX": {
+            "name": "Aco.Sim",
+            "description": "This effect changes the tone of an electric guitar to make it sound like an acoustic guitar.",
+            "version": "1.30",
+            "fxid": 192,
+            "gid": 24,
+            "group": 3,
+            "groupname": "DRIVE",
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "ACOSIM.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Top",
+                  "explanation": "Adjusts the unique string tone of acoustic guitars.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 80
+            },
+            {
+                  "name": "Body",
+                  "explanation": "Adjusts the body resonance of acoustic guitars.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "Tone",
+                  "explanation": "Adjusts the tone.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 100
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 80
+            }
+      ]
+}

@@ -1,0 +1,48 @@
+{
+      "FX": {
+            "name": "ReverseDL",
+            "description": "This reverse delay is a long delay with a maximum length of 2000 mS.",
+            "version": "1.30",
+            "fxid": 64,
+            "gid": 64,
+            "group": 8,
+            "groupname": "DELAY",
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "REVERSED.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Time",
+                  "explanation": "Sets the delay time.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 2005,
+                  "mdefault": 990
+            },
+            {
+                  "name": "F.B",
+                  "explanation": "Adjusts the feedback amount.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 20
+            },
+            {
+                  "name": "BAL",
+                  "explanation": "Adjusts the balance between original and effect sounds.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 50
+            },
+            {
+                  "name": "Tail",
+                  "explanation": "When ON, effect sound continues even after effect is turned off. When OFF, effect sound stops right when effect is turned off.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 0
+            }
+      ]
+}

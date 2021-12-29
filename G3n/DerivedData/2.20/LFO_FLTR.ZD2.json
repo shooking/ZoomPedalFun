@@ -1,0 +1,48 @@
+{
+      "FX": {
+            "name": "LFO FLTR",
+            "description": "This filter effect changes tone characteristics cyclically.",
+            "version": "1.40",
+            "fxid": 208,
+            "gid": 16,
+            "group": 2,
+            "groupname": "FILTER",
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "LFO_FLTR.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Depth",
+                  "explanation": "Sets the depth of the modulation.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 100
+            },
+            {
+                  "name": "Rate",
+                  "explanation": "Sets the speed of the modulation.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 77,
+                  "mdefault": 57
+            },
+            {
+                  "name": "RESO",
+                  "explanation": "Sets effect resonance.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 10,
+                  "mdefault": 8
+            },
+            {
+                  "name": "Wave",
+                  "explanation": "Sets the modulation waveform.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 3,
+                  "mdefault": 0
+            }
+      ]
+}

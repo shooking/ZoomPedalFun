@@ -1,0 +1,80 @@
+{
+      "FX": {
+            "name": "Recti ORG",
+            "description": "This models the sound of the Mesa Boogie Dual Rectifier Orange Channel.",
+            "version": "1.20",
+            "fxid": 112,
+            "gid": 32,
+            "group": 4,
+            "groupname": "AMP",
+            "numParams": 8,
+            "numSlots": 2,
+            "filename": "RCT_ORG.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Mode",
+                  "explanation": "Sets the tone of the character.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 1,
+                  "mdefault": 0
+            },
+            {
+                  "name": "Bass",
+                  "explanation": "Adjusts volume of low frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 52
+            },
+            {
+                  "name": "MID",
+                  "explanation": "Adjusts volume of middle frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 65
+            },
+            {
+                  "name": "Treble",
+                  "explanation": "Adjusts volume of high frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 67
+            },
+            {
+                  "name": "PRSNC",
+                  "explanation": "Adjusts volume of super-high frequencies.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 62
+            },
+            {
+                  "name": "Gain",
+                  "explanation": "Adjusts the gain.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 70
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 62
+            },
+            {
+                  "name": "SOLO",
+                  "explanation": "Sets the volume when the control switch is on.",
+                  "blackback": true,
+                  "pedal": false,
+                  "mmax": 8,
+                  "mdefault": 2
+            }
+      ]
+}

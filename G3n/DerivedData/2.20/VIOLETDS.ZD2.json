@@ -1,0 +1,48 @@
+{
+      "FX": {
+            "name": "VioletDST",
+            "description": "This models the sound of a SUHR Riot Reloaded.",
+            "version": "1.20",
+            "fxid": 400,
+            "gid": 24,
+            "group": 3,
+            "groupname": "DRIVE",
+            "numParams": 4,
+            "numSlots": 1,
+            "filename": "VIOLETDS.ZD2.BMP"
+      },
+      "Parameters": [
+            {
+                  "name": "Gain",
+                  "explanation": "Adjusts the gain.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 70
+            },
+            {
+                  "name": "Tone",
+                  "explanation": "Adjusts the tone.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 80
+            },
+            {
+                  "name": "Voice",
+                  "explanation": "Sets the sound style.",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 2,
+                  "mdefault": 2
+            },
+            {
+                  "name": "VOL",
+                  "explanation": "Adjusts the volume. ",
+                  "blackback": false,
+                  "pedal": false,
+                  "mmax": 100,
+                  "mdefault": 70
+            }
+      ]
+}
