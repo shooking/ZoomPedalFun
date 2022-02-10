@@ -37,6 +37,10 @@ Harware hacks:
 
 Ash Bass: http://ashbass.com/AshBassGuitar/Zoom/
 
+Wireshark tips:
+
+https://bulldogjob.com/news/97-how-i-reverse-engineered-synthesizer-protocol
+
 AIMS
 
 To provide a variety of scripts, along with some supplementary YouTube content (see https://www.youtube.com/user/stephenhookings1985 playlist Miscellaneous Guitar Tools and Mods) that allow folks to get more out of their pedals. This is shared as Creative Commons - share and share alike.
