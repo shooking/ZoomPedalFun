@@ -1,0 +1,44 @@
+{
+    "fxname": "LOFI Rev",
+    "fxid": "0xe0",
+    "gid": "0x9",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "DECAY",
+            "mmax": 100,
+            "mdefault": 52,
+            "pedal": false
+        },
+        {
+            "name": "TONE",
+            "mmax": 100,
+            "mdefault": 95,
+            "pedal": false
+        },
+        {
+            "name": "FxLVL",
+            "mmax": 100,
+            "mdefault": 44,
+            "pedal": false
+        },
+        {
+            "name": "PreD",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "Tail",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "Dry",
+            "mmax": 1,
+            "mdefault": 1,
+            "pedal": true
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "fxname": "Ba Ensmbl",
+    "fxid": "0xb8",
+    "gid": "0x6",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Depth",
+            "mmax": 100,
+            "mdefault": 48,
+            "pedal": false
+        },
+        {
+            "name": "Rate",
+            "mmax": 49,
+            "mdefault": 22,
+            "pedal": false
+        },
+        {
+            "name": "Mix",
+            "mmax": 100,
+            "mdefault": 80,
+            "pedal": true
+        },
+        {
+            "name": "Tone",
+            "mmax": 10,
+            "mdefault": 5,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

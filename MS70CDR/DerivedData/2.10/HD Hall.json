@@ -1,0 +1,44 @@
+{
+    "fxname": "HD Hall",
+    "fxid": "0x8",
+    "gid": "0x9",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "PreD",
+            "mmax": 199,
+            "mdefault": 80,
+            "pedal": false
+        },
+        {
+            "name": "Decay",
+            "mmax": 100,
+            "mdefault": 45,
+            "pedal": false
+        },
+        {
+            "name": "Mix",
+            "mmax": 100,
+            "mdefault": 62,
+            "pedal": false
+        },
+        {
+            "name": "LoDMP",
+            "mmax": 100,
+            "mdefault": 32,
+            "pedal": false
+        },
+        {
+            "name": "HiDMP",
+            "mmax": 100,
+            "mdefault": 70,
+            "pedal": false
+        },
+        {
+            "name": "Tail",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": true
+        }
+    ]
+}

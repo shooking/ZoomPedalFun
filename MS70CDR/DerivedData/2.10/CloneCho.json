@@ -1,0 +1,20 @@
+{
+    "fxname": "CloneCho",
+    "fxid": "0x190",
+    "gid": "0x6",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "DEPTH",
+            "mmax": 1,
+            "mdefault": 1,
+            "pedal": false
+        },
+        {
+            "name": "RATE",
+            "mmax": 100,
+            "mdefault": 23,
+            "pedal": true
+        }
+    ]
+}

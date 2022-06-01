@@ -1,0 +1,38 @@
+{
+    "fxname": "SmoothDly",
+    "fxid": "0x120",
+    "gid": "0x8",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "TIME",
+            "mmax": 3014,
+            "mdefault": 322,
+            "pedal": true
+        },
+        {
+            "name": "F.B",
+            "mmax": 100,
+            "mdefault": 39,
+            "pedal": false
+        },
+        {
+            "name": "E.LVL",
+            "mmax": 100,
+            "mdefault": 49,
+            "pedal": false
+        },
+        {
+            "name": "TONE",
+            "mmax": 100,
+            "mdefault": 83,
+            "pedal": false
+        },
+        {
+            "name": "Tail",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": true
+        }
+    ]
+}

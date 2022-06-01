@@ -1,0 +1,56 @@
+{
+    "fxname": "SilkyCho",
+    "fxid": "0x1c0",
+    "gid": "0x6",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "LoMix",
+            "mmax": 100,
+            "mdefault": 38,
+            "pedal": true
+        },
+        {
+            "name": "HiMix",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "ChMix",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "LoPit",
+            "mmax": 50,
+            "mdefault": 31,
+            "pedal": false
+        },
+        {
+            "name": "HiPit",
+            "mmax": 50,
+            "mdefault": 33,
+            "pedal": false
+        },
+        {
+            "name": "PreD",
+            "mmax": 50,
+            "mdefault": 27,
+            "pedal": false
+        },
+        {
+            "name": "Rate",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "Depth",
+            "mmax": 100,
+            "mdefault": 46,
+            "pedal": false
+        }
+    ]
+}

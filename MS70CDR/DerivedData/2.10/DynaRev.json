@@ -1,0 +1,44 @@
+{
+    "fxname": "DynaRev",
+    "fxid": "0x170",
+    "gid": "0x9",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Decay",
+            "mmax": 100,
+            "mdefault": 82,
+            "pedal": false
+        },
+        {
+            "name": "PreD",
+            "mmax": 100,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "Color",
+            "mmax": 100,
+            "mdefault": 76,
+            "pedal": false
+        },
+        {
+            "name": "Sense",
+            "mmax": 200,
+            "mdefault": 172,
+            "pedal": false
+        },
+        {
+            "name": "Mix",
+            "mmax": 100,
+            "mdefault": 40,
+            "pedal": false
+        },
+        {
+            "name": "Tail",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": true
+        }
+    ]
+}

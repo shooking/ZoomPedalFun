@@ -1,0 +1,50 @@
+{
+    "fxname": "StompDly",
+    "fxid": "0xc0",
+    "gid": "0x8",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "E.LVL",
+            "mmax": 120,
+            "mdefault": 30,
+            "pedal": false
+        },
+        {
+            "name": "F.B",
+            "mmax": 100,
+            "mdefault": 20,
+            "pedal": false
+        },
+        {
+            "name": "Time",
+            "mmax": 599,
+            "mdefault": 359,
+            "pedal": false
+        },
+        {
+            "name": "Sync",
+            "mmax": 15,
+            "mdefault": 0,
+            "pedal": true
+        },
+        {
+            "name": "Mode",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "Tail",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "HiDMP",
+            "mmax": 10,
+            "mdefault": 5,
+            "pedal": true
+        }
+    ]
+}

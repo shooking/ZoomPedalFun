@@ -1,0 +1,20 @@
+{
+    "fxname": "DirtyGate",
+    "fxid": "0x70",
+    "gid": "0x1",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "THRSH",
+            "mmax": 24,
+            "mdefault": 9,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

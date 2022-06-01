@@ -1,0 +1,56 @@
+{
+    "fxname": "TremDelay",
+    "fxid": "0x150",
+    "gid": "0x8",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "TIME",
+            "mmax": 1855,
+            "mdefault": 300,
+            "pedal": true
+        },
+        {
+            "name": "F.B",
+            "mmax": 100,
+            "mdefault": 70,
+            "pedal": false
+        },
+        {
+            "name": "MIX",
+            "mmax": 100,
+            "mdefault": 60,
+            "pedal": false
+        },
+        {
+            "name": "LFO",
+            "mmax": 4,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "DEPTH",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": false
+        },
+        {
+            "name": "SPEED",
+            "mmax": 34,
+            "mdefault": 19,
+            "pedal": false
+        },
+        {
+            "name": "DAMP",
+            "mmax": 10,
+            "mdefault": 4,
+            "pedal": false
+        },
+        {
+            "name": "HPF",
+            "mmax": 20,
+            "mdefault": 4,
+            "pedal": false
+        }
+    ]
+}

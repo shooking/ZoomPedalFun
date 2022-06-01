@@ -1,0 +1,32 @@
+{
+    "fxname": "Spring63",
+    "fxid": "0xc0",
+    "gid": "0x9",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "DWELL",
+            "mmax": 100,
+            "mdefault": 35,
+            "pedal": false
+        },
+        {
+            "name": "MIXER",
+            "mmax": 100,
+            "mdefault": 51,
+            "pedal": false
+        },
+        {
+            "name": "TONE",
+            "mmax": 100,
+            "mdefault": 58,
+            "pedal": false
+        },
+        {
+            "name": "LEVEL",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

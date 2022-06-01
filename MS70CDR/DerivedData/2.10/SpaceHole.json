@@ -1,0 +1,56 @@
+{
+    "fxname": "SpaceHole",
+    "fxid": "0x1a0",
+    "gid": "0x9",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Decay",
+            "mmax": 200,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "PDLY",
+            "mmax": 1000,
+            "mdefault": 80,
+            "pedal": false
+        },
+        {
+            "name": " Mix",
+            "mmax": 100,
+            "mdefault": 40,
+            "pedal": false
+        },
+        {
+            "name": " F.B",
+            "mmax": 100,
+            "mdefault": 45,
+            "pedal": false
+        },
+        {
+            "name": "Depth",
+            "mmax": 100,
+            "mdefault": 58,
+            "pedal": false
+        },
+        {
+            "name": "Speed",
+            "mmax": 100,
+            "mdefault": 39,
+            "pedal": false
+        },
+        {
+            "name": "Size",
+            "mmax": 100,
+            "mdefault": 29,
+            "pedal": false
+        },
+        {
+            "name": " Low",
+            "mmax": 200,
+            "mdefault": 87,
+            "pedal": false
+        }
+    ]
+}

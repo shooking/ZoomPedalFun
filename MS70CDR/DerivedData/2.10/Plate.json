@@ -1,0 +1,56 @@
+{
+    "fxname": "Plate",
+    "fxid": "0x90",
+    "gid": "0x9",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "PreD",
+            "mmax": 199,
+            "mdefault": 8,
+            "pedal": false
+        },
+        {
+            "name": "Decay",
+            "mmax": 100,
+            "mdefault": 52,
+            "pedal": false
+        },
+        {
+            "name": "Mix",
+            "mmax": 100,
+            "mdefault": 44,
+            "pedal": false
+        },
+        {
+            "name": "Color",
+            "mmax": 100,
+            "mdefault": 58,
+            "pedal": false
+        },
+        {
+            "name": "LoDMP",
+            "mmax": 100,
+            "mdefault": 97,
+            "pedal": false
+        },
+        {
+            "name": "HiDMP",
+            "mmax": 100,
+            "mdefault": 95,
+            "pedal": false
+        },
+        {
+            "name": "Tail",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

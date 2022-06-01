@@ -1,0 +1,26 @@
+{
+    "fxname": "OptComp",
+    "fxid": "0x30",
+    "gid": "0x1",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Drive",
+            "mmax": 10,
+            "mdefault": 7,
+            "pedal": false
+        },
+        {
+            "name": "Tone",
+            "mmax": 100,
+            "mdefault": 54,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 50,
+            "pedal": true
+        }
+    ]
+}

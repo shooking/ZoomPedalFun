@@ -1,0 +1,20 @@
+{
+    "fxname": "GrayComp",
+    "fxid": "0x90",
+    "gid": "0x1",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "SUSTN",
+            "mmax": 100,
+            "mdefault": 63,
+            "pedal": false
+        },
+        {
+            "name": "OUT",
+            "mmax": 100,
+            "mdefault": 88,
+            "pedal": true
+        }
+    ]
+}

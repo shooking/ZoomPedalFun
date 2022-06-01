@@ -1,0 +1,38 @@
+{
+    "fxname": "Detune",
+    "fxid": "0x80",
+    "gid": "0x6",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Cent",
+            "mmax": 50,
+            "mdefault": 35,
+            "pedal": false
+        },
+        {
+            "name": "PreD",
+            "mmax": 50,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "Mix",
+            "mmax": 100,
+            "mdefault": 52,
+            "pedal": true
+        },
+        {
+            "name": "Tone",
+            "mmax": 10,
+            "mdefault": 8,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

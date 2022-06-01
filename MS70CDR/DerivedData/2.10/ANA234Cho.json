@@ -1,0 +1,44 @@
+{
+    "fxname": "ANA234Cho",
+    "fxid": "0x1f0",
+    "gid": "0x6",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "LEVEL",
+            "mmax": 100,
+            "mdefault": 70,
+            "pedal": false
+        },
+        {
+            "name": "RATE",
+            "mmax": 100,
+            "mdefault": 60,
+            "pedal": false
+        },
+        {
+            "name": "DEPTH",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "LOW",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": false
+        },
+        {
+            "name": "HIGH",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "Mode",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": true
+        }
+    ]
+}

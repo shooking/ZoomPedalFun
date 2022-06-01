@@ -1,0 +1,56 @@
+{
+    "fxname": "DuoTrem",
+    "fxid": "0x10",
+    "gid": "0x6",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "RateA",
+            "mmax": 78,
+            "mdefault": 46,
+            "pedal": true
+        },
+        {
+            "name": "RateB",
+            "mmax": 78,
+            "mdefault": 5,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "DPT_A",
+            "mmax": 100,
+            "mdefault": 80,
+            "pedal": true
+        },
+        {
+            "name": "DPT_B",
+            "mmax": 100,
+            "mdefault": 90,
+            "pedal": true
+        },
+        {
+            "name": "Link",
+            "mmax": 2,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "WaveA",
+            "mmax": 29,
+            "mdefault": 19,
+            "pedal": false
+        },
+        {
+            "name": "WaveB",
+            "mmax": 29,
+            "mdefault": 21,
+            "pedal": true
+        }
+    ]
+}

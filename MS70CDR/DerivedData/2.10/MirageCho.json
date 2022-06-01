@@ -1,0 +1,44 @@
+{
+    "fxname": "MirageCho",
+    "fxid": "0x1d0",
+    "gid": "0x6",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Depth",
+            "mmax": 100,
+            "mdefault": 60,
+            "pedal": false
+        },
+        {
+            "name": "Rate",
+            "mmax": 100,
+            "mdefault": 38,
+            "pedal": true
+        },
+        {
+            "name": "Mix",
+            "mmax": 100,
+            "mdefault": 55,
+            "pedal": true
+        },
+        {
+            "name": "PreD",
+            "mmax": 19,
+            "mdefault": 10,
+            "pedal": false
+        },
+        {
+            "name": "Tone",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

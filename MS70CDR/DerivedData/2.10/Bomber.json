@@ -1,0 +1,50 @@
+{
+    "fxname": "Bomber",
+    "fxid": "0x20",
+    "gid": "0x7",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "PTTRN",
+            "mmax": 3,
+            "mdefault": 3,
+            "pedal": false
+        },
+        {
+            "name": "Decay",
+            "mmax": 99,
+            "mdefault": 49,
+            "pedal": true
+        },
+        {
+            "name": "Bal",
+            "mmax": 100,
+            "mdefault": 15,
+            "pedal": true
+        },
+        {
+            "name": "THRSH",
+            "mmax": 50,
+            "mdefault": 40,
+            "pedal": false
+        },
+        {
+            "name": "Power",
+            "mmax": 30,
+            "mdefault": 30,
+            "pedal": false
+        },
+        {
+            "name": "Tone",
+            "mmax": 10,
+            "mdefault": 4,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

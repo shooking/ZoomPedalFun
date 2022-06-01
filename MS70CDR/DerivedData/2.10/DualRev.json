@@ -1,0 +1,56 @@
+{
+    "fxname": "DualRev",
+    "fxid": "0x1c0",
+    "gid": "0x9",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "PDlyA",
+            "mmax": 750,
+            "mdefault": 350,
+            "pedal": false
+        },
+        {
+            "name": "PDlyB",
+            "mmax": 750,
+            "mdefault": 700,
+            "pedal": false
+        },
+        {
+            "name": "Mix",
+            "mmax": 100,
+            "mdefault": 30,
+            "pedal": false
+        },
+        {
+            "name": "ABMix",
+            "mmax": 18,
+            "mdefault": 14,
+            "pedal": false
+        },
+        {
+            "name": "DCY A",
+            "mmax": 100,
+            "mdefault": 15,
+            "pedal": false
+        },
+        {
+            "name": "DCY B",
+            "mmax": 100,
+            "mdefault": 30,
+            "pedal": false
+        },
+        {
+            "name": "Size",
+            "mmax": 32,
+            "mdefault": 21,
+            "pedal": false
+        },
+        {
+            "name": "ToneA",
+            "mmax": 200,
+            "mdefault": 100,
+            "pedal": false
+        }
+    ]
+}

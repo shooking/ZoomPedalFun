@@ -1,0 +1,38 @@
+{
+    "fxname": "Ba Cry",
+    "fxid": "0x9a",
+    "gid": "0x2",
+    "version": "1.01",
+    "Parameters": [
+        {
+            "name": "Range",
+            "mmax": 9,
+            "mdefault": 4,
+            "pedal": true
+        },
+        {
+            "name": "Reso",
+            "mmax": 10,
+            "mdefault": 8,
+            "pedal": true
+        },
+        {
+            "name": "Sense",
+            "mmax": 19,
+            "mdefault": 16,
+            "pedal": true
+        },
+        {
+            "name": "Bal",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

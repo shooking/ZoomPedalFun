@@ -1,0 +1,38 @@
+{
+    "fxname": "Chamber",
+    "fxid": "0x160",
+    "gid": "0x8",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Decay",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "Tone",
+            "mmax": 100,
+            "mdefault": 73,
+            "pedal": false
+        },
+        {
+            "name": "Mix",
+            "mmax": 100,
+            "mdefault": 48,
+            "pedal": false
+        },
+        {
+            "name": "PreD",
+            "mmax": 200,
+            "mdefault": 24,
+            "pedal": false
+        },
+        {
+            "name": "Tail",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": true
+        }
+    ]
+}

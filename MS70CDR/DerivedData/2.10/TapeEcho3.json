@@ -1,0 +1,44 @@
+{
+    "fxname": "TapeEcho3",
+    "fxid": "0xd0",
+    "gid": "0x8",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "F.B",
+            "mmax": 100,
+            "mdefault": 20,
+            "pedal": false
+        },
+        {
+            "name": "MIX",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "TIME",
+            "mmax": 990,
+            "mdefault": 350,
+            "pedal": false
+        },
+        {
+            "name": "RecLv",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "SYNC",
+            "mmax": 15,
+            "mdefault": 0,
+            "pedal": true
+        },
+        {
+            "name": "P-Amp",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": true
+        }
+    ]
+}

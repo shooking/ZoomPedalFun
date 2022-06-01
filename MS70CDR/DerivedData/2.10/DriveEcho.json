@@ -1,0 +1,56 @@
+{
+    "fxname": "DriveEcho",
+    "fxid": "0x100",
+    "gid": "0x8",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "DRIVE",
+            "mmax": 100,
+            "mdefault": 39,
+            "pedal": false
+        },
+        {
+            "name": "MIX",
+            "mmax": 100,
+            "mdefault": 80,
+            "pedal": false
+        },
+        {
+            "name": "TIME",
+            "mmax": 1985,
+            "mdefault": 355,
+            "pedal": true
+        },
+        {
+            "name": "F.B",
+            "mmax": 100,
+            "mdefault": 70,
+            "pedal": false
+        },
+        {
+            "name": "WOW",
+            "mmax": 100,
+            "mdefault": 25,
+            "pedal": false
+        },
+        {
+            "name": "DRY",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "Tail",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "Mode",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": true
+        }
+    ]
+}

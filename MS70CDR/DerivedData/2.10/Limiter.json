@@ -1,0 +1,32 @@
+{
+    "fxname": "Limiter",
+    "fxid": "0x3a",
+    "gid": "0x1",
+    "version": "1.01",
+    "Parameters": [
+        {
+            "name": "THRSH",
+            "mmax": 50,
+            "mdefault": 20,
+            "pedal": true
+        },
+        {
+            "name": "Ratio",
+            "mmax": 9,
+            "mdefault": 3,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 90,
+            "pedal": true
+        },
+        {
+            "name": "REL",
+            "mmax": 9,
+            "mdefault": 2,
+            "pedal": true
+        }
+    ]
+}

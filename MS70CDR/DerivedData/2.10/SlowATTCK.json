@@ -1,0 +1,26 @@
+{
+    "fxname": "SlowATTCK",
+    "fxid": "0x40",
+    "gid": "0x1",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Time",
+            "mmax": 49,
+            "mdefault": 20,
+            "pedal": true
+        },
+        {
+            "name": "Curve",
+            "mmax": 10,
+            "mdefault": 10,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "fxname": "BaAutoWah",
+    "fxid": "0x58",
+    "gid": "0x2",
+    "version": "1.01",
+    "Parameters": [
+        {
+            "name": "Sense",
+            "mmax": 19,
+            "mdefault": 11,
+            "pedal": true
+        },
+        {
+            "name": "Reso",
+            "mmax": 10,
+            "mdefault": 8,
+            "pedal": false
+        },
+        {
+            "name": "Dry",
+            "mmax": 100,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

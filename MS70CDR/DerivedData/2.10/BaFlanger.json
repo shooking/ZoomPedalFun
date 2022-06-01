@@ -1,0 +1,50 @@
+{
+    "fxname": "BaFlanger",
+    "fxid": "0xe8",
+    "gid": "0x6",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Depth",
+            "mmax": 100,
+            "mdefault": 76,
+            "pedal": false
+        },
+        {
+            "name": "Rate",
+            "mmax": 78,
+            "mdefault": 40,
+            "pedal": true
+        },
+        {
+            "name": "Reso",
+            "mmax": 20,
+            "mdefault": 15,
+            "pedal": false
+        },
+        {
+            "name": "PreD",
+            "mmax": 50,
+            "mdefault": 2,
+            "pedal": false
+        },
+        {
+            "name": "Mix",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 95,
+            "pedal": false
+        },
+        {
+            "name": "LoCut",
+            "mmax": 10,
+            "mdefault": 1,
+            "pedal": true
+        }
+    ]
+}

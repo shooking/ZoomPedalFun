@@ -1,0 +1,44 @@
+{
+    "fxname": "OrangeLim",
+    "fxid": "0x80",
+    "gid": "0x1",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "\u0014",
+            "mmax": 0,
+            "mdefault": 5,
+            "pedal": true
+        },
+        {
+            "name": "\u0006",
+            "mmax": 4920,
+            "mdefault": 8,
+            "pedal": true
+        },
+        {
+            "name": "\u000e",
+            "mmax": 7,
+            "mdefault": 22,
+            "pedal": true
+        },
+        {
+            "name": "\u000f",
+            "mmax": 0,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "\u0088\u000b",
+            "mmax": 2960,
+            "mdefault": 266,
+            "pedal": false
+        },
+        {
+            "name": ",\f",
+            "mmax": 3124,
+            "mdefault": 1802,
+            "pedal": false
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "fxname": "SuperCho",
+    "fxid": "0xd0",
+    "gid": "0x6",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "E.LVL",
+            "mmax": 120,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "Rate",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "Depth",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "EQ",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "Mode",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": true
+        }
+    ]
+}

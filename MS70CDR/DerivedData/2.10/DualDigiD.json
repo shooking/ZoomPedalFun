@@ -1,0 +1,56 @@
+{
+    "fxname": "DualDigiD",
+    "fxid": "0xe0",
+    "gid": "0x8",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "TimeA",
+            "mmax": 2005,
+            "mdefault": 500,
+            "pedal": true
+        },
+        {
+            "name": "TimeB",
+            "mmax": 2005,
+            "mdefault": 375,
+            "pedal": true
+        },
+        {
+            "name": "FdbkA",
+            "mmax": 110,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "FdbkB",
+            "mmax": 110,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "Depth",
+            "mmax": 101,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "Speed",
+            "mmax": 50,
+            "mdefault": 25,
+            "pedal": false
+        },
+        {
+            "name": "FLTR",
+            "mmax": 200,
+            "mdefault": 100,
+            "pedal": false
+        },
+        {
+            "name": "DlyMx",
+            "mmax": 100,
+            "mdefault": 25,
+            "pedal": false
+        }
+    ]
+}

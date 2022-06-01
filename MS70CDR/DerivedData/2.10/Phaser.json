@@ -1,0 +1,56 @@
+{
+    "fxname": "Phaser",
+    "fxid": "0x30",
+    "gid": "0x6",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Rate",
+            "mmax": 77,
+            "mdefault": 11,
+            "pedal": true
+        },
+        {
+            "name": "Color",
+            "mmax": 3,
+            "mdefault": 3,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "\u0016",
+            "mmax": 0,
+            "mdefault": 8217,
+            "pedal": false
+        },
+        {
+            "name": "\u0018.",
+            "mmax": 0,
+            "mdefault": 11801,
+            "pedal": false
+        },
+        {
+            "name": "\u0019x5",
+            "mmax": 0,
+            "mdefault": 30745,
+            "pedal": false
+        },
+        {
+            "name": "\u0019x11",
+            "mmax": 0,
+            "mdefault": 30745,
+            "pedal": false
+        },
+        {
+            "name": "\u0019x17",
+            "mmax": 0,
+            "mdefault": 30745,
+            "pedal": true
+        }
+    ]
+}

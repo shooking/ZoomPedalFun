@@ -1,0 +1,50 @@
+{
+    "fxname": "ParaEQ",
+    "fxid": "0x20",
+    "gid": "0x2",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Freq1",
+            "mmax": 30,
+            "mdefault": 8,
+            "pedal": false
+        },
+        {
+            "name": "Q1",
+            "mmax": 5,
+            "mdefault": 1,
+            "pedal": false
+        },
+        {
+            "name": "Gain1",
+            "mmax": 24,
+            "mdefault": 12,
+            "pedal": false
+        },
+        {
+            "name": "Freq2",
+            "mmax": 30,
+            "mdefault": 15,
+            "pedal": false
+        },
+        {
+            "name": "Q2",
+            "mmax": 5,
+            "mdefault": 1,
+            "pedal": false
+        },
+        {
+            "name": "Gain2",
+            "mmax": 24,
+            "mdefault": 12,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

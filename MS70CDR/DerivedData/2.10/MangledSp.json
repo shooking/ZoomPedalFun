@@ -1,0 +1,56 @@
+{
+    "fxname": "MangledSp",
+    "fxid": "0x1b0",
+    "gid": "0x9",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "PDLY",
+            "mmax": 500,
+            "mdefault": 80,
+            "pedal": false
+        },
+        {
+            "name": "Clip",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "Mix",
+            "mmax": 100,
+            "mdefault": 38,
+            "pedal": false
+        },
+        {
+            "name": "Decay",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "Mod",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "Size",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "Low",
+            "mmax": 200,
+            "mdefault": 97,
+            "pedal": false
+        },
+        {
+            "name": "High",
+            "mmax": 200,
+            "mdefault": 101,
+            "pedal": false
+        }
+    ]
+}

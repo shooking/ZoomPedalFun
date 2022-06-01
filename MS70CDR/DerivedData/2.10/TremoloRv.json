@@ -1,0 +1,56 @@
+{
+    "fxname": "TremoloRv",
+    "fxid": "0x150",
+    "gid": "0x9",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Decay",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "PDLY",
+            "mmax": 500,
+            "mdefault": 70,
+            "pedal": false
+        },
+        {
+            "name": "Mix",
+            "mmax": 100,
+            "mdefault": 45,
+            "pedal": false
+        },
+        {
+            "name": "Speed",
+            "mmax": 218,
+            "mdefault": 28,
+            "pedal": true
+        },
+        {
+            "name": "Shape",
+            "mmax": 5,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "Depth",
+            "mmax": 199,
+            "mdefault": 199,
+            "pedal": false
+        },
+        {
+            "name": "Size",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "Low",
+            "mmax": 200,
+            "mdefault": 100,
+            "pedal": false
+        }
+    ]
+}

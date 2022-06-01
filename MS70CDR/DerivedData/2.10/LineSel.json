@@ -1,0 +1,20 @@
+{
+    "fxname": "LineSel",
+    "fxid": "0x8",
+    "gid": "0x2",
+    "version": "1.01",
+    "Parameters": [
+        {
+            "name": "EFX_L",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": false
+        },
+        {
+            "name": "OUT_L",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

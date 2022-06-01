@@ -1,0 +1,56 @@
+{
+    "fxname": "CarbonDly",
+    "fxid": "0xf0",
+    "gid": "0x8",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "DELAY",
+            "mmax": 562,
+            "mdefault": 387,
+            "pedal": false
+        },
+        {
+            "name": "REGEN",
+            "mmax": 100,
+            "mdefault": 47,
+            "pedal": false
+        },
+        {
+            "name": "MIX",
+            "mmax": 100,
+            "mdefault": 69,
+            "pedal": false
+        },
+        {
+            "name": "MOD",
+            "mmax": 1,
+            "mdefault": 1,
+            "pedal": false
+        },
+        {
+            "name": "WIDTH",
+            "mmax": 50,
+            "mdefault": 31,
+            "pedal": false
+        },
+        {
+            "name": "SPEED",
+            "mmax": 50,
+            "mdefault": 28,
+            "pedal": false
+        },
+        {
+            "name": "Tail",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "Sync",
+            "mmax": 15,
+            "mdefault": 0,
+            "pedal": true
+        }
+    ]
+}

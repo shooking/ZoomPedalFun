@@ -1,0 +1,26 @@
+{
+    "fxname": "StonePha",
+    "fxid": "0x1a0",
+    "gid": "0x6",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "COLOR",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "RATE",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": true
+        },
+        {
+            "name": "\u00cd&",
+            "mmax": 7268,
+            "mdefault": 13527,
+            "pedal": true
+        }
+    ]
+}

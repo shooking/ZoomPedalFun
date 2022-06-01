@@ -1,0 +1,44 @@
+{
+    "fxname": "CE-Cho5",
+    "fxid": "0x180",
+    "gid": "0x6",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "E.LVL",
+            "mmax": 120,
+            "mdefault": 100,
+            "pedal": false
+        },
+        {
+            "name": "RATE",
+            "mmax": 100,
+            "mdefault": 31,
+            "pedal": false
+        },
+        {
+            "name": "DEPTH",
+            "mmax": 100,
+            "mdefault": 67,
+            "pedal": false
+        },
+        {
+            "name": "LOW",
+            "mmax": 100,
+            "mdefault": 43,
+            "pedal": false
+        },
+        {
+            "name": "HIGH",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "MODE",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": true
+        }
+    ]
+}

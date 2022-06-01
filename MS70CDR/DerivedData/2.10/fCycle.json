@@ -1,0 +1,38 @@
+{
+    "fxname": "fCycle",
+    "fxid": "0xd0",
+    "gid": "0x2",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Rate",
+            "mmax": 77,
+            "mdefault": 5,
+            "pedal": true
+        },
+        {
+            "name": "Wave",
+            "mmax": 3,
+            "mdefault": 3,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "Depth",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "Reso",
+            "mmax": 10,
+            "mdefault": 8,
+            "pedal": true
+        }
+    ]
+}

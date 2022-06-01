@@ -1,0 +1,44 @@
+{
+    "fxname": "Echo",
+    "fxid": "0x140",
+    "gid": "0x9",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "DECAY",
+            "mmax": 100,
+            "mdefault": 25,
+            "pedal": false
+        },
+        {
+            "name": "TIME",
+            "mmax": 200,
+            "mdefault": 125,
+            "pedal": false
+        },
+        {
+            "name": "TONE",
+            "mmax": 100,
+            "mdefault": 70,
+            "pedal": false
+        },
+        {
+            "name": "MIX",
+            "mmax": 100,
+            "mdefault": 80,
+            "pedal": false
+        },
+        {
+            "name": "Tail",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "Mode",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": true
+        }
+    ]
+}

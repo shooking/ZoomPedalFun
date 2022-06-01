@@ -1,0 +1,26 @@
+{
+    "fxname": "AutoWah",
+    "fxid": "0x50",
+    "gid": "0x2",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Sense",
+            "mmax": 19,
+            "mdefault": 17,
+            "pedal": true
+        },
+        {
+            "name": "Reso",
+            "mmax": 10,
+            "mdefault": 8,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

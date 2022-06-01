@@ -1,0 +1,38 @@
+{
+    "fxname": "CoronaCho",
+    "fxid": "0x1e0",
+    "gid": "0x6",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "SPEED",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "DEPTH",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "FxLVL",
+            "mmax": 100,
+            "mdefault": 65,
+            "pedal": false
+        },
+        {
+            "name": "TONE",
+            "mmax": 100,
+            "mdefault": 75,
+            "pedal": false
+        },
+        {
+            "name": "DRY",
+            "mmax": 1,
+            "mdefault": 1,
+            "pedal": true
+        }
+    ]
+}

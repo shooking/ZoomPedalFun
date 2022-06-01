@@ -1,0 +1,32 @@
+{
+    "fxname": "BF FLG 2",
+    "fxid": "0x1b0",
+    "gid": "0x6",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "MNL",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": false
+        },
+        {
+            "name": "DEPTH",
+            "mmax": 100,
+            "mdefault": 80,
+            "pedal": false
+        },
+        {
+            "name": "RATE",
+            "mmax": 100,
+            "mdefault": 30,
+            "pedal": false
+        },
+        {
+            "name": "RES",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": true
+        }
+    ]
+}

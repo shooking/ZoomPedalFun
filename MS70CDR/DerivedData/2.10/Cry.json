@@ -1,0 +1,38 @@
+{
+    "fxname": "Cry",
+    "fxid": "0x70",
+    "gid": "0x2",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "Range",
+            "mmax": 9,
+            "mdefault": 6,
+            "pedal": true
+        },
+        {
+            "name": "Reso",
+            "mmax": 10,
+            "mdefault": 8,
+            "pedal": true
+        },
+        {
+            "name": "Sense",
+            "mmax": 19,
+            "mdefault": 16,
+            "pedal": true
+        },
+        {
+            "name": "Bal",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": true
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

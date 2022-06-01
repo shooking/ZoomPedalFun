@@ -1,0 +1,38 @@
+{
+    "fxname": "CoronaTri",
+    "fxid": "0x200",
+    "gid": "0x6",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "SPEED",
+            "mmax": 100,
+            "mdefault": 25,
+            "pedal": false
+        },
+        {
+            "name": "DEPTH",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": false
+        },
+        {
+            "name": "FxLVL",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": false
+        },
+        {
+            "name": "TONE",
+            "mmax": 100,
+            "mdefault": 100,
+            "pedal": false
+        },
+        {
+            "name": "DRY",
+            "mmax": 1,
+            "mdefault": 1,
+            "pedal": true
+        }
+    ]
+}

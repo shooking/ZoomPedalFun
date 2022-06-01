@@ -1,0 +1,56 @@
+{
+    "fxname": "Ba GEQ",
+    "fxid": "0x18",
+    "gid": "0x2",
+    "version": "1.01",
+    "Parameters": [
+        {
+            "name": "50\u001f",
+            "mmax": 24,
+            "mdefault": 12,
+            "pedal": false
+        },
+        {
+            "name": "120\u001f",
+            "mmax": 24,
+            "mdefault": 12,
+            "pedal": false
+        },
+        {
+            "name": "400\u001f",
+            "mmax": 24,
+            "mdefault": 12,
+            "pedal": false
+        },
+        {
+            "name": "500\u001f",
+            "mmax": 24,
+            "mdefault": 12,
+            "pedal": false
+        },
+        {
+            "name": "800\u001f",
+            "mmax": 24,
+            "mdefault": 12,
+            "pedal": false
+        },
+        {
+            "name": "4.5k\u001f",
+            "mmax": 24,
+            "mdefault": 12,
+            "pedal": false
+        },
+        {
+            "name": "10k\u001f",
+            "mmax": 24,
+            "mdefault": 12,
+            "pedal": false
+        },
+        {
+            "name": "Level",
+            "mmax": 150,
+            "mdefault": 100,
+            "pedal": true
+        }
+    ]
+}

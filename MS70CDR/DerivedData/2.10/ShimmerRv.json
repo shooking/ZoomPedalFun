@@ -1,0 +1,44 @@
+{
+    "fxname": "ShimmerRv",
+    "fxid": "0x180",
+    "gid": "0x9",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "PreD",
+            "mmax": 99,
+            "mdefault": 39,
+            "pedal": false
+        },
+        {
+            "name": "DECAY",
+            "mmax": 100,
+            "mdefault": 90,
+            "pedal": false
+        },
+        {
+            "name": "MIX",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "LoDMP",
+            "mmax": 100,
+            "mdefault": 50,
+            "pedal": false
+        },
+        {
+            "name": "HiDMP",
+            "mmax": 100,
+            "mdefault": 74,
+            "pedal": false
+        },
+        {
+            "name": "Tail",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": true
+        }
+    ]
+}

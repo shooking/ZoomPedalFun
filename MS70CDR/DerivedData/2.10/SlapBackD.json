@@ -1,0 +1,50 @@
+{
+    "fxname": "SlapBackD",
+    "fxid": "0x110",
+    "gid": "0x8",
+    "version": "1.00",
+    "Parameters": [
+        {
+            "name": "TIME",
+            "mmax": 300,
+            "mdefault": 98,
+            "pedal": true
+        },
+        {
+            "name": "SubDv",
+            "mmax": 2,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "F.B",
+            "mmax": 100,
+            "mdefault": 29,
+            "pedal": false
+        },
+        {
+            "name": "FxLVL",
+            "mmax": 100,
+            "mdefault": 40,
+            "pedal": false
+        },
+        {
+            "name": "DRY",
+            "mmax": 1,
+            "mdefault": 1,
+            "pedal": false
+        },
+        {
+            "name": "Tail",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": false
+        },
+        {
+            "name": "Mode",
+            "mmax": 1,
+            "mdefault": 0,
+            "pedal": true
+        }
+    ]
+}
