@@ -15,6 +15,8 @@ Mungewell's Zoom-zt2: https://github.com/mungewell/zoom-zt2
 
 G200kg: https://github.com/g200kg/zoom-ms-utility
 
+Johnny Marnell: https://github.com/JohnnyMarnell/zoom-stomp
+
 SysExTones g1on: https://github.com/SysExTones/g1on
 
 SrMouraSilva: https://github.com/PedalController/PiPedalController
