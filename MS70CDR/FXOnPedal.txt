@@ -1,0 +1,183 @@
+THRU	01 00 00 00
+Ba Chorus f1 00 00 0c
+Ba Detune 11 01 00 0c
+Ba Ensmbl 71 01 00 0c
+Ba Octave 31 02 00 0c
+Ba Pitch 71 02 00 0c
+BaFlanger d1 01 00 0c
+BendCho a1 02 00 0c
+CoronaCho c1 03 00 0c
+CoronaTri 01 04 00 0c
+DuoPhase 6b 00 00 0c
+HPS 81 02 00 0c
+MojoRolle c1 02 00 0c
+Octave 21 02 00 0c
+Phaser 61 00 00 0c
+PitchSHFT 41 02 00 0c
+RingMod e1 02 00 0c
+Slicer 41 00 00 0c [[missing from firmware decode]] CAREFUL. P1 1 not 0
+StereoCho 41 01 00 0c
+TheVibe 81 00 00 0c
+Tremolo 11 00 00 0c 
+Vibrato 01 02 00 0c
+VinFLNGR b1 01 00 0c 
+WarpPhase 75 00 00 0c
+4VoiceSyn a1 01 00 0e [[missing from firmware decode]]
+AutoPan a1 00 00 0e
+BassSynth 71 00 00 0e [[missing from firmware decode]]
+BitCrush 21 00 00 0e
+Defret 41 01 00 0e [[missing from firmware decode]]
+MonoSynth 61 00 00 0e
+StdSyn e1 00 00 0e [[missing from firmware decode]]
+SynTlk 01 01 00 0e [[missing from firmware decode]]
+V-syn 81 01 00 0e [[missing from firmware decode]]
+Z-Organ 81 00 00 0e
+Z-SYN 21 01 00 0e  [[missing from firmware decode]]
+Delay 11 00 00 10
+FilterDly e1 00 00 10
+ModDelay2 51 00 00 10
+MultiTapD a1 00 00 10
+PitchDly 01 01 00 10
+ReverseDL 81 00 00 10
+StereoDly 21 01 00 10
+StompDly 81 01 00 10
+TapeEcho 21 00 00 10
+TrgHldDly 61 01 00 10
+Air e1 00 00 12
+Arena a1 00 00 12
+Cave 01 02 00 12
+Chamber a1 01 00 12
+Church e1 01 00 12
+DualRev 81 03 00 12
+EarlyRef c1 00 00 12
+Echo 81 02 00 12
+Hall 21 00 00 12
+HD Hall 11 00 00 12
+MangledSp 61 03 00 12
+ModReverb 41 01 00 12
+ParticleR 21 03 00 12
+Plate 21 01 00 12
+ReverseRv 61 02 00 12 
+Room 41 00 00 12
+ShimmerRv 01 03 00 12
+SlapBackD
+SpaceHole
+Spring
+160 Comp 6b 00 00 02
+D COMP 31 00 00 02 [[missing from firmware decode]]
+DUAL COMP 41 01 00 02 [[missing from firmware decode]]
+Limiter
+M Comp
+OptComp
+SlowATTCK
+ZNR a1 00 00 02
+A-Filter
+Ba Cry
+Ba GEQ
+Ba PEQ
+BaAutoWah
+Bottom B
+Exciter
+M-Filter 21 01 00 04 [[missing from firmware decode]]
+RndmFLTR
+SeqFLTR
+Splitter
+Step
+Z Tron
+BGN DRV 21 02 00 08 [[
+FD COMBO 11 00 00 08
+HW STACK 61 01 00 08
+MS 1959 e1 01 00 08
+US BLUES 61 00 00 08
+ACOUSTIC 81 02 00 06
+LEAD ZOOM 9002 41 02 00 06
+T Scream 41 00 00 06
+Bass Booster 21 00 80 02
+BassOverDrive 41 00 80 02
+BASS MUFF 61 00 80 02
+T Scream+DRY 41 01 80 02
+Bass Dist1 a1 00 80 02
+Bass Squeak 61 01 80 02
+BassFuzzSmile 81 01 80 02
+BassMetal 21 01 80 02
+BASS DRIVE 21 00 c0 02
+D.I+ 41 00 c0 02
+Bass BB 61 00 c0 02
+DI5 81 00 c0 02
+BassPre a1 00 c0 02
+AcBsPre c1 00 c0 02
+acoustic c1 00 20 0a
+agamp e1 00 20 0a
+B-MAN 41 00 20 0a
+FlipTop a1 00 20 0a
+G-Krueger 41 01 20 0a
+THE Heaven 61 01 20 0a
+HRT-3500 61 00 20 0a
+MarkB 81 01 20 0a
+Monotone 01 01 20 0a
+SMR 81 00 20 0a
+Super B 21 01 20 0a
+SVT 21 00 20 0a
+
+
+repeats - different to what I see in the firmware
+BUT the firmware does claim to be MS50
+
+THRU
+TapeEcho3
+
+
+
+Ambience
+ANA234Cho
+AnalogDly
+AutoWah
+BF FLG 2
+Bomber
+CarbonDly
+CE-Cho5
+Chorus
+CloneCho
+Comp
+Cry
+Detune
+DirtyGate
+DriveEcho
+DualDigiD
+DuoTrem
+DynaDelay
+DynaRev
+Ensemble
+fCycle
+Flanger
+GateRev
+GraphicEQ
+GrayComp
+HD Reverb
+HolyFLERB
+LineSel
+LO-FI Dly
+LOFI Rev
+MirageCho
+ModDelay
+NoiseGate
+OrangeLim
+ParaEQ
+PhaseDly
+RackComp
+Resonance
+Rt Closet
+SilkyCho
+SlapBack
+SlowFLTR
+SlwAtkDly
+SmoothDly
+Spring63
+St Bs GEQ
+St Gt GEQ
+StonePha
+SuperCho
+TiledRoom
+TremDelay
+TremoloRv
+VintageCE
