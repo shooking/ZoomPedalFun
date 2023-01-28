@@ -35,7 +35,10 @@ Offical pages:
 
 Zoom: https://www.zoom.co.jp/products/effects-preamps/guitar
 
-Harware hacks:
+Hardware hacks:
+
+André Colatino: https://www.youtube.com/watch?v=D9xH5quKueQ
+also: http://www.github.com/Colatino/zeropedal
 
 Ash Bass: http://ashbass.com/AshBassGuitar/Zoom/
 
