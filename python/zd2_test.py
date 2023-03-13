@@ -1,4 +1,5 @@
 import zoomzt2_shooking
+# Read file, parse and print details
 binfile = open("mypedal/RACKCOMP.ZD2", "rb")
 if binfile:
     bindata = binfile.read()
