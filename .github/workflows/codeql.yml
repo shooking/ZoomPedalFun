@@ -76,6 +76,12 @@ jobs:
         echo $GITHUB_WORKSPACE
         ls ${{ github.workspace }}
         cd B1ON && make clean all
+        cd ..
+        cd B1XFour && make clean all
+        cd ..
+        cd MS70CDR && make clean all
+        cd ..
+
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
       with:
