@@ -16,5 +16,5 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - name: Build code
-        run: chmod +x ./buildscript.sh && ./buildscript.sh
+        run: cd B1ON && make clean all
       - run: echo "🍏 This job's status is ${{ job.status }}."
