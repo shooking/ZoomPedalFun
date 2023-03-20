@@ -63,11 +63,12 @@ jobs:
 
     #   If the Autobuild fails above, remove it and uncomment the following three lines.
     #   modify them (or add more) to build your code if your project, please refer to the EXAMPLE below for guidance.
+    -name: CheckPython
     - if: matrix.language == 'python'
       name: Autobuild
       uses: github/codeql-action/autobuild@v2
-    - if: matrix.language == 'cpp'
     - name: BuildC
+    - if: matrix.language == 'cpp'
       run: |
         echo "Run, Build Application using script"
         echo $GITHUB_WORKSPACE
