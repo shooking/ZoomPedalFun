@@ -15,5 +15,6 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-          ./buildscript.sh
+      - name: Build code
+        run: chmod +x ./buildscript.sh && ./buildscript.sh
       - run: echo "🍏 This job's status is ${{ job.status }}."
