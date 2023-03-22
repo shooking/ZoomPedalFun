@@ -1241,7 +1241,6 @@ def main():
         # Read data from file
         binfile = open(options.install, "rb")
         if infile:
-            bindata = binfile.read()
             binfile.close()
 
             pedal.file_check(options.install)
