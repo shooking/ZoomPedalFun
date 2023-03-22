@@ -142,19 +142,20 @@ if __name__ == "__main__":
                         nextBlock = checkMe[3] * 256 + checkMe[2]
                         sizeBlock = checkMe[5] * 256 + checkMe[4]
                         #print("{} {} {}: {}".format(prevBlock, nextBlock, sizeBlock, i))
-                    if nextBlock == 0xFFFF:
-                        blockCount = blockCount + 1
-                        ZDL.extend(rawX[i:i + sizeBlock])
-                        # still must take a whole block
-                        i = i + 4096
-                        # now write out the ZDL. Function writes out JSON
-                        #print(ZDL)                        
-                        fxnamefile = check(ZDL) 
-                        if None == fxnamefile:
-                            continue
+                    #
+                    # OK we are are the next block ...
+                    blockCount = blockCount + 1
+                    ZDL.extend(rawX[i:i + sizeBlock])
+                    # still must take a whole block
+                    i = i + 4096
+                    # now write out the ZDL. Function writes out JSON
+                    #print(ZDL)                        
+                    fxnamefile = check(ZDL) 
+                    if None == fxnamefile:
+                        continue
                          
-                        g = open(fxnamefile, "wb")
-                        g.write(ZDL)
-                        g.close()
-                        ZDL=bytearray()
-                        print("{}  {}".format(fxnamefile, blockCount))
+                    g = open(fxnamefile, "wb")
+                    g.write(ZDL)
+                    g.close()
+                    ZDL=bytearray()
+                    print("{}  {}".format(fxnamefile, blockCount))
