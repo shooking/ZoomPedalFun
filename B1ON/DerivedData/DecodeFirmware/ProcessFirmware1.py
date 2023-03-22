@@ -1,7 +1,4 @@
 import sys
-
-# -*- coding: ascii -*-
-import sys
 import json
 
 def check(zdlData):
