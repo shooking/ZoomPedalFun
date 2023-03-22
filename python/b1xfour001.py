@@ -109,8 +109,7 @@ def populatePatches():
             myPatches.append("[{}] {}".format(ri, rp['patchname']))
         return tuple(myPatches)
     except:
-        pass
-        return
+        return None
 
 
 def populateFX():
@@ -142,7 +141,6 @@ def populateFX():
         x=[elem for elem in cnt] 
         return tuple(myFX), myFXNameIndex, x
     except:
-        pass
         return None, None, None
 
 
