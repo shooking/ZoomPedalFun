@@ -436,7 +436,6 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
 	if (PPRMstart != -1)
 	{
 		myInt a;
-		myInt b;
 
 		for (int i=0; i<4; i++)
 		{

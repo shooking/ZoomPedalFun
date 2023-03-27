@@ -1,5 +1,4 @@
 import sys
-import os
 import glob
 from csplitb import CSplitB
 
