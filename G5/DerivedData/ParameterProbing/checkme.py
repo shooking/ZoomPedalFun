@@ -69,6 +69,8 @@ def check(data):
                 #print("increment params")
                 numParameters = numParameters + 1
         except:
+            # The idea here is we probe 2000 parameters and expect to go past end
+            # so we expect to hit an exception.cd
             pass
         #print("Found {} parameters.".format(numParameters))
         tD['Parameters'] = []

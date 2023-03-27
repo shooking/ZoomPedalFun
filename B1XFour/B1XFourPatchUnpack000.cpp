@@ -303,12 +303,12 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
 		}
 		// both valsprintf("FX: %d %d\n", a.x, b.x);
 		printf("FX: %d\n", a.x);
-		for (int j = 0; j < 5; j++)
+		for (int jj = 0; jj < 5; j++)
 		{
 			for (int i=0; i<4; i++)
 			{
-				a.v[i] = unpacked[PTCFstart + 8 + 4 + 10 + 10 + 4 * j + i];
-				b.v[4-i] = unpacked[PTCFstart + 8 + 4 + 10 + 10 + 4 * j + i];
+				a.v[i] = unpacked[PTCFstart + 8 + 4 + 10 + 10 + 4 * jj + i];
+				b.v[4-i] = unpacked[PTCFstart + 8 + 4 + 10 + 10 + 4 * jj + i];
 			}
 			/*
 			** Both big and little endian form. Seems to be "a" form

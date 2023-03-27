@@ -298,11 +298,11 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
 		}
 		printf("FX: %d\n", a.x);
 		numFX=a.x;
-		for (int j = 0; j < numFX; j++)
+		for (int jj = 0; jj < numFX; jj++)
 		{
 			for (int i=0; i<4; i++)
 			{
-				a.v[i] = unpacked[PTCFstart + 8 + 4 + 10 + 10 + 4 * j + i];
+				a.v[i] = unpacked[PTCFstart + 8 + 4 + 10 + 10 + 4 * jj + i];
 			}
 			/*
 			** Both big and little endian form. Seems to be "a" form

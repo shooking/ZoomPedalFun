@@ -177,7 +177,6 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
 	int loop = -1;
 	uint8_t hibits = 0;
 
-	int j = 0;
 	vector<BYTE>	unpacked;
 
 	// Check this is the right sysex
@@ -291,7 +290,7 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
 		myInt a;
 		myInt b;
 		printf("Patch name\n");
-		for (j = PTCFstart+22; j < PTCFstart + 22 + 10; j++)
+		for (size_t j = PTCFstart+22; j < PTCFstart + 22 + 10; j++)
 		{
 			printf("%c", unpacked[j]);
 		}
@@ -380,7 +379,7 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
 		BYTE v[24];
 
 		int edbtNum = a.x/24;
-		for (j = 0; j < edbtNum; j++)
+		for (size_t j = 0; j < edbtNum; j++)
 		{
 
 			for (int i=0; i<24; i++)
