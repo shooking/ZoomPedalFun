@@ -303,7 +303,7 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
 		}
 		// both valsprintf("FX: %d %d\n", a.x, b.x);
 		printf("FX: %d\n", a.x);
-		for (int jj = 0; jj < 5; j++)
+		for (int jj = 0; jj < 5; jj++)
 		{
 			for (int i=0; i<4; i++)
 			{
