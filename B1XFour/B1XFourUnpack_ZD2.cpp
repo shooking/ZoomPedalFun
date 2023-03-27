@@ -27,7 +27,6 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
 	int loop = -1;
 	uint8_t hibits = 0;
 
-	int j = 0;
 	unsigned int offset_bias = 0;
 	vector<BYTE>	unpacked;
 
@@ -64,7 +63,6 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
 	}
 
 	// this is a file block unpacker
-	int currByte = 0;
 	const int dataLen = sysex[9] + 128 * sysex[10];
 	int	expectedBytes = 1 + ceil( (dataLen / 7) ) * 7 ;
 	int	theCount = 0;
