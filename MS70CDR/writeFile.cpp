@@ -1,7 +1,5 @@
 #include "writeFile.h"
 
-int writeFile(vector<BYTE> &packed, char* filename);
-
 
 int writeFile(vector<BYTE> &packed, const char* filename)
 {

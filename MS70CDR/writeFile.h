@@ -12,4 +12,5 @@
 
     using namespace std;
     typedef unsigned char BYTE;
+    int writeFile(vector<BYTE> &packed, const char* filename);
 #endif

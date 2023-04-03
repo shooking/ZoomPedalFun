@@ -1,7 +1,7 @@
 #include "readFile.h"
 
 
-vector<BYTE> readFile(char* filename)
+vector<BYTE> readFile(const char* filename)
 {
     // open the file:
     ifstream file(filename, ios::binary | ios::in);

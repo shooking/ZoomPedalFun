@@ -13,10 +13,9 @@ typedef unsigned char BYTE;
 
 #include "pack.h"
 
-vector<BYTE> pack (vector<BYTE> &vi, int newTempo);
 
 // default it to 0 - which means leave alone!
-vector<BYTE> pack ( vector<BYTE> &unpacked, int newTempo = 0 )
+vector<BYTE> pack ( vector<BYTE> &unpacked, int newTempo = 0, int slot = -1, int fxid = -1, int gid = -1 )
 {
 	// patch the tempo in unpacked (8 bit) space
 	int offset = 0;
@@ -33,6 +32,35 @@ vector<BYTE> pack ( vector<BYTE> &unpacked, int newTempo = 0 )
 		// 0xF8 = 11111000
 		unpacked[109] = (by109 & 0x80) + ((newTempo & 0x07) << 5) + (by109 & 0x0F);
 		unpacked[110] = (by110 & 0xE0) + (((newTempo & 0xF8)<<1) >> 4);
+	}
+
+	if (slot != -1)
+	{
+		cout << "Injecting " << fxid << " " << gid << " into slot " << slot << endl;
+		int NumFX = (unpacked[109] ) >> 2;
+		
+		bool emptySlot = ( unpacked[18 * (slot - 1)] == 0);
+
+		if (emptySlot) {
+			NumFX++;
+			if (NumFX > 6) NumFX = 6;
+		}
+
+		BYTE i18p1 = unpacked[18 * (slot - 1) + 1];
+		unpacked[18*(slot -1)] = (fxid * 2) & 0xFF;
+		unpacked[18*(slot -1) + 1] = (i18p1 & 0xF0) + ( ((fxid * 2) >> 8) & 0x0F);
+
+		BYTE i18p2 = unpacked[18 * (slot - 1) + 2];
+		BYTE i18p3 = unpacked[18 * (slot - 1) + 3];
+		unpacked[18 * (slot - 1) + 2] = (((gid) << 5) & 0xC0) | (i18p2 & 0x3F);
+		cout << "gid = " << gid << endl;
+		cout << (((gid << 5) ) ) << endl;
+		unpacked[18 * (slot - 1) + 3] = ( ( (((gid) << 5) >> 8 ) & 0xF0)) | (i18p3 & 0x0F);
+		// Adjust the numFX where necessary
+		if (!emptySlot) {
+			BYTE b109mask = unpacked[109] & 0x03; // grab 2 LSB bits
+			unpacked[109] = (NumFX <<2) + b109mask;
+		}
 	}
 
 	vector<BYTE>	packed;

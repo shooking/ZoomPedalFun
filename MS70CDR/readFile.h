@@ -12,5 +12,5 @@
     typedef unsigned char BYTE;
 
 
-    vector<BYTE> readFile(char* filename);
+    vector<BYTE> readFile(const char* filename);
 #endif

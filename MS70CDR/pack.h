@@ -12,4 +12,5 @@
 
     using namespace std;
     typedef unsigned char BYTE;
+    vector<BYTE> pack ( vector<BYTE> &unpacked, int newTempo, int slot, int fxid, int gid);
 #endif

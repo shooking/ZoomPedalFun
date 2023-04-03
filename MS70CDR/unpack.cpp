@@ -60,7 +60,7 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
 		/* 5 */	( ( ((unpacked[18* i + 11] & 0xF) << 8) + (unpacked[18* i + 10]) ) >> 4 ),
 		/* 6 */	( ( ((unpacked[18* i + 12] & 0xF) << 8) + (unpacked[18* i + 11]) ) >> 4 ),
 		/* 7 */	( ( ((unpacked[18* i + 13]      ) << 8) + (unpacked[18* i + 12]) ) >> 4 ), 
-		/* 8 */	    ((unpacked[18* i + 16] >> 1 ) )
+		/* 8 */	    ((unpacked[18* i + 16] ) )
 		};
 
 		// Lets try decode FX ID and group
