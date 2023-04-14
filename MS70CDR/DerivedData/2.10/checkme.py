@@ -87,7 +87,7 @@ def check(zdlData):
         with open(fxName+'.json', "w") as f:
             json.dump(tD, f, indent=4)
             return fxName+'.ZDL'
-        return "Not found!"
+    return "Not found!"
 
 
 # handles a processed ZDL
