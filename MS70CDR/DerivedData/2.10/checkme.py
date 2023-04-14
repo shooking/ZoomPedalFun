@@ -84,10 +84,10 @@ def check(zdlData):
             tD['Parameters'].append({'name': name[i+2], 'mmax': mmax[i + 2], 'mdefault': mdefault[i + 2], 'pedal': mpedal[i+2]})
         
         #json.dump(tD, sys.stdout, indent=4)
-        f = open(fxName+'.json', "w")
-        json.dump(tD, f, indent=4)
-        f.close()
-        return fxName+'.ZDL'
+        with open(fxName+'.json', "w") as f:
+            json.dump(tD, f, indent=4)
+            return fxName+'.ZDL'
+        return "Not found!"
 
 
 # handles a processed ZDL
@@ -95,8 +95,7 @@ def check(zdlData):
 # read the fileblocks and handle appropriately.
 if __name__ == "__main__":
     if len(sys.argv) == 2:
-        f = open(sys.argv[1], "rb")
-        data = f.read()
-        f.close()
-
-        check(data)
+        with open(sys.argv[1], "rb") as f:
+            data = f.read()
+            res = check(data)
+            print(res)
