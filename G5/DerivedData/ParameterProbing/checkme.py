@@ -82,17 +82,16 @@ def check(data):
             tD['Parameters'].append({'name': name[i+2], 'mmax': mmax[i + 2], 'mdefault': mdefault[i + 2], 'pedal': mpedal[i+2]})
         
         #json.dump(tD, sys.stdout, indent=4)
-        f = open(fxName+'.json', "w")
-        json.dump(tD, f, indent=4)
-        f.close()
+        with open(fxName+'.json', "w") as f:
+            json.dump(tD, f, indent=4)
         return fxName+'.OnOff'
-
+    return None
 
 # handles a zoom firmware
 if __name__ == "__main__":
     if len(sys.argv) == 2:
-        f = open(sys.argv[1], "rb")
-        data = f.read()
-        f.close()
+        with open(sys.argv[1], "rb") as f:
+            data = f.read()
 
-        check(data)
+        x = check(data)
+        print(x)

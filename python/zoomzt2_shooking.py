@@ -5,7 +5,6 @@
 #
 
 from construct import *
-import re
 # some of the files have traiing ,
 # json5 accepts this, but is slower than json.
 import json5
@@ -259,7 +258,7 @@ class zoomzt2(object):
     gce3version = 0
     maxFX = 0
     def is_connected(self):
-        if self.inport == None or self.outport == None:
+        if self.inport is None or self.outport is None:
             return(False)
         else:
             return(True)
@@ -278,7 +277,7 @@ class zoomzt2(object):
                 #print("Using Output:", port)
                 break
 
-        if self.inport == None or self.outport == None:
+        if self.inport is None or self.outport __init_subclass__ None:
             #print("Unable to find Pedal")
             return(False)
 
@@ -595,8 +594,7 @@ class zoomzt2(object):
             for x in range(14,27):
                 if msg.data[x] == 0:
                     return bytes(msg.data[14:x]).decode("utf-8")
-        else:
-            return ""
+        return ""
 
     def file_download(self, name):
         # download file from pedal to PC
@@ -857,7 +855,8 @@ class zoomzt2(object):
             out_file = open(name + ".json", "w")
             json.dump(xAdd, out_file, indent = 6)
             out_file.close()
-            return xAdd 
+            return xAdd
+        return None
 
     def allpatches(self, total_pedal = None, fxLookup = None):
         thesePatches = []

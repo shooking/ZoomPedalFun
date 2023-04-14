@@ -1,5 +1,4 @@
 import sys
-import os
 import glob
 from csplitb import CSplitB
 
@@ -10,11 +9,10 @@ import sys
 import json
 
 def check(name):
-    f = open(name, "rb")
-    f.read(64)
-    x = f.read(8)
-    data = f.read()
-    f.close()
+    with open(name, "rb") as f:
+        f.read(64)
+        x = f.read(8)
+        data = f.read()
     # try to find name. Is is 0x30 chars from OnOff
 	# These "OnOff" blocks seems to 0x30 long and look until next 4 bytes are 00
     OnOffstart = data.find("OnOff".encode())
@@ -82,9 +80,9 @@ def check(name):
             tD['Parameters'].append({'name': name[i+2], 'mmax': mmax[i + 2], 'mdefault': mdefault[i + 2]})
         
         json.dump(tD, sys.stdout, indent=4)
-        f = open(fxName+'.json', "w")
-        json.dump(tD, f, indent=4)
-        f.close()
+        with open(fxName+'.json', "w") as f:
+            json.dump(tD, f, indent=4)
+    return None
 
 if __name__ == "__main__":
     if len(sys.argv) == 2:

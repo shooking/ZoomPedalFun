@@ -1,7 +1,4 @@
 import sys
-import os
-import glob
-from csplitb import CSplitB
 
 
 
@@ -90,21 +87,19 @@ def check(zdlData):
             tD['Parameters'].append({'name': name[i+2], 'mmax': mmax[i + 2], 'mdefault': mdefault[i + 2], 'pedal': mpedal[i+2]})
         
         #json.dump(tD, sys.stdout, indent=4)
-        f = open(fxName+'.json', "w")
-        json.dump(tD, f, indent=4)
-        f.close()
+        with open(fxName+'.json', "w") as f:
+            json.dump(tD, f, indent=4)
         return fxName+'.ZDL'
     else:
         return None
 
 if __name__ == "__main__":
     if len(sys.argv) == 2:
-        f = open(sys.argv[1], "rb")
-        # we are looking for 6 bytes then 0000000053495A45
-        # lets assume the pattern will be past 6th bytearray
-        # and we need at least 8 bytes left to read pattern
-        rawX = f.read()
-        f.close()
+        with open(sys.argv[1], "rb") as f:
+            # we are looking for 6 bytes then 0000000053495A45
+            # lets assume the pattern will be past 6th bytearray
+            # and we need at least 8 bytes left to read pattern
+            rawX = f.read()
         ZDL=bytearray()
         # note the loop variable is updated in the loop!
         for i in range(len(rawX) - 8):

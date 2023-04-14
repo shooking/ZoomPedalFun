@@ -88,15 +88,14 @@ def check(zdlData):
         json.dump(tD, f, indent=4)
         f.close()
         return fxName+'.ZDL'
-
+    return None
 
 # handles a processed ZDL
 # if you want to extract from the firmware you have to
 # read the fileblocks and handle appropriately.
 if __name__ == "__main__":
     if len(sys.argv) == 2:
-        f = open(sys.argv[1], "rb")
-        data = f.read()
-        f.close()
+        with open(sys.argv[1], "rb") as f:
+            data = f.read()
 
         check(data)

@@ -12,10 +12,8 @@ import subprocess
 logging.basicConfig(filename='midi.log', level=logging.DEBUG)
 from tkinter import *
 from tkinter import ttk
-from tkinter import messagebox
 import tkinter as tk
 from tkinter import font
-from io import BytesIO
 from collections import Counter
 from PIL import Image, ImageTk
 win = Tk()
@@ -27,14 +25,11 @@ win.option_add("*Font", bigfont)
 from construct import *
 import re
 # I think we need json5
-import json5
 import json
 import os
 import shutil
 import sys
 import mido
-import binascii
-from time import sleep
 
 fxOn = [False, False, False, False, False, False, False, False, False]
 # we use this to keep tabs of the FX slot
