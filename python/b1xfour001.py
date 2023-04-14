@@ -23,11 +23,6 @@ bigfont = font.Font(family="LucidaConsole", size = 20)
 win.option_add("*Font", bigfont)
     
 from construct import *
-<<<<<<< HEAD
-import re
-# I think we need json5
-=======
->>>>>>> 3abe0579e765d544010bdc30dc0b204a26a0619d
 import json
 import os
 import shutil

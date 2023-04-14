@@ -277,11 +277,7 @@ class zoomzt2(object):
                 #print("Using Output:", port)
                 break
 
-<<<<<<< HEAD
-        if self.inport is None or self.outport __init_subclass__ None:
-=======
         if self.inport is None or self.outport is None:
->>>>>>> 3abe0579e765d544010bdc30dc0b204a26a0619d
             #print("Unable to find Pedal")
             return(False)
 

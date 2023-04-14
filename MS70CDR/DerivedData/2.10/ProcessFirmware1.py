@@ -1,12 +1,4 @@
 import sys
-<<<<<<< HEAD
-
-
-
-# -*- coding: ascii -*-
-import sys
-=======
->>>>>>> 3abe0579e765d544010bdc30dc0b204a26a0619d
 import json
 
 def check(zdlData):
