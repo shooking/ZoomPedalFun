@@ -9,10 +9,20 @@ import sys
 import json
 
 def check(name):
+<<<<<<< HEAD
     with open(name, "rb") as f:
         f.read(64)
         x = f.read(8)
         data = f.read()
+=======
+    try:
+        f = open(name, "rb")
+        f.read(64)
+        x = f.read(8)
+        data = f.read()
+    finally:
+        f.close()
+>>>>>>> 3abe0579e765d544010bdc30dc0b204a26a0619d
     # try to find name. Is is 0x30 chars from OnOff
 	# These "OnOff" blocks seems to 0x30 long and look until next 4 bytes are 00
     OnOffstart = data.find("OnOff".encode())
@@ -82,8 +92,11 @@ def check(name):
         json.dump(tD, sys.stdout, indent=4)
         with open(fxName+'.json', "w") as f:
             json.dump(tD, f, indent=4)
+<<<<<<< HEAD
     return None
 
+=======
+>>>>>>> 3abe0579e765d544010bdc30dc0b204a26a0619d
 
 if __name__ == "__main__":
     if len(sys.argv) == 2:

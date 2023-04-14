@@ -84,11 +84,19 @@ def check(zdlData):
             tD['Parameters'].append({'name': name[i+2], 'mmax': mmax[i + 2], 'mdefault': mdefault[i + 2], 'pedal': mpedal[i+2]})
         
         #json.dump(tD, sys.stdout, indent=4)
+<<<<<<< HEAD
         f = open(fxName+'.json', "w")
         json.dump(tD, f, indent=4)
         f.close()
         return fxName+'.ZDL'
     return None
+=======
+        with open(fxName+'.json', "w") as f:
+            json.dump(tD, f, indent=4)
+            return fxName+'.ZDL'
+    return "Not found!"
+
+>>>>>>> 3abe0579e765d544010bdc30dc0b204a26a0619d
 
 # handles a processed ZDL
 # if you want to extract from the firmware you have to
@@ -97,5 +105,10 @@ if __name__ == "__main__":
     if len(sys.argv) == 2:
         with open(sys.argv[1], "rb") as f:
             data = f.read()
+<<<<<<< HEAD
 
         check(data)
+=======
+            res = check(data)
+            print(res)
+>>>>>>> 3abe0579e765d544010bdc30dc0b204a26a0619d
