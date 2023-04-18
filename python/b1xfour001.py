@@ -402,6 +402,7 @@ def GenFX(lim):
 def InitializeFXState(currFX):
     x = 0
     for fx in currFX:
+        # Need to change this so an assignement?
         fx = {'onoff' : None, 'label': None, 'slot': x + 1, 'effect': None, 'name' : None}
         x = x + 1
 
