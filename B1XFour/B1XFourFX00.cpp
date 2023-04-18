@@ -113,7 +113,7 @@ void dumpValue(BYTE *v)
 	{
 		same = same && (b[i] == raw[i]);
 		if (same == false) {
-			printf("Different at %d\n", i);
+			printf("Different at %ld\n", i);
 			break;
 		}
 	}
@@ -295,7 +295,6 @@ main (int argc, char **argv)
 
 	cout << "Infile: " << argv[1] << endl;
 	ifstream in_f(argv[1], ios::in | ios::binary);
-	// ofstream out_f(argv[1], ios::out | ios::binary);
 
 	vector<BYTE> vo;
 	vector<BYTE> vi = readFile(argv[1]);
