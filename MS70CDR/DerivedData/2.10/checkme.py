@@ -97,10 +97,5 @@ if __name__ == "__main__":
     if len(sys.argv) == 2:
         with open(sys.argv[1], "rb") as f:
             data = f.read()
-<<<<<<< HEAD
-
-        check(data)
-=======
             res = check(data)
             print(res)
->>>>>>> 3abe0579e765d544010bdc30dc0b204a26a0619d

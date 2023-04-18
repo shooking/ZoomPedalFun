@@ -1,4 +1,3 @@
-# -*- coding: ascii -*-
 import sys
 import json
 
