@@ -2,10 +2,6 @@ import sys
 import glob
 from csplitb import CSplitB
 
-
-
-# -*- coding: ascii -*-
-import sys
 import json
 
 def check(name):
@@ -82,11 +78,8 @@ def check(name):
         json.dump(tD, sys.stdout, indent=4)
         with open(fxName+'.json', "w") as f:
             json.dump(tD, f, indent=4)
-<<<<<<< HEAD
     return None
 
-=======
->>>>>>> 3abe0579e765d544010bdc30dc0b204a26a0619d
 
 if __name__ == "__main__":
     if len(sys.argv) == 2:
