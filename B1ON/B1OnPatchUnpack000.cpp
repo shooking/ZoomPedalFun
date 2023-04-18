@@ -140,7 +140,6 @@ vector<BYTE> readFile(char* filename)
     vec.insert(vec.begin(),
                istream_iterator<BYTE>(file),
                istream_iterator<BYTE>());
-    // cout << "vec was " << vec.size() << endl;
     file.close();
     return vec;
 }

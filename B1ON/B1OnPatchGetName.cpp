@@ -91,7 +91,6 @@ vector<BYTE> readFile(char* filename)
     vec.insert(vec.begin(),
                istream_iterator<BYTE>(file),
                istream_iterator<BYTE>());
-    // cout << "vec was " << vec.size() << endl;
     file.close();
     return vec;
 }
@@ -107,7 +106,6 @@ main (int argc, char **argv)
 		exit(-1);
 	}
 	ifstream in_f(argv[1], ios::in | ios::binary);
-	// ofstream out_f(argv[1], ios::out | ios::binary);
 
 	vector<BYTE> vo;
 	vector<BYTE> vi = readFile(argv[1]);

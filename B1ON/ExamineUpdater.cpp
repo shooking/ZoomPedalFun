@@ -123,7 +123,6 @@ vector<BYTE> readFile(char* filename)
     vec.insert(vec.begin(),
                istream_iterator<BYTE>(file),
                istream_iterator<BYTE>());
-    // cout << "vec was " << vec.size() << endl;
     file.close();
     return vec;
 }
@@ -135,7 +134,6 @@ main (int argc, char **argv)
 
 	cout << "Infile: " << argv[1] << endl;
 	ifstream in_f(argv[1], ios::in | ios::binary);
-	// ofstream out_f(argv[1], ios::out | ios::binary);
 
 	vector<BYTE> vo;
 	vector<BYTE> vi = readFile(argv[1]);
@@ -185,14 +183,12 @@ main (int argc, char **argv)
 					i += locali; // ctr was auto incremented
 				}
 			}
-		} else {
 		}
 		ctr++;
 	}
 	
 	cout << endl;
 	cout << "Found " << OnOffCtr << " FX\n";
-	// cout << "file size: " << vi.size() << endl;
-	// vo = unpack (vi);
+
 	return 0;
 }
