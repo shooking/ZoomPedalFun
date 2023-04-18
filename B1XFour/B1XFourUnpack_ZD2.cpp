@@ -129,7 +129,6 @@ vector<BYTE> readFile(char* filename)
 	    vec.insert(vec.begin(),
 	               istream_iterator<BYTE>(file),
 	               istream_iterator<BYTE>());
-	    // cout << "vec was " << vec.size() << endl;
 	    file.close();
 	    return vec;
 	}
@@ -168,7 +167,6 @@ main (int argc, char **argv)
 	}
 	cout << endl;
 
-	// cout << "file size: " << vi.size() << endl;
 	vo = unpack (vi);
 
     // open a file for the unpacked file

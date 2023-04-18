@@ -114,7 +114,7 @@ void dumpValue(BYTE *v)
 	{
 		same = same && (b[i] == raw[i]);
 		if (same == false) {
-			printf("Different at %d\n", i);
+			printf("Different at %ld\n", i);
 			break;
 		}
 	}
@@ -128,8 +128,8 @@ int getValue(BYTE *v, size_t offset, size_t len)
 	// p8 is 8 bits at bits 72 + 6 -1 to 72 + 6 - 1 + 8
 	if (local_debug == true)
 	{
-		printf("Offset = %d ", offset);
-		printf("Len %d\n", len);
+		printf("Offset = %ld ", offset);
+		printf("Len %ld\n", len);
 	}
 	if ((offset >= 8 * 24) || (offset + len > 8 * 24)) 
 	{
@@ -137,9 +137,6 @@ int getValue(BYTE *v, size_t offset, size_t len)
 		return retval;
 	}
 
-	// bitset<192> mb;
-	// mb = reinterpret_cast<bitset<192> *>(v);
-	// memmove(&mb, v, 24);
 	BYTE mb[192];
 	for (size_t i = 0; i < 24; i++)
 	{
@@ -345,10 +342,7 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
 		{
 			a.v[i] = unpacked[EDTBstart + i];
 		}
-		// printf("EDBT Length: %d %d\n", a.x, b.x);
-		printf("\tEDBT Length: %d\n", a.x);
 
-		//myBits	mb;
 		bitset<192> mb;
 		BYTE v[24];
 
@@ -496,7 +490,6 @@ vector<BYTE> readFile(char* filename)
 	    vec.insert(vec.begin(),
 	               istream_iterator<BYTE>(file),
 	               istream_iterator<BYTE>());
-	    // cout << "vec was " << vec.size() << endl;
 	    file.close();
 	    return vec;
 	}
@@ -519,7 +512,6 @@ main (int argc, char **argv)
 
 	cout << "Infile: " << argv[1] << endl;
 	ifstream in_f(argv[1], ios::in | ios::binary);
-	// ofstream out_f(argv[1], ios::out | ios::binary);
 
 	vector<BYTE> vo;
 	vector<BYTE> vi = readFile(argv[1]);
@@ -536,7 +528,6 @@ main (int argc, char **argv)
 	}
 	cout << endl;
 
-	// cout << "file size: " << vi.size() << endl;
 	vo = unpack (vi);
 
 	ctr = 0;
