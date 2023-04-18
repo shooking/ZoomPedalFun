@@ -86,7 +86,6 @@ vector<BYTE> pack ( vector<BYTE> &unpacked, int newTempo = 0, int slot = -1, int
 			cout << setfill ('0') << setw (2) << hex << (0xff & (unpacked[i*7 + j])) << " ";
 			if ( unpacked[i*7 + j + offset] >= 128 )
 			{
-				// printf("HIT!! %d %d\n", j, (1 << j));
 				bv |= (1 << (6 - j));
 			}
 			packet[j+1] = (unpacked[i*7 + j + offset] & 0x7F);
@@ -108,10 +107,6 @@ vector<BYTE> pack ( vector<BYTE> &unpacked, int newTempo = 0, int slot = -1, int
 	for (size_t i = 0; i < remainderBytes; i++)
 	{
 		packed.push_back(unpacked[7 * numLoops + i]);
-		/*
-		cout << setfill ('0') << setw (2) << hex << (0xFF & unpacked[7 * numLoops + i]);
-		cout << endl;
-		*/
 	}
 	packed.push_back(0xF7);
 	return packed;
