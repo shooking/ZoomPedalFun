@@ -327,7 +327,7 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
 		{
 			a.v[i] = unpacked[TXJ1start + i];
 		}
-		// both formsprintf("TXJ1 Length: %d %d\n", a.x, b.x);
+
 		printf("\tTXJ1 Length: %d\n", a.x);
 		for (int i = 0; i <  a.x; i++)
 		{
