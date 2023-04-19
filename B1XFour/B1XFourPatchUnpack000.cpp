@@ -286,7 +286,6 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
 	if (PTCFstart != -1) 
 	{
 		myInt a;
-		myInt b;
 		printf("Patch name\n");
 		for (j = PTCFstart+22; j < PTCFstart + 22 + 10; j++)
 		{
@@ -296,7 +295,6 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
 		for (int i=0; i<4; i++)
 		{
 			a.v[i] = unpacked[PTCFstart + 8 + i];
-			b.v[4-i] = unpacked[PTCFstart + 8 + i];
 		}
 		printf("FX: %d\n", a.x);
 		for (int jj = 0; jj < 5; jj++)
@@ -304,7 +302,6 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
 			for (int i=0; i<4; i++)
 			{
 				a.v[i] = unpacked[PTCFstart + 8 + 4 + 10 + 10 + 4 * jj + i];
-				b.v[4-i] = unpacked[PTCFstart + 8 + 4 + 10 + 10 + 4 * jj + i];
 			}
 			/*
 			** Both big and little endian form. Seems to be "a" form
@@ -322,11 +319,9 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
 	if (TXJ1start != -1) 
 	{
 		myInt a;
-		myInt b;
 		for (int i=0; i<4; i++)
 		{
 			a.v[i] = unpacked[TXJ1start + i];
-			b.v[4-i] = unpacked[TXJ1start + i];
 		}
 		printf("\tTXJ1 Length: %d\n", a.x);
 		for (int i = 0; i <  a.x; i++)
@@ -341,11 +336,9 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
 	if (TXE1start != -1) 
 	{
 		myInt a;
-		myInt b;
 		for (int i=0; i<4; i++)
 		{
 			a.v[i] = unpacked[TXE1start + i];
-			b.v[4-i] = unpacked[TXE1start + i];
 		}
 		printf("\tTXE1 Length: %d\n", a.x);
 		for (int i=0; i < a.x; i++)
@@ -358,12 +351,10 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
 	if (EDTBstart != -1) 
 	{
 		myInt a;
-		myInt b;
 
 		for (int i=0; i<4; i++)
 		{
 			a.v[i] = unpacked[EDTBstart + i];
-			b.v[4-i] = unpacked[EDTBstart + i];
 		}
 		printf("\tEDBT Length: %d\n", a.x);
 

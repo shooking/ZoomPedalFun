@@ -9,6 +9,7 @@
 #include <bitset>
 #include <cstdio>
 #include <cstring>
+#include <cstddef>
 
 using namespace std;
 typedef unsigned char BYTE;
@@ -173,6 +174,7 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
 	//data = bytearray(b"")
 	int loop = -1;
 	uint8_t hibits = 0;
+    bool showJapanese = false;
 
 	vector<BYTE>	unpacked;
 
@@ -232,7 +234,7 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
 	** 50 50 52 4d == PPRM // seems to be a couple
 	*/
 	// Look for where the above are
-	int PTCFstart=-1;
+	ssize_t PTCFstart=-1;
 	int TXJ1start=-1;
 	int TXE1start=-1;
 	int EDTBstart=-1;
@@ -285,9 +287,9 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
 	if (PTCFstart != -1) 
 	{
 		myInt a;
-		myInt b;
+
 		printf("Patch name\n");
-		for (size_t j = PTCFstart+22; j < PTCFstart + 22 + 10; j++)
+		for (ssize_t j = PTCFstart+22; j < PTCFstart + 22 + 10; j++)
 		{
 			printf("%c", unpacked[j]);
 		}
@@ -295,7 +297,6 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
 		for (int i=0; i<4; i++)
 		{
 			a.v[i] = unpacked[PTCFstart + 8 + i];
-			b.v[4-i] = unpacked[PTCFstart + 8 + i];
 		}
 		printf("FX: %d\n", a.x);
 		int numFX=a.x;
@@ -304,7 +305,6 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
 			for (int i=0; i<4; i++)
 			{
 				a.v[i] = unpacked[PTCFstart + 8 + 4 + 10 + 10 + 4 * j + i];
-				b.v[4-i] = unpacked[PTCFstart + 8 + 4 + 10 + 10 + 4 * j + i];
 			}
 			/*
 			** Both big and little endian form. Seems to be "a" form
@@ -319,15 +319,13 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
 		}
 	}
 	
-	/*
-	if (TXJ1start != -1) 
+	if (showJapanese && (TXJ1start != -1)) 
 	{
 		myInt a;
-		myInt b;
+
 		for (int i=0; i<4; i++)
 		{
 			a.v[i] = unpacked[TXJ1start + i];
-			b.v[4-i] = unpacked[TXJ1start + i];
 		}
 		// both formsprintf("TXJ1 Length: %d %d\n", a.x, b.x);
 		printf("\tTXJ1 Length: %d\n", a.x);
@@ -339,15 +337,14 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
 		printf("\n");
 
 	}
-	*/
+	
 	if (TXE1start != -1) 
 	{
 		myInt a;
-		myInt b;
+
 		for (int i=0; i<4; i++)
 		{
 			a.v[i] = unpacked[TXE1start + i];
-			b.v[4-i] = unpacked[TXE1start + i];
 		}
 		printf("\tTXE1 Length: %d\n", a.x);
 		for (int i=0; i < a.x; i++)
@@ -360,21 +357,18 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
 	if (EDTBstart != -1) 
 	{
 		myInt a;
-		myInt b;
 
 		for (int i=0; i<4; i++)
 		{
 			a.v[i] = unpacked[EDTBstart + i];
-			b.v[4-i] = unpacked[EDTBstart + i];
 		}
 		printf("\tEDBT Length: %d\n", a.x);
 
-		//myBits	mb;
 		bitset<192> mb;
 		BYTE v[24];
 
-		int edbtNum = a.x/24;
-		for (size_t j = 0; j < edbtNum; j++)
+		ssize_t edbtNum = a.x/24;
+		for (ssize_t j = 0; j < edbtNum; j++)
 		{
 
 			for (int i=0; i<24; i++)

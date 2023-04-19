@@ -227,7 +227,7 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
 			} else {
 				printf("\n");
 			}
-        	printf("\t[%3d, %3d]: (%02x) (%02x) = %4d\n",
+        	printf("\t[%3zu, %3zu]: (%02x) (%02x) = %4d\n",
 				bias + i, bias + i +1,
                 unpacked[bias + i], unpacked[bias + i+1],
                 (unpacked[bias + i+1] << 8) + unpacked[bias + i] );
@@ -237,8 +237,8 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
     // and   0b 01, then we seem to get 05 00 ... 6 + 5 == 11 = b?
 
     printf("[%d]: (%02x)\n",
-				unpacked.size() - 5,
-				unpacked[unpacked.size() - 5]);
+				(int)(unpacked.size() - 5),
+				(int)(unpacked[unpacked.size() - 5]));
 
 	return unpacked;
 }
