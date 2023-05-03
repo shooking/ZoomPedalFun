@@ -1,0 +1,7 @@
+construct==2.10.68
+Cython==0.29.34
+json5==0.9.11
+mido==1.2.10
+Pillow==9.5.0
+python-rtmidi==1.4.9
+tk==0.1.0
