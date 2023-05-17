@@ -18,3 +18,8 @@ jobs:
       - name: Build code
         run: cd B1ON && make clean all
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      - shell: bash
+        env:
+          SUPER_SECRET: ${{ secrets.SuperSecret }}
+        run: |
+          echo "$SUPER_SECRET"
