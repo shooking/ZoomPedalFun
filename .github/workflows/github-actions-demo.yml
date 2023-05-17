@@ -20,6 +20,6 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - shell: bash
         env:
-          SUPER_SECRET: ${{ secrets.SuperSecret }}
+          SUPER_SECRET: ${{ secrets.PANTS }}
         run: |
           echo "$SUPER_SECRET"
