@@ -10,14 +10,15 @@ xhost +
 3.1 - sometimes I need 3 runs to get it working
 3.2 - remove the containers
 
+```
 sudo docker run -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY \
 -h $HOSTNAME -v $HOME/.Xauthority:/home/lyonn/.Xauthority -it --rm \
 --device /dev/snd python-zpf:latest
-
+```
 Cool.
 
 When running these python 3 scripts note you will need
-
+```
 sudo apt-get install python-tk
 sudo apt-get install python3-tk 
 sudo apt-get install python-imaging-tk
@@ -29,16 +30,16 @@ sudo apt install -y alsa-tools
 sudo apt install -y alsa-utils
 sudo apt install -y libasound2-dev
 sudo apt-get install -y libjack-dev
-
+```
 pip3 install these
 
 Use a virtual env?
-
+```
 python3 -m venv .venv
 source .venv/bin/activate
 
 pip3 install -r requirements.txt
-
+```
 ## this should install the following
 cython
 tk
