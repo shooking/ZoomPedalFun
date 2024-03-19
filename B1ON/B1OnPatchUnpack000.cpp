@@ -110,7 +110,7 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
 
 	printf("NumFX = %2d (%02x)\n", (unpacked[90] & 0xF0) >> 5, (unpacked[90] & 0xF0) >> 5);
 		cout << endl;
-	printf("Volume = %2d (%02x)\n", unpacked[91], unpacked[91]);
+	printf("Volume = %2d (%02x)\n", unpacked[91] & 0x7F, unpacked[91] & 0x7F);
 		cout << endl;
 
 
