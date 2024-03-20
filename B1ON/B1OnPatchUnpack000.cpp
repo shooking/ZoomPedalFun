@@ -2,6 +2,7 @@
 #include <fstream>
 #include <iomanip>
 #include <iterator>
+#include <map>
 
 #include <string>
 #include <cmath>
@@ -9,7 +10,139 @@
 using namespace std;
 typedef unsigned char BYTE;
 
+typedef map< pair<int, int>, string> FXMap;
+
 vector<BYTE> unpack (vector<BYTE> &vi);
+
+string findFX(int a1, int a2);
+
+string findFX(int a1, int a2)
+{
+
+	FXMap knownFX;
+
+	// we need this to be even - the bit 0 signifies effect on - we dont care when we match
+	if (a1 & 1) a1--;
+
+	knownFX.insert( FXMap::value_type( {0x00, 0x00}, "BYPASS") );				// 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+	knownFX.insert( FXMap::value_type( {0x060, 0x0200}, "OPTCOMP") );			// 61 00 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x030, 0x0200}, "D COMP") );				// 31 00 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x040, 0x0200}, "M COMP") ); 			// 41 00 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x140, 0x0200}, "DUAL COMP") ); 			// 41 01 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x06a, 0x0200}, "160 COMP") ); 			// 6b 00 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x074, 0x0200}, "Limiter") ); 			// 75 00 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x080, 0x0200}, "Slow ATTCK") ); 		// 81 00 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x0a0, 0x0200}, "ZNR") ); 				// a1 00 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+
+	knownFX.insert( FXMap::value_type( {0x030, 0x400}, "BassGraphicEQ") ); 		// 31 00 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x048, 0x400}, "BasParaEQ") ); 			// 49 00 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x050, 0x400}, "Splitter") ); 			// 51 00 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x058, 0x400}, "Bottom B") ); 			// 59 00 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x060, 0x400}, "Exciter") ); 			// 61 00 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x0b0, 0x400}, "BassAutoWah" ) ); 		// b1 00 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+	knownFX.insert( FXMap::value_type( {0x110, 0x400}, "ZTRON" ) ); 			// 11 01 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x120, 0x400}, "M-Filter" ) ); 			// 21 01 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x12a, 0x400}, "A-FILTER" ) ); 			// 2b 01 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x134, 0x400}, "Bass CRY" ) ); 			// 35 01 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x140, 0x400}, "STEP" ) ); 				// 41 01 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x160, 0x400}, "SEQ FILTER" ) ); 		// 61 01 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x180, 0x400}, "RANDOM FILTER" ) ); 	// 81 01 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+
+	knownFX.insert( FXMap::value_type( {0x020, 0x280}, "BASS BOOSTER" ) ); 		// 21 00 80 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x040, 0x280}, "BassOverDrive" ) ); 	// 41 00 80 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x060, 0x280}, "BASS MUFF" ) ); 		// 61 00 80 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x140, 0x280}, "T Scream" ) ); 			// 41 01 80 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x0a0, 0x280}, "Bass Dist" ) ); 		// a1 00 80 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x160, 0x280}, "BassSqueak" ) ); 		// 61 01 80 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x180, 0x280}, "BassFuzzSmile" ) ); 	// 81 01 80 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x120, 0x280}, "Bass Metal" ) ); 		// 21 01 80 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+
+	knownFX.insert( FXMap::value_type( {0x020, 0x02c0}, "BASS DRIVE" ) ); 		// 21 00 c0 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x040, 0x02c0}, "D.I+" ) ); 			// 41 00 c0 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x060, 0x02c0}, "Bass BB" ) ); 			// 61 00 c0 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x080, 0x02c0}, "DI5" ) ); 				// 81 00 c0 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x0a0, 0x02c0}, "BassPre" ) ); 			// a1 00 c0 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x0c0, 0x02c0}, "Ac Bs Pre" ) ); 		// c1 00 c0 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+
+	knownFX.insert( FXMap::value_type( {0x020, 0x0a20}, "SVT" ) ); 				// 21 00 20 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x040, 0x0a20}, "B-MAN" ) ); 			// 41 00 20 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x060, 0x0a20}, "Hrt-3500" ) ); 		// 61 00 20 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x080, 0x0a20}, "SMR" ) ); 				// 81 00 20 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x0a0, 0x0a20}, "Flip Top" ) ); 		// a1 00 20 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x0c0, 0x0a20}, "acoustic" ) ); 		// c1 00 20 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x0e0, 0x0a20}, "agamp" ) ); 			// e1 00 20 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x100, 0x0a20}, "monotone" ) ); 		// 01 01 20 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x120, 0x0a20}, "SUPER B" ) ); 			// 21 01 20 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x140, 0x0a20}, "G-KRUEGER" ) ); 		// 41 01 20 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x160, 0x0a20}, "Heaven" ) ); 			// 61 01 20 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x180, 0x0a20}, "Mark B" ) ); 			// 81 01 20 0a 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+
+	knownFX.insert( FXMap::value_type( {0x010, 0x0c00}, "Tremolo" ) ); 			// 11 00 00 0c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x040, 0x0c00}, "Slicer" ) ); 			// 41 00 00 0c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x060, 0x0c00}, "Phaser" ) ); 			// 61 00 00 0c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x06a, 0x0c00}, "Duo-Phase" ) ); 		// 6b 00 00 0c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x074, 0x0c00}, "WarpPhaser" ) ); 		// 75 00 00 0c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x200, 0x0c00}, "Vibrato" ) ); 			// 01 02 00 0c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x080, 0x0c00}, "TheVibe" ) ); 			// 81 00 00 0c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x0f0, 0x0c00}, "Bass CHORUS" ) ); 		// f1 00 00 0c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x110, 0x0c00}, "Bass Detune" ) ); 		// 11 01 00 0c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x140, 0x0c00}, "StereoCho" ) ); 		// 41 01 00 0c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x170, 0x0c00}, "Bass Ensemble" ) ); 	// 71 01 00 0c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x400, 0x0c00}, "Corona Tri" ) ); 		// 01 04 00 0c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x1d0, 0x0c00}, "Bass Flanger" ) ); 	// d1 01 00 0c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x1b0, 0x0c00}, "Vin FLNGR" ) ); 		// b1 01 00 0c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x230, 0x0c00}, "Bass Octave" ) ); 		// 31 02 00 0c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x240, 0x0c00}, "Pitch SHFT" ) ); 		// 41 02 00 0c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x270, 0x0c00}, "Bass Pitch" ) ); 		// 71 02 00 0c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x280, 0x0c00}, "HPS" ) ); 				// 81 02 00 0c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x2a0, 0x0c00}, "BEND CHO" ) ); 		// a1 02 00 0c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x2c0, 0x0c00}, "MojoRoller" ) ); 		// c1 02 00 0c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x2e0, 0x0c00}, "RingMod" ) ); 			// e1 02 00 0c 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+
+	knownFX.insert( FXMap::value_type( {0x020, 0x0e00}, "Bit Crush" ) ); 		// 21 00 00 0e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x040, 0x0e00}, "BOMBER" ) ); 			// 41 00 00 0e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x0a0, 0x0e00}, "AUTOPAN" ) ); 			// a1 00 00 0e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x070, 0x0e00}, "BassSynth" ) ); 		// 71 00 00 0e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x0e0, 0x0e00}, "StdSyn" ) );			// e1 00 00 0e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x100, 0x0e00}, "Syn Tlk" ) ); 			// 01 01 00 0e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x180, 0x0e00}, "V-SYN" ) ); 			// 81 01 00 0e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x1a0, 0x0e00}, "4VoiceSyn" ) ); 		// a1 01 00 0e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x120, 0x0e00}, "Z-SYN" ) ); 			// 21 01 00 0e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x080, 0x0e00}, "Z-Organ") );			// 81 00 00 0e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x140, 0x0e00}, "Defret") );			// 41 01 00 0e 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+
+	knownFX.insert( FXMap::value_type( {0x010, 0x1000}, "DELAY") ); 			// 11 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x020, 0x1000}, "TapeEcho") ); 			// 21 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x180, 0x1000}, "StompDly") ); 			// 81 01 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x050, 0x1000}, "ModDelay2") ); 		// 51 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x080, 0x1000}, "ReverseDelay") ); 		// 81 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x0a0, 0x1000}, "Multi Tap Delay") ); 	// a1 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x0e0, 0x1000}, "Filter Dly") ); 		// e1 00 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x100, 0x1000}, "Pitch Delay") ); 		// 01 01 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x160, 0x1000}, "TRIGGER HOLD DELAY") );// 61 01 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x120, 0x1000}, "STEREO DELAY") ); 		// 21 01 00 10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+
+	knownFX.insert( FXMap::value_type( {0x010, 0x1200}, "HD Hall") ); 			// 11 00 00 12 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x020, 0x1200}, "HALL") ); 				// 21 00 00 12 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x040, 0x1200}, "ROOM") ); 				// 41 00 00 12 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x060, 0x1200}, "Tiled Rm") ); 			// 61 00 00 12 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x0a0, 0x1200}, "Arena Reverb") ); 		// a1 00 00 12 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x120, 0x1200}, "Plate") ); 			// 21 01 00 12 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x0e0, 0x1200}, "AIR") ); 				// e1 00 00 12 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x0c0, 0x1200}, "Early Reflection") ); 	// c1 00 00 12 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x140, 0x1200}, "MOD REVERB") ); 		// 41 01 00 12 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x160, 0x1200}, "Slap Back Reverb") ); 	// 61 01 00 12 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x320, 0x1200}, "PARTICLE REVERB") ); 	// 21 03 00 12 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+
+
+	if (knownFX.find(std::make_pair(a1, a2)) != knownFX.end())
+	{
+		return (knownFX.find(std::make_pair(a1, a2)))->second;
+	} else {
+		return "UKNOWN FX!!";
+	}
+}
 
 vector<BYTE> unpack ( vector<BYTE> &sysex )
 {
@@ -74,6 +207,7 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
 		// Lets try decode FX ID and group
 		int FXID=(unpacked[18*i + 1] & 15)*256 + unpacked[18*i];
 		int FXGroup;
+		int rawFXGroup = (unpacked[18*i + 3] )*256 + unpacked[18*i + 2];
 		
 		cout << endl;
 		if ((unpacked[18 * i + 2] & 0XC0) == 0)
@@ -101,6 +235,7 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
 			       FXGroup,
 			       FXGroup);		       
 		cout << endl;
+		cout << "FX = " << findFX(FXID,  rawFXGroup) << endl;
 		for (j = 0; j < 9; j++)
 		{
 			printf("\tP%d = %4d (%02x)", j+1, p[j], p[j]);
