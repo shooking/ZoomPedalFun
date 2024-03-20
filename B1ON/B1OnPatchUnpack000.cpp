@@ -207,7 +207,7 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
 		// Lets try decode FX ID and group
 		int FXID=(unpacked[18*i + 1] & 15)*256 + unpacked[18*i];
 		int FXGroup;
-		int rawFXGroup = (unpacked[18*i + 3] )*256 + unpacked[18*i + 2];
+		int rawFXGroup = (unpacked[18*i + 3] & 15 )*256 + unpacked[18*i + 2];
 		
 		cout << endl;
 		if ((unpacked[18 * i + 2] & 0XC0) == 0)
