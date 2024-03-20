@@ -26,6 +26,8 @@ string findFX(int a1, int a2)
 
 	knownFX.insert( FXMap::value_type( {0x00, 0x00}, "BYPASS") );				// 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
 
+	// Filter
+	knownFX.insert( FXMap::value_type( {0x010, 0x0200}, "COMP") );				// discovered from ToneLib G1On
 	knownFX.insert( FXMap::value_type( {0x060, 0x0200}, "OPTCOMP") );			// 61 00 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
 	knownFX.insert( FXMap::value_type( {0x030, 0x0200}, "D COMP") );				// 31 00 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
 	knownFX.insert( FXMap::value_type( {0x040, 0x0200}, "M COMP") ); 			// 41 00 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
@@ -34,29 +36,36 @@ string findFX(int a1, int a2)
 	knownFX.insert( FXMap::value_type( {0x074, 0x0200}, "Limiter") ); 			// 75 00 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
 	knownFX.insert( FXMap::value_type( {0x080, 0x0200}, "Slow ATTCK") ); 		// 81 00 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
 	knownFX.insert( FXMap::value_type( {0x0a0, 0x0200}, "ZNR") ); 				// a1 00 00 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x0c0, 0x0200}, "NoiseGate") );				// discovered from ToneLib G1On
 
-	knownFX.insert( FXMap::value_type( {0x030, 0x400}, "BassGraphicEQ") ); 		// 31 00 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
-	knownFX.insert( FXMap::value_type( {0x048, 0x400}, "BasParaEQ") ); 			// 49 00 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
-	knownFX.insert( FXMap::value_type( {0x050, 0x400}, "Splitter") ); 			// 51 00 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
-	knownFX.insert( FXMap::value_type( {0x058, 0x400}, "Bottom B") ); 			// 59 00 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
-	knownFX.insert( FXMap::value_type( {0x060, 0x400}, "Exciter") ); 			// 61 00 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
-	knownFX.insert( FXMap::value_type( {0x0b0, 0x400}, "BassAutoWah" ) ); 		// b1 00 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00
-	knownFX.insert( FXMap::value_type( {0x110, 0x400}, "ZTRON" ) ); 			// 11 01 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
-	knownFX.insert( FXMap::value_type( {0x120, 0x400}, "M-Filter" ) ); 			// 21 01 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
-	knownFX.insert( FXMap::value_type( {0x12a, 0x400}, "A-FILTER" ) ); 			// 2b 01 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
-	knownFX.insert( FXMap::value_type( {0x134, 0x400}, "Bass CRY" ) ); 			// 35 01 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
-	knownFX.insert( FXMap::value_type( {0x140, 0x400}, "STEP" ) ); 				// 41 01 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
-	knownFX.insert( FXMap::value_type( {0x160, 0x400}, "SEQ FILTER" ) ); 		// 61 01 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
-	knownFX.insert( FXMap::value_type( {0x180, 0x400}, "RANDOM FILTER" ) ); 	// 81 01 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x020, 0x0400}, "GraphicEQ") );				// discovered from ToneLib G1On
+	knownFX.insert( FXMap::value_type( {0x030, 0x0400}, "BassGraphicEQ") ); 		// 31 00 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x048, 0x0400}, "BasParaEQ") ); 			// 49 00 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x050, 0x0400}, "Splitter") ); 			// 51 00 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x058, 0x0400}, "Bottom B") ); 			// 59 00 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x060, 0x0400}, "Exciter") ); 			// 61 00 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x0b0, 0x0400}, "BassAutoWah" ) ); 		// b1 00 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+	knownFX.insert( FXMap::value_type( {0x110, 0x0400}, "ZTRON" ) ); 			// 11 01 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x120, 0x0400}, "M-Filter" ) ); 			// 21 01 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x12a, 0x0400}, "A-FILTER" ) ); 			// 2b 01 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x134, 0x0400}, "Bass CRY" ) ); 			// 35 01 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x140, 0x0400}, "STEP" ) ); 				// 41 01 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x160, 0x0400}, "SEQ FILTER" ) ); 		// 61 01 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x180, 0x0400}, "RANDOM FILTER" ) ); 	// 81 01 00 04 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
 
-	knownFX.insert( FXMap::value_type( {0x020, 0x280}, "BASS BOOSTER" ) ); 		// 21 00 80 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
-	knownFX.insert( FXMap::value_type( {0x040, 0x280}, "BassOverDrive" ) ); 	// 41 00 80 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
-	knownFX.insert( FXMap::value_type( {0x060, 0x280}, "BASS MUFF" ) ); 		// 61 00 80 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
-	knownFX.insert( FXMap::value_type( {0x140, 0x280}, "T Scream" ) ); 			// 41 01 80 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
-	knownFX.insert( FXMap::value_type( {0x0a0, 0x280}, "Bass Dist" ) ); 		// a1 00 80 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
-	knownFX.insert( FXMap::value_type( {0x160, 0x280}, "BassSqueak" ) ); 		// 61 01 80 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
-	knownFX.insert( FXMap::value_type( {0x180, 0x280}, "BassFuzzSmile" ) ); 	// 81 01 80 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
-	knownFX.insert( FXMap::value_type( {0x120, 0x280}, "Bass Metal" ) ); 		// 21 01 80 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x280, 0x0600}, "Aco.Sim") );				// discovered from ToneLib G1On
+
+	// AMP SIM
+	knownFX.insert( FXMap::value_type( {0x020, 0x0800}, "DELUXE-R") );				// discovered from ToneLib G1On
+
+	knownFX.insert( FXMap::value_type( {0x020, 0x0280}, "BASS BOOSTER" ) ); 		// 21 00 80 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x040, 0x0280}, "BassOverDrive" ) ); 	// 41 00 80 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x060, 0x0280}, "BASS MUFF" ) ); 		// 61 00 80 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x140, 0x0280}, "T Scream" ) ); 			// 41 01 80 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x0a0, 0x0280}, "Bass Dist" ) ); 		// a1 00 80 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x160, 0x0280}, "BassSqueak" ) ); 		// 61 01 80 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x180, 0x0280}, "BassFuzzSmile" ) ); 	// 81 01 80 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+	knownFX.insert( FXMap::value_type( {0x120, 0x0280}, "Bass Metal" ) ); 		// 21 01 80 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
 
 	knownFX.insert( FXMap::value_type( {0x020, 0x02c0}, "BASS DRIVE" ) ); 		// 21 00 c0 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
 	knownFX.insert( FXMap::value_type( {0x040, 0x02c0}, "D.I+" ) ); 			// 41 00 c0 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
@@ -207,7 +216,7 @@ vector<BYTE> unpack ( vector<BYTE> &sysex )
 		// Lets try decode FX ID and group
 		int FXID=(unpacked[18*i + 1] & 15)*256 + unpacked[18*i];
 		int FXGroup;
-		int rawFXGroup = (unpacked[18*i + 3] & 15 )*256 + unpacked[18*i + 2];
+		int rawFXGroup = (unpacked[18*i + 3] & 0x3F )*256 + unpacked[18*i + 2]; // I want most of the bits
 		
 		cout << endl;
 		if ((unpacked[18 * i + 2] & 0XC0) == 0)
