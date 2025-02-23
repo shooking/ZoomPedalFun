@@ -9,6 +9,7 @@
 #include <bitset>
 #include <cstdio>
 #include <cstring>
+#include <cstdint>
 
 using namespace std;
 typedef unsigned char BYTE;

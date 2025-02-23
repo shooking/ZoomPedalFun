@@ -7,6 +7,7 @@
 #include <cmath>
 #include <vector>
 #include <sstream>
+#include <cstdint>
 
 #include "pack.h"
 #include "unpack.h"

@@ -7,6 +7,7 @@
 #include <cmath>
 #include <vector>
 #include <sstream>
+#include <cstdint>
 
 using namespace std;
 typedef unsigned char BYTE;
